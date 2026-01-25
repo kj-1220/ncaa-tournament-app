@@ -1,0 +1,90 @@
+.team-table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.team-table thead {
+  background-color: #1e3a8a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.team-table th {
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-table th:hover {
+  background-color: #1e40af;
+}
+
+.team-table th:last-child {
+  border-right: none;
+}
+
+.team-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.team-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.team-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.team-table tbody tr:nth-child(even):hover {
+  background-color: #f3f4f6;
+}
+
+.team-table td {
+  padding: 12px 8px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.team-table td:last-child {
+  border-right: none;
+}
+
+.team-table .team-name {
+  font-weight: 600;
+  color: #1e3a8a;
+  min-width: 150px;
+}
+
+/* Make numbers right-aligned for better readability */
+.team-table td:not(.team-name) {
+  text-align: right;
+}
+
+.team-table th:first-child,
+.team-table td:first-child {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .team-table {
+    font-size: 12px;
+  }
+
+  .team-table th,
+  .team-table td {
+    padding: 8px 4px;
+  }
+}
