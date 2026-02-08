@@ -1,0 +1,8 @@
+APP PROTOCOL:
+
+I. Women's
+
+	1. barttorvik.com/ncaaw/2026_team_results.csv
+	2. barttorvik.com/ncaaw/2026_fffinal.csv
+	3. Update women's team file
+	4. (venv) (base) kevinjohnson@Kevins-MacBook-Air backend % python3 src/combine_torvik_womens_data.py
