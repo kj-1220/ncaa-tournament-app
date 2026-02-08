@@ -76,7 +76,6 @@ ehthumbs.db
 Desktop.ini
 
 # Data files (you may want to track some of these)
-*.csv
 *.xlsx
 *.parquet
 !backend/data/README.md
