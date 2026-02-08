@@ -13,8 +13,8 @@ data_dir = os.path.join(script_dir, '..', 'data', 'women')
 
 # Load files
 print("Loading files...")
-matchups_template = pd.read_csv(os.path.join(data_dir, 'create_womens_matchups.csv'))
-team_stats = pd.read_csv(os.path.join(data_dir, '2026_team_stats.csv'))
+matchups_template = pd.read_csv(os.path.join(data_dir, 'women_matchups_template.csv'))
+team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_current.csv'))
 
 print(f"✓ Matchups template: {matchups_template.shape}")
 print(f"✓ Team stats: {team_stats.shape}\n")
@@ -126,7 +126,7 @@ matchups_final['adj_tempo'] = matchups['adj_tempo_team'] - matchups['adj_tempo_o
 print("✓ Calculated differentials\n")
 
 # Save
-output_file = os.path.join(data_dir, '2026_womens_matchups.csv')
+output_file = os.path.join(data_dir, 'women_matchups_current.csv')
 matchups_final.to_csv(output_file, index=False)
 
 print(f"✓ Saved to: {output_file}")

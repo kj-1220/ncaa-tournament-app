@@ -51,7 +51,7 @@ with open(fffinal_file, 'r') as f:
 fffinal = pd.DataFrame(fffinal_data)
 
 team_results = pd.read_csv(os.path.join(data_dir, '2026_team_results.csv'))
-tournament_teams = pd.read_csv(os.path.join(data_dir, 'womens_teams_current.csv'))
+tournament_teams = pd.read_csv(os.path.join(data_dir, 'women_teams_current.csv'))
 
 print(f"✓ fffinal: {fffinal.shape}")
 print(f"✓ team_results: {team_results.shape}")
@@ -126,7 +126,7 @@ output = pd.merge(
 print(f"✓ Added seeds and regions\n")
 
 # Save
-output_file = os.path.join(data_dir, '2026_team_stats.csv')
+output_file = os.path.join(data_dir, 'women_teams_current.csv')
 output.to_csv(output_file, index=False)
 
 print(f"✓ Saved to: {output_file}")
@@ -137,4 +137,4 @@ print(f"✓ Total columns: {len(output.columns)}")
 
 print("\n" + "="*80)
 print("COMPLETE!")
-print("="*80)
+print("="*
