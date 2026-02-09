@@ -112,4 +112,27 @@ matchups_final['efgd_pct'] = matchups['efgd_pct_team'] - matchups['efg_pct_opp']
 matchups_final['tor'] = matchups['tor_team'] - matchups['tord_opp']
 matchups_final['tord'] = matchups['tord_team'] - matchups['tor_opp']
 matchups_final['orb_pct'] = matchups['orb_pct_team'] - matchups['drb_pct_opp']
-matchups_final['drb_pct'] = matchups['drb_pc
+matchups_final['drb_pct'] = matchups['drb_pct_team'] - matchups['orb_pct_opp']
+matchups_final['ftr'] = matchups['ftr_team'] - matchups['ftrd_opp']
+matchups_final['ftrd'] = matchups['ftrd_team'] - matchups['ftr_opp']
+matchups_final['2p_pct'] = matchups['2p_pct_team'] - matchups['2pd_pct_opp']
+matchups_final['2pd_pct'] = matchups['2pd_pct_team'] - matchups['2p_pct_opp']
+matchups_final['3p_pct'] = matchups['3p_pct_team'] - matchups['3pd_pct_opp']
+matchups_final['3pd_pct'] = matchups['3pd_pct_team'] - matchups['3p_pct_opp']
+matchups_final['3pr'] = matchups['3pr_team'] - matchups['3prd_opp']
+matchups_final['3prd'] = matchups['3prd_team'] - matchups['3pr_opp']
+matchups_final['adj_tempo'] = matchups['adj_tempo_team'] - matchups['adj_tempo_opp']
+
+print("✓ Calculated differentials\n")
+
+# Save
+output_file = os.path.join(data_dir, 'women_matchups_current.csv')
+matchups_final.to_csv(output_file, index=False)
+
+print(f"✓ Saved to: {output_file}")
+print(f"✓ Total matchups: {len(matchups_final)}")
+print(f"✓ Total columns: {len(matchups_final.columns)}")
+
+print("\n" + "="*80)
+print("COMPLETE!")
+print("="*80)
