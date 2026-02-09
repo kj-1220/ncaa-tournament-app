@@ -137,4 +137,4 @@ print(f"✓ Total columns: {len(output.columns)}")
 
 print("\n" + "="*80)
 print("COMPLETE!")
-print("="*80)
+print("="

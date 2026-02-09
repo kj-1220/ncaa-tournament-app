@@ -1,7 +1,6 @@
 """
 Model loading and inference module for NCAA Tournament predictions
 Based on Womens_Composite_Model and Womens_Tiers_Clustering notebooks
-Uses percentile-based scaling with final score normalization
 """
 import pandas as pd
 import numpy as np
@@ -259,13 +258,11 @@ class NCAAPredictor:
             overall_df, all_overall_vars, self.weights['overall'], 'overall'
         )
         
-        # Normalize final scores to 1-10 scale based on the score distribution
-        df['offense'] = ((df['offensive_score'] - df['offensive_score'].min()) / 
-                         (df['offensive_score'].max() - df['offensive_score'].min()) * 9 + 1).round(2)
-        df['defense'] = ((df['defensive_score'] - df['defensive_score'].min()) / 
-                         (df['defensive_score'].max() - df['defensive_score'].min()) * 9 + 1).round(2)
-        df['overall'] = ((df['overall_score'] - df['overall_score'].min()) / 
-                         (df['overall_score'].max() - df['overall_score'].min()) * 9 + 1).round(2)
+        # Normalize to 1-10 using percentile ranking (prevents ties at 10)
+        n = len(df)
+        df['offense'] = (10 - (df['offensive_score'].rank(method='first', ascending=False) - 1) / (n - 1) * 9).round(2)
+        df['defense'] = (10 - (df['defensive_score'].rank(method='first', ascending=False) - 1) / (n - 1) * 9).round(2)
+        df['overall'] = (10 - (df['overall_score'].rank(method='first', ascending=False) - 1) / (n - 1) * 9).round(2)
         
         return df
     
@@ -313,6 +310,10 @@ class NCAAPredictor:
             DataFrame: Input data with added 'tier' and 'cluster' columns
         """
         df = team_data.copy()
+        
+        # Check if seed column exists
+        if 'seed' not in df.columns:
+            raise ValueError("Input data must contain 'seed' column for tier prediction")
         
         # Prepare features and scale
         cluster_features_df = df[self.cluster_features].copy()
