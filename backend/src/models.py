@@ -335,10 +335,70 @@ class NCAAPredictor:
     
     def _assign_tier_labels(self, df):
         """
-        Assign tier labels (S, A, B, C, D) based on cluster, rank, and seed
+        Assign tier labels (S, A, B, C, D, F) based on cluster, rank, and seed
         Logic from Womens_Tiers_Clustering notebook
         """
         tier = pd.Series('', index=df.index)
         
         # S Tier - Elite teams
-        tier[(d
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=4)] = 'S'
+        
+        # A Tier - Championship contenders
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']>4) & (df['seed']<=3)] = 'A'
+        tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
+        
+        # B Tier - Sweet 16 level
+        tier[(df['cluster']==0) & (df['barthag_rtg_rank']<=24) & (df['seed']<=6)] = 'B'
+        tier[(df['cluster']==2) & (df['seed']>3) & (df['seed']<=6)] = 'B'
+        tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
+        
+        # C Tier - Round 2 level
+        tier[(df['cluster']==0) & (df['barthag_rtg_rank']>24) & (df['seed']<=6)] = 'C'
+        tier[(df['cluster']==0) & (df['barthag_rtg_rank']<=24) & (df['seed']>6)] = 'C'
+        tier[(df['cluster']==0) & (df['barthag_rtg_rank']>24) & (df['seed']<=9)] = 'C'
+        tier[(df['cluster']==3) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
+        tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
+        tier[(df['cluster']==3) & (df['seed']>3) & (df['seed']<=6)] = 'C'
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
+        tier[(df['cluster']==4) & (df['seed']>3) & (df['seed']<=6)] = 'C'
+        
+        # D Tier - First/Second round level
+        tier[(df['cluster']==0) & (df['seed']>9) & (df['seed']<=12)] = 'D'
+        tier[(df['cluster']==2) & (df['seed']>6)] = 'D'
+        tier[(df['cluster']==3) & (df['seed']>6) & (df['seed']<=12)] = 'D'
+        tier[(df['cluster']==4) & (df['seed']>6) & (df['seed']<=12)] = 'D'
+        
+        # F Tier - Weakest teams
+        tier[(df['cluster']==0) & (df['seed']>12)] = 'F'
+        tier[(df['cluster']==1)] = 'F'
+        tier[(df['cluster']==3) & (df['seed']>12)] = 'F'
+        tier[(df['cluster']==4) & (df['seed']>12)] = 'F'
+        
+        # Fill any remaining with C
+        tier[tier==''] = 'C'
+        
+        return tier
+    
+    def batch_predict(self, teams_data):
+        """
+        Run all predictions for multiple teams
+        
+        Args:
+            teams_data: DataFrame with team statistics
+            
+        Returns:
+            DataFrame: Teams with all predictions added
+        """
+        # Predict composite scores
+        df = self.predict_composite_scores(teams_data)
+        
+        # Predict tiers
+        df = self.predict_tiers(df)
+        
+        # Add rank based on overall score
+        df['rank'] = df['overall_score'].rank(ascending=False, method='min').astype(int)
+        
+        return df
