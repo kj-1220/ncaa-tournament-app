@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import warnings
 warnings.filterwarnings('ignore')
@@ -28,6 +28,7 @@ class NCAAPredictor:
         self.historical_data = None
         self.scalers = {}
         self.weights = {}
+        self.percentiles = {}  # Store percentile bounds for scaling
         self.kmeans_model = None
         
         # Feature definitions from notebooks
@@ -39,8 +40,8 @@ class NCAAPredictor:
         self.cluster_features = ['adj_oe', 'adj_de', 'barthag', 'efg_pct', 'efgd_pct', 
                                 'orb_pct', 'drb_pct', '2p_pct', '2pd_pct', 'wab']
         
-    def load_historical_data(self, tournament_file='wncaat_teams_historical.csv', 
-                            torvik_file='torvik_women_historical.csv'):
+    def load_historical_data(self, tournament_file='women_teams_historical.csv', 
+                            torvik_file='women_torvik_historical.csv'):
         """
         Load and prepare historical data for model training/normalization
         
@@ -101,17 +102,23 @@ class NCAAPredictor:
             df, self.offensive_vars, y
         )
         
+        # Calculate percentile bounds for offensive features
+        self._calculate_percentile_bounds(df, self.offensive_vars, 'offensive')
+        
         # Train defensive model  
         print("2. Building defensive score weights...")
         self.weights['defensive'] = self._calculate_feature_weights(
             df, self.defensive_vars, y
         )
         
+        # Calculate percentile bounds for defensive features
+        self._calculate_percentile_bounds(df, self.defensive_vars, 'defensive')
+        
         # Train overall model
         print("3. Building overall score weights...")
         # First calculate offensive and defensive scores
-        df['offensive_score'] = self._calculate_weighted_score(df, self.offensive_vars, self.weights['offensive'])
-        df['defensive_score'] = self._calculate_weighted_score(df, self.defensive_vars, self.weights['defensive'])
+        df['offensive_score'] = self._calculate_weighted_score(df, self.offensive_vars, self.weights['offensive'], 'offensive')
+        df['defensive_score'] = self._calculate_weighted_score(df, self.defensive_vars, self.weights['defensive'], 'defensive')
         
         all_overall_vars = self.overall_vars + ['offensive_score', 'defensive_score']
         overall_df = df[all_overall_vars].copy()
@@ -120,8 +127,27 @@ class NCAAPredictor:
             overall_df, all_overall_vars, y
         )
         
+        # Calculate percentile bounds for overall features
+        self._calculate_percentile_bounds(overall_df, all_overall_vars, 'overall')
+        
         print("\n✓ Composite model trained successfully!")
         
+    def _calculate_percentile_bounds(self, df, features, score_type):
+        """
+        Calculate and store 1st and 99th percentile bounds for features
+        
+        Args:
+            df: DataFrame with features
+            features: List of feature names
+            score_type: 'offensive', 'defensive', or 'overall'
+        """
+        self.percentiles[score_type] = {}
+        for feature in features:
+            self.percentiles[score_type][feature] = {
+                'p01': df[feature].quantile(0.01),
+                'p99': df[feature].quantile(0.99)
+            }
+    
     def _calculate_feature_weights(self, df, features, target):
         """
         Calculate feature importance weights using correlation + Random Forest
@@ -163,14 +189,15 @@ class NCAAPredictor:
         
         return weights
     
-    def _calculate_weighted_score(self, df, features, weights):
+    def _calculate_weighted_score(self, df, features, weights, score_type):
         """
-        Calculate weighted score using feature weights
+        Calculate weighted score using percentile-based normalization
         
         Args:
             df: DataFrame with features
             features: List of feature names
             weights: Dict of feature weights
+            score_type: 'offensive', 'defensive', or 'overall'
             
         Returns:
             Series: Weighted scores
@@ -178,13 +205,18 @@ class NCAAPredictor:
         # Fill missing values
         feature_df = df[features].fillna(df[features].median())
         
-        # Normalize each feature to 0-100 scale
-        scaler = MinMaxScaler(feature_range=(0, 100))
-        normalized = pd.DataFrame(
-            scaler.fit_transform(feature_df),
-            columns=features,
-            index=df.index
-        )
+        # Normalize each feature to 0-100 scale using percentiles
+        normalized = pd.DataFrame(index=df.index)
+        
+        for feature in features:
+            p01 = self.percentiles[score_type][feature]['p01']
+            p99 = self.percentiles[score_type][feature]['p99']
+            
+            # Scale to 0-100, clipping values outside percentile range
+            if p99 > p01:  # Avoid division by zero
+                normalized[feature] = ((feature_df[feature] - p01) / (p99 - p01) * 100).clip(0, 100)
+            else:
+                normalized[feature] = 50.0  # If no variance, set to middle
         
         # Calculate weighted sum
         score = sum(normalized[feature] * weights[feature] for feature in features)
@@ -211,19 +243,19 @@ class NCAAPredictor:
         
         # Calculate offensive score
         df['offensive_score'] = self._calculate_weighted_score(
-            df, self.offensive_vars, self.weights['offensive']
+            df, self.offensive_vars, self.weights['offensive'], 'offensive'
         )
         
         # Calculate defensive score
         df['defensive_score'] = self._calculate_weighted_score(
-            df, self.defensive_vars, self.weights['defensive']
+            df, self.defensive_vars, self.weights['defensive'], 'defensive'
         )
         
         # Calculate overall score
         overall_df = df[self.overall_vars + ['offensive_score', 'defensive_score']].copy()
         all_overall_vars = self.overall_vars + ['offensive_score', 'defensive_score']
         df['overall_score'] = self._calculate_weighted_score(
-            overall_df, all_overall_vars, self.weights['overall']
+            overall_df, all_overall_vars, self.weights['overall'], 'overall'
         )
         
         # Scale to 1-10 for display
