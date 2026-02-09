@@ -1,6 +1,7 @@
 """
 Model loading and inference module for NCAA Tournament predictions
 Based on Womens_Composite_Model and Womens_Tiers_Clustering notebooks
+Uses percentile-based scaling with final score normalization
 """
 import pandas as pd
 import numpy as np
@@ -28,7 +29,7 @@ class NCAAPredictor:
         self.historical_data = None
         self.scalers = {}
         self.weights = {}
-        self.percentiles = {}  # Store percentile bounds for scaling
+        self.percentiles = {}
         self.kmeans_model = None
         
         # Feature definitions from notebooks
@@ -213,10 +214,10 @@ class NCAAPredictor:
             p99 = self.percentiles[score_type][feature]['p99']
             
             # Scale to 0-100, clipping values outside percentile range
-            if p99 > p01:  # Avoid division by zero
+            if p99 > p01:
                 normalized[feature] = ((feature_df[feature] - p01) / (p99 - p01) * 100).clip(0, 100)
             else:
-                normalized[feature] = 50.0  # If no variance, set to middle
+                normalized[feature] = 50.0
         
         # Calculate weighted sum
         score = sum(normalized[feature] * weights[feature] for feature in features)
@@ -258,10 +259,13 @@ class NCAAPredictor:
             overall_df, all_overall_vars, self.weights['overall'], 'overall'
         )
         
-        # Scale to 1-10 for display
-        df['offense'] = (df['offensive_score'] / 10).round(2)
-        df['defense'] = (df['defensive_score'] / 10).round(2)
-        df['overall'] = (df['overall_score'] / 10).round(2)
+        # Normalize final scores to 1-10 scale based on the score distribution
+        df['offense'] = ((df['offensive_score'] - df['offensive_score'].min()) / 
+                         (df['offensive_score'].max() - df['offensive_score'].min()) * 9 + 1).round(2)
+        df['defense'] = ((df['defensive_score'] - df['defensive_score'].min()) / 
+                         (df['defensive_score'].max() - df['defensive_score'].min()) * 9 + 1).round(2)
+        df['overall'] = ((df['overall_score'] - df['overall_score'].min()) / 
+                         (df['overall_score'].max() - df['overall_score'].min()) * 9 + 1).round(2)
         
         return df
     
