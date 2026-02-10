@@ -13,7 +13,7 @@ data_dir = os.path.join(script_dir, '..', 'data', 'women')
 
 # Load files
 print("Loading files...")
-matchups_template = pd.read_csv(os.path.join(data_dir, 'women_matchups_template.csv'))
+matchups_template = pd.read_csv(os.path.join(data_dir, 'bracket_template.csv'))
 team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_current.csv'))
 
 print(f"✓ Matchups template: {matchups_template.shape}")
