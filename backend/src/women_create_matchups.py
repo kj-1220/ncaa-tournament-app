@@ -1,5 +1,6 @@
 """
-Create 2026 women's matchups with differentials from team stats
+Generate all possible NCAA tournament matchups for 2026 women's basketball
+Creates differentials between team and opponent stats
 """
 import pandas as pd
 import os
@@ -11,7 +12,6 @@ print("="*80 + "\n")
 script_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(script_dir, '..', 'data', 'women')
 
-# Load files
 print("Loading files...")
 matchups_template = pd.read_csv(os.path.join(data_dir, 'bracket_template.csv'))
 team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_enriched.csv'))
@@ -19,50 +19,36 @@ team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_enriched.csv'))
 print(f"✓ Matchups template: {matchups_template.shape}")
 print(f"✓ Team stats: {team_stats.shape}\n")
 
-print(f"Matchups columns: {matchups_template.columns.tolist()}")
-print(f"Team stats columns: {team_stats.columns.tolist()}")
-print(f"First few matchups:\n{matchups_template.head()}")
+print("Inverting defensive stats...")
+team_stats['adj_de'] = 200 - team_stats['adj_de']
+team_stats['efgd_pct'] = 100 - team_stats['efgd_pct']
+team_stats['tord'] = 100 - team_stats['tord']
+team_stats['drb_pct'] = 100 - team_stats['drb_pct']
+team_stats['ftrd'] = 100 - team_stats['ftrd']
+team_stats['2pd_pct'] = 100 - team_stats['2pd_pct']
+team_stats['3pd_pct'] = 100 - team_stats['3pd_pct']
+team_stats['3prd'] = 100 - team_stats['3prd']
+print("✓ Defensive stats inverted\n")
 
-# Join to get team names
 print("Adding team names...")
-# First join for the main team
-matchups = pd.merge(
-    matchups_template,
-    team_stats[['team', 'region', 'seed']],
+matchups = matchups_template.merge(
+    team_stats[['region', 'seed', 'team']],
     left_on=['team_region', 'team_seed'],
     right_on=['region', 'seed'],
     how='left'
-)
-matchups = matchups.rename(columns={'team': 'team_name'})
-matchups = matchups.drop(columns=['region', 'seed'])
+).rename(columns={'team': 'team_name'})
 
-# Second join for the opponent
-matchups = pd.merge(
-    matchups,
-    team_stats[['team', 'region', 'seed']],
+matchups = matchups.merge(
+    team_stats[['region', 'seed', 'team']],
     left_on=['opp_region', 'opp_seed'],
     right_on=['region', 'seed'],
-    how='left'
-)
-matchups = matchups.rename(columns={'team': 'opponent_name'})
-matchups = matchups.drop(columns=['region', 'seed'])
+    how='left',
+    suffixes=('', '_opp')
+).rename(columns={'team': 'opponent_name'})
 
+matchups = matchups.drop(columns=['region', 'seed', 'region_opp', 'seed_opp'])
 print(f"✓ Added team names: {matchups.shape}\n")
 
-# Invert defensive stats for both teams
-print("Inverting defensive stats...")
-team_stats_inverted = team_stats.copy()
-team_stats_inverted['adj_de'] = 200 - team_stats_inverted['adj_de']
-team_stats_inverted['efgd_pct'] = 100 - team_stats_inverted['efgd_pct']
-team_stats_inverted['tord'] = 100 - team_stats_inverted['tord']
-team_stats_inverted['drb_pct'] = 100 - team_stats_inverted['drb_pct']
-team_stats_inverted['ftrd'] = 100 - team_stats_inverted['ftrd']
-team_stats_inverted['2pd_pct'] = 100 - team_stats_inverted['2pd_pct']
-team_stats_inverted['3pd_pct'] = 100 - team_stats_inverted['3pd_pct']
-team_stats_inverted['3prd'] = 100 - team_stats_inverted['3prd']
-print("✓ Defensive stats inverted\n")
-
-# Join full stats for team
 print("Joining team stats...")
 stat_cols = ['team', 'wab', 'barthag', 'adj_oe', 'adj_de', 'efg_pct', 'efgd_pct', 
              'tor', 'tord', 'orb_pct', 'drb_pct', 'ftr', 'ftrd', '2p_pct', '2pd_pct',
@@ -70,7 +56,7 @@ stat_cols = ['team', 'wab', 'barthag', 'adj_oe', 'adj_de', 'efg_pct', 'efgd_pct'
 
 matchups = pd.merge(
     matchups,
-    team_stats_inverted[stat_cols],
+    team_stats[stat_cols],
     left_on='team_name',
     right_on='team',
     how='left',
@@ -78,20 +64,17 @@ matchups = pd.merge(
 )
 matchups = matchups.drop(columns=['team'])
 
-# Join full stats for opponent
 matchups = pd.merge(
     matchups,
-    team_stats_inverted[stat_cols],
+    team_stats[stat_cols],
     left_on='opponent_name',
     right_on='team',
     how='left',
     suffixes=('_team', '_opp')
 )
 matchups = matchups.drop(columns=['team'])
-
 print(f"✓ Joined team stats: {matchups.shape}\n")
 
-# Calculate differentials
 print("Calculating differentials...")
 matchups_final = pd.DataFrame()
 matchups_final['game_id'] = matchups['game_id']
@@ -103,7 +86,6 @@ matchups_final['opp_region'] = matchups['opp_region']
 matchups_final['opp_seed'] = matchups['opp_seed']
 matchups_final['opponent'] = matchups['opponent_name']
 
-# Differentials (team - opponent)
 matchups_final['wab'] = matchups['wab_team'] - matchups['wab_opp']
 matchups_final['barthag'] = matchups['barthag_team'] - matchups['barthag_opp']
 matchups_final['adj_oe'] = matchups['adj_oe_team'] - matchups['adj_de_opp']
@@ -126,14 +108,13 @@ matchups_final['adj_tempo'] = matchups['adj_tempo_team'] - matchups['adj_tempo_o
 
 print("✓ Calculated differentials\n")
 
-# Save
-output_file = os.path.join(data_dir, 'women_matchups_current.csv')
-matchups_final.to_csv(output_file, index=False)
+output_path = os.path.join(data_dir, 'women_matchups_current.csv')
+matchups_final.to_csv(output_path, index=False)
 
-print(f"✓ Saved to: {output_file}")
+print(f"✓ Saved to: {output_path}")
 print(f"✓ Total matchups: {len(matchups_final)}")
-print(f"✓ Total columns: {len(matchups_final.columns)}")
+print(f"✓ Total columns: {len(matchups_final.columns)}\n")
 
-print("\n" + "="*80)
+print("="*80)
 print("COMPLETE!")
 print("="*80)

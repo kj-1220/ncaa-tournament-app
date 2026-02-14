@@ -1,6 +1,6 @@
 """
 Calculate win probabilities and bracket values for women's tournament
-Uses trained matchup models with game_id-based probability normalization
+Uses trained matchup models with proper pairwise probability normalization
 """
 import pandas as pd
 import numpy as np
@@ -40,7 +40,6 @@ print(f"✓ Loaded {len(matchups)} possible matchups")
 # Verify game_id exists
 if 'game_id' not in matchups.columns:
     print("ERROR: game_id column not found in matchups!")
-    print("Please regenerate matchups with updated bracket_template.csv")
     exit(1)
 
 print(f"✓ Found {matchups['game_id'].nunique()} unique games\n")
@@ -78,42 +77,70 @@ if elite_mask.sum() > 0:
     print(f"✓ Predicted {elite_mask.sum()} elite round matchups\n")
 
 # ============================================================================
-# STEP 4: NORMALIZE PROBABILITIES BY GAME_ID
+# STEP 4: NORMALIZE PROBABILITIES PAIRWISE
 # ============================================================================
-print("STEP 4: Normalizing probabilities to ensure each game sums to 1.0")
+print("STEP 4: Normalizing probabilities for opposing perspectives")
 print("-" * 80 + "\n")
 
 matchups['win_prob'] = 0.0
+matchups['normalized'] = False
 
-# For each unique game
-for game_id in matchups['game_id'].unique():
-    game_matchups = matchups[matchups['game_id'] == game_id]
-    
-    # Should be exactly 2 rows (both perspectives)
-    if len(game_matchups) != 2:
-        print(f"WARNING: game_id {game_id} has {len(game_matchups)} matchups (expected 2)")
+# For each matchup, find its reverse and normalize the pair
+for idx in matchups.index:
+    # Skip if already normalized
+    if matchups.at[idx, 'normalized']:
         continue
     
-    # Get both teams' raw probabilities
-    prob_sum = game_matchups['win_prob_raw'].sum()
+    row = matchups.loc[idx]
+    team = row['team']
+    opponent = row['opponent']
+    game_id = row['game_id']
     
-    if prob_sum > 0:
-        # Normalize so they sum to 1.0
-        for idx in game_matchups.index:
-            matchups.at[idx, 'win_prob'] = matchups.at[idx, 'win_prob_raw'] / prob_sum
+    # Find reverse matchup (opponent vs team, same game_id)
+    reverse = matchups[
+        (matchups['game_id'] == game_id) &
+        (matchups['team'] == opponent) &
+        (matchups['opponent'] == team)
+    ]
+    
+    if len(reverse) == 0:
+        # No reverse found, just use raw probability
+        matchups.at[idx, 'win_prob'] = matchups.at[idx, 'win_prob_raw']
+        matchups.at[idx, 'normalized'] = True
+        continue
+    
+    reverse_idx = reverse.index[0]
+    
+    # Normalize the pair
+    prob1 = matchups.at[idx, 'win_prob_raw']
+    prob2 = matchups.at[reverse_idx, 'win_prob_raw']
+    total = prob1 + prob2
+    
+    if total > 0:
+        matchups.at[idx, 'win_prob'] = prob1 / total
+        matchups.at[reverse_idx, 'win_prob'] = prob2 / total
     else:
-        # If both are 0, default to 50-50
-        for idx in game_matchups.index:
-            matchups.at[idx, 'win_prob'] = 0.5
+        matchups.at[idx, 'win_prob'] = 0.5
+        matchups.at[reverse_idx, 'win_prob'] = 0.5
+    
+    matchups.at[idx, 'normalized'] = True
+    matchups.at[reverse_idx, 'normalized'] = True
 
-print("✓ Normalized all game probabilities")
+matchups = matchups.drop(columns=['normalized'])
+
+print("✓ Normalized all pairwise probabilities")
 
 # Verify normalization
-sample_game = matchups[matchups['game_id'] == matchups['game_id'].iloc[0]]
-print(f"✓ Sample verification: game_id '{sample_game['game_id'].iloc[0]}'")
-print(f"  Team 1 win_prob: {sample_game['win_prob'].iloc[0]:.4f}")
-print(f"  Team 2 win_prob: {sample_game['win_prob'].iloc[1]:.4f}")
-print(f"  Sum: {sample_game['win_prob'].sum():.4f}\n")
+sample_game = matchups[matchups['game_id'] == 'r1_r1_g01']
+print(f"✓ Sample verification: game_id 'r1_r1_g01'")
+uconn = sample_game[sample_game['team'] == 'Connecticut']
+if len(uconn) > 0:
+    print(f"  Connecticut vs {uconn.iloc[0]['opponent']}: {uconn.iloc[0]['win_prob']:.4f}")
+    opp_name = uconn.iloc[0]['opponent']
+    reverse = sample_game[sample_game['team'] == opp_name]
+    if len(reverse) > 0:
+        print(f"  {opp_name} vs Connecticut: {reverse.iloc[0]['win_prob']:.4f}")
+        print(f"  Sum: {uconn.iloc[0]['win_prob'] + reverse.iloc[0]['win_prob']:.4f}\n")
 
 # Save matchups with probabilities
 matchups_output = os.path.join(data_dir, 'women_matchups_with_probs.csv')
@@ -139,16 +166,19 @@ probs = {team: {} for team in teams}
 for team in teams:
     probs[team]['Round 1'] = 1.0
 
-# Round progression sequence
-rounds_sequence = ['Round 1', 'Round 2', 'Sweet 16', 'Elite Eight', 'Final Four', 'Championship']
+# Round progression
+round_progression = [
+    ('Round 1', 'Round 2', 'Round 1'),
+    ('Round 2', 'Sweet 16', 'Round 2'),
+    ('Sweet 16', 'Elite Eight', 'Sweet 16'),
+    ('Elite Eight', 'Final Four', 'Elite Eight'),
+    ('Final Four', 'Championship', 'Final Four')
+]
 
 print("Calculating round-by-round probabilities...")
 
-# Process each round sequentially
-for round_idx in range(len(rounds_sequence) - 1):
-    current_round = rounds_sequence[round_idx]
-    next_round = rounds_sequence[round_idx + 1]
-    
+# Process each round
+for current_round, next_round, matchup_round in round_progression:
     print(f"  Processing {current_round} -> {next_round}")
     
     # For each team, calculate probability of advancing
@@ -159,14 +189,17 @@ for round_idx in range(len(rounds_sequence) - 1):
             probs[team][next_round] = 0.0
             continue
         
-        # Get all possible matchups for this team in current round
+        # Get matchups for current round
         team_matchups = matchups[
             (matchups['team'] == team) & 
-            (matchups['round'] == current_round)
+            (matchups['round'] == matchup_round)
         ]
         
+        if len(team_matchups) == 0:
+            probs[team][next_round] = 0.0
+            continue
+        
         # Calculate probability of advancing
-        # P(team advances) = P(team in round) × Σ[P(opponent in round) × P(team wins)]
         advance_prob = 0.0
         
         for _, matchup in team_matchups.iterrows():
