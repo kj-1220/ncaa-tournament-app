@@ -14,7 +14,7 @@ data_dir = os.path.join(script_dir, '..', 'data', 'women')
 # Load files
 print("Loading files...")
 matchups_template = pd.read_csv(os.path.join(data_dir, 'bracket_template.csv'))
-team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_current.csv'))
+team_stats = pd.read_csv(os.path.join(data_dir, 'women_teams_enriched.csv'))
 
 print(f"✓ Matchups template: {matchups_template.shape}")
 print(f"✓ Team stats: {team_stats.shape}\n")
@@ -94,6 +94,7 @@ print(f"✓ Joined team stats: {matchups.shape}\n")
 # Calculate differentials
 print("Calculating differentials...")
 matchups_final = pd.DataFrame()
+matchups_final['game_id'] = matchups['game_id']
 matchups_final['round'] = matchups['round']
 matchups_final['team_region'] = matchups['team_region']
 matchups_final['team_seed'] = matchups['team_seed']
