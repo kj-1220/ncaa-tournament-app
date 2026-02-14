@@ -10,7 +10,7 @@ import sys
 
 # Add parent directory to path to import models
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from models import NCAAPredictor
+from womens_composite_tier_models import NCAAPredictor
 
 print("="*80)
 print("WOMEN'S BASKETBALL COMPOSITE SCORES & TIERS")
