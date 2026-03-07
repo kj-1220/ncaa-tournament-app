@@ -38,7 +38,7 @@ class NCAAPredictor:
         
         # Clustering features
         self.cluster_features = ['adj_oe', 'adj_de', 'barthag', 'efg_pct', 'efgd_pct', 
-                                'orb_pct', 'drb_pct', '2p_pct', '2pd_pct', 'wab']
+                        'orb_pct', 'drb_pct', 'tor', 'tord', 'wab']
         
     def load_historical_data(self, tournament_file='women_teams_historical.csv', 
                             torvik_file='women_torvik_historical.csv'):
@@ -334,52 +334,46 @@ class NCAAPredictor:
         return df
     
     def _assign_tier_labels(self, df):
-        """
-        Assign tier labels (S, A, B, C, D, F) based on cluster, rank, and seed
-        Logic from Womens_Tiers_Clustering notebook
-        """
         tier = pd.Series('', index=df.index)
-        
-        # S Tier - Elite teams
-        tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=4)] = 'S'
-        
-        # A Tier - Championship contenders
-        tier[(df['cluster']==2) & (df['barthag_rtg_rank']>4) & (df['seed']<=3)] = 'A'
+
+        ### S Tier ###
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=4)] = 'S'
+
+        ### A Tier ###
+        tier[(df['cluster']==4) & (df['barthag_rtg_rank']>4) & (df['seed']<=3)] = 'A'
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
         tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
-        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
-        
-        # B Tier - Sweet 16 level
-        tier[(df['cluster']==0) & (df['barthag_rtg_rank']<=24) & (df['seed']<=6)] = 'B'
-        tier[(df['cluster']==2) & (df['seed']>3) & (df['seed']<=6)] = 'B'
+
+        ### B Tier ###
+        tier[(df['cluster']==1) & (df['barthag_rtg_rank']<=24) & (df['seed']<=6)] = 'B'
+        tier[(df['cluster']==4) & (df['seed']>3) & (df['seed']<=6)] = 'B'
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
         tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
-        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
-        
-        # C Tier - Round 2 level
-        tier[(df['cluster']==0) & (df['barthag_rtg_rank']>24) & (df['seed']<=6)] = 'C'
-        tier[(df['cluster']==0) & (df['barthag_rtg_rank']<=24) & (df['seed']>6)] = 'C'
-        tier[(df['cluster']==0) & (df['barthag_rtg_rank']>24) & (df['seed']<=9)] = 'C'
+
+        ### C Tier ###
+        tier[(df['cluster']==1) & (df['barthag_rtg_rank']>24) & (df['seed']<=6)] = 'C'
+        tier[(df['cluster']==1) & (df['barthag_rtg_rank']<=24) & (df['seed']>6)] = 'C'
+        tier[(df['cluster']==1) & (df['barthag_rtg_rank']>24) & (df['seed']<=9)] = 'C'
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
+        tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
+        tier[(df['cluster']==2) & (df['seed']>3) & (df['seed']<=6)] = 'C'
         tier[(df['cluster']==3) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
         tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
         tier[(df['cluster']==3) & (df['seed']>3) & (df['seed']<=6)] = 'C'
-        tier[(df['cluster']==4) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
-        tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
-        tier[(df['cluster']==4) & (df['seed']>3) & (df['seed']<=6)] = 'C'
-        
-        # D Tier - First/Second round level
-        tier[(df['cluster']==0) & (df['seed']>9) & (df['seed']<=12)] = 'D'
-        tier[(df['cluster']==2) & (df['seed']>6)] = 'D'
+
+        ### D Tier ###
+        tier[(df['cluster']==1) & (df['seed']>9) & (df['seed']<=12)] = 'D'
+        tier[(df['cluster']==4) & (df['seed']>6)] = 'D'
+        tier[(df['cluster']==2) & (df['seed']>6) & (df['seed']<=12)] = 'D'
         tier[(df['cluster']==3) & (df['seed']>6) & (df['seed']<=12)] = 'D'
-        tier[(df['cluster']==4) & (df['seed']>6) & (df['seed']<=12)] = 'D'
-        
-        # F Tier - Weakest teams
-        tier[(df['cluster']==0) & (df['seed']>12)] = 'F'
-        tier[(df['cluster']==1)] = 'F'
+
+        ### F Tier ###
+        tier[(df['cluster']==1) & (df['seed']>12)] = 'F'
+        tier[(df['cluster']==0)] = 'F'
+        tier[(df['cluster']==2) & (df['seed']>12)] = 'F'
         tier[(df['cluster']==3) & (df['seed']>12)] = 'F'
-        tier[(df['cluster']==4) & (df['seed']>12)] = 'F'
-        
-        # Fill any remaining with C
+
         tier[tier==''] = 'C'
-        
         return tier
     
     def batch_predict(self, teams_data):
