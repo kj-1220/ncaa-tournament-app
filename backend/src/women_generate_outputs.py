@@ -169,23 +169,23 @@ def assign_tiers(df):
     tier = pd.Series('', index=df.index)
 
     ### S Tier ###
-    tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=4)] = 'S'
+    tier[(df['cluster']==0) & (df['barthag_rtg_rank']<=4)] = 'S'
 
     ### A Tier ###
-    tier[(df['cluster']==4) & (df['barthag_rtg_rank']>4) & (df['seed']<=3)] = 'A'
+    tier[(df['cluster']==0) & (df['barthag_rtg_rank']>4) & (df['seed']<=3)] = 'A'
     tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
     tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']<=3)] = 'A'
 
     ### B Tier ###
-    tier[(df['cluster']==1) & (df['barthag_rtg_rank']<=24) & (df['seed']<=6)] = 'B'
-    tier[(df['cluster']==4) & (df['seed']>3) & (df['seed']<=6)] = 'B'
+    tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=24) & (df['seed']<=6)] = 'B'
+    tier[(df['cluster']==0) & (df['seed']>3) & (df['seed']<=6)] = 'B'
     tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
     tier[(df['cluster']==3) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'B'
 
     ### C Tier ###
-    tier[(df['cluster']==1) & (df['barthag_rtg_rank']>24) & (df['seed']<=6)] = 'C'
-    tier[(df['cluster']==1) & (df['barthag_rtg_rank']<=24) & (df['seed']>6)] = 'C'
-    tier[(df['cluster']==1) & (df['barthag_rtg_rank']>24) & (df['seed']<=9)] = 'C'
+    tier[(df['cluster']==4) & (df['barthag_rtg_rank']>24) & (df['seed']<=6)] = 'C'
+    tier[(df['cluster']==4) & (df['barthag_rtg_rank']<=24) & (df['seed']>6)] = 'C'
+    tier[(df['cluster']==4) & (df['barthag_rtg_rank']>24) & (df['seed']<=9)] = 'C'
     tier[(df['cluster']==2) & (df['barthag_rtg_rank']>8) & (df['seed']<=3)] = 'C'
     tier[(df['cluster']==2) & (df['barthag_rtg_rank']<=8) & (df['seed']>3)] = 'C'
     tier[(df['cluster']==2) & (df['seed']>3) & (df['seed']<=6)] = 'C'
@@ -194,14 +194,14 @@ def assign_tiers(df):
     tier[(df['cluster']==3) & (df['seed']>3) & (df['seed']<=6)] = 'C'
 
     ### D Tier ###
-    tier[(df['cluster']==1) & (df['seed']>9) & (df['seed']<=12)] = 'D'
-    tier[(df['cluster']==4) & (df['seed']>6)] = 'D'
+    tier[(df['cluster']==4) & (df['seed']>9) & (df['seed']<=12)] = 'D'
+    tier[(df['cluster']==0) & (df['seed']>6)] = 'D'
     tier[(df['cluster']==2) & (df['seed']>6) & (df['seed']<=12)] = 'D'
     tier[(df['cluster']==3) & (df['seed']>6) & (df['seed']<=12)] = 'D'
 
     ### F Tier ###
-    tier[(df['cluster']==1) & (df['seed']>12)] = 'F'
-    tier[(df['cluster']==0)] = 'F'
+    tier[(df['cluster']==4) & (df['seed']>12)] = 'F'
+    tier[(df['cluster']==1)] = 'F'
     tier[(df['cluster']==2) & (df['seed']>12)] = 'F'
     tier[(df['cluster']==3) & (df['seed']>12)] = 'F'
 

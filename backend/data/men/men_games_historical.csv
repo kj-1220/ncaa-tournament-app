@@ -1,0 +1,1257 @@
+game_id,side,id,year,region,round,high_bracket_seed,high_bracket_team,low_bracket_seed,low_bracket_team,high_bracket_score,low_bracket_score,point_diff,point_total,win
+20151101a,a,1101,2015,Region 1,First Round,1,2015 Kentucky,16,2015 Hampton,79,56,23,135,1
+20151102a,a,1102,2015,Region 1,First Round,8,2015 Cincinnati,9,2015 Purdue,66,65,1,131,1
+20151103a,a,1103,2015,Region 1,First Round,5,2015 West Virginia,12,2015 Buffalo,68,62,6,130,1
+20151104a,a,1104,2015,Region 1,First Round,4,2015 Maryland,13,2015 Valparaiso,65,62,3,127,1
+20151105a,a,1105,2015,Region 1,First Round,6,2015 Butler,11,2015 Texas,56,48,8,104,1
+20151106a,a,1106,2015,Region 1,First Round,3,2015 Notre Dame,14,2015 Northeastern,69,65,4,134,1
+20151107a,a,1107,2015,Region 1,First Round,7,2015 Wichita St.,10,2015 Indiana,81,76,5,157,1
+20151108a,a,1108,2015,Region 1,First Round,2,2015 Kansas,15,2015 New Mexico St.,75,56,19,131,1
+20151201a,a,1201,2015,Region 4,First Round,1,2015 Wisconsin,16,2015 Coastal Carolina,86,72,14,158,1
+20151202a,a,1202,2015,Region 4,First Round,8,2015 Oregon,9,2015 Oklahoma St.,79,73,6,152,1
+20151203a,a,1203,2015,Region 4,First Round,5,2015 Arkansas,12,2015 Wofford,56,53,3,109,1
+20151204a,a,1204,2015,Region 4,First Round,4,2015 North Carolina,13,2015 Harvard,67,65,2,132,1
+20151205a,a,1205,2015,Region 4,First Round,6,2015 Xavier,11,2015 Mississippi,76,57,19,133,1
+20151206a,a,1206,2015,Region 4,First Round,3,2015 Baylor,14,2015 Georgia St.,56,57,-1,113,0
+20151207a,a,1207,2015,Region 4,First Round,7,2015 VCU,10,2015 Ohio St.,72,75,-3,147,0
+20151208a,a,1208,2015,Region 4,First Round,2,2015 Arizona,15,2015 Texas Southern,93,72,21,165,1
+20151301a,a,1301,2015,Region 2,First Round,1,2015 Villanova,16,2015 Lafayette,93,52,41,145,1
+20151302a,a,1302,2015,Region 2,First Round,8,2015 NC St.,9,2015 LSU,66,65,1,131,1
+20151303a,a,1303,2015,Region 2,First Round,5,2015 Northern Iowa,12,2015 Wyoming,71,54,17,125,1
+20151304a,a,1304,2015,Region 2,First Round,4,2015 Louisville,13,2015 UC Irvine,57,55,2,112,1
+20151305a,a,1305,2015,Region 2,First Round,6,2015 Providence,11,2015 Dayton,53,66,-13,119,0
+20151306a,a,1306,2015,Region 2,First Round,3,2015 Oklahoma,14,2015 Albany,69,60,9,129,1
+20151307a,a,1307,2015,Region 2,First Round,7,2015 Michigan St.,10,2015 Georgia,70,63,7,133,1
+20151308a,a,1308,2015,Region 2,First Round,2,2015 Virginia,15,2015 Belmont,79,67,12,146,1
+20151401a,a,1401,2015,Region 3,First Round,1,2015 Duke,16,2015 Robert Morris,85,56,29,141,1
+20151402a,a,1402,2015,Region 3,First Round,8,2015 San Diego St.,9,2015 St. John's,76,64,12,140,1
+20151403a,a,1403,2015,Region 3,First Round,5,2015 Utah,12,2015 Stephen F. Austin,57,50,7,107,1
+20151404a,a,1404,2015,Region 3,First Round,4,2015 Georgetown,13,2015 Eastern Washington,84,74,10,158,1
+20151405a,a,1405,2015,Region 3,First Round,6,2015 SMU,11,2015 UCLA,59,60,-1,119,0
+20151406a,a,1406,2015,Region 3,First Round,3,2015 Iowa St.,14,2015 UAB,59,60,-1,119,0
+20151407a,a,1407,2015,Region 3,First Round,7,2015 Iowa,10,2015 Davidson,83,52,31,135,1
+20151408a,a,1408,2015,Region 3,First Round,2,2015 Gonzaga,15,2015 North Dakota St.,86,76,10,162,1
+20152109a,a,2109,2015,Region 1,Second Round,1,2015 Kentucky,8,2015 Cincinnati,64,51,13,115,1
+20152110a,a,2110,2015,Region 1,Second Round,5,2015 West Virginia,4,2015 Maryland,69,59,10,128,1
+20152111a,a,2111,2015,Region 1,Second Round,6,2015 Butler,3,2015 Notre Dame,64,67,-3,131,0
+20152112a,a,2112,2015,Region 1,Second Round,7,2015 Wichita St.,2,2015 Kansas,78,65,13,143,1
+20152209a,a,2209,2015,Region 4,Second Round,1,2015 Wisconsin,8,2015 Oregon,72,65,7,137,1
+20152210a,a,2210,2015,Region 4,Second Round,5,2015 Arkansas,4,2015 North Carolina,78,87,-9,165,0
+20152211a,a,2211,2015,Region 4,Second Round,6,2015 Xavier,14,2015 Georgia St.,75,67,8,142,1
+20152212a,a,2212,2015,Region 4,Second Round,10,2015 Ohio St.,2,2015 Arizona,58,73,-15,131,0
+20152309a,a,2309,2015,Region 2,Second Round,1,2015 Villanova,8,2015 NC St.,68,71,-3,139,0
+20152310a,a,2310,2015,Region 2,Second Round,5,2015 Northern Iowa,4,2015 Louisville,53,66,-13,119,0
+20152311a,a,2311,2015,Region 2,Second Round,11,2015 Dayton,3,2015 Oklahoma,66,72,-6,138,0
+20152312a,a,2312,2015,Region 2,Second Round,7,2015 Michigan St.,2,2015 Virginia,60,54,6,114,1
+20152409a,a,2409,2015,Region 3,Second Round,1,2015 Duke,8,2015 San Diego St.,68,49,19,117,1
+20152410a,a,2410,2015,Region 3,Second Round,5,2015 Utah,4,2015 Georgetown,75,64,11,139,1
+20152411a,a,2411,2015,Region 3,Second Round,11,2015 UCLA,14,2015 UAB,92,75,17,167,1
+20152412a,a,2412,2015,Region 3,Second Round,7,2015 Iowa,2,2015 Gonzaga,68,87,-19,155,0
+20153113a,a,3113,2015,Region 1,Sweet 16,1,2015 Kentucky,5,2015 West Virginia,78,39,39,117,1
+20153113a,a,3113,2015,Region 1,Sweet 16,3,2015 Notre Dame,7,2015 Wichita St.,81,70,11,151,1
+20153213a,a,3213,2015,Region 4,Sweet 16,1,2015 Wisconsin,4,2015 North Carolina,79,72,7,151,1
+20153214a,a,3214,2015,Region 4,Sweet 16,6,2015 Xavier,2,2015 Arizona,60,68,-8,128,0
+20153313a,a,3313,2015,Region 2,Sweet 16,8,2015 NC St.,4,2015 Louisville,65,75,-10,140,0
+20153314a,a,3314,2015,Region 2,Sweet 16,3,2015 Oklahoma,7,2015 Michigan St.,58,62,-4,120,0
+20153413a,a,3413,2015,Region 3,Sweet 16,1,2015 Duke,5,2015 Utah,63,57,6,120,1
+20153414a,a,3414,2015,Region 3,Sweet 16,11,2015 UCLA,2,2015 Gonzaga,62,74,-12,136,0
+20154115a,a,4115,2015,Region 1,Elite Eight,1,2015 Kentucky,3,2015 Notre Dame,68,66,2,134,1
+20154215a,a,4215,2015,Region 4,Elite Eight,1,2015 Wisconsin,2,2015 Arizona,85,78,7,163,1
+20154315a,a,4315,2015,Region 2,Elite Eight,4,2015 Louisville,7,2015 Michigan St.,70,76,-6,146,0
+20154415a,a,4415,2015,Region 3,Elite Eight,1,2015 Duke,2,2015 Gonzaga,66,52,14,118,1
+20155516a,a,5516,2015,Final Four,Final Four,1,2015 Kentucky,1,2015 Wisconsin,64,71,-7,135,0
+20155517a,a,5517,2015,Final Four,Final Four,7,2015 Michigan St.,1,2015 Duke,61,81,-20,142,0
+20155618a,a,5618,2015,Final Four,Championship,1,2015 Wisconsin,1,2015 Duke,63,68,-5,131,0
+20161101a,a,1101,2016,Region 1,First Round,1,2016 Kansas,16,2016 Austin Peay,105,79,26,184,1
+20161102a,a,1102,2016,Region 1,First Round,8,2016 Colorado,9,2016 Connecticut,67,74,-7,141,0
+20161103a,a,1103,2016,Region 1,First Round,5,2016 Maryland,12,2016 South Dakota St.,79,74,5,153,1
+20161104a,a,1104,2016,Region 1,First Round,4,2016 California,13,2016 Hawaii,66,77,-11,143,0
+20161105a,a,1105,2016,Region 1,First Round,6,2016 Arizona,11,2016 Wichita St.,55,65,-10,120,0
+20161106a,a,1106,2016,Region 1,First Round,3,2016 Miami FL,14,2016 Buffalo,79,72,7,151,1
+20161107a,a,1107,2016,Region 1,First Round,7,2016 Iowa,10,2016 Temple,72,70,2,142,1
+20161108a,a,1108,2016,Region 1,First Round,2,2016 Villanova,15,2016 UNC Asheville,86,56,30,142,1
+20161201a,a,1201,2016,Region 4,First Round,1,2016 Oregon,16,2016 Holy Cross,91,52,39,143,1
+20161202a,a,1202,2016,Region 4,First Round,8,2016 Saint Joseph's,9,2016 Cincinnati,78,76,2,154,1
+20161203a,a,1203,2016,Region 4,First Round,5,2016 Baylor,12,2016 Yale,75,79,-4,154,0
+20161204a,a,1204,2016,Region 4,First Round,4,2016 Duke,13,2016 UNC Wilmington,93,85,8,178,1
+20161205a,a,1205,2016,Region 4,First Round,6,2016 Texas,11,2016 Northern Iowa,72,75,-3,147,0
+20161206a,a,1206,2016,Region 4,First Round,3,2016 Texas A&M,14,2016 Green Bay,92,65,27,157,1
+20161207a,a,1207,2016,Region 4,First Round,7,2016 Oregon St.,10,2016 VCU,67,75,-8,142,0
+20161208a,a,1208,2016,Region 4,First Round,2,2016 Oklahoma,15,2016 Cal St. Bakersfield,82,68,14,150,1
+20161301a,a,1301,2016,Region 2,First Round,1,2016 North Carolina,16,2016 Florida Gulf Coast,83,67,16,150,1
+20161302a,a,1302,2016,Region 2,First Round,8,2016 USC,9,2016 Providence,69,70,-1,139,0
+20161303a,a,1303,2016,Region 2,First Round,5,2016 Indiana,12,2016 Chattanooga,99,74,25,173,1
+20161304a,a,1304,2016,Region 2,First Round,4,2016 Kentucky,13,2016 Stony Brook,85,57,28,142,1
+20161305a,a,1305,2016,Region 2,First Round,6,2016 Notre Dame,11,2016 Michigan,70,63,7,133,1
+20161306a,a,1306,2016,Region 2,First Round,3,2016 West Virginia,14,2016 Stephen F. Austin,56,70,-14,126,0
+20161307a,a,1307,2016,Region 2,First Round,7,2016 Wisconsin,10,2016 Pittsburgh,47,43,4,90,1
+20161308a,a,1308,2016,Region 2,First Round,2,2016 Xavier,15,2016 Weber St.,71,53,18,124,1
+20161401a,a,1401,2016,Region 3,First Round,1,2016 Virginia,16,2016 Hampton,81,45,36,126,1
+20161402a,a,1402,2016,Region 3,First Round,8,2016 Texas Tech,9,2016 Butler,61,71,-10,132,0
+20161403a,a,1403,2016,Region 3,First Round,5,2016 Purdue,12,2016 Little Rock,83,85,-2,168,0
+20161404a,a,1404,2016,Region 3,First Round,4,2016 Iowa St.,13,2016 Iona,94,81,13,175,1
+20161405a,a,1405,2016,Region 3,First Round,6,2016 Seton Hall,11,2016 Gonzaga,52,68,-16,120,0
+20161406a,a,1406,2016,Region 3,First Round,3,2016 Utah,14,2016 Fresno St.,80,69,11,149,1
+20161407a,a,1407,2016,Region 3,First Round,7,2016 Dayton,10,2016 Syracuse,51,70,-19,121,0
+20161408a,a,1408,2016,Region 3,First Round,2,2016 Michigan St.,15,2016 Middle Tennessee,81,90,-9,171,0
+20162109a,a,2109,2016,Region 1,Second Round,1,2016 Kansas,9,2016 Connecticut,73,61,12,134,1
+20162110a,a,2110,2016,Region 1,Second Round,5,2016 Maryland,13,2016 Hawaii,73,60,13,133,1
+20162111a,a,2111,2016,Region 1,Second Round,11,2016 Wichita St.,3,2016 Miami FL,57,65,-8,122,0
+20162112a,a,2112,2016,Region 1,Second Round,7,2016 Iowa,2,2016 Villanova,68,87,-19,155,0
+20162209a,a,2209,2016,Region 4,Second Round,1,2016 Oregon,8,2016 Saint Joseph's,69,64,5,133,1
+20162210a,a,2210,2016,Region 4,Second Round,12,2016 Yale,4,2016 Duke,64,71,-7,135,0
+20162211a,a,2211,2016,Region 4,Second Round,11,2016 Northern Iowa,3,2016 Texas A&M,88,92,-4,180,0
+20162212a,a,2212,2016,Region 4,Second Round,10,2016 VCU,2,2016 Oklahoma,81,85,-4,166,0
+20162309a,a,2309,2016,Region 2,Second Round,1,2016 North Carolina,9,2016 Providence,85,66,19,151,1
+20162310a,a,2310,2016,Region 2,Second Round,5,2016 Indiana,4,2016 Kentucky,73,67,6,140,1
+20162311a,a,2311,2016,Region 2,Second Round,6,2016 Notre Dame,14,2016 Stephen F. Austin,76,75,1,151,1
+20162312a,a,2312,2016,Region 2,Second Round,7,2016 Wisconsin,2,2016 Xavier,66,63,3,129,1
+20162409a,a,2409,2016,Region 3,Second Round,1,2016 Virginia,9,2016 Butler,77,69,8,146,1
+20162410a,a,2410,2016,Region 3,Second Round,12,2016 Little Rock,4,2016 Iowa St.,61,78,-17,139,0
+20162411a,a,2411,2016,Region 3,Second Round,11,2016 Gonzaga,3,2016 Utah,82,59,23,141,1
+20162412a,a,2412,2016,Region 3,Second Round,10,2016 Syracuse,15,2016 Middle Tennessee,75,50,25,125,1
+20163113a,a,3113,2016,Region 1,Sweet 16,1,2016 Kansas,5,2016 Maryland,79,63,16,142,1
+20163113a,a,3113,2016,Region 1,Sweet 16,3,2016 Miami FL,2,2016 Villanova,69,92,-23,161,0
+20163213a,a,3213,2016,Region 4,Sweet 16,1,2016 Oregon,4,2016 Duke,82,68,14,150,1
+20163214a,a,3214,2016,Region 4,Sweet 16,3,2016 Texas A&M,2,2016 Oklahoma,63,77,-14,140,0
+20163313a,a,3313,2016,Region 2,Sweet 16,1,2016 North Carolina,5,2016 Indiana,101,86,15,187,1
+20163314a,a,3314,2016,Region 2,Sweet 16,6,2016 Notre Dame,7,2016 Wisconsin,61,56,5,117,1
+20163413a,a,3413,2016,Region 3,Sweet 16,1,2016 Virginia,4,2016 Iowa St.,84,71,13,155,1
+20163414a,a,3414,2016,Region 3,Sweet 16,11,2016 Gonzaga,10,2016 Syracuse,60,63,-3,123,0
+20164115a,a,4115,2016,Region 1,Elite Eight,1,2016 Kansas,2,2016 Villanova,59,64,-5,123,0
+20164215a,a,4215,2016,Region 4,Elite Eight,1,2016 Oregon,2,2016 Oklahoma,68,80,-12,148,0
+20164315a,a,4315,2016,Region 2,Elite Eight,1,2016 North Carolina,6,2016 Notre Dame,88,74,14,162,1
+20164415a,a,4415,2016,Region 3,Elite Eight,1,2016 Virginia,10,2016 Syracuse,62,68,-6,130,0
+20165516a,a,5516,2016,Final Four,Final Four,2,2016 Villanova,2,2016 Oklahoma,95,51,44,146,1
+20165517a,a,5517,2016,Final Four,Final Four,1,2016 North Carolina,10,2016 Syracuse,83,66,17,149,1
+20165618a,a,5618,2016,Final Four,Championship,2,2016 Villanova,1,2016 North Carolina,77,74,3,151,1
+20171101a,a,1101,2017,Region 1,First Round,1,2017 Villanova,16,2017 Mount St. Mary's,76,56,20,132,1
+20171102a,a,1102,2017,Region 1,First Round,8,2017 Wisconsin,9,2017 Virginia Tech,84,74,10,158,1
+20171103a,a,1103,2017,Region 1,First Round,5,2017 Virginia,12,2017 UNC Wilmington,76,71,5,147,1
+20171104a,a,1104,2017,Region 1,First Round,4,2017 Florida,13,2017 East Tennessee St.,80,65,15,145,1
+20171105a,a,1105,2017,Region 1,First Round,6,2017 SMU,11,2017 USC,65,66,-1,131,0
+20171106a,a,1106,2017,Region 1,First Round,3,2017 Baylor,14,2017 New Mexico St.,91,73,18,164,1
+20171107a,a,1107,2017,Region 1,First Round,7,2017 South Carolina,10,2017 Marquette,93,73,20,166,1
+20171108a,a,1108,2017,Region 1,First Round,2,2017 Duke,15,2017 Troy,87,65,22,152,1
+20171201a,a,1201,2017,Region 4,First Round,1,2017 Gonzaga,16,2017 South Dakota St.,66,46,20,112,1
+20171202a,a,1202,2017,Region 4,First Round,8,2017 Northwestern,9,2017 Vanderbilt,68,66,2,134,1
+20171203a,a,1203,2017,Region 4,First Round,5,2017 Notre Dame,12,2017 Princeton,60,58,2,118,1
+20171204a,a,1204,2017,Region 4,First Round,4,2017 West Virginia,13,2017 Bucknell,86,80,6,166,1
+20171205a,a,1205,2017,Region 4,First Round,6,2017 Maryland,11,2017 Xavier,65,76,-11,141,0
+20171206a,a,1206,2017,Region 4,First Round,3,2017 Florida St.,14,2017 Florida Gulf Coast,86,80,6,166,1
+20171207a,a,1207,2017,Region 4,First Round,7,2017 Saint Mary's,10,2017 VCU,85,77,8,162,1
+20171208a,a,1208,2017,Region 4,First Round,2,2017 Arizona,15,2017 North Dakota,100,82,18,182,1
+20171301a,a,1301,2017,Region 2,First Round,1,2017 Kansas,16,2017 UC Davis,100,62,38,162,1
+20171302a,a,1302,2017,Region 2,First Round,8,2017 Miami FL,9,2017 Michigan St.,58,78,-20,136,0
+20171303a,a,1303,2017,Region 2,First Round,5,2017 Iowa St.,12,2017 Nevada,84,73,11,157,1
+20171304a,a,1304,2017,Region 2,First Round,4,2017 Purdue,13,2017 Vermont,80,70,10,150,1
+20171305a,a,1305,2017,Region 2,First Round,6,2017 Creighton,11,2017 Rhode Island,72,84,-12,156,0
+20171306a,a,1306,2017,Region 2,First Round,3,2017 Oregon,14,2017 Iona,93,77,16,170,1
+20171307a,a,1307,2017,Region 2,First Round,7,2017 Michigan,10,2017 Oklahoma St.,92,91,1,183,1
+20171308a,a,1308,2017,Region 2,First Round,2,2017 Louisville,15,2017 Jacksonville St.,78,63,15,141,1
+20171401a,a,1401,2017,Region 3,First Round,1,2017 North Carolina,16,2017 Texas Southern,103,64,39,167,1
+20171402a,a,1402,2017,Region 3,First Round,8,2017 Arkansas,9,2017 Seton Hall,77,71,6,148,1
+20171403a,a,1403,2017,Region 3,First Round,5,2017 Minnesota,12,2017 Middle Tennessee,72,81,-9,153,0
+20171404a,a,1404,2017,Region 3,First Round,4,2017 Butler,13,2017 Winthrop,76,64,12,140,1
+20171405a,a,1405,2017,Region 3,First Round,6,2017 Cincinnati,11,2017 Kansas St.,75,61,14,136,1
+20171406a,a,1406,2017,Region 3,First Round,3,2017 UCLA,14,2017 Kent St.,97,80,17,177,1
+20171407a,a,1407,2017,Region 3,First Round,7,2017 Dayton,10,2017 Wichita St.,58,64,-6,122,0
+20171408a,a,1408,2017,Region 3,First Round,2,2017 Kentucky,15,2017 Northern Kentucky,79,70,9,149,1
+20172109a,a,2109,2017,Region 1,Second Round,1,2017 Villanova,8,2017 Wisconsin,62,65,-3,127,0
+20172110a,a,2110,2017,Region 1,Second Round,5,2017 Virginia,4,2017 Florida,39,65,-26,104,0
+20172111a,a,2111,2017,Region 1,Second Round,11,2017 USC,3,2017 Baylor,78,82,-4,160,0
+20172112a,a,2112,2017,Region 1,Second Round,7,2017 South Carolina,2,2017 Duke,88,81,7,169,1
+20172209a,a,2209,2017,Region 4,Second Round,1,2017 Gonzaga,8,2017 Northwestern,79,73,6,152,1
+20172210a,a,2210,2017,Region 4,Second Round,5,2017 Notre Dame,4,2017 West Virginia,71,83,-12,154,0
+20172211a,a,2211,2017,Region 4,Second Round,11,2017 Xavier,3,2017 Florida St.,91,66,25,157,1
+20172212a,a,2212,2017,Region 4,Second Round,7,2017 Saint Mary's,2,2017 Arizona,60,69,-9,129,0
+20172309a,a,2309,2017,Region 2,Second Round,1,2017 Kansas,9,2017 Michigan St.,90,70,20,160,1
+20172310a,a,2310,2017,Region 2,Second Round,5,2017 Iowa St.,4,2017 Purdue,76,80,-4,156,0
+20172311a,a,2311,2017,Region 2,Second Round,11,2017 Rhode Island,3,2017 Oregon,72,75,-3,147,0
+20172312a,a,2312,2017,Region 2,Second Round,7,2017 Michigan,2,2017 Louisville,73,69,4,142,1
+20172409a,a,2409,2017,Region 3,Second Round,1,2017 North Carolina,8,2017 Arkansas,72,65,7,137,1
+20172410a,a,2410,2017,Region 3,Second Round,12,2017 Middle Tennessee,4,2017 Butler,65,74,-9,139,0
+20172411a,a,2411,2017,Region 3,Second Round,6,2017 Cincinnati,3,2017 UCLA,67,79,-12,146,0
+20172412a,a,2412,2017,Region 3,Second Round,10,2017 Wichita St.,2,2017 Kentucky,62,65,-3,127,0
+20173113a,a,3113,2017,Region 1,Sweet 16,8,2017 Wisconsin,4,2017 Florida,83,84,-1,167,0
+20173113a,a,3113,2017,Region 1,Sweet 16,3,2017 Baylor,7,2017 South Carolina,50,70,-20,120,0
+20173213a,a,3213,2017,Region 4,Sweet 16,1,2017 Gonzaga,4,2017 West Virginia,61,58,3,119,1
+20173214a,a,3214,2017,Region 4,Sweet 16,11,2017 Xavier,2,2017 Arizona,73,71,2,144,1
+20173313a,a,3313,2017,Region 2,Sweet 16,1,2017 Kansas,4,2017 Purdue,98,66,32,164,1
+20173314a,a,3314,2017,Region 2,Sweet 16,3,2017 Oregon,7,2017 Michigan,69,68,1,137,1
+20173413a,a,3413,2017,Region 3,Sweet 16,1,2017 North Carolina,4,2017 Butler,92,80,12,172,1
+20173414a,a,3414,2017,Region 3,Sweet 16,3,2017 UCLA,2,2017 Kentucky,75,86,-11,161,0
+20174115a,a,4115,2017,Region 1,Elite Eight,4,2017 Florida,7,2017 South Carolina,70,77,-7,147,0
+20174215a,a,4215,2017,Region 4,Elite Eight,1,2017 Gonzaga,11,2017 Xavier,83,59,24,142,1
+20174315a,a,4315,2017,Region 2,Elite Eight,1,2017 Kansas,3,2017 Oregon,60,74,-14,134,0
+20174415a,a,4415,2017,Region 3,Elite Eight,1,2017 North Carolina,2,2017 Kentucky,75,73,2,148,1
+20175516a,a,5516,2017,Final Four,Final Four,7,2017 South Carolina,1,2017 Gonzaga,73,77,-4,150,0
+20175517a,a,5517,2017,Final Four,Final Four,3,2017 Oregon,1,2017 North Carolina,76,77,-1,153,0
+20175618a,a,5618,2017,Final Four,Championship,1,2017 Gonzaga,1,2017 North Carolina,65,71,-6,136,0
+20181102a,a,1102,2018,Region 1,First Round,8,2018 Creighton,9,2018 Kansas St.,59,69,-10,128,0
+20181103a,a,1103,2018,Region 1,First Round,5,2018 Kentucky,12,2018 Davidson,78,73,5,151,1
+20181104a,a,1104,2018,Region 1,First Round,4,2018 Arizona,13,2018 Buffalo,68,89,-21,157,0
+20181105a,a,1105,2018,Region 1,First Round,6,2018 Miami FL,11,2018 Loyola Chicago,62,64,-2,126,0
+20181106a,a,1106,2018,Region 1,First Round,3,2018 Tennessee,14,2018 Wright St.,73,47,26,120,1
+20181107a,a,1107,2018,Region 1,First Round,7,2018 Nevada,10,2018 Texas,87,83,4,170,1
+20181108a,a,1108,2018,Region 1,First Round,2,2018 Cincinnati,15,2018 Georgia St.,68,53,15,121,1
+20181201a,a,1201,2018,Region 4,First Round,1,2018 Xavier,16,2018 Texas Southern,102,83,19,185,1
+20181202a,a,1202,2018,Region 4,First Round,8,2018 Missouri,9,2018 Florida St.,54,67,-13,121,0
+20181203a,a,1203,2018,Region 4,First Round,5,2018 Ohio St.,12,2018 South Dakota St.,81,73,8,154,1
+20181204a,a,1204,2018,Region 4,First Round,4,2018 Gonzaga,13,2018 UNC Greensboro,68,64,4,132,1
+20181205a,a,1205,2018,Region 4,First Round,6,2018 Houston,11,2018 San Diego St.,67,65,2,132,1
+20181206a,a,1206,2018,Region 4,First Round,3,2018 Michigan,14,2018 Montana,61,47,14,108,1
+20181207a,a,1207,2018,Region 4,First Round,7,2018 Texas A&M,10,2018 Providence,73,69,4,142,1
+20181208a,a,1208,2018,Region 4,First Round,2,2018 North Carolina,15,2018 Lipscomb,84,66,18,150,1
+20181301a,a,1301,2018,Region 2,First Round,1,2018 Villanova,16,2018 Radford,87,61,26,148,1
+20181302a,a,1302,2018,Region 2,First Round,8,2018 Virginia Tech,9,2018 Alabama,83,86,-3,169,0
+20181303a,a,1303,2018,Region 2,First Round,5,2018 West Virginia,12,2018 Murray St.,85,68,17,153,1
+20181304a,a,1304,2018,Region 2,First Round,4,2018 Wichita St.,13,2018 Marshall,75,81,-6,156,0
+20181305a,a,1305,2018,Region 2,First Round,6,2018 Florida,11,2018 St. Bonaventure,77,62,15,139,1
+20181306a,a,1306,2018,Region 2,First Round,3,2018 Texas Tech,14,2018 Stephen F. Austin,70,60,10,130,1
+20181307a,a,1307,2018,Region 2,First Round,7,2018 Arkansas,10,2018 Butler,62,79,-17,141,0
+20181308a,a,1308,2018,Region 2,First Round,2,2018 Purdue,15,2018 Cal St. Fullerton,74,48,26,122,1
+20181401a,a,1401,2018,Region 3,First Round,1,2018 Kansas,16,2018 Penn,76,60,16,136,1
+20181402a,a,1402,2018,Region 3,First Round,8,2018 Seton Hall,9,2018 NC St.,94,83,11,177,1
+20181403a,a,1403,2018,Region 3,First Round,5,2018 Clemson,12,2018 New Mexico St.,79,68,11,147,1
+20181404a,a,1404,2018,Region 3,First Round,4,2018 Auburn,13,2018 Charleston,62,58,4,120,1
+20181405a,a,1405,2018,Region 3,First Round,6,2018 TCU,11,2018 Syracuse,52,57,-5,109,0
+20181406a,a,1406,2018,Region 3,First Round,3,2018 Michigan St.,14,2018 Bucknell,82,78,4,160,1
+20181407a,a,1407,2018,Region 3,First Round,7,2018 Rhode Island,10,2018 Oklahoma,83,78,5,161,1
+20181408a,a,1408,2018,Region 3,First Round,2,2018 Duke,15,2018 Iona,89,67,22,156,1
+20182109a,a,2109,2018,Region 1,Second Round,16,2018 UMBC,9,2018 Kansas St.,43,50,-7,93,0
+20182110a,a,2110,2018,Region 1,Second Round,5,2018 Kentucky,13,2018 Buffalo,95,75,20,170,1
+20182111a,a,2111,2018,Region 1,Second Round,11,2018 Loyola Chicago,3,2018 Tennessee,63,62,1,125,1
+20182112a,a,2112,2018,Region 1,Second Round,7,2018 Nevada,2,2018 Cincinnati,75,73,2,148,1
+20182209a,a,2209,2018,Region 4,Second Round,1,2018 Xavier,9,2018 Florida St.,70,75,-5,145,0
+20182210a,a,2210,2018,Region 4,Second Round,5,2018 Ohio St.,4,2018 Gonzaga,84,90,-6,174,0
+20182211a,a,2211,2018,Region 4,Second Round,6,2018 Houston,3,2018 Michigan,63,64,-1,127,0
+20182212a,a,2212,2018,Region 4,Second Round,7,2018 Texas A&M,2,2018 North Carolina,86,65,21,151,1
+20182309a,a,2309,2018,Region 2,Second Round,1,2018 Villanova,9,2018 Alabama,81,58,23,139,1
+20182310a,a,2310,2018,Region 2,Second Round,5,2018 West Virginia,13,2018 Marshall,94,71,23,165,1
+20182311a,a,2311,2018,Region 2,Second Round,6,2018 Florida,3,2018 Texas Tech,66,69,-3,135,0
+20182312a,a,2312,2018,Region 2,Second Round,10,2018 Butler,2,2018 Purdue,73,76,-3,149,0
+20182409a,a,2409,2018,Region 3,Second Round,1,2018 Kansas,8,2018 Seton Hall,83,79,4,162,1
+20182410a,a,2410,2018,Region 3,Second Round,5,2018 Clemson,4,2018 Auburn,84,53,31,137,1
+20182411a,a,2411,2018,Region 3,Second Round,11,2018 Syracuse,3,2018 Michigan St.,55,53,2,108,1
+20182412a,a,2412,2018,Region 3,Second Round,7,2018 Rhode Island,2,2018 Duke,62,87,-25,149,0
+20183113a,a,3113,2018,Region 1,Sweet 16,9,2018 Kansas St.,5,2018 Kentucky,61,58,3,119,1
+20183113a,a,3113,2018,Region 1,Sweet 16,11,2018 Loyola Chicago,7,2018 Nevada,69,68,1,137,1
+20183213a,a,3213,2018,Region 4,Sweet 16,9,2018 Florida St.,4,2018 Gonzaga,75,60,15,135,1
+20183214a,a,3214,2018,Region 4,Sweet 16,3,2018 Michigan,7,2018 Texas A&M,99,72,27,171,1
+20183313a,a,3313,2018,Region 2,Sweet 16,1,2018 Villanova,5,2018 West Virginia,90,78,12,168,1
+20183314a,a,3314,2018,Region 2,Sweet 16,3,2018 Texas Tech,2,2018 Purdue,78,65,13,143,1
+20183413a,a,3413,2018,Region 3,Sweet 16,1,2018 Kansas,5,2018 Clemson,80,76,4,156,1
+20183414a,a,3414,2018,Region 3,Sweet 16,11,2018 Syracuse,2,2018 Duke,65,69,-4,134,0
+20184115a,a,4115,2018,Region 1,Elite Eight,9,2018 Kansas St.,11,2018 Loyola Chicago,62,78,-16,140,0
+20184215a,a,4215,2018,Region 4,Elite Eight,9,2018 Florida St.,3,2018 Michigan,54,58,-4,112,0
+20184315a,a,4315,2018,Region 2,Elite Eight,1,2018 Villanova,3,2018 Texas Tech,71,59,12,130,1
+20184415a,a,4415,2018,Region 3,Elite Eight,1,2018 Kansas,2,2018 Duke,85,81,4,166,1
+20185516a,a,5516,2018,Final Four,Final Four,11,2018 Loyola Chicago,3,2018 Michigan,57,69,-12,126,0
+20185517a,a,5517,2018,Final Four,Final Four,1,2018 Villanova,1,2018 Kansas,95,79,16,174,1
+20185618a,a,5618,2018,Final Four,Championship,3,2018 Michigan,1,2018 Villanova,62,79,-17,141,0
+20191101a,a,1101,2019,Region 1,First Round,1,2019 Duke,16,2019 North Dakota St.,85,62,23,147,1
+20191102a,a,1102,2019,Region 1,First Round,8,2019 VCU,9,2019 UCF,58,73,-15,131,0
+20191103a,a,1103,2019,Region 1,First Round,5,2019 Mississippi St.,12,2019 Liberty,76,80,-4,156,0
+20191104a,a,1104,2019,Region 1,First Round,4,2019 Virginia Tech,13,2019 Saint Louis,66,52,14,118,1
+20191105a,a,1105,2019,Region 1,First Round,6,2019 Maryland,11,2019 Belmont,79,77,2,156,1
+20191106a,a,1106,2019,Region 1,First Round,3,2019 LSU,14,2019 Yale,79,74,5,153,1
+20191107a,a,1107,2019,Region 1,First Round,7,2019 Louisville,10,2019 Minnesota,76,86,-10,162,0
+20191108a,a,1108,2019,Region 1,First Round,2,2019 Michigan St.,15,2019 Bradley,76,65,11,141,1
+20191201a,a,1201,2019,Region 4,First Round,1,2019 Gonzaga,16,2019 Fairleigh Dickinson,87,49,38,136,1
+20191202a,a,1202,2019,Region 4,First Round,8,2019 Syracuse,9,2019 Baylor,69,78,-9,147,0
+20191203a,a,1203,2019,Region 4,First Round,5,2019 Marquette,12,2019 Murray St.,64,83,-19,147,0
+20191204a,a,1204,2019,Region 4,First Round,4,2019 Florida St.,13,2019 Vermont,76,79,-3,155,0
+20191205a,a,1205,2019,Region 4,First Round,6,2019 Buffalo,11,2019 Arizona St.,91,74,17,165,1
+20191206a,a,1206,2019,Region 4,First Round,3,2019 Texas Tech,14,2019 Northern Kentucky,72,57,15,129,1
+20191207a,a,1207,2019,Region 4,First Round,7,2019 Nevada,10,2019 Florida,61,70,-9,131,0
+20191208a,a,1208,2019,Region 4,First Round,2,2019 Michigan,15,2019 Montana,74,55,19,129,1
+20191301a,a,1301,2019,Region 2,First Round,1,2019 Virginia,16,2019 Gardner Webb,71,56,15,127,1
+20191302a,a,1302,2019,Region 2,First Round,8,2019 Mississippi,9,2019 Oklahoma,72,95,-23,167,0
+20191303a,a,1303,2019,Region 2,First Round,5,2019 Wisconsin,12,2019 Oregon,54,72,-18,126,0
+20191304a,a,1304,2019,Region 2,First Round,4,2019 Kansas St.,13,2019 UC Irvine,64,70,-6,134,0
+20191305a,a,1305,2019,Region 2,First Round,6,2019 Villanova,11,2019 Saint Mary's,61,57,4,118,1
+20191306a,a,1306,2019,Region 2,First Round,3,2019 Purdue,14,2019 Old Dominion,61,48,13,109,1
+20191307a,a,1307,2019,Region 2,First Round,7,2019 Cincinnati,10,2019 Iowa,72,79,-7,151,0
+20191308a,a,1308,2019,Region 2,First Round,2,2019 Tennessee,15,2019 Colgate,77,70,7,147,1
+20191401a,a,1401,2019,Region 3,First Round,1,2019 North Carolina,16,2019 Iona,88,73,15,161,1
+20191402a,a,1402,2019,Region 3,First Round,8,2019 Utah St.,9,2019 Washington,61,78,-17,139,0
+20191403a,a,1403,2019,Region 3,First Round,5,2019 Auburn,12,2019 New Mexico St.,78,77,1,155,1
+20191404a,a,1404,2019,Region 3,First Round,4,2019 Kansas,13,2019 Northeastern,87,53,34,140,1
+20191405a,a,1405,2019,Region 3,First Round,6,2019 Iowa St.,11,2019 Ohio St.,59,62,-3,121,0
+20191406a,a,1406,2019,Region 3,First Round,3,2019 Houston,14,2019 Georgia St.,84,55,29,139,1
+20191407a,a,1407,2019,Region 3,First Round,7,2019 Wofford,10,2019 Seton Hall,84,68,16,152,1
+20191408a,a,1408,2019,Region 3,First Round,2,2019 Kentucky,15,2019 Abilene Christian,79,44,35,123,1
+20192109a,a,2109,2019,Region 1,Second Round,1,2019 Duke,9,2019 UCF,77,76,1,153,1
+20192110a,a,2110,2019,Region 1,Second Round,12,2019 Liberty,4,2019 Virginia Tech,58,67,-9,125,0
+20192111a,a,2111,2019,Region 1,Second Round,6,2019 Maryland,3,2019 LSU,67,69,-2,136,0
+20192112a,a,2112,2019,Region 1,Second Round,10,2019 Minnesota,2,2019 Michigan St.,50,70,-20,120,0
+20192209a,a,2209,2019,Region 4,Second Round,1,2019 Gonzaga,9,2019 Baylor,83,71,12,154,1
+20192210a,a,2210,2019,Region 4,Second Round,12,2019 Murray St.,4,2019 Florida St.,62,90,-28,152,0
+20192211a,a,2211,2019,Region 4,Second Round,6,2019 Buffalo,3,2019 Texas Tech,58,78,-20,136,0
+20192212a,a,2212,2019,Region 4,Second Round,10,2019 Florida,2,2019 Michigan,49,64,-15,113,0
+20192309a,a,2309,2019,Region 2,Second Round,1,2019 Virginia,9,2019 Oklahoma,63,51,12,114,1
+20192310a,a,2310,2019,Region 2,Second Round,12,2019 Oregon,13,2019 UC Irvine,73,54,19,127,1
+20192311a,a,2311,2019,Region 2,Second Round,6,2019 Villanova,3,2019 Purdue,61,87,-26,148,0
+20192312a,a,2312,2019,Region 2,Second Round,10,2019 Iowa,2,2019 Tennessee,77,83,-6,160,0
+20192409a,a,2409,2019,Region 3,Second Round,1,2019 North Carolina,9,2019 Washington,81,59,22,140,1
+20192410a,a,2410,2019,Region 3,Second Round,5,2019 Auburn,4,2019 Kansas,89,75,14,164,1
+20192411a,a,2411,2019,Region 3,Second Round,11,2019 Ohio St.,3,2019 Houston,59,74,-15,133,0
+20192412a,a,2412,2019,Region 3,Second Round,7,2019 Wofford,2,2019 Kentucky,56,62,-6,118,0
+20193113a,a,3113,2019,Region 1,Sweet 16,1,2019 Duke,4,2019 Virginia Tech,75,73,2,148,1
+20193113a,a,3113,2019,Region 1,Sweet 16,3,2019 LSU,2,2019 Michigan St.,63,80,-17,143,0
+20193213a,a,3213,2019,Region 4,Sweet 16,1,2019 Gonzaga,4,2019 Florida St.,72,58,14,130,1
+20193214a,a,3214,2019,Region 4,Sweet 16,3,2019 Texas Tech,2,2019 Michigan,63,44,19,107,1
+20193313a,a,3313,2019,Region 2,Sweet 16,1,2019 Virginia,12,2019 Oregon,53,49,4,102,1
+20193314a,a,3314,2019,Region 2,Sweet 16,3,2019 Purdue,2,2019 Tennessee,99,94,5,193,1
+20193413a,a,3413,2019,Region 3,Sweet 16,1,2019 North Carolina,5,2019 Auburn,80,97,-17,177,0
+20193414a,a,3414,2019,Region 3,Sweet 16,3,2019 Houston,2,2019 Kentucky,58,62,-4,120,0
+20194115a,a,4115,2019,Region 1,Elite Eight,1,2019 Duke,2,2019 Michigan St.,67,68,-1,135,0
+20194215a,a,4215,2019,Region 4,Elite Eight,1,2019 Gonzaga,3,2019 Texas Tech,69,75,-6,144,0
+20194315a,a,4315,2019,Region 2,Elite Eight,1,2019 Virginia,3,2019 Purdue,80,75,5,155,1
+20194415a,a,4415,2019,Region 3,Elite Eight,5,2019 Auburn,2,2019 Kentucky,77,71,6,148,1
+20195516a,a,5516,2019,Final Four,Final Four,2,2019 Michigan St.,3,2019 Texas Tech,51,61,-10,112,0
+20195517a,a,5517,2019,Final Four,Final Four,1,2019 Virginia,5,2019 Auburn,63,62,1,125,1
+20195618a,a,5618,2019,Final Four,Championship,3,2019 Texas Tech,1,2019 Virginia,77,85,-8,162,0
+20211101a,a,1101,2021,Region 1,First Round,1,2021 Gonzaga,16,2021 Norfolk St.,98,55,43,153,1
+20211102a,a,1102,2021,Region 1,First Round,8,2021 Oklahoma,9,2021 Missouri,72,68,4,140,1
+20211103a,a,1103,2021,Region 1,First Round,5,2021 Creighton,12,2021 UC Santa Barbara,63,62,1,125,1
+20211104a,a,1104,2021,Region 1,First Round,4,2021 Virginia,13,2021 Ohio,58,62,-4,120,0
+20211105a,a,1105,2021,Region 1,First Round,6,2021 USC,11,2021 Drake,72,56,16,128,1
+20211106a,a,1106,2021,Region 1,First Round,3,2021 Kansas,14,2021 Eastern Washington,83,84,-1,167,0
+20211108a,a,1108,2021,Region 1,First Round,2,2021 Iowa,15,2021 Grand Canyon,86,74,12,160,1
+20211201a,a,1201,2021,Region 4,First Round,1,2021 Michigan,16,2021 Texas Southern,82,66,16,148,1
+20211202a,a,1202,2021,Region 4,First Round,8,2021 LSU,9,2021 St. Bonaventure,76,61,15,137,1
+20211203a,a,1203,2021,Region 4,First Round,5,2021 Colorado,12,2021 Georgetown,96,73,23,169,1
+20211204a,a,1204,2021,Region 4,First Round,4,2021 Florida St.,13,2021 UNC Greensboro,64,54,10,118,1
+20211205a,a,1205,2021,Region 4,First Round,6,2021 BYU,11,2021 UCLA,62,73,-11,135,0
+20211206a,a,1206,2021,Region 4,First Round,3,2021 Texas,14,2021 Abilene Christian,52,53,-1,105,0
+20211207a,a,1207,2021,Region 4,First Round,7,2021 Connecticut,10,2021 Maryland,54,63,-9,117,0
+20211208a,a,1208,2021,Region 4,First Round,2,2021 Alabama,15,2021 Iona,68,55,13,123,1
+20211301a,a,1301,2021,Region 2,First Round,1,2021 Baylor,16,2021 Hartford,79,55,24,134,1
+20211302a,a,1302,2021,Region 2,First Round,8,2021 North Carolina,9,2021 Wisconsin,62,85,-23,147,0
+20211303a,a,1303,2021,Region 2,First Round,5,2021 Villanova,12,2021 Winthrop,73,63,10,136,1
+20211304a,a,1304,2021,Region 2,First Round,4,2021 Purdue,13,2021 North Texas,69,78,-9,147,0
+20211305a,a,1305,2021,Region 2,First Round,6,2021 Texas Tech,11,2021 Utah St.,65,53,12,118,1
+20211306a,a,1306,2021,Region 2,First Round,3,2021 Arkansas,14,2021 Colgate,85,68,17,153,1
+20211307a,a,1307,2021,Region 2,First Round,7,2021 Florida,10,2021 Virginia Tech,75,70,5,145,1
+20211308a,a,1308,2021,Region 2,First Round,2,2021 Ohio St.,15,2021 Oral Roberts,72,75,-3,147,0
+20211401a,a,1401,2021,Region 3,First Round,1,2021 Illinois,16,2021 Drexel,78,49,29,127,1
+20211402a,a,1402,2021,Region 3,First Round,8,2021 Loyola Chicago,9,2021 Georgia Tech,71,60,11,131,1
+20211403a,a,1403,2021,Region 3,First Round,5,2021 Tennessee,12,2021 Oregon St.,56,70,-14,126,0
+20211404a,a,1404,2021,Region 3,First Round,4,2021 Oklahoma St.,13,2021 Liberty,69,60,9,129,1
+20211405a,a,1405,2021,Region 3,First Round,6,2021 San Diego St.,11,2021 Syracuse,62,78,-16,140,0
+20211406a,a,1406,2021,Region 3,First Round,3,2021 West Virginia,14,2021 Morehead St.,84,67,17,151,1
+20211407a,a,1407,2021,Region 3,First Round,7,2021 Clemson,10,2021 Rutgers,56,60,-4,116,0
+20211408a,a,1408,2021,Region 3,First Round,2,2021 Houston,15,2021 Cleveland St.,87,56,31,143,1
+20212109a,a,2109,2021,Region 1,Second Round,1,2021 Gonzaga,8,2021 Oklahoma,87,71,16,158,1
+20212110a,a,2110,2021,Region 1,Second Round,5,2021 Creighton,13,2021 Ohio,72,58,14,130,1
+20212111a,a,2111,2021,Region 1,Second Round,6,2021 USC,3,2021 Kansas,85,51,34,136,1
+20212112a,a,2112,2021,Region 1,Second Round,7,2021 Oregon,2,2021 Iowa,95,80,15,175,1
+20212209a,a,2209,2021,Region 4,Second Round,1,2021 Michigan,8,2021 LSU,86,76,10,162,1
+20212210a,a,2210,2021,Region 4,Second Round,5,2021 Colorado,4,2021 Florida St.,53,71,-18,124,0
+20212211a,a,2211,2021,Region 4,Second Round,11,2021 UCLA,14,2021 Abilene Christian,67,47,20,114,1
+20212212a,a,2212,2021,Region 4,Second Round,10,2021 Maryland,2,2021 Alabama,77,96,-19,173,0
+20212309a,a,2309,2021,Region 2,Second Round,1,2021 Baylor,9,2021 Wisconsin,76,63,13,139,1
+20212310a,a,2310,2021,Region 2,Second Round,5,2021 Villanova,13,2021 North Texas,84,61,23,145,1
+20212311a,a,2311,2021,Region 2,Second Round,6,2021 Texas Tech,3,2021 Arkansas,66,68,-2,134,0
+20212312a,a,2312,2021,Region 2,Second Round,7,2021 Florida,15,2021 Oral Roberts,78,81,-3,159,0
+20212409a,a,2409,2021,Region 3,Second Round,1,2021 Illinois,8,2021 Loyola Chicago,58,71,-13,129,0
+20212410a,a,2410,2021,Region 3,Second Round,12,2021 Oregon St.,4,2021 Oklahoma St.,80,70,10,150,1
+20212411a,a,2411,2021,Region 3,Second Round,11,2021 Syracuse,3,2021 West Virginia,75,72,3,147,1
+20212412a,a,2412,2021,Region 3,Second Round,10,2021 Rutgers,2,2021 Houston,60,63,-3,123,0
+20213113a,a,3113,2021,Region 1,Sweet 16,1,2021 Gonzaga,5,2021 Creighton,83,65,18,148,1
+20213113a,a,3113,2021,Region 1,Sweet 16,6,2021 USC,7,2021 Oregon,82,68,14,150,1
+20213213a,a,3213,2021,Region 4,Sweet 16,1,2021 Michigan,4,2021 Florida St.,76,58,18,134,1
+20213214a,a,3214,2021,Region 4,Sweet 16,11,2021 UCLA,2,2021 Alabama,88,78,10,166,1
+20213313a,a,3313,2021,Region 2,Sweet 16,1,2021 Baylor,5,2021 Villanova,62,51,11,113,1
+20213314a,a,3314,2021,Region 2,Sweet 16,3,2021 Arkansas,15,2021 Oral Roberts,72,70,2,142,1
+20213413a,a,3413,2021,Region 3,Sweet 16,8,2021 Loyola Chicago,12,2021 Oregon St.,58,65,-7,123,0
+20213414a,a,3414,2021,Region 3,Sweet 16,11,2021 Syracuse,2,2021 Houston,46,62,-16,108,0
+20214115a,a,4115,2021,Region 1,Elite Eight,1,2021 Gonzaga,6,2021 USC,85,66,19,151,1
+20214215a,a,4215,2021,Region 4,Elite Eight,1,2021 Michigan,11,2021 UCLA,49,51,-2,100,0
+20214315a,a,4315,2021,Region 2,Elite Eight,1,2021 Baylor,3,2021 Arkansas,81,72,9,153,1
+20214415a,a,4415,2021,Region 3,Elite Eight,12,2021 Oregon St.,2,2021 Houston,61,67,-6,128,0
+20215516a,a,5516,2021,Final Four,Final Four,1,2021 Gonzaga,11,2021 UCLA,93,90,3,183,1
+20215517a,a,5517,2021,Final Four,Final Four,1,2021 Baylor,2,2021 Houston,78,59,19,137,1
+20215618a,a,5618,2021,Final Four,Championship,1,2021 Gonzaga,1,2021 Baylor,70,86,-16,156,0
+20221101a,a,1101,2022,Region 1,First Round,1,2022 Gonzaga,16,2022 Georgia St.,93,72,21,165,1
+20221102a,a,1102,2022,Region 1,First Round,8,2022 Boise St.,9,2022 Memphis,53,64,-11,117,0
+20221103a,a,1103,2022,Region 1,First Round,5,2022 Connecticut,12,2022 New Mexico St.,63,70,-7,133,0
+20221104a,a,1104,2022,Region 1,First Round,4,2022 Arkansas,13,2022 Vermont,75,71,4,146,1
+20221105a,a,1105,2022,Region 1,First Round,6,2022 Alabama,11,2022 Notre Dame,64,78,-14,142,0
+20221106a,a,1106,2022,Region 1,First Round,3,2022 Texas Tech,14,2022 Montana St.,97,62,35,159,1
+20221107a,a,1107,2022,Region 1,First Round,7,2022 Michigan St.,10,2022 Davidson,74,73,1,147,1
+20221108a,a,1108,2022,Region 1,First Round,2,2022 Duke,15,2022 Cal St. Fullerton,78,61,17,139,1
+20221201a,a,1201,2022,Region 4,First Round,1,2022 Baylor,16,2022 Norfolk St.,85,49,36,134,1
+20221202a,a,1202,2022,Region 4,First Round,8,2022 North Carolina,9,2022 Marquette,95,63,32,158,1
+20221203a,a,1203,2022,Region 4,First Round,5,2022 Saint Mary's,12,2022 Indiana,82,53,29,135,1
+20221204a,a,1204,2022,Region 4,First Round,4,2022 UCLA,13,2022 Akron,57,53,4,110,1
+20221205a,a,1205,2022,Region 4,First Round,6,2022 Texas,11,2022 Virginia Tech,81,73,8,154,1
+20221206a,a,1206,2022,Region 4,First Round,3,2022 Purdue,14,2022 Yale,78,56,22,134,1
+20221207a,a,1207,2022,Region 4,First Round,7,2022 Murray St.,10,2022 San Francisco,92,87,5,179,1
+20221208a,a,1208,2022,Region 4,First Round,2,2022 Kentucky,15,2022 Saint Peter's,79,85,-6,164,0
+20221301a,a,1301,2022,Region 2,First Round,1,2022 Arizona,16,2022 Wright St.,87,70,17,157,1
+20221302a,a,1302,2022,Region 2,First Round,8,2022 Seton Hall,9,2022 TCU,42,69,-27,111,0
+20221303a,a,1303,2022,Region 2,First Round,5,2022 Houston,12,2022 UAB,82,68,14,150,1
+20221304a,a,1304,2022,Region 2,First Round,4,2022 Illinois,13,2022 Chattanooga,54,53,1,107,1
+20221305a,a,1305,2022,Region 2,First Round,6,2022 Colorado St.,11,2022 Michigan,63,75,-12,138,0
+20221306a,a,1306,2022,Region 2,First Round,3,2022 Tennessee,14,2022 Longwood,88,56,32,144,1
+20221307a,a,1307,2022,Region 2,First Round,7,2022 Ohio St.,10,2022 Loyola Chicago,54,41,13,95,1
+20221308a,a,1308,2022,Region 2,First Round,2,2022 Villanova,15,2022 Delaware,80,60,20,140,1
+20221401a,a,1401,2022,Region 3,First Round,1,2022 Kansas,16,2022 Texas Southern,83,56,27,139,1
+20221402a,a,1402,2022,Region 3,First Round,8,2022 San Diego St.,9,2022 Creighton,69,72,-3,141,0
+20221403a,a,1403,2022,Region 3,First Round,5,2022 Iowa,12,2022 Richmond,63,67,-4,130,0
+20221404a,a,1404,2022,Region 3,First Round,4,2022 Providence,13,2022 South Dakota St.,66,57,9,123,1
+20221405a,a,1405,2022,Region 3,First Round,6,2022 LSU,11,2022 Iowa St.,54,59,-5,113,0
+20221406a,a,1406,2022,Region 3,First Round,3,2022 Wisconsin,14,2022 Colgate,67,60,7,127,1
+20221407a,a,1407,2022,Region 3,First Round,7,2022 USC,10,2022 Miami FL,66,68,-2,134,0
+20221408a,a,1408,2022,Region 3,First Round,2,2022 Auburn,15,2022 Jacksonville St.,80,61,19,141,1
+20222109a,a,2109,2022,Region 1,Second Round,1,2022 Gonzaga,9,2022 Memphis,82,78,4,160,1
+20222110a,a,2110,2022,Region 1,Second Round,12,2022 New Mexico St.,4,2022 Arkansas,48,53,-5,101,0
+20222111a,a,2111,2022,Region 1,Second Round,11,2022 Notre Dame,3,2022 Texas Tech,53,59,-6,112,0
+20222112a,a,2112,2022,Region 1,Second Round,7,2022 Michigan St.,2,2022 Duke,76,85,-9,161,0
+20222209a,a,2209,2022,Region 4,Second Round,1,2022 Baylor,8,2022 North Carolina,86,93,-7,179,0
+20222210a,a,2210,2022,Region 4,Second Round,5,2022 Saint Mary's,4,2022 UCLA,56,72,-16,128,0
+20222211a,a,2211,2022,Region 4,Second Round,6,2022 Texas,3,2022 Purdue,71,81,-10,152,0
+20222212a,a,2212,2022,Region 4,Second Round,7,2022 Murray St.,15,2022 Saint Peter's,60,70,-10,130,0
+20222309a,a,2309,2022,Region 2,Second Round,1,2022 Arizona,9,2022 TCU,85,80,5,165,1
+20222310a,a,2310,2022,Region 2,Second Round,5,2022 Houston,4,2022 Illinois,68,53,15,121,1
+20222311a,a,2311,2022,Region 2,Second Round,11,2022 Michigan,3,2022 Tennessee,76,68,8,144,1
+20222312a,a,2312,2022,Region 2,Second Round,7,2022 Ohio St.,2,2022 Villanova,61,71,-10,132,0
+20222409a,a,2409,2022,Region 3,Second Round,1,2022 Kansas,9,2022 Creighton,79,72,7,151,1
+20222410a,a,2410,2022,Region 3,Second Round,12,2022 Richmond,4,2022 Providence,51,79,-28,130,0
+20222411a,a,2411,2022,Region 3,Second Round,11,2022 Iowa St.,3,2022 Wisconsin,54,49,5,103,1
+20222412a,a,2412,2022,Region 3,Second Round,10,2022 Miami FL,2,2022 Auburn,79,61,18,140,1
+20223113a,a,3113,2022,Region 1,Sweet 16,1,2022 Gonzaga,4,2022 Arkansas,68,74,-6,142,0
+20223113a,a,3113,2022,Region 1,Sweet 16,3,2022 Texas Tech,2,2022 Duke,73,78,-5,151,0
+20223213a,a,3213,2022,Region 4,Sweet 16,8,2022 North Carolina,4,2022 UCLA,73,66,7,139,1
+20223214a,a,3214,2022,Region 4,Sweet 16,3,2022 Purdue,15,2022 Saint Peter's,64,67,-3,131,0
+20223313a,a,3313,2022,Region 2,Sweet 16,1,2022 Arizona,5,2022 Houston,60,72,-12,132,0
+20223314a,a,3314,2022,Region 2,Sweet 16,11,2022 Michigan,2,2022 Villanova,55,63,-8,118,0
+20223413a,a,3413,2022,Region 3,Sweet 16,1,2022 Kansas,4,2022 Providence,66,61,5,127,1
+20223414a,a,3414,2022,Region 3,Sweet 16,11,2022 Iowa St.,10,2022 Miami FL,56,70,-14,126,0
+20224115a,a,4115,2022,Region 1,Elite Eight,4,2022 Arkansas,2,2022 Duke,69,78,-9,147,0
+20224215a,a,4215,2022,Region 4,Elite Eight,8,2022 North Carolina,15,2022 Saint Peter's,69,49,20,118,1
+20224315a,a,4315,2022,Region 2,Elite Eight,5,2022 Houston,2,2022 Villanova,44,50,-6,94,0
+20224415a,a,4415,2022,Region 3,Elite Eight,1,2022 Kansas,10,2022 Miami FL,76,50,26,126,1
+20225516a,a,5516,2022,Final Four,Final Four,2,2022 Duke,8,2022 North Carolina,77,81,-4,158,0
+20225517a,a,5517,2022,Final Four,Final Four,2,2022 Villanova,1,2022 Kansas,65,81,-16,146,0
+20225618a,a,5618,2022,Final Four,Championship,8,2022 North Carolina,1,2022 Kansas,69,72,-3,141,0
+20231101a,a,1101,2023,Region 1,First Round,1,2023 Alabama,16,2023 Texas A&M Corpus Chris,96,75,21,171,1
+20231102a,a,1102,2023,Region 1,First Round,8,2023 Maryland,9,2023 West Virginia,67,65,2,132,1
+20231103a,a,1103,2023,Region 1,First Round,5,2023 San Diego St.,12,2023 Charleston,63,57,6,120,1
+20231104a,a,1104,2023,Region 1,First Round,4,2023 Virginia,13,2023 Furman,67,68,-1,135,0
+20231105a,a,1105,2023,Region 1,First Round,6,2023 Creighton,11,2023 NC St.,72,63,9,135,1
+20231106a,a,1106,2023,Region 1,First Round,3,2023 Baylor,14,2023 UC Santa Barbara,74,56,18,130,1
+20231107a,a,1107,2023,Region 1,First Round,7,2023 Missouri,10,2023 Utah St.,76,65,11,141,1
+20231108a,a,1108,2023,Region 1,First Round,2,2023 Arizona,15,2023 Princeton,55,59,-4,114,0
+20231201a,a,1201,2023,Region 4,First Round,1,2023 Purdue,16,2023 Fairleigh Dickinson,58,63,-5,121,0
+20231202a,a,1202,2023,Region 4,First Round,8,2023 Memphis,9,2023 Florida Atlantic,65,66,-1,131,0
+20231203a,a,1203,2023,Region 4,First Round,5,2023 Duke,12,2023 Oral Roberts,74,51,23,125,1
+20231204a,a,1204,2023,Region 4,First Round,4,2023 Tennessee,13,2023 Louisiana,58,55,3,113,1
+20231205a,a,1205,2023,Region 4,First Round,6,2023 Kentucky,11,2023 Providence,61,53,8,114,1
+20231206a,a,1206,2023,Region 4,First Round,3,2023 Kansas St.,14,2023 Montana St.,77,65,12,142,1
+20231207a,a,1207,2023,Region 4,First Round,7,2023 Michigan St.,10,2023 USC,72,62,10,134,1
+20231208a,a,1208,2023,Region 4,First Round,2,2023 Marquette,15,2023 Vermont,78,61,17,139,1
+20231301a,a,1301,2023,Region 2,First Round,1,2023 Houston,16,2023 Northern Kentucky,63,52,11,115,1
+20231302a,a,1302,2023,Region 2,First Round,8,2023 Iowa,9,2023 Auburn,75,83,-8,158,0
+20231303a,a,1303,2023,Region 2,First Round,5,2023 Miami FL,12,2023 Drake,63,56,7,119,1
+20231304a,a,1304,2023,Region 2,First Round,4,2023 Indiana,13,2023 Kent St.,71,60,11,131,1
+20231305a,a,1305,2023,Region 2,First Round,6,2023 Iowa St.,11,2023 Pittsburgh,41,59,-18,100,0
+20231306a,a,1306,2023,Region 2,First Round,3,2023 Xavier,14,2023 Kennesaw St.,72,67,5,139,1
+20231307a,a,1307,2023,Region 2,First Round,7,2023 Texas A&M,10,2023 Penn St.,59,76,-17,135,0
+20231308a,a,1308,2023,Region 2,First Round,2,2023 Texas,15,2023 Colgate,81,61,20,142,1
+20231401a,a,1401,2023,Region 3,First Round,1,2023 Kansas,16,2023 Howard,96,68,28,164,1
+20231402a,a,1402,2023,Region 3,First Round,8,2023 Arkansas,9,2023 Illinois,73,63,10,136,1
+20231403a,a,1403,2023,Region 3,First Round,5,2023 Saint Mary's,12,2023 VCU,63,51,12,114,1
+20231404a,a,1404,2023,Region 3,First Round,4,2023 Connecticut,13,2023 Iona,87,63,24,150,1
+20231405a,a,1405,2023,Region 3,First Round,6,2023 TCU,11,2023 Arizona St.,72,70,2,142,1
+20231406a,a,1406,2023,Region 3,First Round,3,2023 Gonzaga,14,2023 Grand Canyon,82,70,12,152,1
+20231407a,a,1407,2023,Region 3,First Round,7,2023 Northwestern,10,2023 Boise St.,75,67,8,142,1
+20231408a,a,1408,2023,Region 3,First Round,2,2023 UCLA,15,2023 UNC Asheville,86,53,33,139,1
+20232109a,a,2109,2023,Region 1,Second Round,1,2023 Alabama,8,2023 Maryland,73,51,22,124,1
+20232110a,a,2110,2023,Region 1,Second Round,5,2023 San Diego St.,13,2023 Furman,75,52,23,127,1
+20232111a,a,2111,2023,Region 1,Second Round,6,2023 Creighton,3,2023 Baylor,85,76,9,161,1
+20232112a,a,2112,2023,Region 1,Second Round,7,2023 Missouri,15,2023 Princeton,63,78,-15,141,0
+20232209a,a,2209,2023,Region 4,Second Round,16,2023 Fairleigh Dickinson,9,2023 Florida Atlantic,70,78,-8,148,0
+20232210a,a,2210,2023,Region 4,Second Round,5,2023 Duke,4,2023 Tennessee,52,65,-13,117,0
+20232211a,a,2211,2023,Region 4,Second Round,6,2023 Kentucky,3,2023 Kansas St.,69,75,-6,144,0
+20232212a,a,2212,2023,Region 4,Second Round,7,2023 Michigan St.,2,2023 Marquette,69,60,9,129,1
+20232309a,a,2309,2023,Region 2,Second Round,1,2023 Houston,9,2023 Auburn,81,64,17,145,1
+20232310a,a,2310,2023,Region 2,Second Round,5,2023 Miami FL,4,2023 Indiana,85,69,16,154,1
+20232311a,a,2311,2023,Region 2,Second Round,11,2023 Pittsburgh,3,2023 Xavier,73,84,-11,157,0
+20232312a,a,2312,2023,Region 2,Second Round,10,2023 Penn St.,2,2023 Texas,66,71,-5,137,0
+20232409a,a,2409,2023,Region 3,Second Round,1,2023 Kansas,8,2023 Arkansas,71,72,-1,143,0
+20232410a,a,2410,2023,Region 3,Second Round,5,2023 Saint Mary's,4,2023 Connecticut,55,70,-15,125,0
+20232411a,a,2411,2023,Region 3,Second Round,6,2023 TCU,3,2023 Gonzaga,81,84,-3,165,0
+20232412a,a,2412,2023,Region 3,Second Round,7,2023 Northwestern,2,2023 UCLA,63,68,-5,131,0
+20233113a,a,3113,2023,Region 1,Sweet 16,1,2023 Alabama,5,2023 San Diego St.,64,71,-7,135,0
+20233113a,a,3113,2023,Region 1,Sweet 16,6,2023 Creighton,15,2023 Princeton,86,75,11,161,1
+20233213a,a,3213,2023,Region 4,Sweet 16,9,2023 Florida Atlantic,4,2023 Tennessee,62,55,7,117,1
+20233214a,a,3214,2023,Region 4,Sweet 16,3,2023 Kansas St.,7,2023 Michigan St.,98,93,5,191,1
+20233313a,a,3313,2023,Region 2,Sweet 16,1,2023 Houston,5,2023 Miami FL,75,89,-14,164,0
+20233314a,a,3314,2023,Region 2,Sweet 16,3,2023 Xavier,2,2023 Texas,71,83,-12,154,0
+20233413a,a,3413,2023,Region 3,Sweet 16,8,2023 Arkansas,4,2023 Connecticut,65,88,-23,153,0
+20233414a,a,3414,2023,Region 3,Sweet 16,3,2023 Gonzaga,2,2023 UCLA,79,76,3,155,1
+20234115a,a,4115,2023,Region 1,Elite Eight,5,2023 San Diego St.,6,2023 Creighton,57,56,1,113,1
+20234215a,a,4215,2023,Region 4,Elite Eight,9,2023 Florida Atlantic,3,2023 Kansas St.,79,76,3,155,1
+20234315a,a,4315,2023,Region 2,Elite Eight,5,2023 Miami FL,2,2023 Texas,88,81,7,169,1
+20234415a,a,4415,2023,Region 3,Elite Eight,4,2023 Connecticut,3,2023 Gonzaga,82,54,28,136,1
+20235516a,a,5516,2023,Final Four,Final Four,5,2023 San Diego St.,9,2023 Florida Atlantic,72,71,1,143,1
+20235517a,a,5517,2023,Final Four,Final Four,5,2023 Miami FL,4,2023 Connecticut,59,72,-13,131,0
+20235618a,a,5618,2023,Final Four,Championship,5,2023 San Diego St.,4,2023 Connecticut,59,76,-17,135,0
+20241101a,a,1101,2024,Region 1,First Round,1,2024 Connecticut,16,2024 Stetson,91,52,39,143,1
+20241102a,a,1102,2024,Region 1,First Round,8,2024 Florida Atlantic,9,2024 Northwestern,65,77,-12,142,0
+20241103a,a,1103,2024,Region 1,First Round,5,2024 San Diego St.,12,2024 UAB,69,65,4,134,1
+20241104a,a,1104,2024,Region 1,First Round,4,2024 Auburn,13,2024 Yale,76,78,-2,154,0
+20241105a,a,1105,2024,Region 1,First Round,6,2024 BYU,11,2024 Duquesne,67,71,-4,138,0
+20241106a,a,1106,2024,Region 1,First Round,3,2024 Illinois,14,2024 Morehead St.,85,69,16,154,1
+20241107a,a,1107,2024,Region 1,First Round,7,2024 Washington St.,10,2024 Drake,66,61,5,127,1
+20241108a,a,1108,2024,Region 1,First Round,2,2024 Iowa St.,15,2024 South Dakota St.,82,65,17,147,1
+20241201a,a,1201,2024,Region 2,First Round,1,2024 Houston,16,2024 Longwood,86,46,40,132,1
+20241202a,a,1202,2024,Region 2,First Round,8,2024 Nebraska,9,2024 Texas A&M,83,98,-15,181,0
+20241203a,a,1203,2024,Region 2,First Round,5,2024 Wisconsin,12,2024 James Madison,61,72,-11,133,0
+20241204a,a,1204,2024,Region 2,First Round,4,2024 Duke,13,2024 Vermont,64,47,17,111,1
+20241205a,a,1205,2024,Region 2,First Round,6,2024 Texas Tech,11,2024 NC St.,67,80,-13,147,0
+20241206a,a,1206,2024,Region 2,First Round,3,2024 Kentucky,14,2024 Oakland,76,80,-4,156,0
+20241207a,a,1207,2024,Region 2,First Round,7,2024 Florida,10,2024 Colorado,100,102,-2,202,0
+20241208a,a,1208,2024,Region 2,First Round,2,2024 Marquette,15,2024 Western Kentucky,87,69,18,156,1
+20241301a,a,1301,2024,Region 3,First Round,1,2024 Purdue,16,2024 Grambling St.,78,50,28,128,1
+20241302a,a,1302,2024,Region 3,First Round,8,2024 Utah St.,9,2024 TCU,88,72,16,160,1
+20241303a,a,1303,2024,Region 3,First Round,5,2024 Gonzaga,12,2024 McNeese,86,65,21,151,1
+20241304a,a,1304,2024,Region 3,First Round,4,2024 Kansas,13,2024 Samford,93,89,4,182,1
+20241305a,a,1305,2024,Region 3,First Round,6,2024 South Carolina,11,2024 Oregon,73,87,-14,160,0
+20241306a,a,1306,2024,Region 3,First Round,3,2024 Creighton,14,2024 Akron,77,60,17,137,1
+20241307a,a,1307,2024,Region 3,First Round,7,2024 Texas,10,2024 Colorado St.,56,44,12,100,1
+20241308a,a,1308,2024,Region 3,First Round,2,2024 Tennessee,15,2024 Saint Peter's,83,49,34,132,1
+20241401a,a,1401,2024,Region 4,First Round,1,2024 North Carolina,16,2024 Wagner,90,62,28,152,1
+20241402a,a,1402,2024,Region 4,First Round,8,2024 Mississippi St.,9,2024 Michigan St.,51,69,-18,120,0
+20241403a,a,1403,2024,Region 4,First Round,5,2024 Saint Mary's,12,2024 Grand Canyon,66,75,-9,141,0
+20241404a,a,1404,2024,Region 4,First Round,4,2024 Alabama,13,2024 Charleston,109,96,13,205,1
+20241405a,a,1405,2024,Region 4,First Round,6,2024 Clemson,11,2024 New Mexico,77,56,21,133,1
+20241406a,a,1406,2024,Region 4,First Round,3,2024 Baylor,14,2024 Colgate,92,67,25,159,1
+20241407a,a,1407,2024,Region 4,First Round,7,2024 Dayton,10,2024 Nevada,63,60,3,123,1
+20241408a,a,1408,2024,Region 4,First Round,2,2024 Arizona,15,2024 Long Beach St.,85,65,20,150,1
+20242109a,a,2109,2024,Region 1,Second Round,1,2024 Connecticut,9,2024 Northwestern,75,58,17,133,1
+20242110a,a,2110,2024,Region 1,Second Round,5,2024 San Diego St.,13,2024 Yale,85,57,28,142,1
+20242111a,a,2111,2024,Region 1,Second Round,11,2024 Duquesne,3,2024 Illinois,63,89,-26,152,0
+20242112a,a,2112,2024,Region 1,Second Round,7,2024 Washington St.,2,2024 Iowa St.,56,67,-11,123,0
+20242209a,a,2209,2024,Region 2,Second Round,1,2024 Houston,9,2024 Texas A&M,100,95,5,195,1
+20242210a,a,2210,2024,Region 2,Second Round,12,2024 James Madison,4,2024 Duke,55,93,-38,148,0
+20242211a,a,2211,2024,Region 2,Second Round,11,2024 NC St.,14,2024 Oakland,79,73,6,152,1
+20242212a,a,2212,2024,Region 2,Second Round,10,2024 Colorado,2,2024 Marquette,77,81,-4,158,0
+20242309a,a,2309,2024,Region 3,Second Round,1,2024 Purdue,8,2024 Utah St.,106,67,39,173,1
+20242310a,a,2310,2024,Region 3,Second Round,5,2024 Gonzaga,4,2024 Kansas,89,68,21,157,1
+20242311a,a,2311,2024,Region 3,Second Round,11,2024 Oregon,3,2024 Creighton,73,86,-13,159,0
+20242312a,a,2312,2024,Region 3,Second Round,7,2024 Texas,2,2024 Tennessee,58,62,-4,120,0
+20242409a,a,2409,2024,Region 4,Second Round,1,2024 North Carolina,9,2024 Michigan St.,85,69,16,154,1
+20242410a,a,2410,2024,Region 4,Second Round,12,2024 Grand Canyon,4,2024 Alabama,61,72,-11,133,0
+20242411a,a,2411,2024,Region 4,Second Round,6,2024 Clemson,3,2024 Baylor,72,64,8,136,1
+20242412a,a,2412,2024,Region 4,Second Round,7,2024 Dayton,2,2024 Arizona,68,78,-10,146,0
+20243113a,a,3113,2024,Region 1,Sweet 16,1,2024 Connecticut,5,2024 San Diego St.,82,52,30,134,1
+20243113a,a,3113,2024,Region 1,Sweet 16,3,2024 Illinois,2,2024 Iowa St.,72,69,3,141,1
+20243213a,a,3213,2024,Region 2,Sweet 16,1,2024 Houston,4,2024 Duke,51,54,-3,105,0
+20243214a,a,3214,2024,Region 2,Sweet 16,11,2024 NC St.,2,2024 Marquette,67,58,9,125,1
+20243313a,a,3313,2024,Region 3,Sweet 16,1,2024 Purdue,5,2024 Gonzaga,80,68,12,148,1
+20243314a,a,3314,2024,Region 3,Sweet 16,3,2024 Creighton,2,2024 Tennessee,75,82,-7,157,0
+20243413a,a,3413,2024,Region 4,Sweet 16,1,2024 North Carolina,4,2024 Alabama,87,89,-2,176,0
+20243414a,a,3414,2024,Region 4,Sweet 16,6,2024 Clemson,2,2024 Arizona,77,72,5,149,1
+20244115a,a,4115,2024,Region 1,Elite Eight,1,2024 Connecticut,3,2024 Illinois,77,52,25,129,1
+20244215a,a,4215,2024,Region 2,Elite Eight,4,2024 Duke,11,2024 NC St.,64,76,-12,140,0
+20244315a,a,4315,2024,Region 3,Elite Eight,1,2024 Purdue,2,2024 Tennessee,72,66,6,138,1
+20244415a,a,4415,2024,Region 4,Elite Eight,4,2024 Alabama,6,2024 Clemson,89,82,7,171,1
+20245516a,a,5516,2024,Final Four,Final Four,1,2024 Connecticut,4,2024 Alabama,86,72,14,158,1
+20245517a,a,5517,2024,Final Four,Final Four,11,2024 NC St.,1,2024 Purdue,50,63,-13,113,0
+20245618a,a,5618,2024,Final Four,Championship,1,2024 Connecticut,1,2024 Purdue,75,60,15,135,1
+20251101a,a,1101,2025,Region 1,First Round,1,2025 Auburn,16,2025 Alabama St.,83,63,20,146,1
+20251102a,a,1102,2025,Region 1,First Round,8,2025 Louisville,9,2025 Creighton,75,89,-14,164,0
+20251103a,a,1103,2025,Region 1,First Round,5,2025 Michigan,12,2025 UC San Diego,68,65,3,133,1
+20251104a,a,1104,2025,Region 1,First Round,4,2025 Texas A&M,13,2025 Yale,80,71,9,151,1
+20251105a,a,1105,2025,Region 1,First Round,6,2025 Mississippi,11,2025 North Carolina,71,64,7,135,1
+20251106a,a,1106,2025,Region 1,First Round,3,2025 Iowa St.,14,2025 Lipscomb,82,55,27,137,1
+20251107a,a,1107,2025,Region 1,First Round,7,2025 Marquette,10,2025 New Mexico,66,75,-9,141,0
+20251108a,a,1108,2025,Region 1,First Round,2,2025 Michigan St.,15,2025 Bryant,87,62,25,149,1
+20251201a,a,1201,2025,Region 2,First Round,1,2025 Duke,16,2025 Mount St. Mary's,93,49,44,142,1
+20251202a,a,1202,2025,Region 2,First Round,8,2025 Mississippi St.,9,2025 Baylor,72,75,-3,147,0
+20251203a,a,1203,2025,Region 2,First Round,5,2025 Oregon,12,2025 Liberty,81,52,29,133,1
+20251204a,a,1204,2025,Region 2,First Round,4,2025 Arizona,13,2025 Akron,93,65,28,158,1
+20251205a,a,1205,2025,Region 2,First Round,6,2025 BYU,11,2025 VCU,80,71,9,151,1
+20251206a,a,1206,2025,Region 2,First Round,3,2025 Wisconsin,14,2025 Montana,85,66,19,151,1
+20251207a,a,1207,2025,Region 2,First Round,7,2025 Saint Mary's,10,2025 Vanderbilt,59,56,3,115,1
+20251208a,a,1208,2025,Region 2,First Round,2,2025 Alabama,15,2025 Robert Morris,90,81,9,171,1
+20251301a,a,1301,2025,Region 3,First Round,1,2025 Houston,16,2025 SIU Edwardsville,78,40,38,118,1
+20251302a,a,1302,2025,Region 3,First Round,8,2025 Gonzaga,9,2025 Georgia,89,68,21,157,1
+20251303a,a,1303,2025,Region 3,First Round,5,2025 Clemson,12,2025 McNeese,67,69,-2,136,0
+20251304a,a,1304,2025,Region 3,First Round,4,2025 Purdue,13,2025 High Point,75,63,12,138,1
+20251305a,a,1305,2025,Region 3,First Round,6,2025 Illinois,11,2025 Xavier,86,73,13,159,1
+20251306a,a,1306,2025,Region 3,First Round,3,2025 Kentucky,14,2025 Troy,76,57,19,133,1
+20251307a,a,1307,2025,Region 3,First Round,7,2025 UCLA,10,2025 Utah St.,72,47,25,119,1
+20251308a,a,1308,2025,Region 3,First Round,2,2025 Tennessee,15,2025 Wofford,77,62,15,139,1
+20251401a,a,1401,2025,Region 4,First Round,1,2025 Florida,16,2025 Norfolk St.,95,69,26,164,1
+20251402a,a,1402,2025,Region 4,First Round,8,2025 Connecticut,9,2025 Oklahoma,67,59,8,126,1
+20251403a,a,1403,2025,Region 4,First Round,5,2025 Memphis,12,2025 Colorado St.,70,78,-8,148,0
+20251404a,a,1404,2025,Region 4,First Round,4,2025 Maryland,13,2025 Grand Canyon,81,49,32,130,1
+20251405a,a,1405,2025,Region 4,First Round,6,2025 Missouri,11,2025 Drake,57,67,-10,124,0
+20251406a,a,1406,2025,Region 4,First Round,3,2025 Texas Tech,14,2025 UNC Wilmington,82,72,10,154,1
+20251407a,a,1407,2025,Region 4,First Round,7,2025 Kansas,10,2025 Arkansas,72,79,-7,151,0
+20251408a,a,1408,2025,Region 4,First Round,2,2025 St. John's,15,2025 Nebraska Omaha,83,53,30,136,1
+20252109a,a,2109,2025,Region 1,Second Round,1,2025 Auburn,9,2025 Creighton,82,70,12,152,1
+20252110a,a,2110,2025,Region 1,Second Round,5,2025 Michigan,4,2025 Texas A&M,91,79,12,170,1
+20252111a,a,2111,2025,Region 1,Second Round,6,2025 Mississippi,3,2025 Iowa St.,91,78,13,169,1
+20252112a,a,2112,2025,Region 1,Second Round,10,2025 New Mexico,2,2025 Michigan St.,63,71,-8,134,0
+20252209a,a,2209,2025,Region 2,Second Round,1,2025 Duke,9,2025 Baylor,89,66,23,155,1
+20252210a,a,2210,2025,Region 2,Second Round,5,2025 Oregon,4,2025 Arizona,83,87,-4,170,0
+20252211a,a,2211,2025,Region 2,Second Round,6,2025 BYU,3,2025 Wisconsin,91,89,2,180,1
+20252212a,a,2212,2025,Region 2,Second Round,7,2025 BYU,2,2025 Alabama,66,80,-14,146,0
+20252309a,a,2309,2025,Region 3,Second Round,1,2025 Houston,8,2025 Gonzaga,81,76,5,157,1
+20252310a,a,2310,2025,Region 3,Second Round,12,2025 McNeese,4,2025 Purdue,62,76,-14,138,0
+20252311a,a,2311,2025,Region 3,Second Round,6,2025 Illinois,3,2025 Kentucky,75,84,-9,159,0
+20252312a,a,2312,2025,Region 3,Second Round,7,2025 UCLA,2,2025 Tennessee,58,67,-9,125,0
+20252409a,a,2409,2025,Region 4,Second Round,1,2025 Florida,8,2025 Connecticut,77,75,2,152,1
+20252410a,a,2410,2025,Region 4,Second Round,12,2025 Colorado St.,4,2025 Maryland,71,72,-1,143,0
+20252411a,a,2411,2025,Region 4,Second Round,11,2025 Drake,3,2025 Texas Tech,64,77,-13,141,0
+20252412a,a,2412,2025,Region 4,Second Round,10,2025 Arkansas,2,2025 St. John's,75,66,9,141,1
+20253113a,a,3113,2025,Region 1,Sweet 16,1,2025 Auburn,5,Michigan,78,65,13,143,1
+20253113a,a,3113,2025,Region 1,Sweet 16,6,2025 Mississippi,2,2025 Michigan St.,70,73,-3,143,0
+20253213a,a,3213,2025,Region 2,Sweet 16,1,2025 Duke,4,2025 Arizona,100,93,7,193,1
+20253214a,a,3214,2025,Region 2,Sweet 16,6,2025 BYU,2,2025 Alabama,88,113,-25,201,0
+20253313a,a,3313,2025,Region 3,Sweet 16,1,2025 Houston,4,2025 Purdue,62,60,2,122,1
+20253314a,a,3314,2025,Region 3,Sweet 16,3,2025 Kentucky,2,2025 Tennessee,65,78,-13,143,0
+20253413a,a,3413,2025,Region 4,Sweet 16,1,2025 Florida,4,2025 Maryland,87,71,16,158,1
+20253414a,a,3414,2025,Region 4,Sweet 16,3,2025 Texas Tech,10,2025 Arkansas,85,83,2,168,1
+20254115a,a,4115,2025,Region 1,Elite Eight,1,2025 Auburn,2,2025 Michigan St.,70,64,6,134,1
+20254215a,a,4215,2025,Region 2,Elite Eight,1,2025 Duke,2,2025 Alabama,85,65,20,150,1
+20254315a,a,4315,2025,Region 3,Elite Eight,1,2025 Houston,2,2025 Tennessee,69,50,19,119,1
+20254415a,a,4415,2025,Region 4,Elite Eight,1,2025 Florida,3,2025 Texas Tech,84,79,5,163,1
+20255516a,a,5516,2025,Final Four,Final Four,1,2025 Auburn,1,2025 Florida,73,79,-6,152,0
+20255517a,a,5517,2025,Final Four,Final Four,1,2025 Duke,1,2025 Houston,67,70,-3,137,0
+20255618a,a,5618,2025,Final Four,Championship,1,2025 Florida,1,2025 Houston,65,63,2,128,1
+20151101b,b,1101,2015,Region 1,First Round,16,2015 Hampton,1,2015 Kentucky,56,79,-23,135,0
+20151102b,b,1102,2015,Region 1,First Round,9,2015 Purdue,8,2015 Cincinnati,65,66,-1,131,0
+20151103b,b,1103,2015,Region 1,First Round,12,2015 Buffalo,5,2015 West Virginia,62,68,-6,130,0
+20151104b,b,1104,2015,Region 1,First Round,13,2015 Valparaiso,4,2015 Maryland,62,65,-3,127,0
+20151105b,b,1105,2015,Region 1,First Round,11,2015 Texas,6,2015 Butler,48,56,-8,104,0
+20151106b,b,1106,2015,Region 1,First Round,14,2015 Northeastern,3,2015 Notre Dame,65,69,-4,134,0
+20151107b,b,1107,2015,Region 1,First Round,10,2015 Indiana,7,2015 Wichita St.,76,81,-5,157,0
+20151108b,b,1108,2015,Region 1,First Round,15,2015 New Mexico St.,2,2015 Kansas,56,75,-19,131,0
+20151201b,b,1201,2015,Region 4,First Round,16,2015 Coastal Carolina,1,2015 Wisconsin,72,86,-14,158,0
+20151202b,b,1202,2015,Region 4,First Round,9,2015 Oklahoma St.,8,2015 Oregon,73,79,-6,152,0
+20151203b,b,1203,2015,Region 4,First Round,12,2015 Wofford,5,2015 Arkansas,53,56,-3,109,0
+20151204b,b,1204,2015,Region 4,First Round,13,2015 Harvard,4,2015 North Carolina,65,67,-2,132,0
+20151205b,b,1205,2015,Region 4,First Round,11,2015 Mississippi,6,2015 Xavier,57,76,-19,133,0
+20151206b,b,1206,2015,Region 4,First Round,14,2015 Georgia St.,3,2015 Baylor,57,56,1,113,1
+20151207b,b,1207,2015,Region 4,First Round,10,2015 Ohio St.,7,2015 VCU,75,72,3,147,1
+20151208b,b,1208,2015,Region 4,First Round,15,2015 Texas Southern,2,2015 Arizona,72,93,-21,165,0
+20151301b,b,1301,2015,Region 2,First Round,16,2015 Lafayette,1,2015 Villanova,52,93,-41,145,0
+20151302b,b,1302,2015,Region 2,First Round,9,2015 LSU,8,2015 NC St.,65,66,-1,131,0
+20151303b,b,1303,2015,Region 2,First Round,12,2015 Wyoming,5,2015 Northern Iowa,54,71,-17,125,0
+20151304b,b,1304,2015,Region 2,First Round,13,2015 UC Irvine,4,2015 Louisville,55,57,-2,112,0
+20151305b,b,1305,2015,Region 2,First Round,11,2015 Dayton,6,2015 Providence,66,53,13,119,1
+20151306b,b,1306,2015,Region 2,First Round,14,2015 Albany,3,2015 Oklahoma,60,69,-9,129,0
+20151307b,b,1307,2015,Region 2,First Round,10,2015 Georgia,7,2015 Michigan St.,63,70,-7,133,0
+20151308b,b,1308,2015,Region 2,First Round,15,2015 Belmont,2,2015 Virginia,67,79,-12,146,0
+20151401b,b,1401,2015,Region 3,First Round,16,2015 Robert Morris,1,2015 Duke,56,85,-29,141,0
+20151402b,b,1402,2015,Region 3,First Round,9,2015 St. John's,8,2015 San Diego St.,64,76,-12,140,0
+20151403b,b,1403,2015,Region 3,First Round,12,2015 Stephen F. Austin,5,2015 Utah,50,57,-7,107,0
+20151404b,b,1404,2015,Region 3,First Round,13,2015 Eastern Washington,4,2015 Georgetown,74,84,-10,158,0
+20151405b,b,1405,2015,Region 3,First Round,11,2015 UCLA,6,2015 SMU,60,59,1,119,1
+20151406b,b,1406,2015,Region 3,First Round,14,2015 UAB,3,2015 Iowa St.,60,59,1,119,1
+20151407b,b,1407,2015,Region 3,First Round,10,2015 Davidson,7,2015 Iowa,52,83,-31,135,0
+20151408b,b,1408,2015,Region 3,First Round,15,2015 North Dakota St.,2,2015 Gonzaga,76,86,-10,162,0
+20152109b,b,2109,2015,Region 1,Second Round,8,2015 Cincinnati,1,2015 Kentucky,51,64,-13,115,0
+20152110b,b,2110,2015,Region 1,Second Round,4,2015 Maryland,5,2015 West Virginia,59,69,-10,128,0
+20152111b,b,2111,2015,Region 1,Second Round,3,2015 Notre Dame,6,2015 Butler,67,64,3,131,1
+20152112b,b,2112,2015,Region 1,Second Round,2,2015 Kansas,7,2015 Wichita St.,65,78,-13,143,0
+20152209b,b,2209,2015,Region 4,Second Round,8,2015 Oregon,1,2015 Wisconsin,65,72,-7,137,0
+20152210b,b,2210,2015,Region 4,Second Round,4,2015 North Carolina,5,2015 Arkansas,87,78,9,165,1
+20152211b,b,2211,2015,Region 4,Second Round,14,2015 Georgia St.,6,2015 Xavier,67,75,-8,142,0
+20152212b,b,2212,2015,Region 4,Second Round,2,2015 Arizona,10,2015 Ohio St.,73,58,15,131,1
+20152309b,b,2309,2015,Region 2,Second Round,8,2015 NC St.,1,2015 Villanova,71,68,3,139,1
+20152310b,b,2310,2015,Region 2,Second Round,4,2015 Louisville,5,2015 Northern Iowa,66,53,13,119,1
+20152311b,b,2311,2015,Region 2,Second Round,3,2015 Oklahoma,11,2015 Dayton,72,66,6,138,1
+20152312b,b,2312,2015,Region 2,Second Round,2,2015 Virginia,7,2015 Michigan St.,54,60,-6,114,0
+20152409b,b,2409,2015,Region 3,Second Round,8,2015 San Diego St.,1,2015 Duke,49,68,-19,117,0
+20152410b,b,2410,2015,Region 3,Second Round,4,2015 Georgetown,5,2015 Utah,64,75,-11,139,0
+20152411b,b,2411,2015,Region 3,Second Round,14,2015 UAB,11,2015 UCLA,75,92,-17,167,0
+20152412b,b,2412,2015,Region 3,Second Round,2,2015 Gonzaga,7,2015 Iowa,87,68,19,155,1
+20153113b,b,3113,2015,Region 1,Sweet 16,5,2015 West Virginia,1,2015 Kentucky,39,78,-39,117,0
+20153113b,b,3113,2015,Region 1,Sweet 16,7,2015 Wichita St.,3,2015 Notre Dame,70,81,-11,151,0
+20153213b,b,3213,2015,Region 4,Sweet 16,4,2015 North Carolina,1,2015 Wisconsin,72,79,-7,151,0
+20153214b,b,3214,2015,Region 4,Sweet 16,2,2015 Arizona,6,2015 Xavier,68,60,8,128,1
+20153313b,b,3313,2015,Region 2,Sweet 16,4,2015 Louisville,8,2015 NC St.,75,65,10,140,1
+20153314b,b,3314,2015,Region 2,Sweet 16,7,2015 Michigan St.,3,2015 Oklahoma,62,58,4,120,1
+20153413b,b,3413,2015,Region 3,Sweet 16,5,2015 Utah,1,2015 Duke,57,63,-6,120,0
+20153414b,b,3414,2015,Region 3,Sweet 16,2,2015 Gonzaga,11,2015 UCLA,74,62,12,136,1
+20154115b,b,4115,2015,Region 1,Elite Eight,3,2015 Notre Dame,1,2015 Kentucky,66,68,-2,134,0
+20154215b,b,4215,2015,Region 4,Elite Eight,2,2015 Arizona,1,2015 Wisconsin,78,85,-7,163,0
+20154315b,b,4315,2015,Region 2,Elite Eight,7,2015 Michigan St.,4,2015 Louisville,76,70,6,146,1
+20154415b,b,4415,2015,Region 3,Elite Eight,2,2015 Gonzaga,1,2015 Duke,52,66,-14,118,0
+20155516b,b,5516,2015,Final Four,Final Four,1,2015 Wisconsin,1,2015 Kentucky,71,64,7,135,1
+20155517b,b,5517,2015,Final Four,Final Four,1,2015 Duke,7,2015 Michigan St.,81,61,20,142,1
+20155618b,b,5618,2015,Final Four,Championship,1,2015 Duke,1,2015 Wisconsin,68,63,5,131,1
+20161101b,b,1101,2016,Region 1,First Round,16,2016 Austin Peay,1,2016 Kansas,79,105,-26,184,0
+20161102b,b,1102,2016,Region 1,First Round,9,2016 Connecticut,8,2016 Colorado,74,67,7,141,1
+20161103b,b,1103,2016,Region 1,First Round,12,2016 South Dakota St.,5,2016 Maryland,74,79,-5,153,0
+20161104b,b,1104,2016,Region 1,First Round,13,2016 Hawaii,4,2016 California,77,66,11,143,1
+20161105b,b,1105,2016,Region 1,First Round,11,2016 Wichita St.,6,2016 Arizona,65,55,10,120,1
+20161106b,b,1106,2016,Region 1,First Round,14,2016 Buffalo,3,2016 Miami FL,72,79,-7,151,0
+20161107b,b,1107,2016,Region 1,First Round,10,2016 Temple,7,2016 Iowa,70,72,-2,142,0
+20161108b,b,1108,2016,Region 1,First Round,15,2016 UNC Asheville,2,2016 Villanova,56,86,-30,142,0
+20161201b,b,1201,2016,Region 4,First Round,16,2016 Holy Cross,1,2016 Oregon,52,91,-39,143,0
+20161202b,b,1202,2016,Region 4,First Round,9,2016 Cincinnati,8,2016 Saint Joseph's,76,78,-2,154,0
+20161203b,b,1203,2016,Region 4,First Round,12,2016 Yale,5,2016 Baylor,79,75,4,154,1
+20161204b,b,1204,2016,Region 4,First Round,13,2016 UNC Wilmington,4,2016 Duke,85,93,-8,178,0
+20161205b,b,1205,2016,Region 4,First Round,11,2016 Northern Iowa,6,2016 Texas,75,72,3,147,1
+20161206b,b,1206,2016,Region 4,First Round,14,2016 Green Bay,3,2016 Texas A&M,65,92,-27,157,0
+20161207b,b,1207,2016,Region 4,First Round,10,2016 VCU,7,2016 Oregon St.,75,67,8,142,1
+20161208b,b,1208,2016,Region 4,First Round,15,2016 Cal St. Bakersfield,2,2016 Oklahoma,68,82,-14,150,0
+20161301b,b,1301,2016,Region 2,First Round,16,2016 Florida Gulf Coast,1,2016 North Carolina,67,83,-16,150,0
+20161302b,b,1302,2016,Region 2,First Round,9,2016 Providence,8,2016 USC,70,69,1,139,1
+20161303b,b,1303,2016,Region 2,First Round,12,2016 Chattanooga,5,2016 Indiana,74,99,-25,173,0
+20161304b,b,1304,2016,Region 2,First Round,13,2016 Stony Brook,4,2016 Kentucky,57,85,-28,142,0
+20161305b,b,1305,2016,Region 2,First Round,11,2016 Michigan,6,2016 Notre Dame,63,70,-7,133,0
+20161306b,b,1306,2016,Region 2,First Round,14,2016 Stephen F. Austin,3,2016 West Virginia,70,56,14,126,1
+20161307b,b,1307,2016,Region 2,First Round,10,2016 Pittsburgh,7,2016 Wisconsin,43,47,-4,90,0
+20161308b,b,1308,2016,Region 2,First Round,15,2016 Weber St.,2,2016 Xavier,53,71,-18,124,0
+20161401b,b,1401,2016,Region 3,First Round,16,2016 Hampton,1,2016 Virginia,45,81,-36,126,0
+20161402b,b,1402,2016,Region 3,First Round,9,2016 Butler,8,2016 Texas Tech,71,61,10,132,1
+20161403b,b,1403,2016,Region 3,First Round,12,2016 Little Rock,5,2016 Purdue,85,83,2,168,1
+20161404b,b,1404,2016,Region 3,First Round,13,2016 Iona,4,2016 Iowa St.,81,94,-13,175,0
+20161405b,b,1405,2016,Region 3,First Round,11,2016 Gonzaga,6,2016 Seton Hall,68,52,16,120,1
+20161406b,b,1406,2016,Region 3,First Round,14,2016 Fresno St.,3,2016 Utah,69,80,-11,149,0
+20161407b,b,1407,2016,Region 3,First Round,10,2016 Syracuse,7,2016 Dayton,70,51,19,121,1
+20161408b,b,1408,2016,Region 3,First Round,15,2016 Middle Tennessee,2,2016 Michigan St.,90,81,9,171,1
+20162109b,b,2109,2016,Region 1,Second Round,9,2016 Connecticut,1,2016 Kansas,61,73,-12,134,0
+20162110b,b,2110,2016,Region 1,Second Round,13,2016 Hawaii,5,2016 Maryland,60,73,-13,133,0
+20162111b,b,2111,2016,Region 1,Second Round,3,2016 Miami FL,11,2016 Wichita St.,65,57,8,122,1
+20162112b,b,2112,2016,Region 1,Second Round,2,2016 Villanova,7,2016 Iowa,87,68,19,155,1
+20162209b,b,2209,2016,Region 4,Second Round,8,2016 Saint Joseph's,1,2016 Oregon,64,69,-5,133,0
+20162210b,b,2210,2016,Region 4,Second Round,4,2016 Duke,12,2016 Yale,71,64,7,135,1
+20162211b,b,2211,2016,Region 4,Second Round,3,2016 Texas A&M,11,2016 Northern Iowa,92,88,4,180,1
+20162212b,b,2212,2016,Region 4,Second Round,2,2016 Oklahoma,10,2016 VCU,85,81,4,166,1
+20162309b,b,2309,2016,Region 2,Second Round,9,2016 Providence,1,2016 North Carolina,66,85,-19,151,0
+20162310b,b,2310,2016,Region 2,Second Round,4,2016 Kentucky,5,2016 Indiana,67,73,-6,140,0
+20162311b,b,2311,2016,Region 2,Second Round,14,2016 Stephen F. Austin,6,2016 Notre Dame,75,76,-1,151,0
+20162312b,b,2312,2016,Region 2,Second Round,2,2016 Xavier,7,2016 Wisconsin,63,66,-3,129,0
+20162409b,b,2409,2016,Region 3,Second Round,9,2016 Butler,1,2016 Virginia,69,77,-8,146,0
+20162410b,b,2410,2016,Region 3,Second Round,4,2016 Iowa St.,12,2016 Little Rock,78,61,17,139,1
+20162411b,b,2411,2016,Region 3,Second Round,3,2016 Utah,11,2016 Gonzaga,59,82,-23,141,0
+20162412b,b,2412,2016,Region 3,Second Round,15,2016 Middle Tennessee,10,2016 Syracuse,50,75,-25,125,0
+20163113b,b,3113,2016,Region 1,Sweet 16,5,2016 Maryland,1,2016 Kansas,63,79,-16,142,0
+20163113b,b,3113,2016,Region 1,Sweet 16,2,2016 Villanova,3,2016 Miami FL,92,69,23,161,1
+20163213b,b,3213,2016,Region 4,Sweet 16,4,2016 Duke,1,2016 Oregon,68,82,-14,150,0
+20163214b,b,3214,2016,Region 4,Sweet 16,2,2016 Oklahoma,3,2016 Texas A&M,77,63,14,140,1
+20163313b,b,3313,2016,Region 2,Sweet 16,5,2016 Indiana,1,2016 North Carolina,86,101,-15,187,0
+20163314b,b,3314,2016,Region 2,Sweet 16,7,2016 Wisconsin,6,2016 Notre Dame,56,61,-5,117,0
+20163413b,b,3413,2016,Region 3,Sweet 16,4,2016 Iowa St.,1,2016 Virginia,71,84,-13,155,0
+20163414b,b,3414,2016,Region 3,Sweet 16,10,2016 Syracuse,11,2016 Gonzaga,63,60,3,123,1
+20164115b,b,4115,2016,Region 1,Elite Eight,2,2016 Villanova,1,2016 Kansas,64,59,5,123,1
+20164215b,b,4215,2016,Region 4,Elite Eight,2,2016 Oklahoma,1,2016 Oregon,80,68,12,148,1
+20164315b,b,4315,2016,Region 2,Elite Eight,6,2016 Notre Dame,1,2016 North Carolina,74,88,-14,162,0
+20164415b,b,4415,2016,Region 3,Elite Eight,10,2016 Syracuse,1,2016 Virginia,68,62,6,130,1
+20165516b,b,5516,2016,Final Four,Final Four,2,2016 Oklahoma,2,2016 Villanova,51,95,-44,146,0
+20165517b,b,5517,2016,Final Four,Final Four,10,2016 Syracuse,1,2016 North Carolina,66,83,-17,149,0
+20165618b,b,5618,2016,Final Four,Championship,1,2016 North Carolina,2,2016 Villanova,74,77,-3,151,0
+20171101b,b,1101,2017,Region 1,First Round,16,2017 Mount St. Mary's,1,2017 Villanova,56,76,-20,132,0
+20171102b,b,1102,2017,Region 1,First Round,9,2017 Virginia Tech,8,2017 Wisconsin,74,84,-10,158,0
+20171103b,b,1103,2017,Region 1,First Round,12,2017 UNC Wilmington,5,2017 Virginia,71,76,-5,147,0
+20171104b,b,1104,2017,Region 1,First Round,13,2017 East Tennessee St.,4,2017 Florida,65,80,-15,145,0
+20171105b,b,1105,2017,Region 1,First Round,11,2017 USC,6,2017 SMU,66,65,1,131,1
+20171106b,b,1106,2017,Region 1,First Round,14,2017 New Mexico St.,3,2017 Baylor,73,91,-18,164,0
+20171107b,b,1107,2017,Region 1,First Round,10,2017 Marquette,7,2017 South Carolina,73,93,-20,166,0
+20171108b,b,1108,2017,Region 1,First Round,15,2017 Troy,2,2017 Duke,65,87,-22,152,0
+20171201b,b,1201,2017,Region 4,First Round,16,2017 South Dakota St.,1,2017 Gonzaga,46,66,-20,112,0
+20171202b,b,1202,2017,Region 4,First Round,9,2017 Vanderbilt,8,2017 Northwestern,66,68,-2,134,0
+20171203b,b,1203,2017,Region 4,First Round,12,2017 Princeton,5,2017 Notre Dame,58,60,-2,118,0
+20171204b,b,1204,2017,Region 4,First Round,13,2017 Bucknell,4,2017 West Virginia,80,86,-6,166,0
+20171205b,b,1205,2017,Region 4,First Round,11,2017 Xavier,6,2017 Maryland,76,65,11,141,1
+20171206b,b,1206,2017,Region 4,First Round,14,2017 Florida Gulf Coast,3,2017 Florida St.,80,86,-6,166,0
+20171207b,b,1207,2017,Region 4,First Round,10,2017 VCU,7,2017 Saint Mary's,77,85,-8,162,0
+20171208b,b,1208,2017,Region 4,First Round,15,2017 North Dakota,2,2017 Arizona,82,100,-18,182,0
+20171301b,b,1301,2017,Region 2,First Round,16,2017 UC Davis,1,2017 Kansas,62,100,-38,162,0
+20171302b,b,1302,2017,Region 2,First Round,9,2017 Michigan St.,8,2017 Miami FL,78,58,20,136,1
+20171303b,b,1303,2017,Region 2,First Round,12,2017 Nevada,5,2017 Iowa St.,73,84,-11,157,0
+20171304b,b,1304,2017,Region 2,First Round,13,2017 Vermont,4,2017 Purdue,70,80,-10,150,0
+20171305b,b,1305,2017,Region 2,First Round,11,2017 Rhode Island,6,2017 Creighton,84,72,12,156,1
+20171306b,b,1306,2017,Region 2,First Round,14,2017 Iona,3,2017 Oregon,77,93,-16,170,0
+20171307b,b,1307,2017,Region 2,First Round,10,2017 Oklahoma St.,7,2017 Michigan,91,92,-1,183,0
+20171308b,b,1308,2017,Region 2,First Round,15,2017 Jacksonville St.,2,2017 Louisville,63,78,-15,141,0
+20171401b,b,1401,2017,Region 3,First Round,16,2017 Texas Southern,1,2017 North Carolina,64,103,-39,167,0
+20171402b,b,1402,2017,Region 3,First Round,9,2017 Seton Hall,8,2017 Arkansas,71,77,-6,148,0
+20171403b,b,1403,2017,Region 3,First Round,12,2017 Middle Tennessee,5,2017 Minnesota,81,72,9,153,1
+20171404b,b,1404,2017,Region 3,First Round,13,2017 Winthrop,4,2017 Butler,64,76,-12,140,0
+20171405b,b,1405,2017,Region 3,First Round,11,2017 Kansas St.,6,2017 Cincinnati,61,75,-14,136,0
+20171406b,b,1406,2017,Region 3,First Round,14,2017 Kent St.,3,2017 UCLA,80,97,-17,177,0
+20171407b,b,1407,2017,Region 3,First Round,10,2017 Wichita St.,7,2017 Dayton,64,58,6,122,1
+20171408b,b,1408,2017,Region 3,First Round,15,2017 Northern Kentucky,2,2017 Kentucky,70,79,-9,149,0
+20172109b,b,2109,2017,Region 1,Second Round,8,2017 Wisconsin,1,2017 Villanova,65,62,3,127,1
+20172110b,b,2110,2017,Region 1,Second Round,4,2017 Florida,5,2017 Virginia,65,39,26,104,1
+20172111b,b,2111,2017,Region 1,Second Round,3,2017 Baylor,11,2017 USC,82,78,4,160,1
+20172112b,b,2112,2017,Region 1,Second Round,2,2017 Duke,7,2017 South Carolina,81,88,-7,169,0
+20172209b,b,2209,2017,Region 4,Second Round,8,2017 Northwestern,1,2017 Gonzaga,73,79,-6,152,0
+20172210b,b,2210,2017,Region 4,Second Round,4,2017 West Virginia,5,2017 Notre Dame,83,71,12,154,1
+20172211b,b,2211,2017,Region 4,Second Round,3,2017 Florida St.,11,2017 Xavier,66,91,-25,157,0
+20172212b,b,2212,2017,Region 4,Second Round,2,2017 Arizona,7,2017 Saint Mary's,69,60,9,129,1
+20172309b,b,2309,2017,Region 2,Second Round,9,2017 Michigan St.,1,2017 Kansas,70,90,-20,160,0
+20172310b,b,2310,2017,Region 2,Second Round,4,2017 Purdue,5,2017 Iowa St.,80,76,4,156,1
+20172311b,b,2311,2017,Region 2,Second Round,3,2017 Oregon,11,2017 Rhode Island,75,72,3,147,1
+20172312b,b,2312,2017,Region 2,Second Round,2,2017 Louisville,7,2017 Michigan,69,73,-4,142,0
+20172409b,b,2409,2017,Region 3,Second Round,8,2017 Arkansas,1,2017 North Carolina,65,72,-7,137,0
+20172410b,b,2410,2017,Region 3,Second Round,4,2017 Butler,12,2017 Middle Tennessee,74,65,9,139,1
+20172411b,b,2411,2017,Region 3,Second Round,3,2017 UCLA,6,2017 Cincinnati,79,67,12,146,1
+20172412b,b,2412,2017,Region 3,Second Round,2,2017 Kentucky,10,2017 Wichita St.,65,62,3,127,1
+20173113b,b,3113,2017,Region 1,Sweet 16,4,2017 Florida,8,2017 Wisconsin,84,83,1,167,1
+20173113b,b,3113,2017,Region 1,Sweet 16,7,2017 South Carolina,3,2017 Baylor,70,50,20,120,1
+20173213b,b,3213,2017,Region 4,Sweet 16,4,2017 West Virginia,1,2017 Gonzaga,58,61,-3,119,0
+20173214b,b,3214,2017,Region 4,Sweet 16,2,2017 Arizona,11,2017 Xavier,71,73,-2,144,0
+20173313b,b,3313,2017,Region 2,Sweet 16,4,2017 Purdue,1,2017 Kansas,66,98,-32,164,0
+20173314b,b,3314,2017,Region 2,Sweet 16,7,2017 Michigan,3,2017 Oregon,68,69,-1,137,0
+20173413b,b,3413,2017,Region 3,Sweet 16,4,2017 Butler,1,2017 North Carolina,80,92,-12,172,0
+20173414b,b,3414,2017,Region 3,Sweet 16,2,2017 Kentucky,3,2017 UCLA,86,75,11,161,1
+20174115b,b,4115,2017,Region 1,Elite Eight,7,2017 South Carolina,4,2017 Florida,77,70,7,147,1
+20174215b,b,4215,2017,Region 4,Elite Eight,11,2017 Xavier,1,2017 Gonzaga,59,83,-24,142,0
+20174315b,b,4315,2017,Region 2,Elite Eight,3,2017 Oregon,1,2017 Kansas,74,60,14,134,1
+20174415b,b,4415,2017,Region 3,Elite Eight,2,2017 Kentucky,1,2017 North Carolina,73,75,-2,148,0
+20175516b,b,5516,2017,Final Four,Final Four,1,2017 Gonzaga,7,2017 South Carolina,77,73,4,150,1
+20175517b,b,5517,2017,Final Four,Final Four,1,2017 North Carolina,3,2017 Oregon,77,76,1,153,1
+20175618b,b,5618,2017,Final Four,Championship,1,2017 North Carolina,1,2017 Gonzaga,71,65,6,136,1
+20181102b,b,1102,2018,Region 1,First Round,9,2018 Kansas St.,8,2018 Creighton,69,59,10,128,1
+20181103b,b,1103,2018,Region 1,First Round,12,2018 Davidson,5,2018 Kentucky,73,78,-5,151,0
+20181104b,b,1104,2018,Region 1,First Round,13,2018 Buffalo,4,2018 Arizona,89,68,21,157,1
+20181105b,b,1105,2018,Region 1,First Round,11,2018 Loyola Chicago,6,2018 Miami FL,64,62,2,126,1
+20181106b,b,1106,2018,Region 1,First Round,14,2018 Wright St.,3,2018 Tennessee,47,73,-26,120,0
+20181107b,b,1107,2018,Region 1,First Round,10,2018 Texas,7,2018 Nevada,83,87,-4,170,0
+20181108b,b,1108,2018,Region 1,First Round,15,2018 Georgia St.,2,2018 Cincinnati,53,68,-15,121,0
+20181201b,b,1201,2018,Region 4,First Round,16,2018 Texas Southern,1,2018 Xavier,83,102,-19,185,0
+20181202b,b,1202,2018,Region 4,First Round,9,2018 Florida St.,8,2018 Missouri,67,54,13,121,1
+20181203b,b,1203,2018,Region 4,First Round,12,2018 South Dakota St.,5,2018 Ohio St.,73,81,-8,154,0
+20181204b,b,1204,2018,Region 4,First Round,13,2018 UNC Greensboro,4,2018 Gonzaga,64,68,-4,132,0
+20181205b,b,1205,2018,Region 4,First Round,11,2018 San Diego St.,6,2018 Houston,65,67,-2,132,0
+20181206b,b,1206,2018,Region 4,First Round,14,2018 Montana,3,2018 Michigan,47,61,-14,108,0
+20181207b,b,1207,2018,Region 4,First Round,10,2018 Providence,7,2018 Texas A&M,69,73,-4,142,0
+20181208b,b,1208,2018,Region 4,First Round,15,2018 Lipscomb,2,2018 North Carolina,66,84,-18,150,0
+20181301b,b,1301,2018,Region 2,First Round,16,2018 Radford,1,2018 Villanova,61,87,-26,148,0
+20181302b,b,1302,2018,Region 2,First Round,9,2018 Alabama,8,2018 Virginia Tech,86,83,3,169,1
+20181303b,b,1303,2018,Region 2,First Round,12,2018 Murray St.,5,2018 West Virginia,68,85,-17,153,0
+20181304b,b,1304,2018,Region 2,First Round,13,2018 Marshall,4,2018 Wichita St.,81,75,6,156,1
+20181305b,b,1305,2018,Region 2,First Round,11,2018 St. Bonaventure,6,2018 Florida,62,77,-15,139,0
+20181306b,b,1306,2018,Region 2,First Round,14,2018 Stephen F. Austin,3,2018 Texas Tech,60,70,-10,130,0
+20181307b,b,1307,2018,Region 2,First Round,10,2018 Butler,7,2018 Arkansas,79,62,17,141,1
+20181308b,b,1308,2018,Region 2,First Round,15,2018 Cal St. Fullerton,2,2018 Purdue,48,74,-26,122,0
+20181401b,b,1401,2018,Region 3,First Round,16,2018 Penn,1,2018 Kansas,60,76,-16,136,0
+20181402b,b,1402,2018,Region 3,First Round,9,2018 NC St.,8,2018 Seton Hall,83,94,-11,177,0
+20181403b,b,1403,2018,Region 3,First Round,12,2018 New Mexico St.,5,2018 Clemson,68,79,-11,147,0
+20181404b,b,1404,2018,Region 3,First Round,13,2018 Charleston,4,2018 Auburn,58,62,-4,120,0
+20181405b,b,1405,2018,Region 3,First Round,11,2018 Syracuse,6,2018 TCU,57,52,5,109,1
+20181406b,b,1406,2018,Region 3,First Round,14,2018 Bucknell,3,2018 Michigan St.,78,82,-4,160,0
+20181407b,b,1407,2018,Region 3,First Round,10,2018 Oklahoma,7,2018 Rhode Island,78,83,-5,161,0
+20181408b,b,1408,2018,Region 3,First Round,15,2018 Iona,2,2018 Duke,67,89,-22,156,0
+20182109b,b,2109,2018,Region 1,Second Round,9,2018 Kansas St.,16,2018 UMBC,50,43,7,93,1
+20182110b,b,2110,2018,Region 1,Second Round,13,2018 Buffalo,5,2018 Kentucky,75,95,-20,170,0
+20182111b,b,2111,2018,Region 1,Second Round,3,2018 Tennessee,11,2018 Loyola Chicago,62,63,-1,125,0
+20182112b,b,2112,2018,Region 1,Second Round,2,2018 Cincinnati,7,2018 Nevada,73,75,-2,148,0
+20182209b,b,2209,2018,Region 4,Second Round,9,2018 Florida St.,1,2018 Xavier,75,70,5,145,1
+20182210b,b,2210,2018,Region 4,Second Round,4,2018 Gonzaga,5,2018 Ohio St.,90,84,6,174,1
+20182211b,b,2211,2018,Region 4,Second Round,3,2018 Michigan,6,2018 Houston,64,63,1,127,1
+20182212b,b,2212,2018,Region 4,Second Round,2,2018 North Carolina,7,2018 Texas A&M,65,86,-21,151,0
+20182309b,b,2309,2018,Region 2,Second Round,9,2018 Alabama,1,2018 Villanova,58,81,-23,139,0
+20182310b,b,2310,2018,Region 2,Second Round,13,2018 Marshall,5,2018 West Virginia,71,94,-23,165,0
+20182311b,b,2311,2018,Region 2,Second Round,3,2018 Texas Tech,6,2018 Florida,69,66,3,135,1
+20182312b,b,2312,2018,Region 2,Second Round,2,2018 Purdue,10,2018 Butler,76,73,3,149,1
+20182409b,b,2409,2018,Region 3,Second Round,8,2018 Seton Hall,1,2018 Kansas,79,83,-4,162,0
+20182410b,b,2410,2018,Region 3,Second Round,4,2018 Auburn,5,2018 Clemson,53,84,-31,137,0
+20182411b,b,2411,2018,Region 3,Second Round,3,2018 Michigan St.,11,2018 Syracuse,53,55,-2,108,0
+20182412b,b,2412,2018,Region 3,Second Round,2,2018 Duke,7,2018 Rhode Island,87,62,25,149,1
+20183113b,b,3113,2018,Region 1,Sweet 16,5,2018 Kentucky,9,2018 Kansas St.,58,61,-3,119,0
+20183113b,b,3113,2018,Region 1,Sweet 16,7,2018 Nevada,11,2018 Loyola Chicago,68,69,-1,137,0
+20183213b,b,3213,2018,Region 4,Sweet 16,4,2018 Gonzaga,9,2018 Florida St.,60,75,-15,135,0
+20183214b,b,3214,2018,Region 4,Sweet 16,7,2018 Texas A&M,3,2018 Michigan,72,99,-27,171,0
+20183313b,b,3313,2018,Region 2,Sweet 16,5,2018 West Virginia,1,2018 Villanova,78,90,-12,168,0
+20183314b,b,3314,2018,Region 2,Sweet 16,2,2018 Purdue,3,2018 Texas Tech,65,78,-13,143,0
+20183413b,b,3413,2018,Region 3,Sweet 16,5,2018 Clemson,1,2018 Kansas,76,80,-4,156,0
+20183414b,b,3414,2018,Region 3,Sweet 16,2,2018 Duke,11,2018 Syracuse,69,65,4,134,1
+20184115b,b,4115,2018,Region 1,Elite Eight,11,2018 Loyola Chicago,9,2018 Kansas St.,78,62,16,140,1
+20184215b,b,4215,2018,Region 4,Elite Eight,3,2018 Michigan,9,2018 Florida St.,58,54,4,112,1
+20184315b,b,4315,2018,Region 2,Elite Eight,3,2018 Texas Tech,1,2018 Villanova,59,71,-12,130,0
+20184415b,b,4415,2018,Region 3,Elite Eight,2,2018 Duke,1,2018 Kansas,81,85,-4,166,0
+20185516b,b,5516,2018,Final Four,Final Four,3,2018 Michigan,11,2018 Loyola Chicago,69,57,12,126,1
+20185517b,b,5517,2018,Final Four,Final Four,1,2018 Kansas,1,2018 Villanova,79,95,-16,174,0
+20185618b,b,5618,2018,Final Four,Championship,1,2018 Villanova,3,2018 Michigan,79,62,17,141,1
+20191101b,b,1101,2019,Region 1,First Round,16,2019 North Dakota St.,1,2019 Duke,62,85,-23,147,0
+20191102b,b,1102,2019,Region 1,First Round,9,2019 UCF,8,2019 VCU,73,58,15,131,1
+20191103b,b,1103,2019,Region 1,First Round,12,2019 Liberty,5,2019 Mississippi St.,80,76,4,156,1
+20191104b,b,1104,2019,Region 1,First Round,13,2019 Saint Louis,4,2019 Virginia Tech,52,66,-14,118,0
+20191105b,b,1105,2019,Region 1,First Round,11,2019 Belmont,6,2019 Maryland,77,79,-2,156,0
+20191106b,b,1106,2019,Region 1,First Round,14,2019 Yale,3,2019 LSU,74,79,-5,153,0
+20191107b,b,1107,2019,Region 1,First Round,10,2019 Minnesota,7,2019 Louisville,86,76,10,162,1
+20191108b,b,1108,2019,Region 1,First Round,15,2019 Bradley,2,2019 Michigan St.,65,76,-11,141,0
+20191201b,b,1201,2019,Region 4,First Round,16,2019 Fairleigh Dickinson,1,2019 Gonzaga,49,87,-38,136,0
+20191202b,b,1202,2019,Region 4,First Round,9,2019 Baylor,8,2019 Syracuse,78,69,9,147,1
+20191203b,b,1203,2019,Region 4,First Round,12,2019 Murray St.,5,2019 Marquette,83,64,19,147,1
+20191204b,b,1204,2019,Region 4,First Round,13,2019 Vermont,4,2019 Florida St.,79,76,3,155,1
+20191205b,b,1205,2019,Region 4,First Round,11,2019 Arizona St.,6,2019 Buffalo,74,91,-17,165,0
+20191206b,b,1206,2019,Region 4,First Round,14,2019 Northern Kentucky,3,2019 Texas Tech,57,72,-15,129,0
+20191207b,b,1207,2019,Region 4,First Round,10,2019 Florida,7,2019 Nevada,70,61,9,131,1
+20191208b,b,1208,2019,Region 4,First Round,15,2019 Montana,2,2019 Michigan,55,74,-19,129,0
+20191301b,b,1301,2019,Region 2,First Round,16,2019 Gardner Webb,1,2019 Virginia,56,71,-15,127,0
+20191302b,b,1302,2019,Region 2,First Round,9,2019 Oklahoma,8,2019 Mississippi,95,72,23,167,1
+20191303b,b,1303,2019,Region 2,First Round,12,2019 Oregon,5,2019 Wisconsin,72,54,18,126,1
+20191304b,b,1304,2019,Region 2,First Round,13,2019 UC Irvine,4,2019 Kansas St.,70,64,6,134,1
+20191305b,b,1305,2019,Region 2,First Round,11,2019 Saint Mary's,6,2019 Villanova,57,61,-4,118,0
+20191306b,b,1306,2019,Region 2,First Round,14,2019 Old Dominion,3,2019 Purdue,48,61,-13,109,0
+20191307b,b,1307,2019,Region 2,First Round,10,2019 Iowa,7,2019 Cincinnati,79,72,7,151,1
+20191308b,b,1308,2019,Region 2,First Round,15,2019 Colgate,2,2019 Tennessee,70,77,-7,147,0
+20191401b,b,1401,2019,Region 3,First Round,16,2019 Iona,1,2019 North Carolina,73,88,-15,161,0
+20191402b,b,1402,2019,Region 3,First Round,9,2019 Washington,8,2019 Utah St.,78,61,17,139,1
+20191403b,b,1403,2019,Region 3,First Round,12,2019 New Mexico St.,5,2019 Auburn,77,78,-1,155,0
+20191404b,b,1404,2019,Region 3,First Round,13,2019 Northeastern,4,2019 Kansas,53,87,-34,140,0
+20191405b,b,1405,2019,Region 3,First Round,11,2019 Ohio St.,6,2019 Iowa St.,62,59,3,121,1
+20191406b,b,1406,2019,Region 3,First Round,14,2019 Georgia St.,3,2019 Houston,55,84,-29,139,0
+20191407b,b,1407,2019,Region 3,First Round,10,2019 Seton Hall,7,2019 Wofford,68,84,-16,152,0
+20191408b,b,1408,2019,Region 3,First Round,15,2019 Abilene Christian,2,2019 Kentucky,44,79,-35,123,0
+20192109b,b,2109,2019,Region 1,Second Round,9,2019 UCF,1,2019 Duke,76,77,-1,153,0
+20192110b,b,2110,2019,Region 1,Second Round,4,2019 Virginia Tech,12,2019 Liberty,67,58,9,125,1
+20192111b,b,2111,2019,Region 1,Second Round,3,2019 LSU,6,2019 Maryland,69,67,2,136,1
+20192112b,b,2112,2019,Region 1,Second Round,2,2019 Michigan St.,10,2019 Minnesota,70,50,20,120,1
+20192209b,b,2209,2019,Region 4,Second Round,9,2019 Baylor,1,2019 Gonzaga,71,83,-12,154,0
+20192210b,b,2210,2019,Region 4,Second Round,4,2019 Florida St.,12,2019 Murray St.,90,62,28,152,1
+20192211b,b,2211,2019,Region 4,Second Round,3,2019 Texas Tech,6,2019 Buffalo,78,58,20,136,1
+20192212b,b,2212,2019,Region 4,Second Round,2,2019 Michigan,10,2019 Florida,64,49,15,113,1
+20192309b,b,2309,2019,Region 2,Second Round,9,2019 Oklahoma,1,2019 Virginia,51,63,-12,114,0
+20192310b,b,2310,2019,Region 2,Second Round,13,2019 UC Irvine,12,2019 Oregon,54,73,-19,127,0
+20192311b,b,2311,2019,Region 2,Second Round,3,2019 Purdue,6,2019 Villanova,87,61,26,148,1
+20192312b,b,2312,2019,Region 2,Second Round,2,2019 Tennessee,10,2019 Iowa,83,77,6,160,1
+20192409b,b,2409,2019,Region 3,Second Round,9,2019 Washington,1,2019 North Carolina,59,81,-22,140,0
+20192410b,b,2410,2019,Region 3,Second Round,4,2019 Kansas,5,2019 Auburn,75,89,-14,164,0
+20192411b,b,2411,2019,Region 3,Second Round,3,2019 Houston,11,2019 Ohio St.,74,59,15,133,1
+20192412b,b,2412,2019,Region 3,Second Round,2,2019 Kentucky,7,2019 Wofford,62,56,6,118,1
+20193113b,b,3113,2019,Region 1,Sweet 16,4,2019 Virginia Tech,1,2019 Duke,73,75,-2,148,0
+20193113b,b,3113,2019,Region 1,Sweet 16,2,2019 Michigan St.,3,2019 LSU,80,63,17,143,1
+20193213b,b,3213,2019,Region 4,Sweet 16,4,2019 Florida St.,1,2019 Gonzaga,58,72,-14,130,0
+20193214b,b,3214,2019,Region 4,Sweet 16,2,2019 Michigan,3,2019 Texas Tech,44,63,-19,107,0
+20193313b,b,3313,2019,Region 2,Sweet 16,12,2019 Oregon,1,2019 Virginia,49,53,-4,102,0
+20193314b,b,3314,2019,Region 2,Sweet 16,2,2019 Tennessee,3,2019 Purdue,94,99,-5,193,0
+20193413b,b,3413,2019,Region 3,Sweet 16,5,2019 Auburn,1,2019 North Carolina,97,80,17,177,1
+20193414b,b,3414,2019,Region 3,Sweet 16,2,2019 Kentucky,3,2019 Houston,62,58,4,120,1
+20194115b,b,4115,2019,Region 1,Elite Eight,2,2019 Michigan St.,1,2019 Duke,68,67,1,135,1
+20194215b,b,4215,2019,Region 4,Elite Eight,3,2019 Texas Tech,1,2019 Gonzaga,75,69,6,144,1
+20194315b,b,4315,2019,Region 2,Elite Eight,3,2019 Purdue,1,2019 Virginia,75,80,-5,155,0
+20194415b,b,4415,2019,Region 3,Elite Eight,2,2019 Kentucky,5,2019 Auburn,71,77,-6,148,0
+20195516b,b,5516,2019,Final Four,Final Four,3,2019 Texas Tech,2,2019 Michigan St.,61,51,10,112,1
+20195517b,b,5517,2019,Final Four,Final Four,5,2019 Auburn,1,2019 Virginia,62,63,-1,125,0
+20195618b,b,5618,2019,Final Four,Championship,1,2019 Virginia,3,2019 Texas Tech,85,77,8,162,1
+20211101b,b,1101,2021,Region 1,First Round,16,2021 Norfolk St.,1,2021 Gonzaga,55,98,-43,153,0
+20211102b,b,1102,2021,Region 1,First Round,9,2021 Missouri,8,2021 Oklahoma,68,72,-4,140,0
+20211103b,b,1103,2021,Region 1,First Round,12,2021 UC Santa Barbara,5,2021 Creighton,62,63,-1,125,0
+20211104b,b,1104,2021,Region 1,First Round,13,2021 Ohio,4,2021 Virginia,62,58,4,120,1
+20211105b,b,1105,2021,Region 1,First Round,11,2021 Drake,6,2021 USC,56,72,-16,128,0
+20211106b,b,1106,2021,Region 1,First Round,14,2021 Eastern Washington,3,2021 Kansas,84,83,1,167,1
+20211108b,b,1108,2021,Region 1,First Round,15,2021 Grand Canyon,2,2021 Iowa,74,86,-12,160,0
+20211201b,b,1201,2021,Region 4,First Round,16,2021 Texas Southern,1,2021 Michigan,66,82,-16,148,0
+20211202b,b,1202,2021,Region 4,First Round,9,2021 St. Bonaventure,8,2021 LSU,61,76,-15,137,0
+20211203b,b,1203,2021,Region 4,First Round,12,2021 Georgetown,5,2021 Colorado,73,96,-23,169,0
+20211204b,b,1204,2021,Region 4,First Round,13,2021 UNC Greensboro,4,2021 Florida St.,54,64,-10,118,0
+20211205b,b,1205,2021,Region 4,First Round,11,2021 UCLA,6,2021 BYU,73,62,11,135,1
+20211206b,b,1206,2021,Region 4,First Round,14,2021 Abilene Christian,3,2021 Texas,53,52,1,105,1
+20211207b,b,1207,2021,Region 4,First Round,10,2021 Maryland,7,2021 Connecticut,63,54,9,117,1
+20211208b,b,1208,2021,Region 4,First Round,15,2021 Iona,2,2021 Alabama,55,68,-13,123,0
+20211301b,b,1301,2021,Region 2,First Round,16,2021 Hartford,1,2021 Baylor,55,79,-24,134,0
+20211302b,b,1302,2021,Region 2,First Round,9,2021 Wisconsin,8,2021 North Carolina,85,62,23,147,1
+20211303b,b,1303,2021,Region 2,First Round,12,2021 Winthrop,5,2021 Villanova,63,73,-10,136,0
+20211304b,b,1304,2021,Region 2,First Round,13,2021 North Texas,4,2021 Purdue,78,69,9,147,1
+20211305b,b,1305,2021,Region 2,First Round,11,2021 Utah St.,6,2021 Texas Tech,53,65,-12,118,0
+20211306b,b,1306,2021,Region 2,First Round,14,2021 Colgate,3,2021 Arkansas,68,85,-17,153,0
+20211307b,b,1307,2021,Region 2,First Round,10,2021 Virginia Tech,7,2021 Florida,70,75,-5,145,0
+20211308b,b,1308,2021,Region 2,First Round,15,2021 Oral Roberts,2,2021 Ohio St.,75,72,3,147,1
+20211401b,b,1401,2021,Region 3,First Round,16,2021 Drexel,1,2021 Illinois,49,78,-29,127,0
+20211402b,b,1402,2021,Region 3,First Round,9,2021 Georgia Tech,8,2021 Loyola Chicago,60,71,-11,131,0
+20211403b,b,1403,2021,Region 3,First Round,12,2021 Oregon St.,5,2021 Tennessee,70,56,14,126,1
+20211404b,b,1404,2021,Region 3,First Round,13,2021 Liberty,4,2021 Oklahoma St.,60,69,-9,129,0
+20211405b,b,1405,2021,Region 3,First Round,11,2021 Syracuse,6,2021 San Diego St.,78,62,16,140,1
+20211406b,b,1406,2021,Region 3,First Round,14,2021 Morehead St.,3,2021 West Virginia,67,84,-17,151,0
+20211407b,b,1407,2021,Region 3,First Round,10,2021 Rutgers,7,2021 Clemson,60,56,4,116,1
+20211408b,b,1408,2021,Region 3,First Round,15,2021 Cleveland St.,2,2021 Houston,56,87,-31,143,0
+20212109b,b,2109,2021,Region 1,Second Round,8,2021 Oklahoma,1,2021 Gonzaga,71,87,-16,158,0
+20212110b,b,2110,2021,Region 1,Second Round,13,2021 Ohio,5,2021 Creighton,58,72,-14,130,0
+20212111b,b,2111,2021,Region 1,Second Round,3,2021 Kansas,6,2021 USC,51,85,-34,136,0
+20212112b,b,2112,2021,Region 1,Second Round,2,2021 Iowa,7,2021 Oregon,80,95,-15,175,0
+20212209b,b,2209,2021,Region 4,Second Round,8,2021 LSU,1,2021 Michigan,76,86,-10,162,0
+20212210b,b,2210,2021,Region 4,Second Round,4,2021 Florida St.,5,2021 Colorado,71,53,18,124,1
+20212211b,b,2211,2021,Region 4,Second Round,14,2021 Abilene Christian,11,2021 UCLA,47,67,-20,114,0
+20212212b,b,2212,2021,Region 4,Second Round,2,2021 Alabama,10,2021 Maryland,96,77,19,173,1
+20212309b,b,2309,2021,Region 2,Second Round,9,2021 Wisconsin,1,2021 Baylor,63,76,-13,139,0
+20212310b,b,2310,2021,Region 2,Second Round,13,2021 North Texas,5,2021 Villanova,61,84,-23,145,0
+20212311b,b,2311,2021,Region 2,Second Round,3,2021 Arkansas,6,2021 Texas Tech,68,66,2,134,1
+20212312b,b,2312,2021,Region 2,Second Round,15,2021 Oral Roberts,7,2021 Florida,81,78,3,159,1
+20212409b,b,2409,2021,Region 3,Second Round,8,2021 Loyola Chicago,1,2021 Illinois,71,58,13,129,1
+20212410b,b,2410,2021,Region 3,Second Round,4,2021 Oklahoma St.,12,2021 Oregon St.,70,80,-10,150,0
+20212411b,b,2411,2021,Region 3,Second Round,3,2021 West Virginia,11,2021 Syracuse,72,75,-3,147,0
+20212412b,b,2412,2021,Region 3,Second Round,2,2021 Houston,10,2021 Rutgers,63,60,3,123,1
+20213113b,b,3113,2021,Region 1,Sweet 16,5,2021 Creighton,1,2021 Gonzaga,65,83,-18,148,0
+20213113b,b,3113,2021,Region 1,Sweet 16,7,2021 Oregon,6,2021 USC,68,82,-14,150,0
+20213213b,b,3213,2021,Region 4,Sweet 16,4,2021 Florida St.,1,2021 Michigan,58,76,-18,134,0
+20213214b,b,3214,2021,Region 4,Sweet 16,2,2021 Alabama,11,2021 UCLA,78,88,-10,166,0
+20213313b,b,3313,2021,Region 2,Sweet 16,5,2021 Villanova,1,2021 Baylor,51,62,-11,113,0
+20213314b,b,3314,2021,Region 2,Sweet 16,15,2021 Oral Roberts,3,2021 Arkansas,70,72,-2,142,0
+20213413b,b,3413,2021,Region 3,Sweet 16,12,2021 Oregon St.,8,2021 Loyola Chicago,65,58,7,123,1
+20213414b,b,3414,2021,Region 3,Sweet 16,2,2021 Houston,11,2021 Syracuse,62,46,16,108,1
+20214115b,b,4115,2021,Region 1,Elite Eight,6,2021 USC,1,2021 Gonzaga,66,85,-19,151,0
+20214215b,b,4215,2021,Region 4,Elite Eight,11,2021 UCLA,1,2021 Michigan,51,49,2,100,1
+20214315b,b,4315,2021,Region 2,Elite Eight,3,2021 Arkansas,1,2021 Baylor,72,81,-9,153,0
+20214415b,b,4415,2021,Region 3,Elite Eight,2,2021 Houston,12,2021 Oregon St.,67,61,6,128,1
+20215516b,b,5516,2021,Final Four,Final Four,11,2021 UCLA,1,2021 Gonzaga,90,93,-3,183,0
+20215517b,b,5517,2021,Final Four,Final Four,2,2021 Houston,1,2021 Baylor,59,78,-19,137,0
+20215618b,b,5618,2021,Final Four,Championship,1,2021 Baylor,1,2021 Gonzaga,86,70,16,156,1
+20221101b,b,1101,2022,Region 1,First Round,16,2022 Georgia St.,1,2022 Gonzaga,72,93,-21,165,0
+20221102b,b,1102,2022,Region 1,First Round,9,2022 Memphis,8,2022 Boise St.,64,53,11,117,1
+20221103b,b,1103,2022,Region 1,First Round,12,2022 New Mexico St.,5,2022 Connecticut,70,63,7,133,1
+20221104b,b,1104,2022,Region 1,First Round,13,2022 Vermont,4,2022 Arkansas,71,75,-4,146,0
+20221105b,b,1105,2022,Region 1,First Round,11,2022 Notre Dame,6,2022 Alabama,78,64,14,142,1
+20221106b,b,1106,2022,Region 1,First Round,14,2022 Montana St.,3,2022 Texas Tech,62,97,-35,159,0
+20221107b,b,1107,2022,Region 1,First Round,10,2022 Davidson,7,2022 Michigan St.,73,74,-1,147,0
+20221108b,b,1108,2022,Region 1,First Round,15,2022 Cal St. Fullerton,2,2022 Duke,61,78,-17,139,0
+20221201b,b,1201,2022,Region 4,First Round,16,2022 Norfolk St.,1,2022 Baylor,49,85,-36,134,0
+20221202b,b,1202,2022,Region 4,First Round,9,2022 Marquette,8,2022 North Carolina,63,95,-32,158,0
+20221203b,b,1203,2022,Region 4,First Round,12,2022 Indiana,5,2022 Saint Mary's,53,82,-29,135,0
+20221204b,b,1204,2022,Region 4,First Round,13,2022 Akron,4,2022 UCLA,53,57,-4,110,0
+20221205b,b,1205,2022,Region 4,First Round,11,2022 Virginia Tech,6,2022 Texas,73,81,-8,154,0
+20221206b,b,1206,2022,Region 4,First Round,14,2022 Yale,3,2022 Purdue,56,78,-22,134,0
+20221207b,b,1207,2022,Region 4,First Round,10,2022 San Francisco,7,2022 Murray St.,87,92,-5,179,0
+20221208b,b,1208,2022,Region 4,First Round,15,2022 Saint Peter's,2,2022 Kentucky,85,79,6,164,1
+20221301b,b,1301,2022,Region 2,First Round,16,2022 Wright St.,1,2022 Arizona,70,87,-17,157,0
+20221302b,b,1302,2022,Region 2,First Round,9,2022 TCU,8,2022 Seton Hall,69,42,27,111,1
+20221303b,b,1303,2022,Region 2,First Round,12,2022 UAB,5,2022 Houston,68,82,-14,150,0
+20221304b,b,1304,2022,Region 2,First Round,13,2022 Chattanooga,4,2022 Illinois,53,54,-1,107,0
+20221305b,b,1305,2022,Region 2,First Round,11,2022 Michigan,6,2022 Colorado St.,75,63,12,138,1
+20221306b,b,1306,2022,Region 2,First Round,14,2022 Longwood,3,2022 Tennessee,56,88,-32,144,0
+20221307b,b,1307,2022,Region 2,First Round,10,2022 Loyola Chicago,7,2022 Ohio St.,41,54,-13,95,0
+20221308b,b,1308,2022,Region 2,First Round,15,2022 Delaware,2,2022 Villanova,60,80,-20,140,0
+20221401b,b,1401,2022,Region 3,First Round,16,2022 Texas Southern,1,2022 Kansas,56,83,-27,139,0
+20221402b,b,1402,2022,Region 3,First Round,9,2022 Creighton,8,2022 San Diego St.,72,69,3,141,1
+20221403b,b,1403,2022,Region 3,First Round,12,2022 Richmond,5,2022 Iowa,67,63,4,130,1
+20221404b,b,1404,2022,Region 3,First Round,13,2022 South Dakota St.,4,2022 Providence,57,66,-9,123,0
+20221405b,b,1405,2022,Region 3,First Round,11,2022 Iowa St.,6,2022 LSU,59,54,5,113,1
+20221406b,b,1406,2022,Region 3,First Round,14,2022 Colgate,3,2022 Wisconsin,60,67,-7,127,0
+20221407b,b,1407,2022,Region 3,First Round,10,2022 Miami FL,7,2022 USC,68,66,2,134,1
+20221408b,b,1408,2022,Region 3,First Round,15,2022 Jacksonville St.,2,2022 Auburn,61,80,-19,141,0
+20222109b,b,2109,2022,Region 1,Second Round,9,2022 Memphis,1,2022 Gonzaga,78,82,-4,160,0
+20222110b,b,2110,2022,Region 1,Second Round,4,2022 Arkansas,12,2022 New Mexico St.,53,48,5,101,1
+20222111b,b,2111,2022,Region 1,Second Round,3,2022 Texas Tech,11,2022 Notre Dame,59,53,6,112,1
+20222112b,b,2112,2022,Region 1,Second Round,2,2022 Duke,7,2022 Michigan St.,85,76,9,161,1
+20222209b,b,2209,2022,Region 4,Second Round,8,2022 North Carolina,1,2022 Baylor,93,86,7,179,1
+20222210b,b,2210,2022,Region 4,Second Round,4,2022 UCLA,5,2022 Saint Mary's,72,56,16,128,1
+20222211b,b,2211,2022,Region 4,Second Round,3,2022 Purdue,6,2022 Texas,81,71,10,152,1
+20222212b,b,2212,2022,Region 4,Second Round,15,2022 Saint Peter's,7,2022 Murray St.,70,60,10,130,1
+20222309b,b,2309,2022,Region 2,Second Round,9,2022 TCU,1,2022 Arizona,80,85,-5,165,0
+20222310b,b,2310,2022,Region 2,Second Round,4,2022 Illinois,5,2022 Houston,53,68,-15,121,0
+20222311b,b,2311,2022,Region 2,Second Round,3,2022 Tennessee,11,2022 Michigan,68,76,-8,144,0
+20222312b,b,2312,2022,Region 2,Second Round,2,2022 Villanova,7,2022 Ohio St.,71,61,10,132,1
+20222409b,b,2409,2022,Region 3,Second Round,9,2022 Creighton,1,2022 Kansas,72,79,-7,151,0
+20222410b,b,2410,2022,Region 3,Second Round,4,2022 Providence,12,2022 Richmond,79,51,28,130,1
+20222411b,b,2411,2022,Region 3,Second Round,3,2022 Wisconsin,11,2022 Iowa St.,49,54,-5,103,0
+20222412b,b,2412,2022,Region 3,Second Round,2,2022 Auburn,10,2022 Miami FL,61,79,-18,140,0
+20223113b,b,3113,2022,Region 1,Sweet 16,4,2022 Arkansas,1,2022 Gonzaga,74,68,6,142,1
+20223113b,b,3113,2022,Region 1,Sweet 16,2,2022 Duke,3,2022 Texas Tech,78,73,5,151,1
+20223213b,b,3213,2022,Region 4,Sweet 16,4,2022 UCLA,8,2022 North Carolina,66,73,-7,139,0
+20223214b,b,3214,2022,Region 4,Sweet 16,15,2022 Saint Peter's,3,2022 Purdue,67,64,3,131,1
+20223313b,b,3313,2022,Region 2,Sweet 16,5,2022 Houston,1,2022 Arizona,72,60,12,132,1
+20223314b,b,3314,2022,Region 2,Sweet 16,2,2022 Villanova,11,2022 Michigan,63,55,8,118,1
+20223413b,b,3413,2022,Region 3,Sweet 16,4,2022 Providence,1,2022 Kansas,61,66,-5,127,0
+20223414b,b,3414,2022,Region 3,Sweet 16,10,2022 Miami FL,11,2022 Iowa St.,70,56,14,126,1
+20224115b,b,4115,2022,Region 1,Elite Eight,2,2022 Duke,4,2022 Arkansas,78,69,9,147,1
+20224215b,b,4215,2022,Region 4,Elite Eight,15,2022 Saint Peter's,8,2022 North Carolina,49,69,-20,118,0
+20224315b,b,4315,2022,Region 2,Elite Eight,2,2022 Villanova,5,2022 Houston,50,44,6,94,1
+20224415b,b,4415,2022,Region 3,Elite Eight,10,2022 Miami FL,1,2022 Kansas,50,76,-26,126,0
+20225516b,b,5516,2022,Final Four,Final Four,8,2022 North Carolina,2,2022 Duke,81,77,4,158,1
+20225517b,b,5517,2022,Final Four,Final Four,1,2022 Kansas,2,2022 Villanova,81,65,16,146,1
+20225618b,b,5618,2022,Final Four,Championship,1,2022 Kansas,8,2022 North Carolina,72,69,3,141,1
+20231101b,b,1101,2023,Region 1,First Round,16,2023 Texas A&M Corpus Chris,1,2023 Alabama,75,96,-21,171,0
+20231102b,b,1102,2023,Region 1,First Round,9,2023 West Virginia,8,2023 Maryland,65,67,-2,132,0
+20231103b,b,1103,2023,Region 1,First Round,12,2023 Charleston,5,2023 San Diego St.,57,63,-6,120,0
+20231104b,b,1104,2023,Region 1,First Round,13,2023 Furman,4,2023 Virginia,68,67,1,135,1
+20231105b,b,1105,2023,Region 1,First Round,11,2023 NC St.,6,2023 Creighton,63,72,-9,135,0
+20231106b,b,1106,2023,Region 1,First Round,14,2023 UC Santa Barbara,3,2023 Baylor,56,74,-18,130,0
+20231107b,b,1107,2023,Region 1,First Round,10,2023 Utah St.,7,2023 Missouri,65,76,-11,141,0
+20231108b,b,1108,2023,Region 1,First Round,15,2023 Princeton,2,2023 Arizona,59,55,4,114,1
+20231201b,b,1201,2023,Region 4,First Round,16,2023 Fairleigh Dickinson,1,2023 Purdue,63,58,5,121,1
+20231202b,b,1202,2023,Region 4,First Round,9,2023 Florida Atlantic,8,2023 Memphis,66,65,1,131,1
+20231203b,b,1203,2023,Region 4,First Round,12,2023 Oral Roberts,5,2023 Duke,51,74,-23,125,0
+20231204b,b,1204,2023,Region 4,First Round,13,2023 Louisiana,4,2023 Tennessee,55,58,-3,113,0
+20231205b,b,1205,2023,Region 4,First Round,11,2023 Providence,6,2023 Kentucky,53,61,-8,114,0
+20231206b,b,1206,2023,Region 4,First Round,14,2023 Montana St.,3,2023 Kansas St.,65,77,-12,142,0
+20231207b,b,1207,2023,Region 4,First Round,10,2023 USC,7,2023 Michigan St.,62,72,-10,134,0
+20231208b,b,1208,2023,Region 4,First Round,15,2023 Vermont,2,2023 Marquette,61,78,-17,139,0
+20231301b,b,1301,2023,Region 2,First Round,16,2023 Northern Kentucky,1,2023 Houston,52,63,-11,115,0
+20231302b,b,1302,2023,Region 2,First Round,9,2023 Auburn,8,2023 Iowa,83,75,8,158,1
+20231303b,b,1303,2023,Region 2,First Round,12,2023 Drake,5,2023 Miami FL,56,63,-7,119,0
+20231304b,b,1304,2023,Region 2,First Round,13,2023 Kent St.,4,2023 Indiana,60,71,-11,131,0
+20231305b,b,1305,2023,Region 2,First Round,11,2023 Pittsburgh,6,2023 Iowa St.,59,41,18,100,1
+20231306b,b,1306,2023,Region 2,First Round,14,2023 Kennesaw St.,3,2023 Xavier,67,72,-5,139,0
+20231307b,b,1307,2023,Region 2,First Round,10,2023 Penn St.,7,2023 Texas A&M,76,59,17,135,1
+20231308b,b,1308,2023,Region 2,First Round,15,2023 Colgate,2,2023 Texas,61,81,-20,142,0
+20231401b,b,1401,2023,Region 3,First Round,16,2023 Howard,1,2023 Kansas,68,96,-28,164,0
+20231402b,b,1402,2023,Region 3,First Round,9,2023 Illinois,8,2023 Arkansas,63,73,-10,136,0
+20231403b,b,1403,2023,Region 3,First Round,12,2023 VCU,5,2023 Saint Mary's,51,63,-12,114,0
+20231404b,b,1404,2023,Region 3,First Round,13,2023 Iona,4,2023 Connecticut,63,87,-24,150,0
+20231405b,b,1405,2023,Region 3,First Round,11,2023 Arizona St.,6,2023 TCU,70,72,-2,142,0
+20231406b,b,1406,2023,Region 3,First Round,14,2023 Grand Canyon,3,2023 Gonzaga,70,82,-12,152,0
+20231407b,b,1407,2023,Region 3,First Round,10,2023 Boise St.,7,2023 Northwestern,67,75,-8,142,0
+20231408b,b,1408,2023,Region 3,First Round,15,2023 UNC Asheville,2,2023 UCLA,53,86,-33,139,0
+20232109b,b,2109,2023,Region 1,Second Round,8,2023 Maryland,1,2023 Alabama,51,73,-22,124,0
+20232110b,b,2110,2023,Region 1,Second Round,13,2023 Furman,5,2023 San Diego St.,52,75,-23,127,0
+20232111b,b,2111,2023,Region 1,Second Round,3,2023 Baylor,6,2023 Creighton,76,85,-9,161,0
+20232112b,b,2112,2023,Region 1,Second Round,15,2023 Princeton,7,2023 Missouri,78,63,15,141,1
+20232209b,b,2209,2023,Region 4,Second Round,9,2023 Florida Atlantic,16,2023 Fairleigh Dickinson,78,70,8,148,1
+20232210b,b,2210,2023,Region 4,Second Round,4,2023 Tennessee,5,2023 Duke,65,52,13,117,1
+20232211b,b,2211,2023,Region 4,Second Round,3,2023 Kansas St.,6,2023 Kentucky,75,69,6,144,1
+20232212b,b,2212,2023,Region 4,Second Round,2,2023 Marquette,7,2023 Michigan St.,60,69,-9,129,0
+20232309b,b,2309,2023,Region 2,Second Round,9,2023 Auburn,1,2023 Houston,64,81,-17,145,0
+20232310b,b,2310,2023,Region 2,Second Round,4,2023 Indiana,5,2023 Miami FL,69,85,-16,154,0
+20232311b,b,2311,2023,Region 2,Second Round,3,2023 Xavier,11,2023 Pittsburgh,84,73,11,157,1
+20232312b,b,2312,2023,Region 2,Second Round,2,2023 Texas,10,2023 Penn St.,71,66,5,137,1
+20232409b,b,2409,2023,Region 3,Second Round,8,2023 Arkansas,1,2023 Kansas,72,71,1,143,1
+20232410b,b,2410,2023,Region 3,Second Round,4,2023 Connecticut,5,2023 Saint Mary's,70,55,15,125,1
+20232411b,b,2411,2023,Region 3,Second Round,3,2023 Gonzaga,6,2023 TCU,84,81,3,165,1
+20232412b,b,2412,2023,Region 3,Second Round,2,2023 UCLA,7,2023 Northwestern,68,63,5,131,1
+20233113b,b,3113,2023,Region 1,Sweet 16,5,2023 San Diego St.,1,2023 Alabama,71,64,7,135,1
+20233113b,b,3113,2023,Region 1,Sweet 16,15,2023 Princeton,6,2023 Creighton,75,86,-11,161,0
+20233213b,b,3213,2023,Region 4,Sweet 16,4,2023 Tennessee,9,2023 Florida Atlantic,55,62,-7,117,0
+20233214b,b,3214,2023,Region 4,Sweet 16,7,2023 Michigan St.,3,2023 Kansas St.,93,98,-5,191,0
+20233313b,b,3313,2023,Region 2,Sweet 16,5,2023 Miami FL,1,2023 Houston,89,75,14,164,1
+20233314b,b,3314,2023,Region 2,Sweet 16,2,2023 Texas,3,2023 Xavier,83,71,12,154,1
+20233413b,b,3413,2023,Region 3,Sweet 16,4,2023 Connecticut,8,2023 Arkansas,88,65,23,153,1
+20233414b,b,3414,2023,Region 3,Sweet 16,2,2023 UCLA,3,2023 Gonzaga,76,79,-3,155,0
+20234115b,b,4115,2023,Region 1,Elite Eight,6,2023 Creighton,5,2023 San Diego St.,56,57,-1,113,0
+20234215b,b,4215,2023,Region 4,Elite Eight,3,2023 Kansas St.,9,2023 Florida Atlantic,76,79,-3,155,0
+20234315b,b,4315,2023,Region 2,Elite Eight,2,2023 Texas,5,2023 Miami FL,81,88,-7,169,0
+20234415b,b,4415,2023,Region 3,Elite Eight,3,2023 Gonzaga,4,2023 Connecticut,54,82,-28,136,0
+20235516b,b,5516,2023,Final Four,Final Four,9,2023 Florida Atlantic,5,2023 San Diego St.,71,72,-1,143,0
+20235517b,b,5517,2023,Final Four,Final Four,4,2023 Connecticut,5,2023 Miami FL,72,59,13,131,1
+20235618b,b,5618,2023,Final Four,Championship,4,2023 Connecticut,5,2023 San Diego St.,76,59,17,135,1
+20241101b,b,1101,2024,Region 1,First Round,16,2024 Stetson,1,2024 Connecticut,52,91,-39,143,0
+20241102b,b,1102,2024,Region 1,First Round,9,2024 Northwestern,8,2024 Florida Atlantic,77,65,12,142,1
+20241103b,b,1103,2024,Region 1,First Round,12,2024 UAB,5,2024 San Diego St.,65,69,-4,134,0
+20241104b,b,1104,2024,Region 1,First Round,13,2024 Yale,4,2024 Auburn,78,76,2,154,1
+20241105b,b,1105,2024,Region 1,First Round,11,2024 Duquesne,6,2024 BYU,71,67,4,138,1
+20241106b,b,1106,2024,Region 1,First Round,14,2024 Morehead St.,3,2024 Illinois,69,85,-16,154,0
+20241107b,b,1107,2024,Region 1,First Round,10,2024 Drake,7,2024 Washington St.,61,66,-5,127,0
+20241108b,b,1108,2024,Region 1,First Round,15,2024 South Dakota St.,2,2024 Iowa St.,65,82,-17,147,0
+20241201b,b,1201,2024,Region 2,First Round,16,2024 Longwood,1,2024 Houston,46,86,-40,132,0
+20241202b,b,1202,2024,Region 2,First Round,9,2024 Texas A&M,8,2024 Nebraska,98,83,15,181,1
+20241203b,b,1203,2024,Region 2,First Round,12,2024 James Madison,5,2024 Wisconsin,72,61,11,133,1
+20241204b,b,1204,2024,Region 2,First Round,13,2024 Vermont,4,2024 Duke,47,64,-17,111,0
+20241205b,b,1205,2024,Region 2,First Round,11,2024 NC St.,6,2024 Texas Tech,80,67,13,147,1
+20241206b,b,1206,2024,Region 2,First Round,14,2024 Oakland,3,2024 Kentucky,80,76,4,156,1
+20241207b,b,1207,2024,Region 2,First Round,10,2024 Colorado,7,2024 Florida,102,100,2,202,1
+20241208b,b,1208,2024,Region 2,First Round,15,2024 Western Kentucky,2,2024 Marquette,69,87,-18,156,0
+20241301b,b,1301,2024,Region 3,First Round,16,2024 Grambling St.,1,2024 Purdue,50,78,-28,128,0
+20241302b,b,1302,2024,Region 3,First Round,9,2024 TCU,8,2024 Utah St.,72,88,-16,160,0
+20241303b,b,1303,2024,Region 3,First Round,12,2024 McNeese,5,2024 Gonzaga,65,86,-21,151,0
+20241304b,b,1304,2024,Region 3,First Round,13,2024 Samford,4,2024 Kansas,89,93,-4,182,0
+20241305b,b,1305,2024,Region 3,First Round,11,2024 Oregon,6,2024 South Carolina,87,73,14,160,1
+20241306b,b,1306,2024,Region 3,First Round,14,2024 Akron,3,2024 Creighton,60,77,-17,137,0
+20241307b,b,1307,2024,Region 3,First Round,10,2024 Colorado St.,7,2024 Texas,44,56,-12,100,0
+20241308b,b,1308,2024,Region 3,First Round,15,2024 Saint Peter's,2,2024 Tennessee,49,83,-34,132,0
+20241401b,b,1401,2024,Region 4,First Round,16,2024 Wagner,1,2024 North Carolina,62,90,-28,152,0
+20241402b,b,1402,2024,Region 4,First Round,9,2024 Michigan St.,8,2024 Mississippi St.,69,51,18,120,1
+20241403b,b,1403,2024,Region 4,First Round,12,2024 Grand Canyon,5,2024 Saint Mary's,75,66,9,141,1
+20241404b,b,1404,2024,Region 4,First Round,13,2024 Charleston,4,2024 Alabama,96,109,-13,205,0
+20241405b,b,1405,2024,Region 4,First Round,11,2024 New Mexico,6,2024 Clemson,56,77,-21,133,0
+20241406b,b,1406,2024,Region 4,First Round,14,2024 Colgate,3,2024 Baylor,67,92,-25,159,0
+20241407b,b,1407,2024,Region 4,First Round,10,2024 Nevada,7,2024 Dayton,60,63,-3,123,0
+20241408b,b,1408,2024,Region 4,First Round,15,2024 Long Beach St.,2,2024 Arizona,65,85,-20,150,0
+20242109b,b,2109,2024,Region 1,Second Round,9,2024 Northwestern,1,2024 Connecticut,58,75,-17,133,0
+20242110b,b,2110,2024,Region 1,Second Round,13,2024 Yale,5,2024 San Diego St.,57,85,-28,142,0
+20242111b,b,2111,2024,Region 1,Second Round,3,2024 Illinois,11,2024 Duquesne,89,63,26,152,1
+20242112b,b,2112,2024,Region 1,Second Round,2,2024 Iowa St.,7,2024 Washington St.,67,56,11,123,1
+20242209b,b,2209,2024,Region 2,Second Round,9,2024 Texas A&M,1,2024 Houston,95,100,-5,195,0
+20242210b,b,2210,2024,Region 2,Second Round,4,2024 Duke,12,2024 James Madison,93,55,38,148,1
+20242211b,b,2211,2024,Region 2,Second Round,14,2024 Oakland,11,2024 NC St.,73,79,-6,152,0
+20242212b,b,2212,2024,Region 2,Second Round,2,2024 Marquette,10,2024 Colorado,81,77,4,158,1
+20242309b,b,2309,2024,Region 3,Second Round,8,2024 Utah St.,1,2024 Purdue,67,106,-39,173,0
+20242310b,b,2310,2024,Region 3,Second Round,4,2024 Kansas,5,2024 Gonzaga,68,89,-21,157,0
+20242311b,b,2311,2024,Region 3,Second Round,3,2024 Creighton,11,2024 Oregon,86,73,13,159,1
+20242312b,b,2312,2024,Region 3,Second Round,2,2024 Tennessee,7,2024 Texas,62,58,4,120,1
+20242409b,b,2409,2024,Region 4,Second Round,9,2024 Michigan St.,1,2024 North Carolina,69,85,-16,154,0
+20242410b,b,2410,2024,Region 4,Second Round,4,2024 Alabama,12,2024 Grand Canyon,72,61,11,133,1
+20242411b,b,2411,2024,Region 4,Second Round,3,2024 Baylor,6,2024 Clemson,64,72,-8,136,0
+20242412b,b,2412,2024,Region 4,Second Round,2,2024 Arizona,7,2024 Dayton,78,68,10,146,1
+20243113b,b,3113,2024,Region 1,Sweet 16,5,2024 San Diego St.,1,2024 Connecticut,52,82,-30,134,0
+20243113b,b,3113,2024,Region 1,Sweet 16,2,2024 Iowa St.,3,2024 Illinois,69,72,-3,141,0
+20243213b,b,3213,2024,Region 2,Sweet 16,4,2024 Duke,1,2024 Houston,54,51,3,105,1
+20243214b,b,3214,2024,Region 2,Sweet 16,2,2024 Marquette,11,2024 NC St.,58,67,-9,125,0
+20243313b,b,3313,2024,Region 3,Sweet 16,5,2024 Gonzaga,1,2024 Purdue,68,80,-12,148,0
+20243314b,b,3314,2024,Region 3,Sweet 16,2,2024 Tennessee,3,2024 Creighton,82,75,7,157,1
+20243413b,b,3413,2024,Region 4,Sweet 16,4,2024 Alabama,1,2024 North Carolina,89,87,2,176,1
+20243414b,b,3414,2024,Region 4,Sweet 16,2,2024 Arizona,6,2024 Clemson,72,77,-5,149,0
+20244115b,b,4115,2024,Region 1,Elite Eight,3,2024 Illinois,1,2024 Connecticut,52,77,-25,129,0
+20244215b,b,4215,2024,Region 2,Elite Eight,11,2024 NC St.,4,2024 Duke,76,64,12,140,1
+20244315b,b,4315,2024,Region 3,Elite Eight,2,2024 Tennessee,1,2024 Purdue,66,72,-6,138,0
+20244415b,b,4415,2024,Region 4,Elite Eight,6,2024 Clemson,4,2024 Alabama,82,89,-7,171,0
+20245516b,b,5516,2024,Final Four,Final Four,4,2024 Alabama,1,2024 Connecticut,72,86,-14,158,0
+20245517b,b,5517,2024,Final Four,Final Four,1,2024 Purdue,11,2024 NC St.,63,50,13,113,1
+20245618b,b,5618,2024,Final Four,Championship,1,2024 Purdue,1,2024 Connecticut,60,75,-15,135,0
+20251101b,b,1101,2025,Region 1,First Round,16,2025 Alabama St.,1,2025 Auburn,63,83,-20,146,0
+20251102b,b,1102,2025,Region 1,First Round,9,2025 Creighton,8,2025 Louisville,89,75,14,164,1
+20251103b,b,1103,2025,Region 1,First Round,12,2025 UC San Diego,5,2025 Michigan,65,68,-3,133,0
+20251104b,b,1104,2025,Region 1,First Round,13,2025 Yale,4,2025 Texas A&M,71,80,-9,151,0
+20251105b,b,1105,2025,Region 1,First Round,11,2025 North Carolina,6,2025 Mississippi,64,71,-7,135,0
+20251106b,b,1106,2025,Region 1,First Round,14,2025 Lipscomb,3,2025 Iowa St.,55,82,-27,137,0
+20251107b,b,1107,2025,Region 1,First Round,10,2025 New Mexico,7,2025 Marquette,75,66,9,141,1
+20251108b,b,1108,2025,Region 1,First Round,15,2025 Bryant,2,2025 Michigan St.,62,87,-25,149,0
+20251201b,b,1201,2025,Region 2,First Round,16,2025 Mount St. Mary's,1,2025 Duke,49,93,-44,142,0
+20251202b,b,1202,2025,Region 2,First Round,9,2025 Baylor,8,2025 Mississippi St.,75,72,3,147,1
+20251203b,b,1203,2025,Region 2,First Round,12,2025 Liberty,5,2025 Oregon,52,81,-29,133,0
+20251204b,b,1204,2025,Region 2,First Round,13,2025 Akron,4,2025 Arizona,65,93,-28,158,0
+20251205b,b,1205,2025,Region 2,First Round,11,2025 VCU,6,2025 BYU,71,80,-9,151,0
+20251206b,b,1206,2025,Region 2,First Round,14,2025 Montana,3,2025 Wisconsin,66,85,-19,151,0
+20251207b,b,1207,2025,Region 2,First Round,10,2025 Vanderbilt,7,2025 Saint Mary's,56,59,-3,115,0
+20251208b,b,1208,2025,Region 2,First Round,15,2025 Robert Morris,2,2025 Alabama,81,90,-9,171,0
+20251301b,b,1301,2025,Region 3,First Round,16,2025 SIU Edwardsville,1,2025 Houston,40,78,-38,118,0
+20251302b,b,1302,2025,Region 3,First Round,9,2025 Georgia,8,2025 Gonzaga,68,89,-21,157,0
+20251303b,b,1303,2025,Region 3,First Round,12,2025 McNeese,5,2025 Clemson,69,67,2,136,1
+20251304b,b,1304,2025,Region 3,First Round,13,2025 High Point,4,2025 Purdue,63,75,-12,138,0
+20251305b,b,1305,2025,Region 3,First Round,11,2025 Xavier,6,2025 Illinois,73,86,-13,159,0
+20251306b,b,1306,2025,Region 3,First Round,14,2025 Troy,3,2025 Kentucky,57,76,-19,133,0
+20251307b,b,1307,2025,Region 3,First Round,10,2025 Utah St.,7,2025 UCLA,47,72,-25,119,0
+20251308b,b,1308,2025,Region 3,First Round,15,2025 Wofford,2,2025 Tennessee,62,77,-15,139,0
+20251401b,b,1401,2025,Region 4,First Round,16,2025 Norfolk St.,1,2025 Florida,69,95,-26,164,0
+20251402b,b,1402,2025,Region 4,First Round,9,2025 Oklahoma,8,2025 Connecticut,59,67,-8,126,0
+20251403b,b,1403,2025,Region 4,First Round,12,2025 Colorado St.,5,2025 Memphis,78,70,8,148,1
+20251404b,b,1404,2025,Region 4,First Round,13,2025 Grand Canyon,4,2025 Maryland,49,81,-32,130,0
+20251405b,b,1405,2025,Region 4,First Round,11,2025 Drake,6,2025 Missouri,67,57,10,124,1
+20251406b,b,1406,2025,Region 4,First Round,14,2025 UNC Wilmington,3,2025 Texas Tech,72,82,-10,154,0
+20251407b,b,1407,2025,Region 4,First Round,10,2025 Arkansas,7,2025 Kansas,79,72,7,151,1
+20251408b,b,1408,2025,Region 4,First Round,15,2025 Nebraska Omaha,2,2025 St. John's,53,83,-30,136,0
+20252109b,b,2109,2025,Region 1,Second Round,9,2025 Creighton,1,2025 Auburn,70,82,-12,152,0
+20252110b,b,2110,2025,Region 1,Second Round,4,2025 Texas A&M,5,2025 Michigan,79,91,-12,170,0
+20252111b,b,2111,2025,Region 1,Second Round,3,2025 Iowa St.,6,2025 Mississippi,78,91,-13,169,0
+20252112b,b,2112,2025,Region 1,Second Round,2,2025 Michigan St.,10,2025 New Mexico,71,63,8,134,1
+20252209b,b,2209,2025,Region 2,Second Round,9,2025 Baylor,1,2025 Duke,66,89,-23,155,0
+20252210b,b,2210,2025,Region 2,Second Round,4,2025 Arizona,5,2025 Oregon,87,83,4,170,1
+20252211b,b,2211,2025,Region 2,Second Round,3,2025 Wisconsin,6,2025 BYU,89,91,-2,180,0
+20252212b,b,2212,2025,Region 2,Second Round,2,2025 Alabama,7,2025 BYU,80,66,14,146,1
+20252309b,b,2309,2025,Region 3,Second Round,8,2025 Gonzaga,1,2025 Houston,76,81,-5,157,0
+20252310b,b,2310,2025,Region 3,Second Round,4,2025 Purdue,12,2025 McNeese,76,62,14,138,1
+20252311b,b,2311,2025,Region 3,Second Round,3,2025 Kentucky,6,2025 Illinois,84,75,9,159,1
+20252312b,b,2312,2025,Region 3,Second Round,2,2025 Tennessee,7,2025 UCLA,67,58,9,125,1
+20252409b,b,2409,2025,Region 4,Second Round,8,2025 Connecticut,1,2025 Florida,75,77,-2,152,0
+20252410b,b,2410,2025,Region 4,Second Round,4,2025 Maryland,12,2025 Colorado St.,72,71,1,143,1
+20252411b,b,2411,2025,Region 4,Second Round,3,2025 Texas Tech,11,2025 Drake,77,64,13,141,1
+20252412b,b,2412,2025,Region 4,Second Round,2,2025 St. John's,10,2025 Arkansas,66,75,-9,141,0
+20253113b,b,3113,2025,Region 1,Sweet 16,5,Michigan,1,2025 Auburn,65,78,-13,143,0
+20253113b,b,3113,2025,Region 1,Sweet 16,2,2025 Michigan St.,6,2025 Mississippi,73,70,3,143,1
+20253213b,b,3213,2025,Region 2,Sweet 16,4,2025 Arizona,1,2025 Duke,93,100,-7,193,0
+20253214b,b,3214,2025,Region 2,Sweet 16,2,2025 Alabama,6,2025 BYU,113,88,25,201,1
+20253313b,b,3313,2025,Region 3,Sweet 16,4,2025 Purdue,1,2025 Houston,60,62,-2,122,0
+20253314b,b,3314,2025,Region 3,Sweet 16,2,2025 Tennessee,3,2025 Kentucky,78,65,13,143,1
+20253413b,b,3413,2025,Region 4,Sweet 16,4,2025 Maryland,1,2025 Florida,71,87,-16,158,0
+20253414b,b,3414,2025,Region 4,Sweet 16,10,2025 Arkansas,3,2025 Texas Tech,83,85,-2,168,0
+20254115b,b,4115,2025,Region 1,Elite Eight,2,2025 Michigan St.,1,2025 Auburn,64,70,-6,134,0
+20254215b,b,4215,2025,Region 2,Elite Eight,2,2025 Alabama,1,2025 Duke,65,85,-20,150,0
+20254315b,b,4315,2025,Region 3,Elite Eight,2,2025 Tennessee,1,2025 Houston,50,69,-19,119,0
+20254415b,b,4415,2025,Region 4,Elite Eight,3,2025 Texas Tech,1,2025 Florida,79,84,-5,163,0
+20255516b,b,5516,2025,Final Four,Final Four,1,2025 Florida,1,2025 Auburn,79,73,6,152,1
+20255517b,b,5517,2025,Final Four,Final Four,1,2025 Houston,1,2025 Duke,70,67,3,137,1
+20255618b,b,5618,2025,Final Four,Championship,1,2025 Houston,1,2025 Florida,63,65,-2,128,0

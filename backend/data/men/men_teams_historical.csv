@@ -1,0 +1,705 @@
+team_id,year,team,region,seed,finish,weekend,coach,coach_id,conference,conf,conf_id,kenpom_id,torvik_id
+2015 Villanova,2015,Villanova,Region 2,1,Second Round,1,Jay Wright,2015 Jay Wright,Big East,BE,2015 BE,2015 Villanova,2015 Villanova
+2015 Virginia,2015,Virginia,Region 2,2,Second Round,1,Tony Bennett,2015 Tony Bennett,ACC,ACC,2015 ACC,2015 Virginia,2015 Virginia
+2015 Oklahoma,2015,Oklahoma,Region 2,3,Sweet 16,2,Lon Kruger,2015 Lon Kruger,Big 12,B12,2015 B12,2015 Oklahoma,2015 Oklahoma
+2015 Louisville,2015,Louisville,Region 2,4,Sweet 16,2,Rick Pitino,2015 Rick Pitino,ACC,ACC,2015 ACC,2015 Louisville,2015 Louisville
+2015 Northern Iowa,2015,Northern Iowa,Region 2,5,Second Round,1,Ben Jacobson,2015 Ben Jacobson,Missouri Valley,MVC,2015 MVC,2015 Northern Iowa,2015 Northern Iowa
+2015 Providence,2015,Providence,Region 2,6,First Round,1,Ed Cooley,2015 Ed Cooley,Big East,BE,2015 BE,2015 Providence,2015 Providence
+2015 Michigan St.,2015,Michigan St.,Region 2,7,Final Four,3,Tom Izzo,2015 Tom Izzo,Big 10,B10,2015 B10,2015 Michigan St.,2015 Michigan St.
+2015 NC St.,2015,North Carolina St.,Region 2,8,Sweet 16,2,Mark Gottfried,2015 Mark Gottfried,ACC,ACC,2015 ACC,2015 North Carolina St.,2015 N.C. State
+2015 LSU,2015,LSU,Region 2,9,First Round,1,Johnny Jones,2015 Johnny Jones,SEC,SEC,2015 SEC,2015 LSU,2015 LSU
+2015 Georgia,2015,Georgia,Region 2,10,First Round,1,Mark Fox,2015 Mark Fox,SEC,SEC,2015 SEC,2015 Georgia,2015 Georgia
+2015 Dayton,2015,Dayton,Region 2,11,Second Round,1,Archie Miller,2015 Archie Miller,Atlantic 10,A10,2015 A10,2015 Dayton,2015 Dayton
+2015 Wyoming,2015,Wyoming,Region 2,12,First Round,1,Larry Shyatt,2015 Larry Shyatt,Mountain West,MWC,2015 MWC,2015 Wyoming,2015 Wyoming
+2015 UC Irvine,2015,UC Irvine,Region 2,13,First Round,1,Russell Turner,2015 Russell Turner,Big West,BW,2015 BW,2015 UC Irvine,2015 UC Irvine
+2015 Albany,2015,Albany,Region 2,14,First Round,1,Will Brown,2015 Will Brown,Amerian East,AE,2015 AE,2015 Albany,2015 Albany
+2015 Belmont,2015,Belmont,Region 2,15,First Round,1,Rick Byrd,2015 Rick Byrd,Ohio Valley,OVC,2015 OVC,2015 Belmont,2015 Belmont
+2015 Lafayette,2015,Lafayette,Region 2,16,First Round,1,Fran O'Hanlon,2015 Fran O'Hanlon,Patriot,Pat,2015 Pat,2015 Lafayette,2015 Lafayette
+2015 Kentucky,2015,Kentucky,Region 1,1,Final Four,3,John Calipari,2015 John Calipari,SEC,SEC,2015 SEC,2015 Kentucky,2015 Kentucky
+2015 Kansas,2015,Kansas,Region 1,2,Second Round,1,Bill Self,2015 Bill Self,Big 12,B12,2015 B12,2015 Kansas,2015 Kansas
+2015 Notre Dame,2015,Notre Dame,Region 1,3,Elite Eight,2,Mike Brey,2015 Mike Brey,ACC,ACC,2015 ACC,2015 Notre Dame,2015 Notre Dame
+2015 Maryland,2015,Maryland,Region 1,4,Second Round,1,Mark Turgeon,2015 Mark Turgeon,Big 10,B10,2015 B10,2015 Maryland,2015 Maryland
+2015 West Virginia,2015,West Virginia,Region 1,5,Sweet 16,2,Bob Huggins,2015 Bob Huggins,Big 12,B12,2015 B12,2015 West Virginia,2015 West Virginia
+2015 Butler,2015,Butler,Region 1,6,Second Round,1,Chris Holtmann,2015 Chris Holtmann,Big East,BE,2015 BE,2015 Butler,2015 Butler
+2015 Wichita St.,2015,Wichita St.,Region 1,7,Sweet 16,2,Gregg Marshall,2015 Gregg Marshall,Missouri Valley,MVC,2015 MVC,2015 Wichita St.,2015 Wichita St.
+2015 Cincinnati,2015,Cincinnati,Region 1,8,Second Round,1,Mick Cronin,2015 Mick Cronin,American,Amer,2015 Amer,2015 Cincinnati,2015 Cincinnati
+2015 Purdue,2015,Purdue,Region 1,9,First Round,1,Matt Painter,2015 Matt Painter,Big 10,B10,2015 B10,2015 Purdue,2015 Purdue
+2015 Indiana,2015,Indiana,Region 1,10,First Round,1,Tom Crean,2015 Tom Crean,Big 10,B10,2015 B10,2015 Indiana,2015 Indiana
+2015 Texas,2015,Texas,Region 1,11,First Round,1,Rick Barnes,2015 Rick Barnes,Big 12,B12,2015 B12,2015 Texas,2015 Texas
+2015 Buffalo,2015,Buffalo,Region 1,12,First Round,1,Bobby Hurley,2015 Bobby Hurley,MAC,MAC,2015 MAC,2015 Buffalo,2015 Buffalo
+2015 Valparaiso,2015,Valparaiso,Region 1,13,First Round,1,Bryce Drew,2015 Bryce Drew,Horizon,Horz,2015 Horz,2015 Valparaiso,2015 Valparaiso
+2015 Northeastern,2015,Northeastern,Region 1,14,First Round,1,Bill Coen,2015 Bill Coen,CAA,CAA,2015 CAA,2015 Northeastern,2015 Northeastern
+2015 New Mexico St.,2015,New Mexico St.,Region 1,15,First Round,1,Marvin Menzies,2015 Marvin Menzies,WAC,WAC,2015 WAC,2015 New Mexico St.,2015 New Mexico St.
+2015 Hampton,2015,Hampton,Region 1,16,First Round,1,Edward Joyner Jr.,2015 Edward Joyner Jr.,MEAC,MEAC,2015 MEAC,2015 Hampton,2015 Hampton
+2015 Duke,2015,Duke,Region 3,1,Champion,3,Mike Krzyzewski,2015 Mike Krzyzewski,ACC,ACC,2015 ACC,2015 Duke,2015 Duke
+2015 Gonzaga,2015,Gonzaga,Region 3,2,Elite Eight,2,Mark Few,2015 Mark Few,WCC,WCC,2015 WCC,2015 Gonzaga,2015 Gonzaga
+2015 Iowa St.,2015,Iowa St.,Region 3,3,First Round,1,Fred Hoiberg,2015 Fred Hoiberg,Big 12,B12,2015 B12,2015 Iowa St.,2015 Iowa St.
+2015 Georgetown,2015,Georgetown,Region 3,4,Second Round,1,John Thompson,2015 John Thompson,Big East,BE,2015 BE,2015 Georgetown,2015 Georgetown
+2015 Utah,2015,Utah,Region 3,5,Sweet 16,2,Larry Krystowiak,2015 Larry Krystowiak,Pac 12,P12,2015 P12,2015 Utah,2015 Utah
+2015 SMU,2015,SMU,Region 3,6,First Round,1,Larry Brown,2015 Larry Brown,American,Amer,2015 Amer,2015 SMU,2015 SMU
+2015 Iowa,2015,Iowa,Region 3,7,Second Round,1,Fran McCaffery,2015 Fran McCaffery,Big 10,B10,2015 B10,2015 Iowa,2015 Iowa
+2015 San Diego St.,2015,San Diego St.,Region 3,8,Second Round,1,Steve Fischer,2015 Steve Fischer,Mountain West,MWC,2015 MWC,2015 San Diego St.,2015 San Diego St.
+2015 St. John's,2015,St. John's,Region 3,9,First Round,1,Steve Lavin,2015 Steve Lavin,Big East,BE,2015 BE,2015 St. John's,2015 St. John's
+2015 Davidson,2015,Davidson,Region 3,10,First Round,1,Bob McKillop,2015 Bob McKillop,Atlantic 10,A10,2015 A10,2015 Davidson,2015 Davidson
+2015 UCLA,2015,UCLA,Region 3,11,Sweet 16,2,Steve Alford,2015 Steve Alford,Pac 12,P12,2015 P12,2015 UCLA,2015 UCLA
+2015 Stephen F. Austin,2015,Stephen F. Austin,Region 3,12,First Round,1,Brad Underwood,2015 Brad Underwood,Southland,Slnd,2015 Slnd,2015 Stephen F. Austin,2015 Stephen F. Austin
+2015 Eastern Washington,2015,Eastern Washington,Region 3,13,First Round,1,Jim Hayford,2015 Jim Hayford,Big Sky,BSky,2015 BSky,2015 Eastern Washington,2015 Eastern Washington
+2015 UAB,2015,UAB,Region 3,14,Second Round,1,Jerod Haase,2015 Jerod Haase,Conference USA,CUSA,2015 CUSA,2015 UAB,2015 UAB
+2015 North Dakota St.,2015,North Dakota St.,Region 3,15,First Round,1,Dave Richman,2015 Dave Richman,Summit,Sum,2015 Sum,2015 North Dakota St.,2015 North Dakota St.
+2015 Robert Morris,2015,Robert Morris,Region 3,16,First Round,1,Andrew Toole,2015 Andrew Toole,NEC,NEC,2015 NEC,2015 Robert Morris,2015 Robert Morris
+2015 Wisconsin,2015,Wisconsin,Region 4,1,Runner Up,3,Bo Ryan,2015 Bo Ryan,Big 10,B10,2015 B10,2015 Wisconsin,2015 Wisconsin
+2015 Arizona,2015,Arizona,Region 4,2,Elite Eight,2,Sean Miller,2015 Sean Miller,Pac 12,P12,2015 P12,2015 Arizona,2015 Arizona
+2015 Baylor,2015,Baylor,Region 4,3,First Round,1,Scott Drew,2015 Scott Drew,Big 12,B12,2015 B12,2015 Baylor,2015 Baylor
+2015 North Carolina,2015,North Carolina,Region 4,4,Sweet 16,2,Roy Williams,2015 Roy Williams,ACC,ACC,2015 ACC,2015 North Carolina,2015 North Carolina
+2015 Arkansas,2015,Arkansas,Region 4,5,Second Round,1,Mike Anderson,2015 Mike Anderson,SEC,SEC,2015 SEC,2015 Arkansas,2015 Arkansas
+2015 Xavier,2015,Xavier,Region 4,6,Sweet 16,2,Chris Mack,2015 Chris Mack,Big East,BE,2015 BE,2015 Xavier,2015 Xavier
+2015 VCU,2015,VCU,Region 4,7,First Round,1,Shaka Smart,2015 Shaka Smart,Atlantic 10,A10,2015 A10,2015 VCU,2015 VCU
+2015 Oregon,2015,Oregon,Region 4,8,Second Round,1,Dana Altman,2015 Dana Altman,Pac 12,P12,2015 P12,2015 Oregon,2015 Oregon
+2015 Oklahoma St.,2015,Oklahoma St.,Region 4,9,First Round,1,Travis Ford,2015 Travis Ford,Big 12,B12,2015 B12,2015 Oklahoma St.,2015 Oklahoma St.
+2015 Ohio St.,2015,Ohio St.,Region 4,10,Second Round,1,Thad Matta,2015 Thad Matta,Big 10,B10,2015 B10,2015 Ohio St.,2015 Ohio St.
+2015 Mississippi,2015,Mississippi,Region 4,11,First Round,1,Andy Kennedy,2015 Andy Kennedy,SEC,SEC,2015 SEC,2015 Mississippi,2015 Mississippi
+2015 Wofford,2015,Wofford,Region 4,12,First Round,1,Mike Young,2015 Mike Young,Southern,SC,2015 SC,2015 Wofford,2015 Wofford
+2015 Harvard,2015,Harvard,Region 4,13,First Round,1,Tommy Amaker,2015 Tommy Amaker,Ivy,Ivy,2015 Ivy,2015 Harvard,2015 Harvard
+2015 Georgia St.,2015,Georgia St.,Region 4,14,Second Round,1,Ron Hunter,2015 Ron Hunter,Sun Belt,SB,2015 SB,2015 Georgia St.,2015 Georgia St.
+2015 Texas Southern,2015,Texas Southern,Region 4,15,First Round,1,Mike Davis,2015 Mike Davis,SWAC,SWAC,2015 SWAC,2015 Texas Southern,2015 Texas Southern
+2015 Coastal Carolina,2015,Coastal Carolina,Region 4,16,First Round,1,Cliff Ellis,2015 Cliff Ellis,Big South,BSth,2015 BSth,2015 Coastal Carolina,2015 Coastal Carolina
+2016 North Carolina,2016,North Carolina,Region 2,1,Runner Up,3,Roy Williams,2016 Roy Williams,ACC,ACC,2016 ACC,2016 North Carolina,2016 North Carolina
+2016 Xavier,2016,Xavier,Region 2,2,Second Round,1,Chris Mack,2016 Chris Mack,Big East,BE,2016 BE,2016 Xavier,2016 Xavier
+2016 West Virginia,2016,West Virginia,Region 2,3,First Round,1,Bob Huggins,2016 Bob Huggins,Big 12,B12,2016 B12,2016 West Virginia,2016 West Virginia
+2016 Kentucky,2016,Kentucky,Region 2,4,Second Round,1,John Calipari,2016 John Calipari,SEC,SEC,2016 SEC,2016 Kentucky,2016 Kentucky
+2016 Indiana,2016,Indiana,Region 2,5,Sweet 16,2,Tom Crean,2016 Tom Crean,Big 10,B10,2016 B10,2016 Indiana,2016 Indiana
+2016 Notre Dame,2016,Notre Dame,Region 2,6,Elite Eight,2,Mike Brey,2016 Mike Brey,ACC,ACC,2016 ACC,2016 Notre Dame,2016 Notre Dame
+2016 Wisconsin,2016,Wisconsin,Region 2,7,Sweet 16,2,Greg Gard,2016 Greg Gard,Big 10,B10,2016 B10,2016 Wisconsin,2016 Wisconsin
+2016 USC,2016,USC,Region 2,8,First Round,1,Andy Enfield,2016 Andy Enfield,Pac 12,P12,2016 P12,2016 USC,2016 USC
+2016 Providence,2016,Providence,Region 2,9,Second Round,1,Ed Cooley,2016 Ed Cooley,Big East,BE,2016 BE,2016 Providence,2016 Providence
+2016 Pittsburgh,2016,Pittsburgh,Region 2,10,First Round,1,Jamie Dixon,2016 Jamie Dixon,ACC,ACC,2016 ACC,2016 Pittsburgh,2016 Pittsburgh
+2016 Michigan,2016,Michigan,Region 2,11,First Round,1,John Beilein,2016 John Beilein,Big 10,B10,2016 B10,2016 Michigan,2016 Michigan
+2016 Chattanooga,2016,Chattanooga,Region 2,12,First Round,1,Matt McCall,2016 Matt McCall,Southern,SC,2016 SC,2016 Chattanooga,2016 Chattanooga
+2016 Stony Brook,2016,Stony Brook,Region 2,13,First Round,1,Steve Pikiell,2016 Steve Pikiell,Amerian East,AE,2016 AE,2016 Stony Brook,2016 Stony Brook
+2016 Stephen F. Austin,2016,Stephen F. Austin,Region 2,14,Second Round,1,Brad Underwood,2016 Brad Underwood,Southland,Slnd,2016 Slnd,2016 Stephen F. Austin,2016 Stephen F. Austin
+2016 Weber St.,2016,Weber St.,Region 2,15,First Round,1,Randy Rahe,2016 Randy Rahe,Big Sky,BSky,2016 BSky,2016 Weber St.,2016 Weber St.
+2016 Florida Gulf Coast,2016,Florida Gulf Coast,Region 2,16,First Round,1,Joe Dooley,2016 Joe Dooley,Atlantic Sun,ASun,2016 ASun,2016 Florida Gulf Coast,2016 Florida Gulf Coast
+2016 Virginia,2016,Virginia,Region 3,1,Elite Eight,2,Tony Bennett,2016 Tony Bennett,ACC,ACC,2016 ACC,2016 Virginia,2016 Virginia
+2016 Michigan St.,2016,Michigan St.,Region 3,2,First Round,1,Tom Izzo,2016 Tom Izzo,Big 10,B10,2016 B10,2016 Michigan St.,2016 Michigan St.
+2016 Utah,2016,Utah,Region 3,3,Second Round,1,Larry Krystowiak,2016 Larry Krystowiak,Pac 12,P12,2016 P12,2016 Utah,2016 Utah
+2016 Iowa St.,2016,Iowa St.,Region 3,4,Sweet 16,2,Steve Prohm,2016 Steve Prohm,Big 12,B12,2016 B12,2016 Iowa St.,2016 Iowa St.
+2016 Purdue,2016,Purdue,Region 3,5,First Round,1,Matt Painter,2016 Matt Painter,Big 10,B10,2016 B10,2016 Purdue,2016 Purdue
+2016 Seton Hall,2016,Seton Hall,Region 3,6,First Round,1,Kevin Willard,2016 Kevin Willard,Big East,BE,2016 BE,2016 Seton Hall,2016 Seton Hall
+2016 Dayton,2016,Dayton,Region 3,7,First Round,1,Archie Miller,2016 Archie Miller,Atlantic 10,A10,2016 A10,2016 Dayton,2016 Dayton
+2016 Texas Tech,2016,Texas Tech,Region 3,8,First Round,1,Tubby Smith,2016 Tubby Smith,Big 12,B12,2016 B12,2016 Texas Tech,2016 Texas Tech
+2016 Butler,2016,Butler,Region 3,9,Second Round,1,Chris Holtmann,2016 Chris Holtmann,Big East,BE,2016 BE,2016 Butler,2016 Butler
+2016 Syracuse,2016,Syracuse,Region 3,10,Final Four,3,Jim Boeheim,2016 Jim Boeheim,ACC,ACC,2016 ACC,2016 Syracuse,2016 Syracuse
+2016 Gonzaga,2016,Gonzaga,Region 3,11,Sweet 16,2,Mark Few,2016 Mark Few,WCC,WCC,2016 WCC,2016 Gonzaga,2016 Gonzaga
+2016 Little Rock,2016,Little Rock,Region 3,12,Second Round,1,Chris Beard,2016 Chris Beard,Sun Belt,SB,2016 SB,2016 Arkansas Little Rock,2016 Little Rock
+2016 Iona,2016,Iona,Region 3,13,First Round,1,Tim Cluesss,2016 Tim Cluesss,MAAC,MAAC,2016 MAAC,2016 Iona,2016 Iona
+2016 Fresno St.,2016,Fresno St.,Region 3,14,First Round,1,Rodney Terry,2016 Rodney Terry,Mountain West,MWC,2016 MWC,2016 Fresno St.,2016 Fresno St.
+2016 Middle Tennessee,2016,Middle Tennessee,Region 3,15,Second Round,1,Kermit Davis Jr,2016 Kermit Davis Jr,Conference USA,CUSA,2016 CUSA,2016 Middle Tennessee,2016 Middle Tennessee
+2016 Hampton,2016,Hampton,Region 3,16,First Round,1,Edward Joyner Jr.,2016 Edward Joyner Jr.,MEAC,MEAC,2016 MEAC,2016 Hampton,2016 Hampton
+2016 Kansas,2016,Kansas,Region 1,1,Elite Eight,2,Bill Self,2016 Bill Self,Big 12,B12,2016 B12,2016 Kansas,2016 Kansas
+2016 Villanova,2016,Villanova,Region 1,2,Champion,3,Jay Wright,2016 Jay Wright,Big East,BE,2016 BE,2016 Villanova,2016 Villanova
+2016 Miami FL,2016,Miami FL,Region 1,3,Sweet 16,2,Jim Larranaga,2016 Jim Larranaga,ACC,ACC,2016 ACC,2016 Miami FL,2016 Miami FL
+2016 California,2016,California,Region 1,4,First Round,1,Cuonzo Martin,2016 Cuonzo Martin,Pac 12,P12,2016 P12,2016 California,2016 California
+2016 Maryland,2016,Maryland,Region 1,5,Sweet 16,2,Mark Turgeon,2016 Mark Turgeon,Big 10,B10,2016 B10,2016 Maryland,2016 Maryland
+2016 Arizona,2016,Arizona,Region 1,6,First Round,1,Sean Miller,2016 Sean Miller,Pac 12,P12,2016 P12,2016 Arizona,2016 Arizona
+2016 Iowa,2016,Iowa,Region 1,7,Second Round,1,Fran McCaffery,2016 Fran McCaffery,Big 10,B10,2016 B10,2016 Iowa,2016 Iowa
+2016 Colorado,2016,Colorado,Region 1,8,First Round,1,Tad Boyle,2016 Tad Boyle,Pac 12,P12,2016 P12,2016 Colorado,2016 Colorado
+2016 Connecticut,2016,Connecticut,Region 1,9,Second Round,1,Kevin Ollie,2016 Kevin Ollie,American,Amer,2016 Amer,2016 Connecticut,2016 Connecticut
+2016 Temple,2016,Temple,Region 1,10,First Round,1,Fran Dunphy,2016 Fran Dunphy,American,Amer,2016 Amer,2016 Temple,2016 Temple
+2016 Wichita St.,2016,Wichita St.,Region 1,11,Second Round,1,Gregg Marshall,2016 Gregg Marshall,Missouri Valley,MVC,2016 MVC,2016 Wichita St.,2016 Wichita St.
+2016 South Dakota St.,2016,South Dakota St.,Region 1,12,First Round,1,Scott Nagy,2016 Scott Nagy,Summit,Sum,2016 Sum,2016 South Dakota St.,2016 South Dakota St.
+2016 Hawaii,2016,Hawaii,Region 1,13,Second Round,1,Eran Ganot,2016 Eran Ganot,Big West,BW,2016 BW,2016 Hawaii,2016 Hawaii
+2016 Buffalo,2016,Buffalo,Region 1,14,First Round,1,Nate Oats,2016 Nate Oats,MAC,MAC,2016 MAC,2016 Buffalo,2016 Buffalo
+2016 UNC Asheville,2016,UNC Asheville,Region 1,15,First Round,1,Nicholas McDevitt,2016 Nicholas McDevitt,Big South,BSth,2016 BSth,2016 UNC Asheville,2016 UNC Asheville
+2016 Austin Peay,2016,Austin Peay,Region 1,16,First Round,1,Dave Loos,2016 Dave Loos,Ohio Valley,OVC,2016 OVC,2016 Austin Peay,2016 Austin Peay
+2016 Oregon,2016,Oregon,Region 4,1,Elite Eight,2,Dana Altman,2016 Dana Altman,Pac 12,P12,2016 P12,2016 Oregon,2016 Oregon
+2016 Oklahoma,2016,Oklahoma,Region 4,2,Final Four,3,Lon Kruger,2016 Lon Kruger,Big 12,B12,2016 B12,2016 Oklahoma,2016 Oklahoma
+2016 Texas A&M,2016,Texas A&M,Region 4,3,Sweet 16,2,Billy Kennedy,2016 Billy Kennedy,SEC,SEC,2016 SEC,2016 Texas A&M,2016 Texas A&M
+2016 Duke,2016,Duke,Region 4,4,Sweet 16,2,Mike Krzyzewski,2016 Mike Krzyzewski,ACC,ACC,2016 ACC,2016 Duke,2016 Duke
+2016 Baylor,2016,Baylor,Region 4,5,First Round,1,Scott Drew,2016 Scott Drew,Big 12,B12,2016 B12,2016 Baylor,2016 Baylor
+2016 Texas,2016,Texas,Region 4,6,First Round,1,Shaka Smart,2016 Shaka Smart,Big 12,B12,2016 B12,2016 Texas,2016 Texas
+2016 Oregon St.,2016,Oregon St.,Region 4,7,First Round,1,Wayne Tinkle,2016 Wayne Tinkle,Pac 12,P12,2016 P12,2016 Oregon St.,2016 Oregon St.
+2016 Saint Joseph's,2016,Saint Joseph's,Region 4,8,Second Round,1,Phil Martelli,2016 Phil Martelli,Atlantic 10,A10,2016 A10,2016 Saint Joseph's,2016 Saint Joseph's
+2016 Cincinnati,2016,Cincinnati,Region 4,9,First Round,1,Mick Cronin,2016 Mick Cronin,American,Amer,2016 Amer,2016 Cincinnati,2016 Cincinnati
+2016 VCU,2016,VCU,Region 4,10,Second Round,1,Will Wade,2016 Will Wade,Atlantic 10,A10,2016 A10,2016 VCU,2016 VCU
+2016 Northern Iowa,2016,Northern Iowa,Region 4,11,Second Round,1,Ben Jacobson,2016 Ben Jacobson,Missouri Valley,MVC,2016 MVC,2016 Northern Iowa,2016 Northern Iowa
+2016 Yale,2016,Yale,Region 4,12,Second Round,1,James Jones,2016 James Jones,Ivy,Ivy,2016 Ivy,2016 Yale,2016 Yale
+2016 UNC Wilmington,2016,UNC Wilmington,Region 4,13,First Round,1,Kevin Keatts,2016 Kevin Keatts,CAA,CAA,2016 CAA,2016 UNC Wilmington,2016 UNC Wilmington
+2016 Green Bay,2016,Green Bay,Region 4,14,First Round,1,Linc Darner,2016 Linc Darner,Horizon,Horz,2016 Horz,2016 Green Bay,2016 Green Bay
+2016 Cal St. Bakersfield,2016,Cal St. Bakersfield,Region 4,15,First Round,1,Rod Barnes,2016 Rod Barnes,WAC,WAC,2016 WAC,2016 Cal St. Bakersfield,2016 Cal St. Bakersfield
+2016 Holy Cross,2016,Holy Cross,Region 4,16,First Round,1,Bill Carmody,2016 Bill Carmody,Patriot,Pat,2016 Pat,2016 Holy Cross,2016 Holy Cross
+2017 Villanova,2017,Villanova,Region 1,1,Second Round,1,Jay Wright,2017 Jay Wright,Big East,BE,2017 BE,2017 Villanova,2017 Villanova
+2017 Duke,2017,Duke,Region 1,2,Second Round,1,Mike Krzyzewski,2017 Mike Krzyzewski,ACC,ACC,2017 ACC,2017 Duke,2017 Duke
+2017 Baylor,2017,Baylor,Region 1,3,Sweet 16,2,Scott Drew,2017 Scott Drew,Big 12,B12,2017 B12,2017 Baylor,2017 Baylor
+2017 Florida,2017,Florida,Region 1,4,Elite Eight,2,Michael White,2017 Michael White,SEC,SEC,2017 SEC,2017 Florida,2017 Florida
+2017 Virginia,2017,Virginia,Region 1,5,Second Round,1,Tony Bennett,2017 Tony Bennett,ACC,ACC,2017 ACC,2017 Virginia,2017 Virginia
+2017 SMU,2017,SMU,Region 1,6,First Round,1,Tim Jankovich,2017 Tim Jankovich,American,Amer,2017 Amer,2017 SMU,2017 SMU
+2017 South Carolina,2017,South Carolina,Region 1,7,Final Four,3,Frank Martin,2017 Frank Martin,SEC,SEC,2017 SEC,2017 South Carolina,2017 South Carolina
+2017 Wisconsin,2017,Wisconsin,Region 1,8,Sweet 16,2,Greg Gard,2017 Greg Gard,Big 10,B10,2017 B10,2017 Wisconsin,2017 Wisconsin
+2017 Virginia Tech,2017,Virginia Tech,Region 1,9,First Round,1,Buzz Williams,2017 Buzz Williams,ACC,ACC,2017 ACC,2017 Virginia Tech,2017 Virginia Tech
+2017 Marquette,2017,Marquette,Region 1,10,First Round,1,Steve Wojciechowski,2017 Steve Wojciechowski,Big East,BE,2017 BE,2017 Marquette,2017 Marquette
+2017 USC,2017,USC,Region 1,11,Second Round,1,Andy Enfield,2017 Andy Enfield,Pac 12,P12,2017 P12,2017 USC,2017 USC
+2017 UNC Wilmington,2017,UNC Wilmington,Region 1,12,First Round,1,Kevin Keatts,2017 Kevin Keatts,CAA,CAA,2017 CAA,2017 UNC Wilmington,2017 UNC Wilmington
+2017 East Tennessee St.,2017,East Tennessee St.,Region 1,13,First Round,1,Steve Forbes,2017 Steve Forbes,Southern,SC,2017 SC,2017 East Tennessee St.,2017 East Tennessee St.
+2017 New Mexico St.,2017,New Mexico St.,Region 1,14,First Round,1,Paul Weir,2017 Paul Weir,WAC,WAC,2017 WAC,2017 New Mexico St.,2017 New Mexico St.
+2017 Troy,2017,Troy,Region 1,15,First Round,1,Phil Cunningham,2017 Phil Cunningham,Sun Belt,SB,2017 SB,2017 Troy,2017 Troy
+2017 Mount St. Mary's,2017,Mount St. Mary's,Region 1,16,First Round,1,Jamion Christian,2017 Jamion Christian,NEC,NEC,2017 NEC,2017 Mount St. Mary's,2017 Mount St. Mary's
+2017 Kansas,2017,Kansas,Region 2,1,Elite Eight,2,Bill Self,2017 Bill Self,Big 12,B12,2017 B12,2017 Kansas,2017 Kansas
+2017 Louisville,2017,Louisville,Region 2,2,Second Round,1,Rick Pitino,2017 Rick Pitino,ACC,ACC,2017 ACC,2017 Louisville,2017 Louisville
+2017 Oregon,2017,Oregon,Region 2,3,Final Four,3,Dana Altman,2017 Dana Altman,Pac 12,P12,2017 P12,2017 Oregon,2017 Oregon
+2017 Purdue,2017,Purdue,Region 2,4,Sweet 16,2,Matt Painter,2017 Matt Painter,Big 10,B10,2017 B10,2017 Purdue,2017 Purdue
+2017 Iowa St.,2017,Iowa St.,Region 2,5,Second Round,1,Steve Prohm,2017 Steve Prohm,Big 12,B12,2017 B12,2017 Iowa St.,2017 Iowa St.
+2017 Creighton,2017,Creighton,Region 2,6,First Round,1,Greg McDermott,2017 Greg McDermott,Big East,BE,2017 BE,2017 Creighton,2017 Creighton
+2017 Michigan,2017,Michigan,Region 2,7,Sweet 16,2,John Beilein,2017 John Beilein,Big 10,B10,2017 B10,2017 Michigan,2017 Michigan
+2017 Miami FL,2017,Miami FL,Region 2,8,First Round,1,Jim Larranaga,2017 Jim Larranaga,ACC,ACC,2017 ACC,2017 Miami FL,2017 Miami FL
+2017 Michigan St.,2017,Michigan St.,Region 2,9,Second Round,1,Tom Izzo,2017 Tom Izzo,Big 10,B10,2017 B10,2017 Michigan St.,2017 Michigan St.
+2017 Oklahoma St.,2017,Oklahoma St.,Region 2,10,First Round,1,Brad Underwood,2017 Brad Underwood,Big 12,B12,2017 B12,2017 Oklahoma St.,2017 Oklahoma St.
+2017 Rhode Island,2017,Rhode Island,Region 2,11,Second Round,1,Dan Hurley,2017 Dan Hurley,Atlantic 10,A10,2017 A10,2017 Rhode Island,2017 Rhode Island
+2017 Nevada,2017,Nevada,Region 2,12,First Round,1,Eric Musselman,2017 Eric Musselman,Mountain West,MWC,2017 MWC,2017 Nevada,2017 Nevada
+2017 Vermont,2017,Vermont,Region 2,13,First Round,1,John Becker,2017 John Becker,Amerian East,AE,2017 AE,2017 Vermont,2017 Vermont
+2017 Iona,2017,Iona,Region 2,14,First Round,1,Tim Cluesss,2017 Tim Cluesss,MAAC,MAAC,2017 MAAC,2017 Iona,2017 Iona
+2017 Jacksonville St.,2017,Jacksonville St.,Region 2,15,First Round,1,Ray Harper,2017 Ray Harper,Ohio Valley,OVC,2017 OVC,2017 Jacksonville St.,2017 Jacksonville St.
+2017 UC Davis,2017,UC Davis,Region 2,16,First Round,1,Jim Les,2017 Jim Les,Big West,BW,2017 BW,2017 UC Davis,2017 UC Davis
+2017 North Carolina,2017,North Carolina,Region 3,1,Champion,3,Roy Williams,2017 Roy Williams,ACC,ACC,2017 ACC,2017 North Carolina,2017 North Carolina
+2017 Kentucky,2017,Kentucky,Region 3,2,Elite Eight,2,John Calipari,2017 John Calipari,SEC,SEC,2017 SEC,2017 Kentucky,2017 Kentucky
+2017 UCLA,2017,UCLA,Region 3,3,Sweet 16,2,Steve Alford,2017 Steve Alford,Pac 12,P12,2017 P12,2017 UCLA,2017 UCLA
+2017 Butler,2017,Butler,Region 3,4,Sweet 16,2,Chris Holtmann,2017 Chris Holtmann,Big East,BE,2017 BE,2017 Butler,2017 Butler
+2017 Minnesota,2017,Minnesota,Region 3,5,First Round,1,Richard Pitino,2017 Richard Pitino,Big 10,B10,2017 B10,2017 Minnesota,2017 Minnesota
+2017 Cincinnati,2017,Cincinnati,Region 3,6,Second Round,1,Mick Cronin,2017 Mick Cronin,American,Amer,2017 Amer,2017 Cincinnati,2017 Cincinnati
+2017 Dayton,2017,Dayton,Region 3,7,First Round,1,Archie Miller,2017 Archie Miller,Atlantic 10,A10,2017 A10,2017 Dayton,2017 Dayton
+2017 Arkansas,2017,Arkansas,Region 3,8,Second Round,1,Mike Anderson,2017 Mike Anderson,SEC,SEC,2017 SEC,2017 Arkansas,2017 Arkansas
+2017 Seton Hall,2017,Seton Hall,Region 3,9,First Round,1,Kevin Willard,2017 Kevin Willard,Big East,BE,2017 BE,2017 Seton Hall,2017 Seton Hall
+2017 Wichita St.,2017,Wichita St.,Region 3,10,Second Round,1,Gregg Marshall,2017 Gregg Marshall,Missouri Valley,MVC,2017 MVC,2017 Wichita St.,2017 Wichita St.
+2017 Kansas St.,2017,Kansas St.,Region 3,11,First Round,1,Bruce Weber,2017 Bruce Weber,Big 12,B12,2017 B12,2017 Kansas St.,2017 Kansas St.
+2017 Middle Tennessee,2017,Middle Tennessee,Region 3,12,Second Round,1,Kermit Davis Jr,2017 Kermit Davis Jr,Conference USA,CUSA,2017 CUSA,2017 Middle Tennessee,2017 Middle Tennessee
+2017 Winthrop,2017,Winthrop,Region 3,13,First Round,1,Pat Kelsey,2017 Pat Kelsey,Big South,BSth,2017 BSth,2017 Winthrop,2017 Winthrop
+2017 Kent St.,2017,Kent St.,Region 3,14,First Round,1,Rob Senderoff,2017 Rob Senderoff,MAC,MAC,2017 MAC,2017 Kent St.,2017 Kent St.
+2017 Northern Kentucky,2017,Northern Kentucky,Region 3,15,First Round,1,John Brannen,2017 John Brannen,Horizon,Horz,2017 Horz,2017 Northern Kentucky,2017 Northern Kentucky
+2017 Texas Southern,2017,Texas Southern,Region 3,16,First Round,1,Mike Davis,2017 Mike Davis,SWAC,SWAC,2017 SWAC,2017 Texas Southern,2017 Texas Southern
+2017 Gonzaga,2017,Gonzaga,Region 4,1,Runner Up,3,Mark Few,2017 Mark Few,WCC,WCC,2017 WCC,2017 Gonzaga,2017 Gonzaga
+2017 Arizona,2017,Arizona,Region 4,2,Sweet 16,2,Sean Miller,2017 Sean Miller,Pac 12,P12,2017 P12,2017 Arizona,2017 Arizona
+2017 Florida St.,2017,Florida St.,Region 4,3,Second Round,1,Leonard Hamilton,2017 Leonard Hamilton,ACC,ACC,2017 ACC,2017 Florida St.,2017 Florida St.
+2017 West Virginia,2017,West Virginia,Region 4,4,Sweet 16,2,Bob Huggins,2017 Bob Huggins,Big 12,B12,2017 B12,2017 West Virginia,2017 West Virginia
+2017 Notre Dame,2017,Notre Dame,Region 4,5,Second Round,1,Mike Brey,2017 Mike Brey,ACC,ACC,2017 ACC,2017 Notre Dame,2017 Notre Dame
+2017 Maryland,2017,Maryland,Region 4,6,First Round,1,Mark Turgeon,2017 Mark Turgeon,Big 10,B10,2017 B10,2017 Maryland,2017 Maryland
+2017 Saint Mary's,2017,Saint Mary's,Region 4,7,Second Round,1,Randy Bennett,2017 Randy Bennett,WCC,WCC,2017 WCC,2017 Saint Mary's,2017 Saint Mary's
+2017 Northwestern,2017,Northwestern,Region 4,8,Second Round,1,Chris Collins,2017 Chris Collins,Big 10,B10,2017 B10,2017 Northwestern,2017 Northwestern
+2017 Vanderbilt,2017,Vanderbilt,Region 4,9,First Round,1,Bryce Drew,2017 Bryce Drew,SEC,SEC,2017 SEC,2017 Vanderbilt,2017 Vanderbilt
+2017 VCU,2017,VCU,Region 4,10,First Round,1,Will Wade,2017 Will Wade,Atlantic 10,A10,2017 A10,2017 VCU,2017 VCU
+2017 Xavier,2017,Xavier,Region 4,11,Elite Eight,2,Chris Mack,2017 Chris Mack,Big East,BE,2017 BE,2017 Xavier,2017 Xavier
+2017 Princeton,2017,Princeton,Region 4,12,First Round,1,Mitch Henderson,2017 Mitch Henderson,Ivy,Ivy,2017 Ivy,2017 Princeton,2017 Princeton
+2017 Bucknell,2017,Bucknell,Region 4,13,First Round,1,Nathan Davis,2017 Nathan Davis,Patriot,Pat,2017 Pat,2017 Bucknell,2017 Bucknell
+2017 Florida Gulf Coast,2017,Florida Gulf Coast,Region 4,14,First Round,1,Joe Dooley,2017 Joe Dooley,Atlantic Sun,ASun,2017 ASun,2017 Florida Gulf Coast,2017 Florida Gulf Coast
+2017 North Dakota,2017,North Dakota,Region 4,15,First Round,1,Brian Jones,2017 Brian Jones,Big Sky,BSky,2017 BSky,2017 North Dakota,2017 North Dakota
+2017 South Dakota St.,2017,South Dakota St.,Region 4,16,First Round,1,T.J. Otzelberger,2017 T.J. Otzelberger,Summit,Sum,2017 Sum,2017 South Dakota St.,2017 South Dakota St.
+2018 Villanova,2018,Villanova,Region 2,1,Champion,3,Jay Wright,2018 Jay Wright,Big East,BE,2018 BE,2018 Villanova,2018 Villanova
+2018 Purdue,2018,Purdue,Region 2,2,Sweet 16,2,Matt Painter,2018 Matt Painter,Big 10,B10,2018 B10,2018 Purdue,2018 Purdue
+2018 Texas Tech,2018,Texas Tech,Region 2,3,Elite Eight,2,Chris Beard,2018 Chris Beard,Big 12,B12,2018 B12,2018 Texas Tech,2018 Texas Tech
+2018 Wichita St.,2018,Wichita St.,Region 2,4,First Round,1,Gregg Marshall,2018 Gregg Marshall,American,Amer,2018 Amer,2018 Wichita St.,2018 Wichita St.
+2018 West Virginia,2018,West Virginia,Region 2,5,Sweet 16,2,Bob Huggins,2018 Bob Huggins,Big 12,B12,2018 B12,2018 West Virginia,2018 West Virginia
+2018 Florida,2018,Florida,Region 2,6,Second Round,1,Michael White,2018 Michael White,SEC,SEC,2018 SEC,2018 Florida,2018 Florida
+2018 Arkansas,2018,Arkansas,Region 2,7,First Round,1,Mike Anderson,2018 Mike Anderson,SEC,SEC,2018 SEC,2018 Arkansas,2018 Arkansas
+2018 Virginia Tech,2018,Virginia Tech,Region 2,8,First Round,1,Buzz Williams,2018 Buzz Williams,ACC,ACC,2018 ACC,2018 Virginia Tech,2018 Virginia Tech
+2018 Alabama,2018,Alabama,Region 2,9,Second Round,1,Avery Johnson,2018 Avery Johnson,SEC,SEC,2018 SEC,2018 Alabama,2018 Alabama
+2018 Butler,2018,Butler,Region 2,10,Second Round,1,LaVall Jordan,2018 LaVall Jordan,Big East,BE,2018 BE,2018 Butler,2018 Butler
+2018 St. Bonaventure,2018,St. Bonaventure,Region 2,11,First Round,1,Mark Schmidt,2018 Mark Schmidt,Atlantic 10,A10,2018 A10,2018 St. Bonaventure,2018 St. Bonaventure
+2018 Murray St.,2018,Murray St.,Region 2,12,First Round,1,Matt McMahon,2018 Matt McMahon,Ohio Valley,OVC,2018 OVC,2018 Murray St.,2018 Murray St.
+2018 Marshall,2018,Marshall,Region 2,13,Second Round,1,Dan D'Antoni,2018 Dan D'Antoni,Conference USA,CUSA,2018 CUSA,2018 Marshall,2018 Marshall
+2018 Stephen F. Austin,2018,Stephen F. Austin,Region 2,14,First Round,1,Kyle Keller,2018 Kyle Keller,Southland,Slnd,2018 Slnd,2018 Stephen F. Austin,2018 Stephen F. Austin
+2018 Cal St. Fullerton,2018,Cal St. Fullerton,Region 2,15,First Round,1,Dedrique Taylor,2018 Dedrique Taylor,Big West,BW,2018 BW,2018 Cal St. Fullerton,2018 Cal St. Fullerton
+2018 Radford,2018,Radford,Region 2,16,First Round,1,Mike Jones,2018 Mike Jones,Big South,BSth,2018 BSth,2018 Radford,2018 Radford
+2018 Kansas,2018,Kansas,Region 3,1,Final Four,3,Bill Self,2018 Bill Self,Big 12,B12,2018 B12,2018 Kansas,2018 Kansas
+2018 Duke,2018,Duke,Region 3,2,Elite Eight,2,Mike Krzyzewski,2018 Mike Krzyzewski,ACC,ACC,2018 ACC,2018 Duke,2018 Duke
+2018 Michigan St.,2018,Michigan St.,Region 3,3,Second Round,1,Tom Izzo,2018 Tom Izzo,Big 10,B10,2018 B10,2018 Michigan St.,2018 Michigan St.
+2018 Auburn,2018,Auburn,Region 3,4,Second Round,1,Bruce Pearl,2018 Bruce Pearl,SEC,SEC,2018 SEC,2018 Auburn,2018 Auburn
+2018 Clemson,2018,Clemson,Region 3,5,Sweet 16,2,Brad Brownell,2018 Brad Brownell,ACC,ACC,2018 ACC,2018 Clemson,2018 Clemson
+2018 TCU,2018,TCU,Region 3,6,First Round,1,Jamie Dixon,2018 Jamie Dixon,Big 12,B12,2018 B12,2018 TCU,2018 TCU
+2018 Rhode Island,2018,Rhode Island,Region 3,7,Second Round,1,Dan Hurley,2018 Dan Hurley,Atlantic 10,A10,2018 A10,2018 Rhode Island,2018 Rhode Island
+2018 Seton Hall,2018,Seton Hall,Region 3,8,Second Round,1,Kevin Willard,2018 Kevin Willard,Big East,BE,2018 BE,2018 Seton Hall,2018 Seton Hall
+2018 NC St.,2018,North Carolina St.,Region 3,9,First Round,1,Kevin Keatts,2018 Kevin Keatts,ACC,ACC,2018 ACC,2018 North Carolina St.,2018 N.C. State
+2018 Oklahoma,2018,Oklahoma,Region 3,10,First Round,1,Lon Kruger,2018 Lon Kruger,Big 12,B12,2018 B12,2018 Oklahoma,2018 Oklahoma
+2018 Syracuse,2018,Syracuse,Region 3,11,Sweet 16,2,Jim Boeheim,2018 Jim Boeheim,ACC,ACC,2018 ACC,2018 Syracuse,2018 Syracuse
+2018 New Mexico St.,2018,New Mexico St.,Region 3,12,First Round,1,Chris Jans,2018 Chris Jans,WAC,WAC,2018 WAC,2018 New Mexico St.,2018 New Mexico St.
+2018 Charleston,2018,College of Charleston,Region 3,13,First Round,1,Earl Grant,2018 Earl Grant,CAA,CAA,2018 CAA,2018 College of Charleston,2018 Charleston
+2018 Bucknell,2018,Bucknell,Region 3,14,First Round,1,Nathan Davis,2018 Nathan Davis,Patriot,Pat,2018 Pat,2018 Bucknell,2018 Bucknell
+2018 Iona,2018,Iona,Region 3,15,First Round,1,Tim Cluesss,2018 Tim Cluesss,MAAC,MAAC,2018 MAAC,2018 Iona,2018 Iona
+2018 Penn,2018,Penn,Region 3,16,First Round,1,Steve Donahue,2018 Steve Donahue,Ivy,Ivy,2018 Ivy,2018 Penn,2018 Penn
+2018 Virginia,2018,Virginia,Region 1,1,First Round,1,Tony Bennett,2018 Tony Bennett,ACC,ACC,2018 ACC,2018 Virginia,2018 Virginia
+2018 Cincinnati,2018,Cincinnati,Region 1,2,Second Round,1,Mick Cronin,2018 Mick Cronin,American,Amer,2018 Amer,2018 Cincinnati,2018 Cincinnati
+2018 Tennessee,2018,Tennessee,Region 1,3,Second Round,1,Rick Barnes,2018 Rick Barnes,SEC,SEC,2018 SEC,2018 Tennessee,2018 Tennessee
+2018 Arizona,2018,Arizona,Region 1,4,First Round,1,Sean Miller,2018 Sean Miller,Pac 12,P12,2018 P12,2018 Arizona,2018 Arizona
+2018 Kentucky,2018,Kentucky,Region 1,5,Sweet 16,2,John Calipari,2018 John Calipari,SEC,SEC,2018 SEC,2018 Kentucky,2018 Kentucky
+2018 Miami FL,2018,Miami FL,Region 1,6,First Round,1,Jim Larranaga,2018 Jim Larranaga,ACC,ACC,2018 ACC,2018 Miami FL,2018 Miami FL
+2018 Nevada,2018,Nevada,Region 1,7,Sweet 16,2,Eric Musselman,2018 Eric Musselman,Mountain West,MWC,2018 MWC,2018 Nevada,2018 Nevada
+2018 Creighton,2018,Creighton,Region 1,8,First Round,1,Greg McDermott,2018 Greg McDermott,Big East,BE,2018 BE,2018 Creighton,2018 Creighton
+2018 Kansas St.,2018,Kansas St.,Region 1,9,Elite Eight,2,Bruce Weber,2018 Bruce Weber,Big 12,B12,2018 B12,2018 Kansas St.,2018 Kansas St.
+2018 Texas,2018,Texas,Region 1,10,First Round,1,Shaka Smart,2018 Shaka Smart,Big 12,B12,2018 B12,2018 Texas,2018 Texas
+2018 Loyola Chicago,2018,Loyola Chicago,Region 1,11,Final Four,3,Porter Moser,2018 Porter Moser,Missouri Valley,MVC,2018 MVC,2018 Loyola Chicago,2018 Loyola Chicago
+2018 Davidson,2018,Davidson,Region 1,12,First Round,1,Bob McKillop,2018 Bob McKillop,Atlantic 10,A10,2018 A10,2018 Davidson,2018 Davidson
+2018 Buffalo,2018,Buffalo,Region 1,13,Second Round,1,Nate Oats,2018 Nate Oats,MAC,MAC,2018 MAC,2018 Buffalo,2018 Buffalo
+2018 Wright St.,2018,Wright St.,Region 1,14,First Round,1,Scott Nagy,2018 Scott Nagy,Horizon,Horz,2018 Horz,2018 Wright St.,2018 Wright St.
+2018 Georgia St.,2018,Georgia St.,Region 1,15,First Round,1,Ron Hunter,2018 Ron Hunter,Sun Belt,SB,2018 SB,2018 Georgia St.,2018 Georgia St.
+2018 UMBC,2018,UMBC,Region 1,16,Second Round,1,Ryan Odom,2018 Ryan Odom,Amerian East,AE,2018 AE,2018 UMBC,2018 UMBC
+2018 Xavier,2018,Xavier,Region 4,1,Second Round,1,Chris Mack,2018 Chris Mack,Big East,BE,2018 BE,2018 Xavier,2018 Xavier
+2018 North Carolina,2018,North Carolina,Region 4,2,Second Round,1,Roy Williams,2018 Roy Williams,ACC,ACC,2018 ACC,2018 North Carolina,2018 North Carolina
+2018 Michigan,2018,Michigan,Region 4,3,Runner Up,3,John Beilein,2018 John Beilein,Big 10,B10,2018 B10,2018 Michigan,2018 Michigan
+2018 Gonzaga,2018,Gonzaga,Region 4,4,Sweet 16,2,Mark Few,2018 Mark Few,WCC,WCC,2018 WCC,2018 Gonzaga,2018 Gonzaga
+2018 Ohio St.,2018,Ohio St.,Region 4,5,Second Round,1,Chris Holtmann,2018 Chris Holtmann,Big 10,B10,2018 B10,2018 Ohio St.,2018 Ohio St.
+2018 Houston,2018,Houston,Region 4,6,Second Round,1,Kelvin Sampson,2018 Kelvin Sampson,American,Amer,2018 Amer,2018 Houston,2018 Houston
+2018 Texas A&M,2018,Texas A&M,Region 4,7,Sweet 16,2,Billy Kennedy,2018 Billy Kennedy,SEC,SEC,2018 SEC,2018 Texas A&M,2018 Texas A&M
+2018 Missouri,2018,Missouri,Region 4,8,First Round,1,Cuonzo Martin,2018 Cuonzo Martin,SEC,SEC,2018 SEC,2018 Missouri,2018 Missouri
+2018 Florida St.,2018,Florida St.,Region 4,9,Second Round,1,Leonard Hamilton,2018 Leonard Hamilton,ACC,ACC,2018 ACC,2018 Florida St.,2018 Florida St.
+2018 Providence,2018,Providence,Region 4,10,First Round,1,Ed Cooley,2018 Ed Cooley,Big East,BE,2018 BE,2018 Providence,2018 Providence
+2018 San Diego St.,2018,San Diego St.,Region 4,11,First Round,1,Brian Dutcher,2018 Brian Dutcher,Mountain West,MWC,2018 MWC,2018 San Diego St.,2018 San Diego St.
+2018 South Dakota St.,2018,South Dakota St.,Region 4,12,First Round,1,T.J. Otzelberger,2018 T.J. Otzelberger,Summit,Sum,2018 Sum,2018 South Dakota St.,2018 South Dakota St.
+2018 UNC Greensboro,2018,UNC Greensboro,Region 4,13,First Round,1,Wes Miller,2018 Wes Miller,Southern,SC,2018 SC,2018 UNC Greensboro,2018 UNC Greensboro
+2018 Montana,2018,Montana,Region 4,14,First Round,1,Travis DeCuire,2018 Travis DeCuire,Big Sky,BSky,2018 BSky,2018 Montana,2018 Montana
+2018 Lipscomb,2018,Lipscomb,Region 4,15,First Round,1,Casey Alexander,2018 Casey Alexander,Atlantic Sun,ASun,2018 ASun,2018 Lipscomb,2018 Lipscomb
+2018 Texas Southern,2018,Texas Southern,Region 4,16,First Round,1,Mike Davis,2018 Mike Davis,SWAC,SWAC,2018 SWAC,2018 Texas Southern,2018 Texas Southern
+2019 Duke,2019,Duke,Region 1,1,Elite Eight,2,Mike Krzyzewski,2019 Mike Krzyzewski,ACC,ACC,2019 ACC,2019 Duke,2019 Duke
+2019 Michigan St.,2019,Michigan St.,Region 1,2,Final Four,3,Tom Izzo,2019 Tom Izzo,Big 10,B10,2019 B10,2019 Michigan St.,2019 Michigan St.
+2019 LSU,2019,LSU,Region 1,3,Sweet 16,2,Will Wade,2019 Will Wade,SEC,SEC,2019 SEC,2019 LSU,2019 LSU
+2019 Virginia Tech,2019,Virginia Tech,Region 1,4,Sweet 16,2,Buzz Williams,2019 Buzz Williams,ACC,ACC,2019 ACC,2019 Virginia Tech,2019 Virginia Tech
+2019 Mississippi St.,2019,Mississippi St.,Region 1,5,First Round,1,Ben Howland,2019 Ben Howland,SEC,SEC,2019 SEC,2019 Mississippi St.,2019 Mississippi St.
+2019 Maryland,2019,Maryland,Region 1,6,Second Round,1,Mark Turgeon,2019 Mark Turgeon,Big 10,B10,2019 B10,2019 Maryland,2019 Maryland
+2019 Louisville,2019,Louisville,Region 1,7,First Round,1,Chris Mack,2019 Chris Mack,ACC,ACC,2019 ACC,2019 Louisville,2019 Louisville
+2019 VCU,2019,VCU,Region 1,8,First Round,1,Mike Rhoades,2019 Mike Rhoades,Atlantic 10,A10,2019 A10,2019 VCU,2019 VCU
+2019 UCF,2019,UCF,Region 1,9,Second Round,1,Johnny Dawkins,2019 Johnny Dawkins,American,Amer,2019 Amer,2019 UCF,2019 UCF
+2019 Minnesota,2019,Minnesota,Region 1,10,Second Round,1,Richard Pitino,2019 Richard Pitino,Big 10,B10,2019 B10,2019 Minnesota,2019 Minnesota
+2019 Belmont,2019,Belmont,Region 1,11,First Round,1,Rick Byrd,2019 Rick Byrd,Ohio Valley,OVC,2019 OVC,2019 Belmont,2019 Belmont
+2019 Liberty,2019,Liberty,Region 1,12,Second Round,1,Ritche McKay,2019 Ritche McKay,Atlantic Sun,ASun,2019 ASun,2019 Liberty,2019 Liberty
+2019 Saint Louis,2019,Saint Louis,Region 1,13,First Round,1,Travis Ford,2019 Travis Ford,Atlantic 10,A10,2019 A10,2019 Saint Louis,2019 Saint Louis
+2019 Yale,2019,Yale,Region 1,14,First Round,1,James Jones,2019 James Jones,Ivy,Ivy,2019 Ivy,2019 Yale,2019 Yale
+2019 Bradley,2019,Bradley,Region 1,15,First Round,1,Brian Wardle,2019 Brian Wardle,Missouri Valley,MVC,2019 MVC,2019 Bradley,2019 Bradley
+2019 North Dakota St.,2019,North Dakota St.,Region 1,16,First Round,1,David Richman,2019 David Richman,Summit,Sum,2019 Sum,2019 North Dakota St.,2019 North Dakota St.
+2019 North Carolina,2019,North Carolina,Region 3,1,Sweet 16,2,Roy Williams,2019 Roy Williams,ACC,ACC,2019 ACC,2019 North Carolina,2019 North Carolina
+2019 Kentucky,2019,Kentucky,Region 3,2,Elite Eight,2,John Calipari,2019 John Calipari,SEC,SEC,2019 SEC,2019 Kentucky,2019 Kentucky
+2019 Houston,2019,Houston,Region 3,3,Sweet 16,2,Kelvin Sampson,2019 Kelvin Sampson,American,Amer,2019 Amer,2019 Houston,2019 Houston
+2019 Kansas,2019,Kansas,Region 3,4,Second Round,1,Bill Self,2019 Bill Self,Big 12,B12,2019 B12,2019 Kansas,2019 Kansas
+2019 Auburn,2019,Auburn,Region 3,5,Final Four,3,Bruce Pearl,2019 Bruce Pearl,SEC,SEC,2019 SEC,2019 Auburn,2019 Auburn
+2019 Iowa St.,2019,Iowa St.,Region 3,6,First Round,1,Steve Prohm,2019 Steve Prohm,Big 12,B12,2019 B12,2019 Iowa St.,2019 Iowa St.
+2019 Wofford,2019,Wofford,Region 3,7,Second Round,1,Mike Young,2019 Mike Young,Southern,SC,2019 SC,2019 Wofford,2019 Wofford
+2019 Utah St.,2019,Utah St.,Region 3,8,First Round,1,Craig Smith,2019 Craig Smith,Mountain West,MWC,2019 MWC,2019 Utah St.,2019 Utah St.
+2019 Washington,2019,Washington,Region 3,9,Second Round,1,Mike Hopkins,2019 Mike Hopkins,Pac 12,P12,2019 P12,2019 Washington,2019 Washington
+2019 Seton Hall,2019,Seton Hall,Region 3,10,First Round,1,Kevin Willard,2019 Kevin Willard,Big East,BE,2019 BE,2019 Seton Hall,2019 Seton Hall
+2019 Ohio St.,2019,Ohio St.,Region 3,11,Second Round,1,Chris Holtmann,2019 Chris Holtmann,Big 10,B10,2019 B10,2019 Ohio St.,2019 Ohio St.
+2019 New Mexico St.,2019,New Mexico St.,Region 3,12,First Round,1,Chris Jans,2019 Chris Jans,WAC,WAC,2019 WAC,2019 New Mexico St.,2019 New Mexico St.
+2019 Northeastern,2019,Northeastern,Region 3,13,First Round,1,Bill Coen,2019 Bill Coen,CAA,CAA,2019 CAA,2019 Northeastern,2019 Northeastern
+2019 Georgia St.,2019,Georgia St.,Region 3,14,First Round,1,Ron Hunter,2019 Ron Hunter,Sun Belt,SB,2019 SB,2019 Georgia St.,2019 Georgia St.
+2019 Abilene Christian,2019,Abilene Christian,Region 3,15,First Round,1,Joe Golding,2019 Joe Golding,Southland,Slnd,2019 Slnd,2019 Abilene Christian,2019 Abilene Christian
+2019 Iona,2019,Iona,Region 3,16,First Round,1,Tim Cluesss,2019 Tim Cluesss,MAAC,MAAC,2019 MAAC,2019 Iona,2019 Iona
+2019 Virginia,2019,Virginia,Region 2,1,Champion,3,Tony Bennett,2019 Tony Bennett,ACC,ACC,2019 ACC,2019 Virginia,2019 Virginia
+2019 Tennessee,2019,Tennessee,Region 2,2,Sweet 16,2,Rick Barnes,2019 Rick Barnes,SEC,SEC,2019 SEC,2019 Tennessee,2019 Tennessee
+2019 Purdue,2019,Purdue,Region 2,3,Elite Eight,2,Matt Painter,2019 Matt Painter,Big 10,B10,2019 B10,2019 Purdue,2019 Purdue
+2019 Kansas St.,2019,Kansas St.,Region 2,4,First Round,1,Bruce Weber,2019 Bruce Weber,Big 12,B12,2019 B12,2019 Kansas St.,2019 Kansas St.
+2019 Wisconsin,2019,Wisconsin,Region 2,5,First Round,1,Greg Gard,2019 Greg Gard,Big 10,B10,2019 B10,2019 Wisconsin,2019 Wisconsin
+2019 Villanova,2019,Villanova,Region 2,6,Second Round,1,Jay Wright,2019 Jay Wright,Big East,BE,2019 BE,2019 Villanova,2019 Villanova
+2019 Cincinnati,2019,Cincinnati,Region 2,7,First Round,1,Mick Cronin,2019 Mick Cronin,American,Amer,2019 Amer,2019 Cincinnati,2019 Cincinnati
+2019 Mississippi,2019,Mississippi,Region 2,8,First Round,1,Kermit Davis Jr,2019 Kermit Davis Jr,SEC,SEC,2019 SEC,2019 Mississippi,2019 Mississippi
+2019 Oklahoma,2019,Oklahoma,Region 2,9,Second Round,1,Lon Kruger,2019 Lon Kruger,Big 12,B12,2019 B12,2019 Oklahoma,2019 Oklahoma
+2019 Iowa,2019,Iowa,Region 2,10,Second Round,1,Fran McCaffery,2019 Fran McCaffery,Big 10,B10,2019 B10,2019 Iowa,2019 Iowa
+2019 Saint Mary's,2019,Saint Mary's,Region 2,11,First Round,1,Randy Bennett,2019 Randy Bennett,WCC,WCC,2019 WCC,2019 Saint Mary's,2019 Saint Mary's
+2019 Oregon,2019,Oregon,Region 2,12,Sweet 16,2,Dana Altman,2019 Dana Altman,Pac 12,P12,2019 P12,2019 Oregon,2019 Oregon
+2019 UC Irvine,2019,UC Irvine,Region 2,13,Second Round,1,Russell Turner,2019 Russell Turner,Big West,BW,2019 BW,2019 UC Irvine,2019 UC Irvine
+2019 Old Dominion,2019,Old Dominion,Region 2,14,First Round,1,Jeff Jones,2019 Jeff Jones,Conference USA,CUSA,2019 CUSA,2019 Old Dominion,2019 Old Dominion
+2019 Colgate,2019,Colgate,Region 2,15,First Round,1,Matt Langel,2019 Matt Langel,Patriot,Pat,2019 Pat,2019 Colgate,2019 Colgate
+2019 Gardner Webb,2019,Gardner Webb,Region 2,16,First Round,1,Tim Craft,2019 Tim Craft,Big South,BSth,2019 BSth,2019 Gardner Webb,2019 Gardner Webb
+2019 Gonzaga,2019,Gonzaga,Region 4,1,Elite Eight,2,Mark Few,2019 Mark Few,WCC,WCC,2019 WCC,2019 Gonzaga,2019 Gonzaga
+2019 Michigan,2019,Michigan,Region 4,2,Sweet 16,2,John Beilein,2019 John Beilein,Big 10,B10,2019 B10,2019 Michigan,2019 Michigan
+2019 Texas Tech,2019,Texas Tech,Region 4,3,Runner Up,3,Chris Beard,2019 Chris Beard,Big 12,B12,2019 B12,2019 Texas Tech,2019 Texas Tech
+2019 Florida St.,2019,Florida St.,Region 4,4,Sweet 16,2,Leonard Hamilton,2019 Leonard Hamilton,ACC,ACC,2019 ACC,2019 Florida St.,2019 Florida St.
+2019 Marquette,2019,Marquette,Region 4,5,First Round,1,Steve Wojciechowski,2019 Steve Wojciechowski,Big East,BE,2019 BE,2019 Marquette,2019 Marquette
+2019 Buffalo,2019,Buffalo,Region 4,6,Second Round,1,Nate Oats,2019 Nate Oats,MAC,MAC,2019 MAC,2019 Buffalo,2019 Buffalo
+2019 Nevada,2019,Nevada,Region 4,7,First Round,1,Eric Musselman,2019 Eric Musselman,Mountain West,MWC,2019 MWC,2019 Nevada,2019 Nevada
+2019 Syracuse,2019,Syracuse,Region 4,8,First Round,1,Jim Boeheim,2019 Jim Boeheim,ACC,ACC,2019 ACC,2019 Syracuse,2019 Syracuse
+2019 Baylor,2019,Baylor,Region 4,9,Second Round,1,Scott Drew,2019 Scott Drew,Big 12,B12,2019 B12,2019 Baylor,2019 Baylor
+2019 Florida,2019,Florida,Region 4,10,Second Round,1,Michael White,2019 Michael White,SEC,SEC,2019 SEC,2019 Florida,2019 Florida
+2019 Arizona St.,2019,Arizona St.,Region 4,11,First Round,1,Bobby Hurley,2019 Bobby Hurley,Pac 12,P12,2019 P12,2019 Arizona St.,2019 Arizona St.
+2019 Murray St.,2019,Murray St.,Region 4,12,Second Round,1,Matt McMahon,2019 Matt McMahon,Ohio Valley,OVC,2019 OVC,2019 Murray St.,2019 Murray St.
+2019 Vermont,2019,Vermont,Region 4,13,First Round,1,John Becker,2019 John Becker,Amerian East,AE,2019 AE,2019 Vermont,2019 Vermont
+2019 Northern Kentucky,2019,Northern Kentucky,Region 4,14,First Round,1,John Brannen,2019 John Brannen,Horizon,Horz,2019 Horz,2019 Northern Kentucky,2019 Northern Kentucky
+2019 Montana,2019,Montana,Region 4,15,First Round,1,Travis DeCuire,2019 Travis DeCuire,Big Sky,BSky,2019 BSky,2019 Montana,2019 Montana
+2019 Fairleigh Dickinson,2019,Fairleigh Dickinson,Region 4,16,First Round,1,Greg Herenda,2019 Greg Herenda,NEC,NEC,2019 NEC,2019 Fairleigh Dickinson,2019 Fairleigh Dickinson
+2020 Dayton,2020,Dayton,Region 4,1,Covid,3,Anthony Grant,2020 Anthony Grant,Atlantic 10,A10,2020 A10,2020 Dayton,2020 Dayton
+2020 Florida St.,2020,Florida St.,Region 4,2,Covid,2,Leonard Hamilton,2020 Leonard Hamilton,ACC,ACC,2020 ACC,2020 Florida St.,2020 Florida St.
+2020 Villanova,2020,Villanova,Region 4,3,Covid,2,Jay Wright,2020 Jay Wright,Big East,BE,2020 BE,2020 Villanova,2020 Villanova
+2020 Maryland,2020,Maryland,Region 4,4,Covid,2,Mark Turgeon,2020 Mark Turgeon,ACC,ACC,2020 ACC,2020 Maryland,2020 Maryland
+2020 Butler,2020,Butler,Region 4,5,Covid,1,LaVall Jordan,2020 LaVall Jordan,Horizon,Horz,2020 Horz,2020 Butler,2020 Butler
+2020 Penn St.,2020,Penn St.,Region 4,6,Covid,1,Pat Chambers,2020 Pat Chambers,Big 10,B10,2020 B10,2020 Penn St.,2020 Penn St.
+2020 West Virginia,2020,West Virginia,Region 4,7,Covid,1,Bob Huggins,2020 Bob Huggins,Big East,BE,2020 BE,2020 West Virginia,2020 West Virginia
+2020 Colorado,2020,Colorado,Region 4,8,Covid,1,Tad Boyle,2020 Tad Boyle,Pac 12,P12,2020 P12,2020 Colorado,2020 Colorado
+2020 Florida,2020,Florida,Region 4,9,Covid,1,Michael White,2020 Michael White,SEC,SEC,2020 SEC,2020 Florida,2020 Florida
+2020 Utah St.,2020,Utah St.,Region 4,10,Covid,1,Craig Smith,2020 Craig Smith,Big West,BW,2020 BW,2020 Utah St.,2020 Utah St.
+2020 UCLA,2020,UCLA,Region 4,11,Covid,1,Mick Cronin,2020 Mick Cronin,Pac 12,P12,2020 P12,2020 UCLA,2020 UCLA
+2020 Texas,2020,Texas,Region 4,12,Covid,1,Shaka Smart,2020 Shaka Smart,Big 12,B12,2020 B12,2020 Texas,2020 Texas
+2020 Akron,2020,Akron,Region 4,13,Covid,1,John Groce,2020 John Groce,MAC,MAC,2020 MAC,2020 Akron,2020 Akron
+2020 Hofstra,2020,Hofstra,Region 4,14,Covid,1,Joe Mihalich,2020 Joe Mihalich,CAA,CAA,2020 CAA,2020 Hofstra,2020 Hofstra
+2020 Northern Kentucky,2020,Northern Kentucky,Region 4,15,Covid,1,Darrin Horn,2020 Darrin Horn,Horizon,Horz,2020 Horz,2020 Northern Kentucky,2020 Northern Kentucky
+2020 Robert Morris,2020,Robert Morris,Region 4,16,Covid,1,Andrew Toole,2020 Andrew Toole,NEC,NEC,2020 NEC,2020 Robert Morris,2020 Robert Morris
+2020 Kansas,2020,Kansas,Region 1,1,Covid,3,Bill Self,2020 Bill Self,Big 12,B12,2020 B12,2020 Kansas,2020 Kansas
+2020 Kentucky,2020,Kentucky,Region 1,2,Covid,2,John Calipari,2020 John Calipari,SEC,SEC,2020 SEC,2020 Kentucky,2020 Kentucky
+2020 Duke,2020,Duke,Region 1,3,Covid,2,Mike Krzyzewski,2020 Mike Krzyzewski,ACC,ACC,2020 ACC,2020 Duke,2020 Duke
+2020 Wisconsin,2020,Wisconsin,Region 1,4,Covid,1,Greg Gard,2020 Greg Gard,Big 10,B10,2020 B10,2020 Wisconsin,2020 Wisconsin
+2020 Auburn,2020,Auburn,Region 1,5,Covid,2,Bruce Pearl,2020 Bruce Pearl,SEC,SEC,2020 SEC,2020 Auburn,2020 Auburn
+2020 Iowa,2020,Iowa,Region 1,6,Covid,1,Fran McCaffery,2020 Fran McCaffery,Big 10,B10,2020 B10,2020 Iowa,2020 Iowa
+2020 Providence,2020,Providence,Region 1,7,Covid,1,Ed Cooley,2020 Ed Cooley,Big East,BE,2020 BE,2020 Providence,2020 Providence
+2020 Houston,2020,Houston,Region 1,8,Covid,1,Kelvin Sampson,2020 Kelvin Sampson,Conference USA,CUSA,2020 CUSA,2020 Houston,2020 Houston
+2020 Marquette,2020,Marquette,Region 1,9,Covid,1,Steve Wojciechowski,2020 Steve Wojciechowski,Big East,BE,2020 BE,2020 Marquette,2020 Marquette
+2020 Arizona St.,2020,Arizona St.,Region 1,10,Covid,1,Bobby Hurley,2020 Bobby Hurley,Pac 12,P12,2020 P12,2020 Arizona St.,2020 Arizona St.
+2020 East Tennessee St.,2020,East Tennessee St.,Region 1,11,Covid,1,Steve Forbes,2020 Steve Forbes,Southern,SC,2020 SC,2020 East Tennessee St.,2020 East Tennessee St.
+2020 Liberty,2020,Liberty,Region 1,12,Covid,1,Ritche McKay,2020 Ritche McKay,Big South,BSth,2020 BSth,2020 Liberty,2020 Liberty
+2020 North Texas,2020,North Texas,Region 1,13,Covid,1,Grant McCasland,2020 Grant McCasland,Sun Belt,SB,2020 SB,2020 North Texas,2020 North Texas
+2020 Belmont,2020,Belmont,Region 1,14,Covid,1,Rick Byrd,2020 Rick Byrd,Atlantic Sun,ASun,2020 ASun,2020 Belmont,2020 Belmont
+2020 North Dakota St.,2020,North Dakota St.,Region 1,15,Covid,1,David Richman,2020 David Richman,Summit,Sum,2020 Sum,2020 North Dakota St.,2020 North Dakota St.
+2020 Siena,2020,Siena,Region 1,16,Covid,1,Carmen Maciariello,2020 Carmen Maciariello,MAAC,MAAC,2020 MAAC,2020 Siena,2020 Siena
+2020 Baylor,2020,Baylor,Region 3,1,Covid,2,Scott Drew,2020 Scott Drew,Big 12,B12,2020 B12,2020 Baylor,2020 Baylor
+2020 Creighton,2020,Creighton,Region 3,2,Covid,1,Greg McDermott,2020 Greg McDermott,Missouri Valley,MVC,2020 MVC,2020 Creighton,2020 Creighton
+2020 Michigan St.,2020,Michigan St.,Region 3,3,Covid,3,Tom Izzo,2020 Tom Izzo,Big 10,B10,2020 B10,2020 Michigan St.,2020 Michigan St.
+2020 Louisville,2020,Louisville,Region 3,4,Covid,1,Chris Mack,2020 Chris Mack,Conference USA,CUSA,2020 CUSA,2020 Louisville,2020 Louisville
+2020 Ohio St.,2020,Ohio St.,Region 3,5,Covid,1,Chris Holtmann,2020 Chris Holtmann,Big 10,B10,2020 B10,2020 Ohio St.,2020 Ohio St.
+2020 Virginia,2020,Virginia,Region 3,6,Covid,1,Tony Bennett,2020 Tony Bennett,ACC,ACC,2020 ACC,2020 Virginia,2020 Virginia
+2020 Illinois,2020,Illinois,Region 3,7,Covid,2,Brad Underwood,2020 Brad Underwood,Big 10,B10,2020 B10,2020 Illinois,2020 Illinois
+2020 Saint Mary's,2020,Saint Mary's,Region 3,8,Covid,1,Randy Bennett,2020 Randy Bennett,WCC,WCC,2020 WCC,2020 Saint Mary's,2020 Saint Mary's
+2020 Rutgers,2020,Rutgers,Region 3,9,Covid,1,Steve Pikiell,2020 Steve Pikiell,Big 10,B10,2020 B10,2020 Rutgers,2020 Rutgers
+2020 USC,2020,USC,Region 3,10,Covid,1,Andy Enfield,2020 Andy Enfield,Pac 12,P12,2020 P12,2020 USC,2020 USC
+2020 Cincinnati,2020,Cincinnati,Region 3,11,Covid,1,Mick Cronin,2020 Mick Cronin,Conference USA,CUSA,2020 CUSA,2020 Cincinnati,2020 Cincinnati
+2020 Stephen F. Austin,2020,Stephen F. Austin,Region 3,12,Covid,2,Kyle Keller,2020 Kyle Keller,Southland,Slnd,2020 Slnd,2020 Stephen F. Austin,2020 Stephen F. Austin
+2020 Vermont,2020,Vermont,Region 3,13,Covid,1,John Becker,2020 John Becker,Amerian East,AE,2020 AE,2020 Vermont,2020 Vermont
+2020 Bradley,2020,Bradley,Region 3,14,Covid,1,Brian Wardle,2020 Brian Wardle,Missouri Valley,MVC,2020 MVC,2020 Bradley,2020 Bradley
+2020 Little Rock,2020,Little Rock,Region 3,15,Covid,1,Chris Beard,2020 Chris Beard,Sun Belt,SB,2020 SB,2020 Little Rock,2020 Little Rock
+2020 Winthrop,2020,Winthrop,Region 3,16,Covid,1,Pat Kelsey,2020 Pat Kelsey,Big South,BSth,2020 BSth,2020 Winthrop,2020 Winthrop
+2020 Gonzaga,2020,Gonzaga,Region 2,1,Covid,2,Mark Few,2020 Mark Few,WCC,WCC,2020 WCC,2020 Gonzaga,2020 Gonzaga
+2020 San Diego St.,2020,San Diego St.,Region 2,2,Covid,3,Brian Dutcher,2020 Brian Dutcher,Mountain West,MWC,2020 MWC,2020 San Diego St.,2020 San Diego St.
+2020 Seton Hall,2020,Seton Hall,Region 2,3,Covid,1,Kevin Willard,2020 Kevin Willard,Big East,BE,2020 BE,2020 Seton Hall,2020 Seton Hall
+2020 Oregon,2020,Oregon,Region 2,4,Covid,1,Dana Altman,2020 Dana Altman,Pac 12,P12,2020 P12,2020 Oregon,2020 Oregon
+2020 Michigan,2020,Michigan,Region 2,5,Covid,2,Juwan Howard,2020 Juwan Howard,Big 10,B10,2020 B10,2020 Michigan,2020 Michigan
+2020 BYU,2020,BYU,Region 2,6,Covid,1,Mark Pope,2020 Mark Pope,Mountain West,MWC,2020 MWC,2020 BYU,2020 BYU
+2020 Arizona,2020,Arizona,Region 2,7,Covid,1,Tommy Lloyd,2020 Tommy Lloyd,Pac 12,P12,2020 P12,2020 Arizona,2020 Arizona
+2020 LSU,2020,LSU,Region 2,8,Covid,1,Will Wade,2020 Will Wade,SEC,SEC,2020 SEC,2020 LSU,2020 LSU
+2020 Oklahoma,2020,Oklahoma,Region 2,9,Covid,1,Lon Kruger,2020 Lon Kruger,Big 12,B12,2020 B12,2020 Oklahoma,2020 Oklahoma
+2020 Texas Tech,2020,Texas Tech,Region 2,10,Covid,1,Chris Beard,2020 Chris Beard,Big 12,B12,2020 B12,2020 Texas Tech,2020 Texas Tech
+2020 Indiana,2020,Indiana,Region 2,11,Covid,2,Archie Miller,2020 Archie Miller,Big 10,B10,2020 B10,2020 Indiana,2020 Indiana
+2020 Yale,2020,Yale,Region 2,12,Covid,1,James Jones,2020 James Jones,Ivy,Ivy,2020 Ivy,2020 Yale,2020 Yale
+2020 New Mexico St.,2020,New Mexico St.,Region 2,13,Covid,1,Chris Jans,2020 Chris Jans,WAC,WAC,2020 WAC,2020 New Mexico St.,2020 New Mexico St.
+2020 Eastern Washington,2020,Eastern Washington,Region 2,14,Covid,1,Shantay Lagans,2020 Shantay Lagans,Big Sky,BSky,2020 BSky,2020 Eastern Washington,2020 Eastern Washington
+2020 UC Irvine,2020,UC Irvine,Region 2,15,Covid,1,Russell Turner,2020 Russell Turner,Big West,BW,2020 BW,2020 UC Irvine,2020 UC Irvine
+2020 North Carolina Central,2020,North Carolina Central,Region 2,16,Covid,1,Levell Moton,2020 Levell Moton,MEAC,MEAC,2020 MEAC,2020 North Carolina Central,2020 North Carolina Central
+2021 Michigan,2021,Michigan,Region 4,1,Elite Eight,2,Juwan Howard,2021 Juwan Howard,Big 10,B10,2021 B10,2021 Michigan,2021 Michigan
+2021 Alabama,2021,Alabama,Region 4,2,Sweet 16,2,Nate Oats,2021 Nate Oats,SEC,SEC,2021 SEC,2021 Alabama,2021 Alabama
+2021 Texas,2021,Texas,Region 4,3,First Round,1,Shaka Smart,2021 Shaka Smart,Big 12,B12,2021 B12,2021 Texas,2021 Texas
+2021 Florida St.,2021,Florida St.,Region 4,4,Sweet 16,2,Leonard Hamilton,2021 Leonard Hamilton,ACC,ACC,2021 ACC,2021 Florida St.,2021 Florida St.
+2021 Colorado,2021,Colorado,Region 4,5,First Round,1,Tad Boyle,2021 Tad Boyle,Pac 12,P12,2021 P12,2021 Colorado,2021 Colorado
+2021 BYU,2021,BYU,Region 4,6,First Round,1,Mark Pope,2021 Mark Pope,WCC,WCC,2021 WCC,2021 BYU,2021 BYU
+2021 Connecticut,2021,Connecticut,Region 4,7,First Round,1,Dan Hurley,2021 Dan Hurley,Big East,BE,2021 BE,2021 Connecticut,2021 Connecticut
+2021 LSU,2021,LSU,Region 4,8,Second Round,1,Will Wade,2021 Will Wade,SEC,SEC,2021 SEC,2021 LSU,2021 LSU
+2021 St. Bonaventure,2021,St. Bonaventure,Region 4,9,First Round,1,Mark Schmidt,2021 Mark Schmidt,Atlantic 10,A10,2021 A10,2021 St. Bonaventure,2021 St. Bonaventure
+2021 Maryland,2021,Maryland,Region 4,10,Second Round,1,Mark Turgeon,2021 Mark Turgeon,Big 10,B10,2021 B10,2021 Maryland,2021 Maryland
+2021 UCLA,2021,UCLA,Region 4,11,Final Four,3,Mick Cronin,2021 Mick Cronin,Pac 12,P12,2021 P12,2021 UCLA,2021 UCLA
+2021 Georgetown,2021,Georgetown,Region 4,12,First Round,1,Patrick Ewing,2021 Patrick Ewing,Big East,BE,2021 BE,2021 Georgetown,2021 Georgetown
+2021 UNC Greensboro,2021,UNC Greensboro,Region 4,13,First Round,1,Wes Miller,2021 Wes Miller,Southern,SC,2021 SC,2021 UNC Greensboro,2021 UNC Greensboro
+2021 Abilene Christian,2021,Abilene Christian,Region 4,14,Second Round,1,Joe Golding,2021 Joe Golding,Southland,Slnd,2021 Slnd,2021 Abilene Christian,2021 Abilene Christian
+2021 Iona,2021,Iona,Region 4,15,First Round,1,Rick Pitino,2021 Rick Pitino,MAAC,MAAC,2021 MAAC,2021 Iona,2021 Iona
+2021 Texas Southern,2021,Texas Southern,Region 4,16,First Round,1,Johnny Jones,2021 Johnny Jones,SWAC,SWAC,2021 SWAC,2021 Texas Southern,2021 Texas Southern
+2021 Illinois,2021,Illinois,Region 3,1,Second Round,1,Brad Underwood,2021 Brad Underwood,Big 10,B10,2021 B10,2021 Illinois,2021 Illinois
+2021 Houston,2021,Houston,Region 3,2,Final Four,3,Kelvin Sampson,2021 Kelvin Sampson,American,Amer,2021 Amer,2021 Houston,2021 Houston
+2021 West Virginia,2021,West Virginia,Region 3,3,Second Round,1,Bob Huggins,2021 Bob Huggins,Big 12,B12,2021 B12,2021 West Virginia,2021 West Virginia
+2021 Oklahoma St.,2021,Oklahoma St.,Region 3,4,Second Round,1,Mike Boynton,2021 Mike Boynton,Big 12,B12,2021 B12,2021 Oklahoma St.,2021 Oklahoma St.
+2021 Tennessee,2021,Tennessee,Region 3,5,First Round,1,Rick Barnes,2021 Rick Barnes,SEC,SEC,2021 SEC,2021 Tennessee,2021 Tennessee
+2021 San Diego St.,2021,San Diego St.,Region 3,6,First Round,1,Brian Dutcher,2021 Brian Dutcher,Mountain West,MWC,2021 MWC,2021 San Diego St.,2021 San Diego St.
+2021 Clemson,2021,Clemson,Region 3,7,First Round,1,Brad Brownell,2021 Brad Brownell,ACC,ACC,2021 ACC,2021 Clemson,2021 Clemson
+2021 Loyola Chicago,2021,Loyola Chicago,Region 3,8,Sweet 16,2,Porter Moser,2021 Porter Moser,Missouri Valley,MVC,2021 MVC,2021 Loyola Chicago,2021 Loyola Chicago
+2021 Georgia Tech,2021,Georgia Tech,Region 3,9,First Round,1,Josh Pastner,2021 Josh Pastner,ACC,ACC,2021 ACC,2021 Georgia Tech,2021 Georgia Tech
+2021 Rutgers,2021,Rutgers,Region 3,10,Second Round,1,Steve Pikiell,2021 Steve Pikiell,Big 10,B10,2021 B10,2021 Rutgers,2021 Rutgers
+2021 Syracuse,2021,Syracuse,Region 3,11,Sweet 16,2,Jim Boeheim,2021 Jim Boeheim,ACC,ACC,2021 ACC,2021 Syracuse,2021 Syracuse
+2021 Oregon St.,2021,Oregon St.,Region 3,12,Elite Eight,2,Wayne Tinkle,2021 Wayne Tinkle,Pac 12,P12,2021 P12,2021 Oregon St.,2021 Oregon St.
+2021 Liberty,2021,Liberty,Region 3,13,First Round,1,Ritche McKay,2021 Ritche McKay,Atlantic Sun,ASun,2021 ASun,2021 Liberty,2021 Liberty
+2021 Morehead St.,2021,Morehead St.,Region 3,14,First Round,1,Preston Spradlin,2021 Preston Spradlin,Ohio Valley,OVC,2021 OVC,2021 Morehead St.,2021 Morehead St.
+2021 Cleveland St.,2021,Cleveland St.,Region 3,15,First Round,1,Dennis Gates,2021 Dennis Gates,Horizon,Horz,2021 Horz,2021 Cleveland St.,2021 Cleveland St.
+2021 Drexel,2021,Drexel,Region 3,16,First Round,1,Zach Spiker,2021 Zach Spiker,CAA,CAA,2021 CAA,2021 Drexel,2021 Drexel
+2021 Baylor,2021,Baylor,Region 2,1,Champion,3,Scott Drew,2021 Scott Drew,Big 12,B12,2021 B12,2021 Baylor,2021 Baylor
+2021 Ohio St.,2021,Ohio St.,Region 2,2,First Round,1,Chris Holtmann,2021 Chris Holtmann,Big 10,B10,2021 B10,2021 Ohio St.,2021 Ohio St.
+2021 Arkansas,2021,Arkansas,Region 2,3,Elite Eight,2,Eric Musselman,2021 Eric Musselman,SEC,SEC,2021 SEC,2021 Arkansas,2021 Arkansas
+2021 Purdue,2021,Purdue,Region 2,4,First Round,1,Matt Painter,2021 Matt Painter,Big 10,B10,2021 B10,2021 Purdue,2021 Purdue
+2021 Villanova,2021,Villanova,Region 2,5,Sweet 16,2,Jay Wright,2021 Jay Wright,Big East,BE,2021 BE,2021 Villanova,2021 Villanova
+2021 Texas Tech,2021,Texas Tech,Region 2,6,Second Round,1,Chris Beard,2021 Chris Beard,Big 12,B12,2021 B12,2021 Texas Tech,2021 Texas Tech
+2021 Florida,2021,Florida,Region 2,7,Second Round,1,Michael White,2021 Michael White,SEC,SEC,2021 SEC,2021 Florida,2021 Florida
+2021 North Carolina,2021,North Carolina,Region 2,8,First Round,1,Roy Williams,2021 Roy Williams,ACC,ACC,2021 ACC,2021 North Carolina,2021 North Carolina
+2021 Wisconsin,2021,Wisconsin,Region 2,9,Second Round,1,Greg Gard,2021 Greg Gard,Big 10,B10,2021 B10,2021 Wisconsin,2021 Wisconsin
+2021 Virginia Tech,2021,Virginia Tech,Region 2,10,First Round,1,Mike Young,2021 Mike Young,ACC,ACC,2021 ACC,2021 Virginia Tech,2021 Virginia Tech
+2021 Utah St.,2021,Utah St.,Region 2,11,First Round,1,Craig Smith,2021 Craig Smith,Mountain West,MWC,2021 MWC,2021 Utah St.,2021 Utah St.
+2021 Winthrop,2021,Winthrop,Region 2,12,First Round,1,Pat Kelsey,2021 Pat Kelsey,Big South,BSth,2021 BSth,2021 Winthrop,2021 Winthrop
+2021 North Texas,2021,North Texas,Region 2,13,Second Round,1,Grant McCasland,2021 Grant McCasland,Conference USA,CUSA,2021 CUSA,2021 North Texas,2021 North Texas
+2021 Colgate,2021,Colgate,Region 2,14,First Round,1,Matt Langel,2021 Matt Langel,Patriot,Pat,2021 Pat,2021 Colgate,2021 Colgate
+2021 Oral Roberts,2021,Oral Roberts,Region 2,15,Sweet 16,2,Paul Mills,2021 Paul Mills,Summit,Sum,2021 Sum,2021 Oral Roberts,2021 Oral Roberts
+2021 Hartford,2021,Hartford,Region 2,16,First Round,1,John Gallagher,2021 John Gallagher,Amerian East,AE,2021 AE,2021 Hartford,2021 Hartford
+2021 Gonzaga,2021,Gonzaga,Region 1,1,Runner Up,3,Mark Few,2021 Mark Few,WCC,WCC,2021 WCC,2021 Gonzaga,2021 Gonzaga
+2021 Iowa,2021,Iowa,Region 1,2,Second Round,1,Fran McCaffery,2021 Fran McCaffery,Big 10,B10,2021 B10,2021 Iowa,2021 Iowa
+2021 Kansas,2021,Kansas,Region 1,3,Second Round,1,Bill Self,2021 Bill Self,Big 12,B12,2021 B12,2021 Kansas,2021 Kansas
+2021 Virginia,2021,Virginia,Region 1,4,First Round,1,Tony Bennett,2021 Tony Bennett,ACC,ACC,2021 ACC,2021 Virginia,2021 Virginia
+2021 Creighton,2021,Creighton,Region 1,5,Sweet 16,2,Greg McDermott,2021 Greg McDermott,Big East,BE,2021 BE,2021 Creighton,2021 Creighton
+2021 USC,2021,USC,Region 1,6,Elite Eight,2,Andy Enfield,2021 Andy Enfield,Pac 12,P12,2021 P12,2021 USC,2021 USC
+2021 Oregon,2021,Oregon,Region 1,7,Sweet 16,2,Dana Altman,2021 Dana Altman,Pac 12,P12,2021 P12,2021 Oregon,2021 Oregon
+2021 Oklahoma,2021,Oklahoma,Region 1,8,Second Round,1,Lon Kruger,2021 Lon Kruger,Big 12,B12,2021 B12,2021 Oklahoma,2021 Oklahoma
+2021 Missouri,2021,Missouri,Region 1,9,First Round,1,Cuonzo Martin,2021 Cuonzo Martin,SEC,SEC,2021 SEC,2021 Missouri,2021 Missouri
+2021 VCU,2021,VCU,Region 1,10,First Round,1,Mike Rhoades,2021 Mike Rhoades,Atlantic 10,A10,2021 A10,2021 VCU,2021 VCU
+2021 Drake,2021,Drake,Region 1,11,First Round,1,Darian DeVries,2021 Darian DeVries,Missouri Valley,MVC,2021 MVC,2021 Drake,2021 Drake
+2021 UC Santa Barbara,2021,UC Santa Barbara,Region 1,12,First Round,1,Joe Pasternack,2021 Joe Pasternack,Big West,BW,2021 BW,2021 UC Santa Barbara,2021 UC Santa Barbara
+2021 Ohio,2021,Ohio,Region 1,13,Second Round,1,Jeff Boals,2021 Jeff Boals,MAC,MAC,2021 MAC,2021 Ohio,2021 Ohio
+2021 Eastern Washington,2021,Eastern Washington,Region 1,14,First Round,1,Shantay Legans,2021 Shantay Legans,Big Sky,BSky,2021 BSky,2021 Eastern Washington,2021 Eastern Washington
+2021 Grand Canyon,2021,Grand Canyon,Region 1,15,First Round,1,Bryce Drew,2021 Bryce Drew,WAC,WAC,2021 WAC,2021 Grand Canyon,2021 Grand Canyon
+2021 Norfolk St.,2021,Norfolk St.,Region 1,16,First Round,1,Robert Jones,2021 Robert Jones,MEAC,MEAC,2021 MEAC,2021 Norfolk St.,2021 Norfolk St.
+2022 Baylor,2022,Baylor,Region 4,1,Second Round,1,Scott Drew,2022 Scott Drew,Big 12,B12,2022 B12,2022 Baylor,2022 Baylor
+2022 Kentucky,2022,Kentucky,Region 4,2,First Round,1,John Calipari,2022 John Calipari,SEC,SEC,2022 SEC,2022 Kentucky,2022 Kentucky
+2022 Purdue,2022,Purdue,Region 4,3,Sweet 16,2,Matt Painter,2022 Matt Painter,Big 10,B10,2022 B10,2022 Purdue,2022 Purdue
+2022 UCLA,2022,UCLA,Region 4,4,Sweet 16,2,Mick Cronin,2022 Mick Cronin,Pac 12,P12,2022 P12,2022 UCLA,2022 UCLA
+2022 Saint Mary's,2022,Saint Mary's,Region 4,5,Second Round,1,Randy Bennett,2022 Randy Bennett,WCC,WCC,2022 WCC,2022 Saint Mary's,2022 Saint Mary's
+2022 Texas,2022,Texas,Region 4,6,Second Round,1,Chris Beard,2022 Chris Beard,Big 12,B12,2022 B12,2022 Texas,2022 Texas
+2022 Murray St.,2022,Murray St.,Region 4,7,Second Round,1,Matt McMahon,2022 Matt McMahon,Ohio Valley,OVC,2022 OVC,2022 Murray St.,2022 Murray St.
+2022 North Carolina,2022,North Carolina,Region 4,8,Runner Up,3,Hubert Davis,2022 Hubert Davis,ACC,ACC,2022 ACC,2022 North Carolina,2022 North Carolina
+2022 Marquette,2022,Marquette,Region 4,9,First Round,1,Shaka Smart,2022 Shaka Smart,Big East,BE,2022 BE,2022 Marquette,2022 Marquette
+2022 San Francisco,2022,San Francisco,Region 4,10,First Round,1,Todd Golden,2022 Todd Golden,WCC,WCC,2022 WCC,2022 San Francisco,2022 San Francisco
+2022 Virginia Tech,2022,Virginia Tech,Region 4,11,First Round,1,Mike Young,2022 Mike Young,ACC,ACC,2022 ACC,2022 Virginia Tech,2022 Virginia Tech
+2022 Indiana,2022,Indiana,Region 4,12,First Round,1,Tom Crean,2022 Tom Crean,Big 10,B10,2022 B10,2022 Indiana,2022 Indiana
+2022 Akron,2022,Akron,Region 4,13,First Round,1,John Groce,2022 John Groce,MAC,MAC,2022 MAC,2022 Akron,2022 Akron
+2022 Yale,2022,Yale,Region 4,14,First Round,1,James Jones,2022 James Jones,Ivy,Ivy,2022 Ivy,2022 Yale,2022 Yale
+2022 Saint Peter's,2022,Saint Peter's,Region 4,15,Elite Eight,2,Shaheen Holloway,2022 Shaheen Holloway,MAAC,MAAC,2022 MAAC,2022 Saint Peter's,2022 Saint Peter's
+2022 Norfolk St.,2022,Norfolk St.,Region 4,16,First Round,1,Robert Jones,2022 Robert Jones,MEAC,MEAC,2022 MEAC,2022 Norfolk St.,2022 Norfolk St.
+2022 Kansas,2022,Kansas,Region 3,1,Champion,3,Bill Self,2022 Bill Self,Big 12,B12,2022 B12,2022 Kansas,2022 Kansas
+2022 Auburn,2022,Auburn,Region 3,2,Second Round,1,Bruce Pearl,2022 Bruce Pearl,SEC,SEC,2022 SEC,2022 Auburn,2022 Auburn
+2022 Wisconsin,2022,Wisconsin,Region 3,3,Second Round,1,Greg Gard,2022 Greg Gard,Big 10,B10,2022 B10,2022 Wisconsin,2022 Wisconsin
+2022 Providence,2022,Providence,Region 3,4,Sweet 16,2,Ed Cooley,2022 Ed Cooley,Big East,BE,2022 BE,2022 Providence,2022 Providence
+2022 Iowa,2022,Iowa,Region 3,5,First Round,1,Fran McCaffery,2022 Fran McCaffery,Big 10,B10,2022 B10,2022 Iowa,2022 Iowa
+2022 LSU,2022,LSU,Region 3,6,First Round,1,Will Wade,2022 Will Wade,SEC,SEC,2022 SEC,2022 LSU,2022 LSU
+2022 USC,2022,USC,Region 3,7,First Round,1,Andy Enfield,2022 Andy Enfield,Pac 12,P12,2022 P12,2022 USC,2022 USC
+2022 San Diego St.,2022,San Diego St.,Region 3,8,First Round,1,Brian Dutcher,2022 Brian Dutcher,Mountain West,MWC,2022 MWC,2022 San Diego St.,2022 San Diego St.
+2022 Creighton,2022,Creighton,Region 3,9,Second Round,1,Greg McDermott,2022 Greg McDermott,Big East,BE,2022 BE,2022 Creighton,2022 Creighton
+2022 Miami FL,2022,Miami FL,Region 3,10,Elite Eight,2,Jim Larranaga,2022 Jim Larranaga,ACC,ACC,2022 ACC,2022 Miami FL,2022 Miami FL
+2022 Iowa St.,2022,Iowa St.,Region 3,11,Sweet 16,2,T.J. Otzelberger,2022 T.J. Otzelberger,Big 12,B12,2022 B12,2022 Iowa St.,2022 Iowa St.
+2022 Richmond,2022,Richmond,Region 3,12,Second Round,1,Chris Mooney,2022 Chris Mooney,Atlantic 10,A10,2022 A10,2022 Richmond,2022 Richmond
+2022 South Dakota St.,2022,South Dakota St.,Region 3,13,First Round,1,Eric Henderson,2022 Eric Henderson,Summit,Sum,2022 Sum,2022 South Dakota St.,2022 South Dakota St.
+2022 Colgate,2022,Colgate,Region 3,14,First Round,1,Matt Langel,2022 Matt Langel,Patriot,Pat,2022 Pat,2022 Colgate,2022 Colgate
+2022 Jacksonville St.,2022,Jacksonville St.,Region 3,15,First Round,1,Ray Harper,2022 Ray Harper,Atlantic Sun,ASun,2022 ASun,2022 Jacksonville St.,2022 Jacksonville St.
+2022 Texas Southern,2022,Texas Southern,Region 3,16,First Round,1,Johnny Jones,2022 Johnny Jones,SWAC,SWAC,2022 SWAC,2022 Texas Southern,2022 Texas Southern
+2022 Arizona,2022,Arizona,Region 2,1,Sweet 16,2,Tommy Lloyd,2022 Tommy Lloyd,Pac 12,P12,2022 P12,2022 Arizona,2022 Arizona
+2022 Villanova,2022,Villanova,Region 2,2,Final Four,3,Jay Wright,2022 Jay Wright,Big East,BE,2022 BE,2022 Villanova,2022 Villanova
+2022 Tennessee,2022,Tennessee,Region 2,3,Second Round,1,Rick Barnes,2022 Rick Barnes,SEC,SEC,2022 SEC,2022 Tennessee,2022 Tennessee
+2022 Illinois,2022,Illinois,Region 2,4,Second Round,1,Brad Underwood,2022 Brad Underwood,Big 10,B10,2022 B10,2022 Illinois,2022 Illinois
+2022 Houston,2022,Houston,Region 2,5,Elite Eight,2,Kelvin Sampson,2022 Kelvin Sampson,American,Amer,2022 Amer,2022 Houston,2022 Houston
+2022 Colorado St.,2022,Colorado St.,Region 2,6,First Round,1,Niko Medved,2022 Niko Medved,Mountain West,MWC,2022 MWC,2022 Colorado St.,2022 Colorado St.
+2022 Ohio St.,2022,Ohio St.,Region 2,7,Second Round,1,Chris Holtmann,2022 Chris Holtmann,Big 10,B10,2022 B10,2022 Ohio St.,2022 Ohio St.
+2022 Seton Hall,2022,Seton Hall,Region 2,8,First Round,1,Kevin Willard,2022 Kevin Willard,Big East,BE,2022 BE,2022 Seton Hall,2022 Seton Hall
+2022 TCU,2022,TCU,Region 2,9,Second Round,1,Jamie Dixon,2022 Jamie Dixon,Big 12,B12,2022 B12,2022 TCU,2022 TCU
+2022 Loyola Chicago,2022,Loyola Chicago,Region 2,10,First Round,1,Drew Valentine,2022 Drew Valentine,Missouri Valley,MVC,2022 MVC,2022 Loyola Chicago,2022 Loyola Chicago
+2022 Michigan,2022,Michigan,Region 2,11,Sweet 16,2,Juwan Howard,2022 Juwan Howard,Big 10,B10,2022 B10,2022 Michigan,2022 Michigan
+2022 UAB,2022,UAB,Region 2,12,First Round,1,Andy Kennedy,2022 Andy Kennedy,Conference USA,CUSA,2022 CUSA,2022 UAB,2022 UAB
+2022 Chattanooga,2022,Chattanooga,Region 2,13,First Round,1,Lamont Paris,2022 Lamont Paris,Southern,SC,2022 SC,2022 Chattanooga,2022 Chattanooga
+2022 Longwood,2022,Longwood,Region 2,14,First Round,1,Griff Aldrich,2022 Griff Aldrich,Big South,BSth,2022 BSth,2022 Longwood,2022 Longwood
+2022 Delaware,2022,Delaware,Region 2,15,First Round,1,Martin Ingelsby,2022 Martin Ingelsby,CAA,CAA,2022 CAA,2022 Delaware,2022 Delaware
+2022 Bryant,2022,Bryant,Region 2,16,First Round,1,Jared Grasso,2022 Jared Grasso,NEC,NEC,2022 NEC,2022 Bryant,2022 Bryant
+2022 Gonzaga,2022,Gonzaga,Region 1,1,Sweet 16,2,Mark Few,2022 Mark Few,WCC,WCC,2022 WCC,2022 Gonzaga,2022 Gonzaga
+2022 Duke,2022,Duke,Region 1,2,Final Four,3,Mike Krzyzewski,2022 Mike Krzyzewski,ACC,ACC,2022 ACC,2022 Duke,2022 Duke
+2022 Texas Tech,2022,Texas Tech,Region 1,3,Sweet 16,2,Mark Adams,2022 Mark Adams,Big 12,B12,2022 B12,2022 Texas Tech,2022 Texas Tech
+2022 Arkansas,2022,Arkansas,Region 1,4,Elite Eight,2,Eric Musselman,2022 Eric Musselman,SEC,SEC,2022 SEC,2022 Arkansas,2022 Arkansas
+2022 Connecticut,2022,Connecticut,Region 1,5,First Round,1,Dan Hurley,2022 Dan Hurley,Big East,BE,2022 BE,2022 Connecticut,2022 Connecticut
+2022 Alabama,2022,Alabama,Region 1,6,First Round,1,Nate Oats,2022 Nate Oats,SEC,SEC,2022 SEC,2022 Alabama,2022 Alabama
+2022 Michigan St.,2022,Michigan St.,Region 1,7,Second Round,1,Tom Izzo,2022 Tom Izzo,Big 10,B10,2022 B10,2022 Michigan St.,2022 Michigan St.
+2022 Boise St.,2022,Boise St.,Region 1,8,First Round,1,Leon Rose,2022 Leon Rose,Mountain West,MWC,2022 MWC,2022 Boise St.,2022 Boise St.
+2022 Memphis,2022,Memphis,Region 1,9,Second Round,1,Penny Hardaway,2022 Penny Hardaway,American,Amer,2022 Amer,2022 Memphis,2022 Memphis
+2022 Davidson,2022,Davidson,Region 1,10,First Round,1,Bob McKillop,2022 Bob McKillop,Atlantic 10,A10,2022 A10,2022 Davidson,2022 Davidson
+2022 Notre Dame,2022,Notre Dame,Region 1,11,Second Round,1,Mike Brey,2022 Mike Brey,ACC,ACC,2022 ACC,2022 Notre Dame,2022 Notre Dame
+2022 New Mexico St.,2022,New Mexico St.,Region 1,12,Second Round,1,Chris Jans,2022 Chris Jans,WAC,WAC,2022 WAC,2022 New Mexico St.,2022 New Mexico St.
+2022 Vermont,2022,Vermont,Region 1,13,First Round,1,John Becker,2022 John Becker,Amerian East,AE,2022 AE,2022 Vermont,2022 Vermont
+2022 Montana St.,2022,Montana St.,Region 1,14,First Round,1,Danny Sprinkle,2022 Danny Sprinkle,Big Sky,BSky,2022 BSky,2022 Montana St.,2022 Montana St.
+2022 Cal St. Fullerton,2022,Cal St. Fullerton,Region 1,15,First Round,1,Dedrique Taylor,2022 Dedrique Taylor,Big West,BW,2022 BW,2022 Cal St. Fullerton,2022 Cal St. Fullerton
+2022 Georgia St.,2022,Georgia St.,Region 1,16,First Round,1,Rob Lanier,2022 Rob Lanier,Sun Belt,SB,2022 SB,2022 Georgia St.,2022 Georgia St.
+2023 Purdue,2023,Purdue,Region 4,1,First Round,1,Matt Painter,2023 Matt Painter,Big 10,B10,2023 B10,2023 Purdue,2023 Purdue
+2023 Marquette,2023,Marquette,Region 4,2,Second Round,1,Shaka Smart,2023 Shaka Smart,Big East,BE,2023 BE,2023 Marquette,2023 Marquette
+2023 Kansas St.,2023,Kansas St.,Region 4,3,Elite Eight,2,Jerome Tang,2023 Jerome Tang,Big 12,B12,2023 B12,2023 Kansas St.,2023 Kansas St.
+2023 Tennessee,2023,Tennessee,Region 4,4,Sweet 16,2,Rick Barnes,2023 Rick Barnes,SEC,SEC,2023 SEC,2023 Tennessee,2023 Tennessee
+2023 Duke,2023,Duke,Region 4,5,Second Round,1,Jon Scheyer,2023 Jon Scheyer,ACC,ACC,2023 ACC,2023 Duke,2023 Duke
+2023 Kentucky,2023,Kentucky,Region 4,6,Second Round,1,John Calipari,2023 John Calipari,SEC,SEC,2023 SEC,2023 Kentucky,2023 Kentucky
+2023 Michigan St.,2023,Michigan St.,Region 4,7,Sweet 16,2,Tom Izzo,2023 Tom Izzo,Big 10,B10,2023 B10,2023 Michigan St.,2023 Michigan St.
+2023 Memphis,2023,Memphis,Region 4,8,First Round,1,Penny Hardaway,2023 Penny Hardaway,American,Amer,2023 Amer,2023 Memphis,2023 Memphis
+2023 Florida Atlantic,2023,Florida Atlantic,Region 4,9,Final Four,3,Dusty May,2023 Dusty May,Conference USA,CUSA,2023 CUSA,2023 Florida Atlantic,2023 Florida Atlantic
+2023 USC,2023,USC,Region 4,10,First Round,1,Andy Enfield,2023 Andy Enfield,Pac 12,P12,2023 P12,2023 USC,2023 USC
+2023 Providence,2023,Providence,Region 4,11,First Round,1,Ed Cooley,2023 Ed Cooley,Big East,BE,2023 BE,2023 Providence,2023 Providence
+2023 Oral Roberts,2023,Oral Roberts,Region 4,12,First Round,1,Paul Mills,2023 Paul Mills,Summit,Sum,2023 Sum,2023 Oral Roberts,2023 Oral Roberts
+2023 Louisiana,2023,Louisiana Lafayette,Region 4,13,First Round,1,Bob Marlin,2023 Bob Marlin,Sun Belt,SB,2023 SB,2023 Louisiana,2023 Louisiana
+2023 Montana St.,2023,Montana St.,Region 4,14,First Round,1,Danny Sprinkle,2023 Danny Sprinkle,Big Sky,BSky,2023 BSky,2023 Montana St.,2023 Montana St.
+2023 Vermont,2023,Vermont,Region 4,15,First Round,1,John Becker,2023 John Becker,Amerian East,AE,2023 AE,2023 Vermont,2023 Vermont
+2023 Fairleigh Dickinson,2023,Fairleigh Dickinson,Region 4,16,Second Round,1,Tobin Anderson,2023 Tobin Anderson,NEC,NEC,2023 NEC,2023 Fairleigh Dickinson,2023 Fairleigh Dickinson
+2023 Houston,2023,Houston,Region 2,1,Sweet 16,2,Kelvin Sampson,2023 Kelvin Sampson,American,Amer,2023 Amer,2023 Houston,2023 Houston
+2023 Texas,2023,Texas,Region 2,2,Elite Eight,2,Rodney Terry,2023 Rodney Terry,Big 12,B12,2023 B12,2023 Texas,2023 Texas
+2023 Xavier,2023,Xavier,Region 2,3,Sweet 16,2,Sean Miller,2023 Sean Miller,Big East,BE,2023 BE,2023 Xavier,2023 Xavier
+2023 Indiana,2023,Indiana,Region 2,4,Second Round,1,Mike Woodson,2023 Mike Woodson,Big 10,B10,2023 B10,2023 Indiana,2023 Indiana
+2023 Miami FL,2023,Miami FL,Region 2,5,Final Four,3,Jim Larranaga,2023 Jim Larranaga,ACC,ACC,2023 ACC,2023 Miami FL,2023 Miami FL
+2023 Iowa St.,2023,Iowa St.,Region 2,6,First Round,1,T.J. Otzelberger,2023 T.J. Otzelberger,Big 12,B12,2023 B12,2023 Iowa St.,2023 Iowa St.
+2023 Texas A&M,2023,Texas A&M,Region 2,7,First Round,1,Buzz Williams,2023 Buzz Williams,SEC,SEC,2023 SEC,2023 Texas A&M,2023 Texas A&M
+2023 Iowa,2023,Iowa,Region 2,8,First Round,1,Fran McCaffery,2023 Fran McCaffery,Big 10,B10,2023 B10,2023 Iowa,2023 Iowa
+2023 Auburn,2023,Auburn,Region 2,9,Second Round,1,Bruce Pearl,2023 Bruce Pearl,SEC,SEC,2023 SEC,2023 Auburn,2023 Auburn
+2023 Penn St.,2023,Penn St.,Region 2,10,Second Round,1,Micah Shrewsberry,2023 Micah Shrewsberry,Big 10,B10,2023 B10,2023 Penn St.,2023 Penn St.
+2023 Pittsburgh,2023,Pittsburgh,Region 2,11,Second Round,1,Jeff Capel,2023 Jeff Capel,ACC,ACC,2023 ACC,2023 Pittsburgh,2023 Pittsburgh
+2023 Drake,2023,Drake,Region 2,12,First Round,1,Darian DeVries,2023 Darian DeVries,Missouri Valley,MVC,2023 MVC,2023 Drake,2023 Drake
+2023 Kent St.,2023,Kent St.,Region 2,13,First Round,1,Rob Senderoff,2023 Rob Senderoff,MAC,MAC,2023 MAC,2023 Kent St.,2023 Kent St.
+2023 Kennesaw St.,2023,Kennesaw St.,Region 2,14,First Round,1,Amir Abdur-Rahim,2023 Amir Abdur-Rahim,Atlantic Sun,ASun,2023 ASun,2023 Kennesaw St.,2023 Kennesaw St.
+2023 Colgate,2023,Colgate,Region 2,15,First Round,1,Matt Langel,2023 Matt Langel,Patriot,Pat,2023 Pat,2023 Colgate,2023 Colgate
+2023 Northern Kentucky,2023,Northern Kentucky,Region 2,16,First Round,1,Darrin Horn,2023 Darrin Horn,Horizon,Horz,2023 Horz,2023 Northern Kentucky,2023 Northern Kentucky
+2023 Alabama,2023,Alabama,Region 1,1,Sweet 16,2,Nate Oats,2023 Nate Oats,SEC,SEC,2023 SEC,2023 Alabama,2023 Alabama
+2023 Arizona,2023,Arizona,Region 1,2,First Round,1,Tommy Lloyd,2023 Tommy Lloyd,Pac 12,P12,2023 P12,2023 Arizona,2023 Arizona
+2023 Baylor,2023,Baylor,Region 1,3,Second Round,1,Scott Drew,2023 Scott Drew,Big 12,B12,2023 B12,2023 Baylor,2023 Baylor
+2023 Virginia,2023,Virginia,Region 1,4,First Round,1,Tony Bennett,2023 Tony Bennett,ACC,ACC,2023 ACC,2023 Virginia,2023 Virginia
+2023 San Diego St.,2023,San Diego St.,Region 1,5,Runner Up,3,Brian Dutcher,2023 Brian Dutcher,Mountain West,MWC,2023 MWC,2023 San Diego St.,2023 San Diego St.
+2023 Creighton,2023,Creighton,Region 1,6,Elite Eight,2,Greg McDermott,2023 Greg McDermott,Big East,BE,2023 BE,2023 Creighton,2023 Creighton
+2023 Missouri,2023,Missouri,Region 1,7,Second Round,1,Dennis Gates,2023 Dennis Gates,SEC,SEC,2023 SEC,2023 Missouri,2023 Missouri
+2023 Maryland,2023,Maryland,Region 1,8,Second Round,1,Kevin Willard,2023 Kevin Willard,Big 10,B10,2023 B10,2023 Maryland,2023 Maryland
+2023 West Virginia,2023,West Virginia,Region 1,9,First Round,1,Bob Huggins,2023 Bob Huggins,Big 12,B12,2023 B12,2023 West Virginia,2023 West Virginia
+2023 Utah St.,2023,Utah St.,Region 1,10,First Round,1,Ryan Odom,2023 Ryan Odom,Mountain West,MWC,2023 MWC,2023 Utah St.,2023 Utah St.
+2023 NC St.,2023,North Carolina St.,Region 1,11,First Round,1,Kevin Keatts,2023 Kevin Keatts,ACC,ACC,2023 ACC,2023 N.C. State,2023 N.C. State
+2023 Charleston,2023,College of Charleston,Region 1,12,First Round,1,Pat Kelsey,2023 Pat Kelsey,CAA,CAA,2023 CAA,2023 Charleston,2023 Charleston
+2023 Furman,2023,Furman,Region 1,13,Second Round,1,Bob Richey,2023 Bob Richey,Southern,SC,2023 SC,2023 Furman,2023 Furman
+2023 UC Santa Barbara,2023,UC Santa Barbara,Region 1,14,First Round,1,Joe Pasternack,2023 Joe Pasternack,Big West,BW,2023 BW,2023 UC Santa Barbara,2023 UC Santa Barbara
+2023 Princeton,2023,Princeton,Region 1,15,First Round,1,Mitch Henderson,2023 Mitch Henderson,Ivy,Ivy,2023 Ivy,2023 Princeton,2023 Princeton
+2023 Southeast Missouri St.,2023,Southeast Missouri St.,Region 1,16,First Round,1,Brad Korn,2023 Brad Korn,Ohio Valley,OVC,2023 OVC,2023 Southeast Missouri St.,2023 Southeast Missouri St.
+2023 Kansas,2023,Kansas,Region 3,1,Second Round,1,Bill Self,2023 Bill Self,Big 12,B12,2023 B12,2023 Kansas,2023 Kansas
+2023 UCLA,2023,UCLA,Region 3,2,Sweet 16,2,Mick Cronin,2023 Mick Cronin,Pac 12,P12,2023 P12,2023 UCLA,2023 UCLA
+2023 Gonzaga,2023,Gonzaga,Region 3,3,Second Round,1,Mark Few,2023 Mark Few,WCC,WCC,2023 WCC,2023 Gonzaga,2023 Gonzaga
+2023 Connecticut,2023,Connecticut,Region 3,4,Champion,3,Dan Hurley,2023 Dan Hurley,Big East,BE,2023 BE,2023 Connecticut,2023 Connecticut
+2023 Saint Mary's,2023,Saint Mary's,Region 3,5,Second Round,1,Randy Bennett,2023 Randy Bennett,WCC,WCC,2023 WCC,2023 Saint Mary's,2023 Saint Mary's
+2023 TCU,2023,TCU,Region 3,6,Second Round,1,Jamie Dixon,2023 Jamie Dixon,Big 12,B12,2023 B12,2023 TCU,2023 TCU
+2023 Northwestern,2023,Northwestern,Region 3,7,Second Round,1,Chris Collins,2023 Chris Collins,Big 10,B10,2023 B10,2023 Northwestern,2023 Northwestern
+2023 Arkansas,2023,Arkansas,Region 3,8,Sweet 16,2,Eric Musselman,2023 Eric Musselman,SEC,SEC,2023 SEC,2023 Arkansas,2023 Arkansas
+2023 Illinois,2023,Illinois,Region 3,9,First Round,1,Brad Underwood,2023 Brad Underwood,Big 10,B10,2023 B10,2023 Illinois,2023 Illinois
+2023 Boise St.,2023,Boise St.,Region 3,10,First Round,1,Leon Rose,2023 Leon Rose,Mountain West,MWC,2023 MWC,2023 Boise St.,2023 Boise St.
+2023 Arizona St.,2023,Arizona St.,Region 3,11,First Round,1,Bobby Hurley,2023 Bobby Hurley,Pac 12,P12,2023 P12,2023 Arizona St.,2023 Arizona St.
+2023 VCU,2023,VCU,Region 3,12,First Round,1,Mike Rhoades,2023 Mike Rhoades,Atlantic 10,A10,2023 A10,2023 VCU,2023 VCU
+2023 Iona,2023,Iona,Region 3,13,First Round,1,Rick Pitino,2023 Rick Pitino,MAAC,MAAC,2023 MAAC,2023 Iona,2023 Iona
+2023 Grand Canyon,2023,Grand Canyon,Region 3,14,First Round,1,Bryce Drew,2023 Bryce Drew,WAC,WAC,2023 WAC,2023 Grand Canyon,2023 Grand Canyon
+2023 UNC Asheville,2023,UNC Asheville,Region 3,15,First Round,1,Mike Morrell,2023 Mike Morrell,Big South,BSth,2023 BSth,2023 UNC Asheville,2023 UNC Asheville
+2023 Howard,2023,Howard,Region 3,16,First Round,1,Kenny Blakeney,2023 Kenny Blakeney,MEAC,MEAC,2023 MEAC,2023 Howard,2023 Howard
+2024 Connecticut,2024,Connecticut,Region 1,1,Champion,3,Dan Hurley,2024 Dan Hurley,Big East,BE,2024 BE,2024 Connecticut,2024 Connecticut
+2024 Iowa St.,2024,Iowa St.,Region 1,2,Sweet 16,2,T.J. Otzelberger,2024 T.J. Otzelberger,Big 12,B12,2024 B12,2024 Iowa St.,2024 Iowa St.
+2024 Illinois,2024,Illinois,Region 1,3,Elite Eight,2,Brad Underwood,2024 Brad Underwood,Big 10,B10,2024 B10,2024 Illinois,2024 Illinois
+2024 Auburn,2024,Auburn,Region 1,4,First Round,1,Bruce Pearl,2024 Bruce Pearl,SEC,SEC,2024 SEC,2024 Auburn,2024 Auburn
+2024 San Diego St.,2024,San Diego St.,Region 1,5,Sweet 16,2,Brian Dutcher,2024 Brian Dutcher,Mountain West,MWC,2024 MWC,2024 San Diego St.,2024 San Diego St.
+2024 BYU,2024,BYU,Region 1,6,First Round,1,Mark Pope,2024 Mark Pope,Big 12,B12,2024 B12,2024 BYU,2024 BYU
+2024 Washington St.,2024,Washington St.,Region 1,7,Second Round,1,Kyle Smith,2024 Kyle Smith,Pac 12,P12,2024 P12,2024 Washington St.,2024 Washington St.
+2024 Florida Atlantic,2024,Florida Atlantic,Region 1,8,First Round,1,Dusty May,2024 Dusty May,American,Amer,2024 Amer,2024 Florida Atlantic,2024 Florida Atlantic
+2024 Northwestern,2024,Northwestern,Region 1,9,Second Round,1,Chris Collins,2024 Chris Collins,Big 10,B10,2024 B10,2024 Northwestern,2024 Northwestern
+2024 Drake,2024,Drake,Region 1,10,First Round,1,Darian DeVries,2024 Darian DeVries,Missouri Valley,MVC,2024 MVC,2024 Drake,2024 Drake
+2024 Duquesne,2024,Duquesne,Region 1,11,Second Round,1,Keith Dambrot,2024 Keith Dambrot,Atlantic 10,A10,2024 A10,2024 Duquesne,2024 Duquesne
+2024 UAB,2024,UAB,Region 1,12,First Round,1,Andy Kennedy,2024 Andy Kennedy,American,Amer,2024 Amer,2024 UAB,2024 UAB
+2024 Yale,2024,Yale,Region 1,13,Second Round,1,James Jones,2024 James Jones,Ivy,Ivy,2024 Ivy,2024 Yale,2024 Yale
+2024 Morehead St.,2024,Morehead St.,Region 1,14,First Round,1,Preston Spradlin,2024 Preston Spradlin,Ohio Valley,OVC,2024 OVC,2024 Morehead St.,2024 Morehead St.
+2024 South Dakota St.,2024,South Dakota St.,Region 1,15,First Round,1,Eric Henderson,2024 Eric Henderson,Summit,Sum,2024 Sum,2024 South Dakota St.,2024 South Dakota St.
+2024 Stetson,2024,Stetson,Region 1,16,First Round,1,Donnie Jones,2024 Donnie Jones,Atlantic Sun,ASun,2024 ASun,2024 Stetson,2024 Stetson
+2024 Purdue,2024,Purdue,Region 3,1,Runner Up,3,Matt Painter,2024 Matt Painter,Big 10,B10,2024 B10,2024 Purdue,2024 Purdue
+2024 Tennessee,2024,Tennessee,Region 3,2,Elite Eight,2,Rick Barnes,2024 Rick Barnes,SEC,SEC,2024 SEC,2024 Tennessee,2024 Tennessee
+2024 Creighton,2024,Creighton,Region 3,3,Sweet 16,2,Greg McDermott,2024 Greg McDermott,Big East,BE,2024 BE,2024 Creighton,2024 Creighton
+2024 Kansas,2024,Kansas,Region 3,4,Second Round,1,Bill Self,2024 Bill Self,Big 12,B12,2024 B12,2024 Kansas,2024 Kansas
+2024 Gonzaga,2024,Gonzaga,Region 3,5,Sweet 16,2,Mark Few,2024 Mark Few,WCC,WCC,2024 WCC,2024 Gonzaga,2024 Gonzaga
+2024 South Carolina,2024,South Carolina,Region 3,6,First Round,1,Lamont Paris,2024 Lamont Paris,SEC,SEC,2024 SEC,2024 South Carolina,2024 South Carolina
+2024 Texas,2024,Texas,Region 3,7,Second Round,1,Rodney Terry,2024 Rodney Terry,Big 12,B12,2024 B12,2024 Texas,2024 Texas
+2024 Utah St.,2024,Utah St.,Region 3,8,Second Round,1,Ryan Odom,2024 Ryan Odom,Mountain West,MWC,2024 MWC,2024 Utah St.,2024 Utah St.
+2024 TCU,2024,TCU,Region 3,9,First Round,1,Jamie Dixon,2024 Jamie Dixon,Big 12,B12,2024 B12,2024 TCU,2024 TCU
+2024 Colorado St.,2024,Colorado St.,Region 3,10,First Round,1,Niko Medved,2024 Niko Medved,Mountain West,MWC,2024 MWC,2024 Colorado St.,2024 Colorado St.
+2024 Oregon,2024,Oregon,Region 3,11,Second Round,1,Dana Altman,2024 Dana Altman,Pac 12,P12,2024 P12,2024 Oregon,2024 Oregon
+2024 McNeese,2024,McNeese St.,Region 3,12,First Round,1,Will Wade,2024 Will Wade,Southland,Slnd,2024 Slnd,2024 McNeese St.,2024 McNeese St.
+2024 Samford,2024,Samford,Region 3,13,First Round,1,Bucky McMillan,2024 Bucky McMillan,Southern,SC,2024 SC,2024 Samford,2024 Samford
+2024 Akron,2024,Akron,Region 3,14,First Round,1,John Groce,2024 John Groce,MAC,MAC,2024 MAC,2024 Akron,2024 Akron
+2024 Saint Peter's,2024,Saint Peter's,Region 3,15,First Round,1,Shaheen Holloway,2024 Shaheen Holloway,MAAC,MAAC,2024 MAAC,2024 Saint Peter's,2024 Saint Peter's
+2024 Montana St.,2024,Montana St.,Region 3,16,First Round,1,Matt Logie,2024 Matt Logie,Big Sky,BSky,2024 BSky,2024 Montana St.,2024 Montana St.
+2024 Houston,2024,Houston,Region 2,1,Sweet 16,2,Kelvin Sampson,2024 Kelvin Sampson,Big 12,B12,2024 B12,2024 Houston,2024 Houston
+2024 Marquette,2024,Marquette,Region 2,2,Sweet 16,2,Shaka Smart,2024 Shaka Smart,Big East,BE,2024 BE,2024 Marquette,2024 Marquette
+2024 Kentucky,2024,Kentucky,Region 2,3,First Round,1,John Calipari,2024 John Calipari,SEC,SEC,2024 SEC,2024 Kentucky,2024 Kentucky
+2024 Duke,2024,Duke,Region 2,4,Elite Eight,2,Jon Scheyer,2024 Jon Scheyer,ACC,ACC,2024 ACC,2024 Duke,2024 Duke
+2024 Wisconsin,2024,Wisconsin,Region 2,5,First Round,1,Greg Gard,2024 Greg Gard,Big 10,B10,2024 B10,2024 Wisconsin,2024 Wisconsin
+2024 Texas Tech,2024,Texas Tech,Region 2,6,First Round,1,Chris Beard,2024 Chris Beard,Big 12,B12,2024 B12,2024 Texas Tech,2024 Texas Tech
+2024 Florida,2024,Florida,Region 2,7,First Round,1,Todd Golden,2024 Todd Golden,SEC,SEC,2024 SEC,2024 Florida,2024 Florida
+2024 Nebraska,2024,Nebraska,Region 2,8,First Round,1,Fred Hoiberg,2024 Fred Hoiberg,Big 10,B10,2024 B10,2024 Nebraska,2024 Nebraska
+2024 Texas A&M,2024,Texas A&M,Region 2,9,Second Round,1,Buzz Williams,2024 Buzz Williams,SEC,SEC,2024 SEC,2024 Texas A&M,2024 Texas A&M
+2024 Boise St.,2024,Boise St.,Region 2,10,Second Round,1,Leon Rose,2024 Leon Rose,Mountain West,MWC,2024 MWC,2024 Boise St.,2024 Boise St.
+2024 NC St.,2024,North Carolina St.,Region 2,11,Final Four,3,Kevin Keatts,2024 Kevin Keatts,ACC,ACC,2024 ACC,2024 N.C. State,2024 N.C. State
+2024 James Madison,2024,James Madison,Region 2,12,Second Round,1,Mark Byington,2024 Mark Byington,Sun Belt,SB,2024 SB,2024 James Madison,2024 James Madison
+2024 Vermont,2024,Vermont,Region 2,13,First Round,1,John Becker,2024 John Becker,Amerian East,AE,2024 AE,2024 Vermont,2024 Vermont
+2024 Oakland,2024,Oakland,Region 2,14,Second Round,1,Greg Kampe,2024 Greg Kampe,Horizon,Horz,2024 Horz,2024 Oakland,2024 Oakland
+2024 Western Kentucky,2024,Western Kentucky,Region 2,15,First Round,1,Hank Plona,2024 Hank Plona,Conference USA,CUSA,2024 CUSA,2024 Western Kentucky,2024 Western Kentucky
+2024 Longwood,2024,Longwood,Region 2,16,First Round,1,Griff Aldrich,2024 Griff Aldrich,Big South,BSth,2024 BSth,2024 Longwood,2024 Longwood
+2024 North Carolina,2024,North Carolina,Region 4,1,Sweet 16,2,Hubert Davis,2024 Hubert Davis,ACC,ACC,2024 ACC,2024 North Carolina,2024 North Carolina
+2024 Arizona,2024,Arizona,Region 4,2,Sweet 16,2,Tommy Lloyd,2024 Tommy Lloyd,Pac 12,P12,2024 P12,2024 Arizona,2024 Arizona
+2024 Baylor,2024,Baylor,Region 4,3,Second Round,1,Scott Drew,2024 Scott Drew,Big 12,B12,2024 B12,2024 Baylor,2024 Baylor
+2024 Alabama,2024,Alabama,Region 4,4,Final Four,3,Nate Oats,2024 Nate Oats,SEC,SEC,2024 SEC,2024 Alabama,2024 Alabama
+2024 Saint Mary's,2024,Saint Mary's,Region 4,5,First Round,1,Randy Bennett,2024 Randy Bennett,WCC,WCC,2024 WCC,2024 Saint Mary's,2024 Saint Mary's
+2024 Clemson,2024,Clemson,Region 4,6,Elite Eight,2,Brad Brownell,2024 Brad Brownell,ACC,ACC,2024 ACC,2024 Clemson,2024 Clemson
+2024 Dayton,2024,Dayton,Region 4,7,Second Round,1,Anthony Grant,2024 Anthony Grant,Atlantic 10,A10,2024 A10,2024 Dayton,2024 Dayton
+2024 Mississippi St.,2024,Mississippi St.,Region 4,8,First Round,1,Chris Jans,2024 Chris Jans,SEC,SEC,2024 SEC,2024 Mississippi St.,2024 Mississippi St.
+2024 Michigan St.,2024,Michigan St.,Region 4,9,Second Round,1,Tom Izzo,2024 Tom Izzo,Big 10,B10,2024 B10,2024 Michigan St.,2024 Michigan St.
+2024 Nevada,2024,Nevada,Region 4,10,First Round,1,Steve Alford,2024 Steve Alford,Mountain West,MWC,2024 MWC,2024 Nevada,2024 Nevada
+2024 New Mexico,2024,New Mexico,Region 4,11,First Round,1,Richard Pitino,2024 Richard Pitino,Mountain West,MWC,2024 MWC,2024 New Mexico,2024 New Mexico
+2024 Grand Canyon,2024,Grand Canyon,Region 4,12,Second Round,1,Bryce Drew,2024 Bryce Drew,WAC,WAC,2024 WAC,2024 Grand Canyon,2024 Grand Canyon
+2024 Charleston,2024,College of Charleston,Region 4,13,First Round,1,Pat Kelsey,2024 Pat Kelsey,CAA,CAA,2024 CAA,2024 Charleston,2024 Charleston
+2024 Colgate,2024,Colgate,Region 4,14,First Round,1,Matt Langel,2024 Matt Langel,Patriot,Pat,2024 Pat,2024 Colgate,2024 Colgate
+2024 Long Beach St.,2024,Long Beach St.,Region 4,15,First Round,1,Dan Monson,2024 Dan Monson,Big West,BW,2024 BW,2024 Long Beach St.,2024 Long Beach St.
+2024 Howard,2024,Howard,Region 4,16,First Round,1,Kenny Blakeney,2024 Kenny Blakeney,MEAC,MEAC,2024 MEAC,2024 Howard,2024 Howard
+2025 Duke,2025,Duke,Region 2,1,Final Four,3,Jon Scheyer,2025 Jon Scheyer,ACC,ACC,2025 ACC,2025 Duke,2025 Duke
+2025 Alabama,2025,Alabama,Region 2,2,Elite Eight,2,Nate Oats,2025 Nate Oats,SEC,SEC,2025 SEC,2025 Alabama,2025 Alabama
+2025 Wisconsin,2025,Wisconsin,Region 2,3,Second Round,1,Greg Gard,2025 Greg Gard,Big 10,B10,2025 B10,2025 Wisconsin,2025 Wisconsin
+2025 Arizona,2025,Arizona,Region 2,4,Sweet 16,2,Tommy Lloyd,2025 Tommy Lloyd,Big 12,B12,2025 B12,2025 Arizona,2025 Arizona
+2025 Oregon,2025,Oregon,Region 2,5,Second Round,1,Dana Altman,2025 Dana Altman,Big 10,B10,2025 B10,2025 Oregon,2025 Oregon
+2025 BYU,2025,BYU,Region 2,6,Sweet 16,2,Kevin Young,2025 Kevin Young,Big 12,B12,2025 B12,2025 BYU,2025 BYU
+2025 Saint Mary's,2025,Saint Mary's,Region 2,7,Second Round,1,Randy Bennett,2025 Randy Bennett,WCC,WCC,2025 WCC,2025 Saint Mary's,2025 Saint Mary's
+2025 Mississippi St.,2025,Mississippi St.,Region 2,8,First Round,1,Chris Jans,2025 Chris Jans,SEC,SEC,2025 SEC,2025 Mississippi St.,2025 Mississippi St.
+2025 Baylor,2025,Baylor,Region 2,9,Second Round,1,Scott Drew,2025 Scott Drew,Big 12,B12,2025 B12,2025 Baylor,2025 Baylor
+2025 Vanderbilt,2025,Vanderbilt,Region 2,10,First Round,1,Mark Byington,2025 Mark Byington,SEC,SEC,2025 SEC,2025 Vanderbilt,2025 Vanderbilt
+2025 VCU,2025,VCU,Region 2,11,First Round,1,Ryan Odom,2025 Ryan Odom,Atlantic 10,A10,2025 A10,2025 VCU,2025 VCU
+2025 Liberty,2025,Liberty,Region 2,12,First Round,1,Ritche McKay,2025 Ritche McKay,Conference USA,CUSA,2025 CUSA,2025 Liberty,2025 Liberty
+2025 Akron,2025,Akron,Region 2,13,First Round,1,John Groce,2025 John Groce,MAC,MAC,2025 MAC,2025 Akron,2025 Akron
+2025 Montana,2025,Montana,Region 2,14,First Round,1,Travis DeCuire,2025 Travis DeCuire,Big Sky,BSky,2025 BSky,2025 Montana,2025 Montana
+2025 Robert Morris,2025,Robert Morris,Region 2,15,First Round,1,Andrew Toole,2025 Andrew Toole,Horizon,Horz,2025 Horz,2025 Robert Morris,2025 Robert Morris
+2025 American,2025,American,Region 2,16,First Round,1,Mike Brennan,2025 Mike Brennan,Patriot,Pat,2025 Pat,2025 American,2025 American
+2025 Houston,2025,Houston,Region 3,1,Runner Up,3,Kelvin Sampson,2025 Kelvin Sampson,Big 12,B12,2025 B12,2025 Houston,2025 Houston
+2025 Tennessee,2025,Tennessee,Region 3,2,Elite Eight,2,Rick Barnes,2025 Rick Barnes,SEC,SEC,2025 SEC,2025 Tennessee,2025 Tennessee
+2025 Kentucky,2025,Kentucky,Region 3,3,Sweet 16,2,Mark Pope,2025 Mark Pope,SEC,SEC,2025 SEC,2025 Kentucky,2025 Kentucky
+2025 Purdue,2025,Purdue,Region 3,4,Sweet 16,2,Matt Painter,2025 Matt Painter,Big 10,B10,2025 B10,2025 Purdue,2025 Purdue
+2025 Clemson,2025,Clemson,Region 3,5,First Round,1,Brad Brownell,2025 Brad Brownell,ACC,ACC,2025 ACC,2025 Clemson,2025 Clemson
+2025 Illinois,2025,Illinois,Region 3,6,Second Round,1,Brad Underwood,2025 Brad Underwood,Big 10,B10,2025 B10,2025 Illinois,2025 Illinois
+2025 UCLA,2025,UCLA,Region 3,7,Second Round,1,Mick Cronin,2025 Mick Cronin,Big 10,B10,2025 B10,2025 UCLA,2025 UCLA
+2025 Gonzaga,2025,Gonzaga,Region 3,8,Second Round,1,Mark Few,2025 Mark Few,WCC,WCC,2025 WCC,2025 Gonzaga,2025 Gonzaga
+2025 Georgia,2025,Georgia,Region 3,9,First Round,1,Mike White,2025 Mike White,SEC,SEC,2025 SEC,2025 Georgia,2025 Georgia
+2025 Utah St.,2025,Utah St.,Region 3,10,First Round,1,Jerrod Calhoun,2025 Jerrod Calhoun,Mountain West,MWC,2025 MWC,2025 Utah St.,2025 Utah St.
+2025 Texas,2025,Texas,Region 3,11,First Round,1,Rodney Terry,2025 Rodney Terry,SEC,SEC,2025 SEC,2025 Texas,2025 Texas
+2025 McNeese,2025,McNeese,Region 3,12,Second Round,1,Will Wade,2025 Will Wade,Southland,Slnd,2025 Slnd,2025 McNeese,2025 McNeese St.
+2025 High Point,2025,High Point,Region 3,13,First Round,1,Alan Huss,2025 Alan Huss,Big South,BSth,2025 BSth,2025 High Point,2025 High Point
+2025 Troy,2025,Troy,Region 3,14,First Round,1,Scott Cross,2025 Scott Cross,Sun Belt,SB,2025 SB,2025 Troy,2025 Troy
+2025 Wofford,2025,Wofford,Region 3,15,First Round,1,Dwight Perry,2025 Dwight Perry,Southern,SC,2025 SC,2025 Wofford,2025 Wofford
+2025 SIU Edwardsville,2025,SIU Edwardsville,Region 3,16,First Round,1,Brian Barone,2025 Brian Barone,Ohio Valley,OVC,2025 OVC,2025 SIUE,2025 SIU Edwardsville
+2025 Auburn,2025,Auburn,Region 1,1,Final Four,3,Bruce Pearl,2025 Bruce Pearl,SEC,SEC,2025 SEC,2025 Auburn,2025 Auburn
+2025 Michigan St.,2025,Michigan St.,Region 1,2,Elite Eight,2,Tom Izzo,2025 Tom Izzo,Big 10,B10,2025 B10,2025 Michigan St.,2025 Michigan St.
+2025 Iowa St.,2025,Iowa St.,Region 1,3,Second Round,1,T.J. Otzelberger,2025 T.J. Otzelberger,Big 12,B12,2025 B12,2025 Iowa St.,2025 Iowa St.
+2025 Texas A&M,2025,Texas A&M,Region 1,4,Second Round,1,Buzz Williams,2025 Buzz Williams,SEC,SEC,2025 SEC,2025 Texas A&M,2025 Texas A&M
+2025 Michigan,2025,Michigan,Region 1,5,Sweet 16,2,Dusty May,2025 Dusty May,Big 10,B10,2025 B10,2025 Michigan,2025 Michigan
+2025 Mississippi,2025,Mississippi,Region 1,6,Sweet 16,2,Mississippi,2025 Mississippi,SEC,SEC,2025 SEC,2025 Mississippi,2025 Mississippi
+2025 Marquette,2025,Marquette,Region 1,7,First Round,1,Shaka Smart,2025 Shaka Smart,Big 12,B12,2025 B12,2025 Marquette,2025 Marquette
+2025 Louisville,2025,Louisville,Region 1,8,First Round,1,Pat Kelsey,2025 Pat Kelsey,ACC,ACC,2025 ACC,2025 Louisville,2025 Louisville
+2025 Creighton,2025,Creighton,Region 1,9,Second Round,1,Greg McDermott,2025 Greg McDermott,Big East,BE,2025 BE,2025 Creighton,2025 Creighton
+2025 New Mexico,2025,New Mexico,Region 1,10,Second Round,1,Richard Pitino,2025 Richard Pitino,Mountain West,MWC,2025 MWC,2025 New Mexico,2025 New Mexico
+2025 North Carolina,2025,North Carolina,Region 1,11,First Round,1,Hubert Davis,2025 Hubert Davis,ACC,ACC,2025 ACC,2025 North Carolina,2025 North Carolina
+2025 UC San Diego,2025,UC San Diego,Region 1,12,First Round,1,Eric Olen,2025 Eric Olen,Big West,BW,2025 BW,2025 UC San Diego,2025 UC San Diego
+2025 Yale,2025,Yale,Region 1,13,First Round,1,James Jones,2025 James Jones,Ivy,Ivy,2025 Ivy,2025 Yale,2025 Yale
+2025 Lipscomb,2025,Lipscomb,Region 1,14,First Round,1,Lennie Acuff,2025 Lennie Acuff,Atlantic Sun,ASun,2025 ASun,2025 Lipscomb,2025 Lipscomb
+2025 Bryant,2025,Bryant,Region 1,15,First Round,1,Doug Brotherton,2025 Doug Brotherton,Amerian East,AE,2025 AE,2025 Bryant,2025 Bryant
+2025 Saint Francis,2025,Saint Francis,Region 1,16,First Round,1,Rob Krimmel,2025 Rob Krimmel,NEC,NEC,2025 NEC,2025 Saint Francis,2025 Saint Francis
+2025 Florida,2025,Florida,Region 4,1,Champion,3,Todd Golden,2025 Todd Golden,SEC,SEC,2025 SEC,2025 Florida,2025 Florida
+2025 St. John's,2025,St. John's,Region 4,2,Second Round,1,Rick Pitino,2025 Rick Pitino,Big East,BE,2025 BE,2025 St. John's,2025 St. John's
+2025 Texas Tech,2025,Texas Tech,Region 4,3,Elite Eight,2,Grant McCasland,2025 Grant McCasland,Big 12,B12,2025 B12,2025 Texas Tech,2025 Texas Tech
+2025 Maryland,2025,Maryland,Region 4,4,Sweet 16,2,Kevin Willard,2025 Kevin Willard,Big 10,B10,2025 B10,2025 Maryland,2025 Maryland
+2025 Memphis,2025,Memphis,Region 4,5,First Round,1,Penny Hardaway,2025 Penny Hardaway,American,Amer,2025 Amer,2025 Memphis,2025 Memphis
+2025 Missouri,2025,Missouri,Region 4,6,First Round,1,Dennis Gates,2025 Dennis Gates,SEC,SEC,2025 SEC,2025 Missouri,2025 Missouri
+2025 Kansas,2025,Kansas,Region 4,7,First Round,1,Bill Self,2025 Bill Self,Big 12,B12,2025 B12,2025 Kansas,2025 Kansas
+2025 Connecticut,2025,Connecticut,Region 4,8,Second Round,1,Dan Hurley,2025 Dan Hurley,Big East,BE,2025 BE,2025 Connecticut,2025 Connecticut
+2025 Oklahoma,2025,Oklahoma,Region 4,9,First Round,1,Porter Moser,2025 Porter Moser,SEC,SEC,2025 SEC,2025 Oklahoma,2025 Oklahoma
+2025 Arkansas,2025,Arkansas,Region 4,10,Sweet 16,2,John Calipari,2025 John Calipari,SEC,SEC,2025 SEC,2025 Arkansas,2025 Arkansas
+2025 Drake,2025,Drake,Region 4,11,Second Round,1,Ben McCollum,2025 Ben McCollum,Missouri Valley,MVC,2025 MVC,2025 Drake,2025 Drake
+2025 Colorado St.,2025,Colorado St.,Region 4,12,Second Round,1,Niko Medved,2025 Niko Medved,Mountain West,MWC,2025 MWC,2025 Colorado St.,2025 Colorado St.
+2025 Grand Canyon,2025,Grand Canyon,Region 4,13,First Round,1,Bryce Drew,2025 Bryce Drew,WAC,WAC,2025 WAC,2025 Grand Canyon,2025 Grand Canyon
+2025 UNC Wilmington,2025,UNC Wilmington,Region 4,14,First Round,1,Takayo Siddle,2025 Takayo Siddle,CAA,CAA,2025 CAA,2025 UNC Wilmington,2025 UNC Wilmington
+2025 Nebraska Omaha,2025,Nebraska Omaha,Region 4,15,First Round,1,Chris Crutchfield,2025 Chris Crutchfield,Summit,Sum,2025 Sum,2025 Nebraska Omaha,2025 Nebraska Omaha
+2025 Norfolk St.,2025,Norfolk St.,Region 4,16,First Round,1,Robert Jones,2025 Robert Jones,MEAC,MEAC,2025 MEAC,2025 Norfolk St.,2025 Norfolk St.
