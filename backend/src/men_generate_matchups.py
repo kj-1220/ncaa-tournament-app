@@ -5,8 +5,8 @@ Men's NCAA Tournament - Matchup Models & Probabilities (Stage 2)
 
   Round 1:   XGBoost (23 features)
   Round 2:   Random Forest (30 features)
-  Weekend 2: Logistic Regression (9 features) - Sweet 16 + Elite Eight
-  Weekend 3: Logistic Regression (7 features) - Final Four + Championship
+  Weekend 2: Random Forest (5 features) - Sweet 16 + Elite Eight
+  Weekend 3: Logistic Regression (6 features) - Final Four + Championship
 
 Inputs (in backend/data/men/):
   - men_2026_matchups_training.csv (from men_create_data.py)
@@ -30,6 +30,7 @@ warnings.filterwarnings('ignore')
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.calibration import CalibratedClassifierCV
+from sklearn.frozen import FrozenEstimator
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
@@ -97,8 +98,8 @@ xgb_model.fit(X_train_r1_s, y_train_r1,
               eval_set=[(X_train_r1_s, y_train_r1), (X_val_r1_s, y_val_r1)],
               verbose=False)
 
-# Platt Scaling
-r1_calibrated = CalibratedClassifierCV(xgb_model, method='sigmoid', cv='prefit')
+# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
+r1_calibrated = CalibratedClassifierCV(FrozenEstimator(xgb_model), method='sigmoid', cv=2)
 r1_calibrated.fit(X_val_r1_s, y_val_r1)
 
 from sklearn.metrics import accuracy_score
@@ -141,22 +142,21 @@ rf_model = RandomForestClassifier(
 )
 rf_model.fit(X_train_r2_s, y_train_r2)
 
-# Platt Scaling
-r2_calibrated = CalibratedClassifierCV(rf_model, method='sigmoid', cv='prefit')
+# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
+r2_calibrated = CalibratedClassifierCV(FrozenEstimator(rf_model), method='sigmoid', cv=2)
 r2_calibrated.fit(X_test_r2_s, y_test_r2)
 
 r2_acc = accuracy_score(y_test_r2, rf_model.predict(X_test_r2_s))
 print(f"  ✓ Round 2: {len(df_r2)} games, test accuracy: {r2_acc:.4f}")
 
 # ============================================================================
-# STEP 4: TRAIN WEEKEND 2 MODEL (Logistic Regression)
+# STEP 4: TRAIN WEEKEND 2 MODEL (Random Forest)
 # ============================================================================
-print("\nSTEP 4: Training Weekend 2 model (Logistic Regression)...")
+print("\nSTEP 4: Training Weekend 2 model (Random Forest)...")
 
 w2_features = [
-    '5man_bpm', 'wab', 'torvik_rtg', 'elite_outcome_probability',
-    '5man_dbpm', '3man_prpg', 'four_factors_composite',
-    'lineup_depth_quality', '3man_bpm'
+    'wab', 'rotation_balance', '5man_prpg',
+    'three_point_volume_efficiency', '5man_dbpm'
 ]
 
 df_w2 = matchups[matchups['round'].isin(['Sweet 16', 'Elite Eight'])].copy()
@@ -164,21 +164,24 @@ X_w2 = df_w2[w2_features].fillna(df_w2[w2_features].median())
 y_w2 = df_w2['win']
 
 X_train_w2, X_test_w2, y_train_w2, y_test_w2 = train_test_split(
-    X_w2, y_w2, test_size=0.30, random_state=42, stratify=y_w2
+    X_w2, y_w2, test_size=0.25, random_state=42, stratify=y_w2
 )
 
 scaler_w2 = StandardScaler()
 X_train_w2_s = scaler_w2.fit_transform(X_train_w2)
 X_test_w2_s = scaler_w2.transform(X_test_w2)
 
-lr_w2 = LogisticRegression(max_iter=1000, random_state=42)
-lr_w2.fit(X_train_w2_s, y_train_w2)
+rf_w2 = RandomForestClassifier(
+    n_estimators=300, max_depth=3, min_samples_split=8,
+    min_samples_leaf=5, max_features=0.7, random_state=42, n_jobs=-1
+)
+rf_w2.fit(X_train_w2_s, y_train_w2)
 
 # Platt Scaling
-w2_calibrated = CalibratedClassifierCV(lr_w2, method='sigmoid', cv='prefit')
+w2_calibrated = CalibratedClassifierCV(FrozenEstimator(rf_w2), method='sigmoid', cv=2)
 w2_calibrated.fit(X_test_w2_s, y_test_w2)
 
-w2_acc = accuracy_score(y_test_w2, lr_w2.predict(X_test_w2_s))
+w2_acc = accuracy_score(y_test_w2, rf_w2.predict(X_test_w2_s))
 print(f"  ✓ Weekend 2: {len(df_w2)} games, test accuracy: {w2_acc:.4f}")
 
 # ============================================================================
@@ -187,8 +190,8 @@ print(f"  ✓ Weekend 2: {len(df_w2)} games, test accuracy: {w2_acc:.4f}")
 print("\nSTEP 5: Training Weekend 3 model (Logistic Regression)...")
 
 w3_features = [
-    '5man_bpm', 'assist_to_usage_ratio', 'experience_weighted_production',
-    'effective_possession_rate', 'off_3pt_share', 'kenpom_off', 'blk_pct'
+    '5man_bpm', 'assist_to_usage_ratio', 'kenpom_off',
+    'def_far2_share', 'blk_pct', 'four_factors_composite'
 ]
 
 df_w3 = matchups[matchups['round'].isin(['Final Four', 'Championship'])].copy()
@@ -206,8 +209,8 @@ X_test_w3_s = scaler_w3.transform(X_test_w3)
 lr_w3 = LogisticRegression(max_iter=1000, random_state=42)
 lr_w3.fit(X_train_w3_s, y_train_w3)
 
-# Platt Scaling
-w3_calibrated = CalibratedClassifierCV(lr_w3, method='sigmoid', cv='prefit')
+# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
+w3_calibrated = CalibratedClassifierCV(FrozenEstimator(lr_w3), method='sigmoid', cv=2)
 w3_calibrated.fit(X_test_w3_s, y_test_w3)
 
 w3_acc = accuracy_score(y_test_w3, lr_w3.predict(X_test_w3_s))
@@ -399,6 +402,7 @@ X_w3_2026_s = scaler_w3.transform(X_w3_2026)
 matchups_2026['w3_win_prob'] = w3_calibrated.predict_proba(X_w3_2026_s)[:, 1]
 
 # Pairwise normalize: P(A beats B) + P(B beats A) = 1
+normalized_pairs = set()
 for idx, row in matchups_2026.iterrows():
     opp_idx = matchups_2026[
         (matchups_2026['team_id'] == row['opponent_id']) &
@@ -406,12 +410,17 @@ for idx, row in matchups_2026.iterrows():
     ].index
     if len(opp_idx) > 0:
         opp_idx = opp_idx[0]
+        pair_key = tuple(sorted([idx, opp_idx]))
+        if pair_key in normalized_pairs:
+            continue
+        normalized_pairs.add(pair_key)
         for prob_col in ['r1_win_prob', 'r2_win_prob', 'w2_win_prob', 'w3_win_prob']:
             p1 = matchups_2026.loc[idx, prob_col]
             p2 = matchups_2026.loc[opp_idx, prob_col]
             total = p1 + p2
             if total > 0:
                 matchups_2026.loc[idx, prob_col] = p1 / total
+                matchups_2026.loc[opp_idx, prob_col] = p2 / total
 
 print("  ✓ Win probabilities calculated and normalized")
 
@@ -420,17 +429,6 @@ print("  ✓ Win probabilities calculated and normalized")
 # ============================================================================
 print("\nSTEP 8: Calculating advancement probabilities...")
 
-# Map round to model
-round_model_map = {
-    'Round 1': 'r1_win_prob',
-    'Round 2': 'r2_win_prob',
-    'Sweet 16': 'w2_win_prob',
-    'Elite Eight': 'w2_win_prob',
-    'Final Four': 'w3_win_prob',
-    'Championship': 'w3_win_prob'
-}
-
-rounds_order = ['Round 1', 'Round 2', 'Sweet 16', 'Elite Eight', 'Final Four', 'Championship']
 prob_cols = ['pct_round_2', 'pct_sweet_16', 'pct_elite_eight', 'pct_final_four', 'pct_championship', 'pct_champion']
 
 # Initialize advancement probs
@@ -438,107 +436,127 @@ team_probs = {}
 for tid in team_ids:
     team_probs[tid] = {pc: 0.0 for pc in prob_cols}
 
-# Round 1: P(advance) = P(win matchup) for actual bracket matchup
-# For simplicity with all-vs-all, use region + seed to determine bracket path
-# Round 1 matchups: 1v16, 2v15, 3v14, 4v13, 5v12, 6v11, 7v10, 8v9
-r1_seed_matchups = [(1,16), (2,15), (3,14), (4,13), (5,12), (6,11), (7,10), (8,9)]
+# Helper: get win prob from matchups_2026 lookup (pre-built dict for speed)
+win_prob_cache = {}
+for _, row in matchups_2026.iterrows():
+    win_prob_cache[(row['team_id'], row['opponent_id'])] = {
+        'r1': row['r1_win_prob'], 'r2': row['r2_win_prob'],
+        'w2': row['w2_win_prob'], 'w3': row['w3_win_prob']
+    }
+
+def get_win_prob(t1, t2, prob_key):
+    key = (t1, t2)
+    if key in win_prob_cache:
+        return win_prob_cache[key][prob_key]
+    return 0.5  # fallback
+
+# Build proper bracket structure per region
+# Standard bracket order (pairs that play in Round 1, arranged for correct bracket flow)
+bracket_r1 = [(1,16), (8,9), (5,12), (4,13), (6,11), (3,14), (7,10), (2,15)]
 
 regions = teams_2026['region'].unique()
 
+def get_team_id(region_teams, seed):
+    t = region_teams[region_teams['seed'] == seed]
+    return t.iloc[0]['team_id'] if len(t) > 0 else None
+
+# Store regional champions: region -> list of (team_id, prob)
+regional_champions = {}
+
+def play_round(slot_a, slot_b, prob_key, next_prob_col):
+    """Play a bracket round between two slots, return winners slot."""
+    slot_result = []
+    for (ta, pa) in slot_a:
+        total_win = 0.0
+        for (tb, pb) in slot_b:
+            total_win += pb * get_win_prob(ta, tb, prob_key)
+        advance_prob = pa * total_win
+        if advance_prob > 0:
+            slot_result.append((ta, advance_prob))
+            team_probs[ta][next_prob_col] = advance_prob
+    for (tb, pb) in slot_b:
+        total_win = 0.0
+        for (ta, pa) in slot_a:
+            total_win += pa * get_win_prob(tb, ta, prob_key)
+        advance_prob = pb * total_win
+        if advance_prob > 0:
+            slot_result.append((tb, advance_prob))
+            team_probs[tb][next_prob_col] = advance_prob
+    return slot_result
+
 for region in regions:
     region_teams = teams_2026[teams_2026['region'] == region]
 
-    for high_seed, low_seed in r1_seed_matchups:
-        high_team = region_teams[region_teams['seed'] == high_seed]
-        low_team = region_teams[region_teams['seed'] == low_seed]
-
-        if len(high_team) == 0 or len(low_team) == 0:
+    # === ROUND 1 ===
+    r1_winners = []
+    for high_seed, low_seed in bracket_r1:
+        h_id = get_team_id(region_teams, high_seed)
+        l_id = get_team_id(region_teams, low_seed)
+        if h_id is None or l_id is None:
+            r1_winners.append([])
             continue
+        p_high = get_win_prob(h_id, l_id, 'r1')
+        p_low = 1 - p_high
+        team_probs[h_id]['pct_round_2'] = p_high
+        team_probs[l_id]['pct_round_2'] = p_low
+        r1_winners.append([(h_id, p_high), (l_id, p_low)])
 
-        h_id = high_team.iloc[0]['team_id']
-        l_id = low_team.iloc[0]['team_id']
+    # === ROUND 2 ===
+    r2_winners = []
+    for g in range(0, 8, 2):
+        r2_winners.append(play_round(r1_winners[g], r1_winners[g+1], 'r2', 'pct_sweet_16'))
 
-        matchup_row = matchups_2026[
-            (matchups_2026['team_id'] == h_id) & (matchups_2026['opponent_id'] == l_id)
-        ]
-        if len(matchup_row) > 0:
-            p_high = matchup_row.iloc[0]['r1_win_prob']
-            team_probs[h_id]['pct_round_2'] = p_high
-            team_probs[l_id]['pct_round_2'] = 1 - p_high
+    # === SWEET 16 ===
+    s16_winners = []
+    for g in range(0, 4, 2):
+        s16_winners.append(play_round(r2_winners[g], r2_winners[g+1], 'w2', 'pct_elite_eight'))
 
-# Subsequent rounds: P(advance) = sum over possible opponents of P(team in round) * P(opp in round) * P(win)
-def calc_round_prob(teams_in_pod, current_round_col, next_round_col, prob_key):
-    """Calculate advancement probability for a round within a pod of teams."""
-    for team_id in teams_in_pod:
-        total_prob = 0.0
-        p_team = team_probs[team_id][current_round_col]
-        if p_team == 0:
-            continue
-        for opp_id in teams_in_pod:
-            if opp_id == team_id:
-                continue
-            p_opp = team_probs[opp_id][current_round_col]
-            if p_opp == 0:
-                continue
-            matchup_row = matchups_2026[
-                (matchups_2026['team_id'] == team_id) & (matchups_2026['opponent_id'] == opp_id)
-            ]
-            if len(matchup_row) > 0:
-                win_prob = matchup_row.iloc[0][prob_key]
-                total_prob += p_opp * win_prob
-        team_probs[team_id][next_round_col] = p_team * total_prob
+    # === ELITE EIGHT ===
+    region_result = play_round(s16_winners[0], s16_winners[1], 'w2', 'pct_final_four')
+    regional_champions[region] = region_result
 
-# Round 2 pods (seeds that meet in R2): {1,16,8,9}, {2,15,7,10}, {3,14,6,11}, {4,13,5,12}
-r2_pods = [(1,16,8,9), (2,15,7,10), (3,14,6,11), (4,13,5,12)]
+# === FINAL FOUR ===
+region_list = sorted(regions)
+semifinal_pairs = [(region_list[0], region_list[1]), (region_list[2], region_list[3])]
 
-for region in regions:
-    region_teams = teams_2026[teams_2026['region'] == region]
+print(f"  Final Four pairings: {semifinal_pairs[0][0]} vs {semifinal_pairs[0][1]}, "
+      f"{semifinal_pairs[1][0]} vs {semifinal_pairs[1][1]}")
 
-    for pod_seeds in r2_pods:
-        pod_ids = []
-        for s in pod_seeds:
-            t = region_teams[region_teams['seed'] == s]
-            if len(t) > 0:
-                pod_ids.append(t.iloc[0]['team_id'])
-        if pod_ids:
-            calc_round_prob(pod_ids, 'pct_round_2', 'pct_sweet_16', 'r2_win_prob')
+ff_winners = []
+for reg_a, reg_b in semifinal_pairs:
+    slot_a = regional_champions.get(reg_a, [])
+    slot_b = regional_champions.get(reg_b, [])
+    ff_winners.append(play_round(slot_a, slot_b, 'w3', 'pct_championship'))
 
-# Sweet 16 pods (top half: seeds 1,16,8,9,4,13,5,12 and bottom half: 2,15,7,10,3,14,6,11)
-s16_top = (1,16,8,9,4,13,5,12)
-s16_bot = (2,15,7,10,3,14,6,11)
+# === CHAMPIONSHIP ===
+slot_a = ff_winners[0]
+slot_b = ff_winners[1]
+for (ta, pa) in slot_a:
+    total_win = 0.0
+    for (tb, pb) in slot_b:
+        total_win += pb * get_win_prob(ta, tb, 'w3')
+    team_probs[ta]['pct_champion'] = pa * total_win
+for (tb, pb) in slot_b:
+    total_win = 0.0
+    for (ta, pa) in slot_a:
+        total_win += pa * get_win_prob(tb, ta, 'w3')
+    team_probs[tb]['pct_champion'] = pb * total_win
 
-for region in regions:
-    region_teams = teams_2026[teams_2026['region'] == region]
-
-    for pod_seeds in [s16_top, s16_bot]:
-        pod_ids = []
-        for s in pod_seeds:
-            t = region_teams[region_teams['seed'] == s]
-            if len(t) > 0:
-                pod_ids.append(t.iloc[0]['team_id'])
-        if pod_ids:
-            calc_round_prob(pod_ids, 'pct_sweet_16', 'pct_elite_eight', 'w2_win_prob')
-
-# Elite Eight: full region
-for region in regions:
-    region_teams = teams_2026[teams_2026['region'] == region]
-    region_ids = region_teams['team_id'].tolist()
-    calc_round_prob(region_ids, 'pct_elite_eight', 'pct_final_four', 'w2_win_prob')
-
-# Final Four: all teams
-all_ids = teams_2026['team_id'].tolist()
-calc_round_prob(all_ids, 'pct_final_four', 'pct_championship', 'w3_win_prob')
-
-# Championship
-calc_round_prob(all_ids, 'pct_championship', 'pct_champion', 'w3_win_prob')
-
-# Normalize champion probabilities to sum to 1
+# Verify conservation
+total_r2 = sum(team_probs[tid]['pct_round_2'] for tid in team_ids)
+total_s16 = sum(team_probs[tid]['pct_sweet_16'] for tid in team_ids)
+total_e8 = sum(team_probs[tid]['pct_elite_eight'] for tid in team_ids)
+total_f4 = sum(team_probs[tid]['pct_final_four'] for tid in team_ids)
+total_champ_game = sum(team_probs[tid]['pct_championship'] for tid in team_ids)
 total_champ = sum(team_probs[tid]['pct_champion'] for tid in team_ids)
-if total_champ > 0:
-    for tid in team_ids:
-        team_probs[tid]['pct_champion'] /= total_champ
 
-print(f"  ✓ Total champion probability: {sum(team_probs[tid]['pct_champion'] for tid in team_ids):.4f}")
+print(f"  Probability conservation check:")
+print(f"    Round 2:      {total_r2:.4f} (should be 32.0)")
+print(f"    Sweet 16:     {total_s16:.4f} (should be 16.0)")
+print(f"    Elite Eight:  {total_e8:.4f} (should be 8.0)")
+print(f"    Final Four:   {total_f4:.4f} (should be 4.0)")
+print(f"    Champ Game:   {total_champ_game:.4f} (should be 2.0)")
+print(f"    Champion:     {total_champ:.4f} (should be 1.0)")
 
 # ============================================================================
 # STEP 9: CALCULATE BRACKET VALUE
@@ -581,18 +599,111 @@ total_champ_check = teams_output[teams_output['year'] == 2026]['pct_champion'].s
 print(f"\n  Total champion probability (2026): {total_champ_check:.4f}")
 
 # ============================================================================
-# STEP 11: SAVE MATCHUPS OUTPUT
+# STEP 11: SAVE MATCHUPS OUTPUT (bracket template based)
 # ============================================================================
-print("\nSTEP 11: Saving matchups output...")
+print("\nSTEP 11: Building matchups output from bracket template...")
 
-matchups_out = matchups_2026[['team_id', 'opponent_id', 'team', 'opponent',
-                               'team_seed', 'opp_seed', 'team_region', 'opp_region',
-                               'r1_win_prob', 'r2_win_prob', 'w2_win_prob', 'w3_win_prob']].copy()
+# Map actual region names to template Region 1-4
+actual_regions = sorted(teams_2026['region'].unique())
+region_map = {f'Region {i+1}': actual_regions[i] for i in range(len(actual_regions))}
+reverse_region_map = {v: k for k, v in region_map.items()}
+print(f"  Region mapping: {region_map}")
+
+# Round -> which probability column to use
+round_prob_map = {
+    'Round 1': 'r1_win_prob',
+    'Round 2': 'r2_win_prob',
+    'Sweet 16': 'w2_win_prob',
+    'Elite Eight': 'w2_win_prob',
+    'Final Four': 'w3_win_prob',
+    'Championship': 'w3_win_prob'
+}
+
+# Key team stats to include in output (raw values, not differentials)
+team_stat_cols = [
+    'overall_score', 'offensive_score', 'defensive_score', 'tier',
+    '5man_bpm', '3man_bpm', 'kenpom_rtg', 'torvik_rtg',
+    'kenpom_off', 'kenpom_def', 'torvik_off', 'torvik_def',
+    'wab', 'efg%', 'efgd%', 'adj_tempo',
+    'elite_outcome_probability', 'four_factors_composite'
+]
+# Filter to columns that actually exist in teams_2026
+team_stat_cols = [c for c in team_stat_cols if c in teams_2026.columns]
+
+# Build lookup: (region, seed) -> team row
+team_lookup = {}
+for _, t in teams_2026.iterrows():
+    template_region = reverse_region_map.get(t['region'], '')
+    team_lookup[(template_region, int(t['seed']))] = t
+
+# Build matchups output from bracket template
+matchup_rows = []
+for _, brow in bracket.iterrows():
+    game_id = brow['game_id']
+    rnd = brow['round']
+    t_region = brow['team_region']
+    t_seed = int(brow['team_seed'])
+    o_region = brow['opp_region']
+    o_seed = int(brow['opp_seed'])
+
+    t = team_lookup.get((t_region, t_seed))
+    o = team_lookup.get((o_region, o_seed))
+    if t is None or o is None:
+        continue
+
+    t_id = t['team_id']
+    o_id = o['team_id']
+
+    # Get win probability from matchups_2026
+    prob_col = round_prob_map[rnd]
+    m_row = matchups_2026[
+        (matchups_2026['team_id'] == t_id) & (matchups_2026['opponent_id'] == o_id)
+    ]
+    win_prob = m_row.iloc[0][prob_col] if len(m_row) > 0 else 0.5
+
+    row = {
+        'game_id': game_id,
+        'round': rnd,
+        'team': t['team'],
+        'team_seed': t_seed,
+        'team_region': region_map[t_region],
+        'opponent': o['team'],
+        'opp_seed': o_seed,
+        'opp_region': region_map[o_region],
+        'win_prob': round(win_prob, 4),
+    }
+
+    # Add team stats with "team_" prefix
+    for col in team_stat_cols:
+        row[f'team_{col}'] = t[col]
+
+    # Add opponent stats with "opp_" prefix
+    for col in team_stat_cols:
+        row[f'opp_{col}'] = o[col]
+
+    # Add key differential stats from matchups_2026
+    diff_cols = [c for c in matchups_2026.columns
+                 if c not in ['team_id', 'opponent_id', 'team', 'opponent',
+                              'team_seed', 'opp_seed', 'team_region', 'opp_region',
+                              'r1_win_prob', 'r2_win_prob', 'w2_win_prob', 'w3_win_prob']]
+    if len(m_row) > 0:
+        for col in diff_cols:
+            row[f'diff_{col}'] = m_row.iloc[0][col]
+
+    matchup_rows.append(row)
+
+matchups_out = pd.DataFrame(matchup_rows)
 
 matchups_path = os.path.join(data_dir, 'men_matchups_output.csv')
 matchups_out.to_csv(matchups_path, index=False)
 print(f"  ✓ Saved: {matchups_path}")
-print(f"    {len(matchups_out)} matchups")
+print(f"    {len(matchups_out)} matchups, {matchups_out['game_id'].nunique()} unique games")
+print(f"    Columns: {len(matchups_out.columns)}")
+
+# Show sample
+print(f"\n  Sample Round 1 matchups:")
+r1_sample = matchups_out[matchups_out['round'] == 'Round 1'].head(8)
+print(r1_sample[['game_id', 'team', 'team_seed', 'opponent', 'opp_seed', 'win_prob']].to_string(index=False))
 
 print("\n" + "=" * 80)
 print("COMPLETE!")
