@@ -619,16 +619,19 @@ round_prob_map = {
     'Championship': 'w3_win_prob'
 }
 
-# Key team stats to include in output (raw values, not differentials)
-team_stat_cols = [
-    'overall_score', 'offensive_score', 'defensive_score', 'tier',
-    '5man_bpm', '3man_bpm', 'kenpom_rtg', 'torvik_rtg',
-    'kenpom_off', 'kenpom_def', 'torvik_off', 'torvik_def',
-    'wab', 'efg%', 'efgd%', 'adj_tempo',
-    'elite_outcome_probability', 'four_factors_composite'
-]
-# Filter to columns that actually exist in teams_2026
-team_stat_cols = [c for c in team_stat_cols if c in teams_2026.columns]
+# ALL team stat columns (every column except metadata)
+team_meta_cols = ['team_id', 'year', 'team', 'seed', 'finish', 'weekend',
+                  'conference', 'region', 'kenpom_id', 'torvik_id']
+team_stat_cols = [c for c in teams_2026.columns if c not in team_meta_cols]
+
+# ALL differential columns from matchups_2026
+diff_meta_cols = ['team_id', 'opponent_id', 'team', 'opponent',
+                  'team_seed', 'opp_seed', 'team_region', 'opp_region',
+                  'r1_win_prob', 'r2_win_prob', 'w2_win_prob', 'w3_win_prob']
+diff_cols = [c for c in matchups_2026.columns if c not in diff_meta_cols]
+
+print(f"  Team stats: {len(team_stat_cols)} columns per side")
+print(f"  Differential stats: {len(diff_cols)} columns")
 
 # Build lookup: (region, seed) -> team row
 team_lookup = {}
@@ -673,19 +676,15 @@ for _, brow in bracket.iterrows():
         'win_prob': round(win_prob, 4),
     }
 
-    # Add team stats with "team_" prefix
+    # Add EVERY team stat with "team_" prefix
     for col in team_stat_cols:
         row[f'team_{col}'] = t[col]
 
-    # Add opponent stats with "opp_" prefix
+    # Add EVERY opponent stat with "opp_" prefix
     for col in team_stat_cols:
         row[f'opp_{col}'] = o[col]
 
-    # Add key differential stats from matchups_2026
-    diff_cols = [c for c in matchups_2026.columns
-                 if c not in ['team_id', 'opponent_id', 'team', 'opponent',
-                              'team_seed', 'opp_seed', 'team_region', 'opp_region',
-                              'r1_win_prob', 'r2_win_prob', 'w2_win_prob', 'w3_win_prob']]
+    # Add EVERY differential from matchups_2026
     if len(m_row) > 0:
         for col in diff_cols:
             row[f'diff_{col}'] = m_row.iloc[0][col]

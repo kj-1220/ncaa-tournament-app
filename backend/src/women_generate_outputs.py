@@ -16,6 +16,7 @@ warnings.filterwarnings('ignore')
 from pathlib import Path
 from sklearn.linear_model import LogisticRegression
 from sklearn.calibration import CalibratedClassifierCV
+from sklearn.frozen import FrozenEstimator
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
@@ -70,7 +71,7 @@ y_early = early_df['win']
 X_tr, X_te, y_tr, y_te = train_test_split(X_early, y_early, test_size=0.3, random_state=42)
 base_early = LogisticRegression(random_state=42, max_iter=1000)
 base_early.fit(X_tr, y_tr)
-early_model = CalibratedClassifierCV(base_early, method='sigmoid', cv='prefit')
+early_model = CalibratedClassifierCV(FrozenEstimator(base_early), method='sigmoid', cv=2)
 early_model.fit(X_te, y_te)
 print(f"  ✓ Early rounds model trained ({len(early_df)} games)")
 
@@ -86,7 +87,7 @@ base_elite = XGBClassifier(
     random_state=42, eval_metric='logloss'
 )
 base_elite.fit(X_tr, y_tr)
-elite_model = CalibratedClassifierCV(base_elite, method='sigmoid', cv='prefit')
+elite_model = CalibratedClassifierCV(FrozenEstimator(base_elite), method='sigmoid', cv=2)
 elite_model.fit(X_te, y_te)
 print(f"  ✓ Elite rounds model trained ({len(elite_df)} games)")
 
@@ -263,30 +264,34 @@ def invert_defensive_stats(df):
 
 def compute_differentials(team_stats, opp_stats):
     """
-    Compute matchup differentials exactly matching women_create_matchups.py.
-    Both team_stats and opp_stats should already have inverted defensive stats.
-    Returns a dict of differential feature values.
+    Compute matchup differentials with CORRECTED inversion handling.
+    Both team_stats and opp_stats have inverted defensive stats.
+    For inverted-100 stats: use (a + b - 100) instead of (a - b).
+    For inverted-200 stats: use (a + b - 200) instead of (a - b).
     """
     return {
+        # Not inverted — simple subtraction
         'wab':      team_stats['wab']      - opp_stats['wab'],
         'barthag':  team_stats['barthag']  - opp_stats['barthag'],
-        'adj_oe':   team_stats['adj_oe']   - opp_stats['adj_de'],    # team offense vs opp defense
-        'adj_de':   team_stats['adj_de']   - opp_stats['adj_oe'],    # team defense vs opp offense
-        'efg_pct':  team_stats['efg_pct']  - opp_stats['efgd_pct'],
-        'efgd_pct': team_stats['efgd_pct'] - opp_stats['efg_pct'],
-        'tor':      team_stats['tor']      - opp_stats['tord'],
-        'tord':     team_stats['tord']     - opp_stats['tor'],
-        'orb_pct':  team_stats['orb_pct']  - opp_stats['drb_pct'],
-        'drb_pct':  team_stats['drb_pct']  - opp_stats['orb_pct'],
-        'ftr':      team_stats['ftr']      - opp_stats['ftrd'],
-        'ftrd':     team_stats['ftrd']     - opp_stats['ftr'],
-        '2p_pct':   team_stats['2p_pct']  - opp_stats['2pd_pct'],
-        '2pd_pct':  team_stats['2pd_pct'] - opp_stats['2p_pct'],
-        '3p_pct':   team_stats['3p_pct']  - opp_stats['3pd_pct'],
-        '3pd_pct':  team_stats['3pd_pct'] - opp_stats['3p_pct'],
-        '3pr':      team_stats['3pr']      - opp_stats['3prd'],
-        '3prd':     team_stats['3prd']     - opp_stats['3pr'],
         'adj_tempo': team_stats['adj_tempo'] - opp_stats['adj_tempo'],
+        # Inverted-200: offense vs defense
+        'adj_oe':   team_stats['adj_oe']   + opp_stats['adj_de']   - 200,
+        'adj_de':   team_stats['adj_de']   + opp_stats['adj_oe']   - 200,
+        # Inverted-100: offense vs defense
+        'efg_pct':  team_stats['efg_pct']  + opp_stats['efgd_pct'] - 100,
+        'efgd_pct': team_stats['efgd_pct'] + opp_stats['efg_pct']  - 100,
+        'tor':      team_stats['tor']      + opp_stats['tord']     - 100,
+        'tord':     team_stats['tord']     + opp_stats['tor']      - 100,
+        'orb_pct':  team_stats['orb_pct']  + opp_stats['drb_pct']  - 100,
+        'drb_pct':  team_stats['drb_pct']  + opp_stats['orb_pct']  - 100,
+        'ftr':      team_stats['ftr']      + opp_stats['ftrd']     - 100,
+        'ftrd':     team_stats['ftrd']     + opp_stats['ftr']      - 100,
+        '2p_pct':   team_stats['2p_pct']   + opp_stats['2pd_pct']  - 100,
+        '2pd_pct':  team_stats['2pd_pct']  + opp_stats['2p_pct']   - 100,
+        '3p_pct':   team_stats['3p_pct']   + opp_stats['3pd_pct']  - 100,
+        '3pd_pct':  team_stats['3pd_pct']  + opp_stats['3p_pct']   - 100,
+        '3pr':      team_stats['3pr']      + opp_stats['3prd']     - 100,
+        '3prd':     team_stats['3prd']     + opp_stats['3pr']      - 100,
     }
 
 
@@ -359,28 +364,26 @@ def predict_win_probs(matchups_df):
 
     # Pairwise normalization: for each game_id, normalize the two sides to sum to 1
     df['win_prob'] = 0.0
-    df['_normalized'] = False
+    normalized_pairs = set()
 
     for idx in df.index:
-        if df.at[idx, '_normalized']:
-            continue
         row = df.loc[idx]
         reverse = df[(df['game_id']==row['game_id']) &
                      (df['team']==row['opponent']) &
                      (df['opponent']==row['team'])]
         if len(reverse) == 0:
             df.at[idx, 'win_prob'] = df.at[idx, 'win_prob_raw']
-            df.at[idx, '_normalized'] = True
             continue
         rev_idx = reverse.index[0]
+        pair_key = tuple(sorted([idx, rev_idx]))
+        if pair_key in normalized_pairs:
+            continue
+        normalized_pairs.add(pair_key)
         p1, p2 = df.at[idx, 'win_prob_raw'], df.at[rev_idx, 'win_prob_raw']
         total = p1 + p2
         df.at[idx, 'win_prob']     = p1/total if total > 0 else 0.5
         df.at[rev_idx, 'win_prob'] = p2/total if total > 0 else 0.5
-        df.at[idx, '_normalized']     = True
-        df.at[rev_idx, '_normalized'] = True
 
-    df = df.drop(columns=['_normalized'])
     return df
 
 

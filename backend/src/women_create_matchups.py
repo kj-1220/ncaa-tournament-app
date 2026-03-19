@@ -86,25 +86,28 @@ matchups_final['opp_region'] = matchups['opp_region']
 matchups_final['opp_seed'] = matchups['opp_seed']
 matchups_final['opponent'] = matchups['opponent_name']
 
+# Not inverted — simple subtraction
 matchups_final['wab'] = matchups['wab_team'] - matchups['wab_opp']
 matchups_final['barthag'] = matchups['barthag_team'] - matchups['barthag_opp']
-matchups_final['adj_oe'] = matchups['adj_oe_team'] - matchups['adj_de_opp']
-matchups_final['adj_de'] = matchups['adj_de_team'] - matchups['adj_oe_opp']
-matchups_final['efg_pct'] = matchups['efg_pct_team'] - matchups['efgd_pct_opp']
-matchups_final['efgd_pct'] = matchups['efgd_pct_team'] - matchups['efg_pct_opp']
-matchups_final['tor'] = matchups['tor_team'] - matchups['tord_opp']
-matchups_final['tord'] = matchups['tord_team'] - matchups['tor_opp']
-matchups_final['orb_pct'] = matchups['orb_pct_team'] - matchups['drb_pct_opp']
-matchups_final['drb_pct'] = matchups['drb_pct_team'] - matchups['orb_pct_opp']
-matchups_final['ftr'] = matchups['ftr_team'] - matchups['ftrd_opp']
-matchups_final['ftrd'] = matchups['ftrd_team'] - matchups['ftr_opp']
-matchups_final['2p_pct'] = matchups['2p_pct_team'] - matchups['2pd_pct_opp']
-matchups_final['2pd_pct'] = matchups['2pd_pct_team'] - matchups['2p_pct_opp']
-matchups_final['3p_pct'] = matchups['3p_pct_team'] - matchups['3pd_pct_opp']
-matchups_final['3pd_pct'] = matchups['3pd_pct_team'] - matchups['3p_pct_opp']
-matchups_final['3pr'] = matchups['3pr_team'] - matchups['3prd_opp']
-matchups_final['3prd'] = matchups['3prd_team'] - matchups['3pr_opp']
 matchups_final['adj_tempo'] = matchups['adj_tempo_team'] - matchups['adj_tempo_opp']
+
+# Offense vs Defense — corrected for inversions (a + b - inversion_constant)
+matchups_final['adj_oe'] = matchups['adj_oe_team'] + matchups['adj_de_opp'] - 200       # inverted-200
+matchups_final['adj_de'] = matchups['adj_de_team'] + matchups['adj_oe_opp'] - 200       # inverted-200
+matchups_final['efg_pct'] = matchups['efg_pct_team'] + matchups['efgd_pct_opp'] - 100   # inverted-100
+matchups_final['efgd_pct'] = matchups['efgd_pct_team'] + matchups['efg_pct_opp'] - 100
+matchups_final['tor'] = matchups['tor_team'] + matchups['tord_opp'] - 100
+matchups_final['tord'] = matchups['tord_team'] + matchups['tor_opp'] - 100
+matchups_final['orb_pct'] = matchups['orb_pct_team'] + matchups['drb_pct_opp'] - 100
+matchups_final['drb_pct'] = matchups['drb_pct_team'] + matchups['orb_pct_opp'] - 100
+matchups_final['ftr'] = matchups['ftr_team'] + matchups['ftrd_opp'] - 100
+matchups_final['ftrd'] = matchups['ftrd_team'] + matchups['ftr_opp'] - 100
+matchups_final['2p_pct'] = matchups['2p_pct_team'] + matchups['2pd_pct_opp'] - 100
+matchups_final['2pd_pct'] = matchups['2pd_pct_team'] + matchups['2p_pct_opp'] - 100
+matchups_final['3p_pct'] = matchups['3p_pct_team'] + matchups['3pd_pct_opp'] - 100
+matchups_final['3pd_pct'] = matchups['3pd_pct_team'] + matchups['3p_pct_opp'] - 100
+matchups_final['3pr'] = matchups['3pr_team'] + matchups['3prd_opp'] - 100
+matchups_final['3prd'] = matchups['3prd_team'] + matchups['3pr_opp'] - 100
 
 print("✓ Calculated differentials\n")
 

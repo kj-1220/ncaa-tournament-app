@@ -79,26 +79,20 @@ five_man_cur = pd.read_csv(os.path.join(data_dir, 'men_lineups_5man_current.csv'
 three_man_cur = pd.read_csv(os.path.join(data_dir, 'men_lineups_3man_current.csv'))
 
 kp_ratings_cur = pd.read_csv(os.path.join(data_dir, 'men_kenpom_ratings_current.csv'))
-# kenpom_id already exists in file
 kp_ratings_cur = kp_ratings_cur[['kenpom_id', 'kenpom_off', 'kenpom_def', 'kenpom_rtg']]
 
 kp_roster_cur = pd.read_csv(os.path.join(data_dir, 'men_kenpom_roster_current.csv'))
-# kenpom_id already exists in file
 kp_roster_cur = kp_roster_cur.drop(columns=['year', 'team'])
 
 bt_ratings_cur = pd.read_csv(os.path.join(data_dir, 'men_torvik_ratings_current.csv'))
-# torvik_id does NOT exist — create it from year + team
 bt_ratings_cur['torvik_id'] = bt_ratings_cur['year'].astype(str) + ' ' + bt_ratings_cur['team']
 bt_ratings_cur = bt_ratings_cur.drop(columns=['year', 'team'])
 
 bt_splits_cur = pd.read_csv(os.path.join(data_dir, 'men_torvik_splits_current.csv'))
-# torvik_id already exists in file
 bt_splits_cur = bt_splits_cur.drop(columns=['year', 'team'])
 
-# Current teams need kenpom_id and torvik_id for merging
 teams_cur['kenpom_id'] = teams_cur['team_id']
 teams_cur['torvik_id'] = teams_cur['team_id']
-# Add missing columns that historical has
 teams_cur['finish'] = 'TBD'
 teams_cur['weekend'] = 0
 teams_cur['conference'] = ''
@@ -122,7 +116,7 @@ print(f"\n  Combined: {df.shape[0]} teams x {df.shape[1]} columns")
 print("\nSTEP 2: Feature engineering...")
 
 # --------------------------------------------------------------------------
-# INVERSIONS
+# INVERSIONS (higher = better for all stats)
 # --------------------------------------------------------------------------
 for col in ['efgd%', '2p%d', '3p%d', 'ft%d', 'def_dunk_fg%', 'def_close2_fg%',
             'def_far2_fg%', 'def_3pt_fg%', 'ast%d']:
@@ -279,7 +273,6 @@ print(f"  Games: {games.shape}")
 # Merge high-bracket team stats
 matchups = games.merge(df, left_on='high_bracket_team', right_on='team_id',
                        how='inner', suffixes=('', '_DROP'))
-# Drop duplicate columns from first merge
 matchups = matchups[[c for c in matchups.columns if not c.endswith('_DROP')]]
 for col in df.columns:
     if col in matchups.columns and col not in games.columns:
@@ -288,13 +281,18 @@ for col in df.columns:
 # Merge low-bracket team stats
 matchups = matchups.merge(df, left_on='low_bracket_team', right_on='team_id',
                           how='inner', suffixes=('', '_DROP'))
-# Drop duplicate columns from second merge
 matchups = matchups[[c for c in matchups.columns if not c.endswith('_DROP')]]
 for col in df.columns:
     if col in matchups.columns and col not in games.columns and not col.startswith('high_'):
         matchups.rename(columns={col: f'low_{col}'}, inplace=True)
 
 # Build differentials
+# NOTE: Stats inverted with (100 - x) need correction when comparing offense vs defense.
+#   For inverted-100 stats: off_raw vs def_inverted → use (off + def_inverted - 100)
+#   For inverted-200 stats: off_raw vs def_inverted → use (off + def_inverted - 200)
+#   For inverted-50 stats:  off_raw vs def_inverted → use (off + def_inverted - 50)
+#   Non-inverted stats (team vs team): use simple subtraction.
+
 matchups_df = pd.DataFrame()
 
 # Game info
@@ -308,82 +306,83 @@ matchups_df['high_bracket_seed'] = matchups['high_bracket_seed']
 matchups_df['low_bracket_seed'] = matchups['low_bracket_seed']
 matchups_df['win'] = matchups['win']
 
-# COMPOSITES (team vs team)
+# COMPOSITES (team vs team — NOT inverted, simple subtraction)
 matchups_df['5man_bpm'] = matchups['high_5man_bpm'] - matchups['low_5man_bpm']
 matchups_df['3man_bpm'] = matchups['high_3man_bpm'] - matchups['low_3man_bpm']
 matchups_df['wab'] = matchups['high_wab'] - matchups['low_wab']
 matchups_df['kenpom_rtg'] = matchups['high_kenpom_rtg'] - matchups['low_kenpom_rtg']
 matchups_df['torvik_rtg'] = matchups['high_torvik_rtg'] - matchups['low_torvik_rtg']
 
-# LINEUP PRODUCTION RATES - HIGH OFFENSE vs LOW DEFENSE
-matchups_df['5man_prpg'] = matchups['high_5man_prpg!'] - matchups['low_5man_dprpg']
-matchups_df['3man_prpg'] = matchups['high_3man_prpg!'] - matchups['low_3man_dprpg']
+# LINEUP PRODUCTION RATES — inverted with 50
+# high offense vs low defense (inverted-50): off + def_inv - 50
+matchups_df['5man_prpg'] = matchups['high_5man_prpg!'] + matchups['low_5man_dprpg'] - 50
+matchups_df['3man_prpg'] = matchups['high_3man_prpg!'] + matchups['low_3man_dprpg'] - 50
+# high defense vs low offense (inverted-50): def_inv + off - 50... but from high's perspective
+matchups_df['5man_dprpg'] = matchups['high_5man_dprpg'] + matchups['low_5man_prpg!'] - 50
+matchups_df['3man_dprpg'] = matchups['high_3man_dprpg'] + matchups['low_3man_prpg!'] - 50
 
-# LINEUP PRODUCTION RATES - HIGH DEFENSE vs LOW OFFENSE
-matchups_df['5man_dprpg'] = matchups['high_5man_dprpg'] - matchups['low_5man_prpg!']
-matchups_df['3man_dprpg'] = matchups['high_3man_dprpg'] - matchups['low_3man_prpg!']
-
-# TEAM vs TEAM
+# TEAM vs TEAM (not inverted)
 matchups_df['size'] = matchups['high_size'] - matchups['low_size']
 matchups_df['height'] = matchups['high_height'] - matchups['low_height']
 matchups_df['experience'] = matchups['high_experience'] - matchups['low_experience']
 matchups_df['bench'] = matchups['high_bench'] - matchups['low_bench']
 matchups_df['raw_tempo'] = matchups['high_raw_tempo'] - matchups['low_raw_tempo']
 matchups_df['adj_tempo'] = matchups['high_adj_tempo'] - matchups['low_adj_tempo']
-matchups_df['3pr'] = matchups['high_3pr'] - matchups['low_3prd']
-matchups_df['3prd'] = matchups['high_3prd'] - matchups['low_3pr']
+# 3pr vs 3prd: 3prd is inverted-100
+matchups_df['3pr'] = matchups['high_3pr'] + matchups['low_3prd'] - 100
+matchups_df['3prd'] = matchups['high_3prd'] + matchups['low_3pr'] - 100
 
-# SHOT SHARES - HIGH OFFENSE vs LOW DEFENSE
+# SHOT SHARES — not inverted, simple subtraction
 matchups_df['off_dunk_share'] = matchups['high_off_dunk_share'] - matchups['low_def_dunk_share']
 matchups_df['off_close2_share'] = matchups['high_off_close2_share'] - matchups['low_def_close2_share']
 matchups_df['off_far2_share'] = matchups['high_off_far2_share'] - matchups['low_def_far2_share']
 matchups_df['off_3pt_share'] = matchups['high_off_3pt_share'] - matchups['low_def_3pt_share']
-
-# SHOT SHARES - HIGH DEFENSE vs LOW OFFENSE
 matchups_df['def_dunk_share'] = matchups['high_def_dunk_share'] - matchups['low_off_dunk_share']
 matchups_df['def_close2_share'] = matchups['high_def_close2_share'] - matchups['low_off_close2_share']
 matchups_df['def_far2_share'] = matchups['high_def_far2_share'] - matchups['low_off_far2_share']
 matchups_df['def_3pt_share'] = matchups['high_def_3pt_share'] - matchups['low_off_3pt_share']
 
-# HIGH OFFENSE vs LOW DEFENSE
-matchups_df['5man_obpm'] = matchups['high_5man_obpm'] - matchups['low_5man_dbpm']
+# HIGH OFFENSE vs LOW DEFENSE — inverted-100 corrections for fg/pct stats
+matchups_df['5man_obpm'] = matchups['high_5man_obpm'] - matchups['low_5man_dbpm']  # BPM not inverted
 matchups_df['3man_obpm'] = matchups['high_3man_obpm'] - matchups['low_3man_dbpm']
-matchups_df['kenpom_off'] = matchups['high_kenpom_off'] - matchups['low_kenpom_def']
-matchups_df['torvik_off'] = matchups['high_torvik_off'] - matchups['low_torvik_def']
-matchups_df['efg_pct'] = matchups['high_efg%'] - matchups['low_efgd%']
-matchups_df['2p_pct'] = matchups['high_2p%'] - matchups['low_2p%d']
-matchups_df['3p_pct'] = matchups['high_3p%'] - matchups['low_3p%d']
-matchups_df['ft_pct'] = matchups['high_ft%'] - matchups['low_ft%d']
-matchups_df['ftr'] = matchups['high_ftr'] - matchups['low_ftrd']
-matchups_df['tor'] = matchups['high_tor'] - matchups['low_tord']
-matchups_df['orb_pct'] = matchups['high_orb%'] - matchups['low_drb%']
-matchups_df['ast_pct'] = matchups['high_ast%'] - matchups['low_ast%d']
-matchups_df['blk_pct'] = matchups['high_blk%'] - matchups['low_blked%']
-matchups_df['off_dunk_fg_pct'] = matchups['high_off_dunk_fg%'] - matchups['low_def_dunk_fg%']
-matchups_df['off_close2_fg_pct'] = matchups['high_off_close2_fg%'] - matchups['low_def_close2_fg%']
-matchups_df['off_far2_fg_pct'] = matchups['high_off_far2_fg%'] - matchups['low_def_far2_fg%']
-matchups_df['off_3pt_fg_pct'] = matchups['high_off_3pt_fg%'] - matchups['low_def_3pt_fg%']
+matchups_df['kenpom_off'] = matchups['high_kenpom_off'] + matchups['low_kenpom_def'] - 200  # inverted-200
+matchups_df['torvik_off'] = matchups['high_torvik_off'] + matchups['low_torvik_def'] - 200  # inverted-200
+matchups_df['efg_pct'] = matchups['high_efg%'] + matchups['low_efgd%'] - 100  # inverted-100
+matchups_df['2p_pct'] = matchups['high_2p%'] + matchups['low_2p%d'] - 100
+matchups_df['3p_pct'] = matchups['high_3p%'] + matchups['low_3p%d'] - 100
+matchups_df['ft_pct'] = matchups['high_ft%'] + matchups['low_ft%d'] - 100
+matchups_df['ftr'] = matchups['high_ftr'] + matchups['low_ftrd'] - 100  # ftrd inverted-100
+matchups_df['tor'] = matchups['high_tor'] + matchups['low_tord'] - 100  # tor & tord both inverted-100
+matchups_df['orb_pct'] = matchups['high_orb%'] - matchups['low_drb%']  # drb% not inverted
+matchups_df['ast_pct'] = matchups['high_ast%'] + matchups['low_ast%d'] - 100  # ast%d inverted-100
+matchups_df['blk_pct'] = matchups['high_blk%'] + matchups['low_blked%'] - 100  # blked% inverted-100
+matchups_df['off_dunk_fg_pct'] = matchups['high_off_dunk_fg%'] + matchups['low_def_dunk_fg%'] - 100
+matchups_df['off_close2_fg_pct'] = matchups['high_off_close2_fg%'] + matchups['low_def_close2_fg%'] - 100
+matchups_df['off_far2_fg_pct'] = matchups['high_off_far2_fg%'] + matchups['low_def_far2_fg%'] - 100
+matchups_df['off_3pt_fg_pct'] = matchups['high_off_3pt_fg%'] + matchups['low_def_3pt_fg%'] - 100
 
-# HIGH DEFENSE vs LOW OFFENSE
+# HIGH DEFENSE vs LOW OFFENSE — same corrections, reversed perspective
 matchups_df['5man_dbpm'] = matchups['high_5man_dbpm'] - matchups['low_5man_obpm']
 matchups_df['3man_dbpm'] = matchups['high_3man_dbpm'] - matchups['low_3man_obpm']
-matchups_df['kenpom_def'] = matchups['high_kenpom_def'] - matchups['low_kenpom_off']
-matchups_df['torvik_def'] = matchups['high_torvik_def'] - matchups['low_torvik_off']
-matchups_df['efgd_pct'] = matchups['high_efgd%'] - matchups['low_efg%']
-matchups_df['2pd_pct'] = matchups['high_2p%d'] - matchups['low_2p%']
-matchups_df['3pd_pct'] = matchups['high_3p%d'] - matchups['low_3p%']
-matchups_df['ftd_pct'] = matchups['high_ft%d'] - matchups['low_ft%']
-matchups_df['ftrd'] = matchups['high_ftrd'] - matchups['low_ftr']
-matchups_df['tord'] = matchups['high_tord'] - matchups['low_tor']
-matchups_df['drb_pct'] = matchups['high_drb%'] - matchups['low_orb%']
-matchups_df['astd_pct'] = matchups['high_ast%d'] - matchups['low_ast%']
-matchups_df['blked_pct'] = matchups['high_blked%'] - matchups['low_blk%']
-matchups_df['def_dunk_fg_pct'] = matchups['high_def_dunk_fg%'] - matchups['low_off_dunk_fg%']
-matchups_df['def_close2_fg_pct'] = matchups['high_def_close2_fg%'] - matchups['low_off_close2_fg%']
-matchups_df['def_far2_fg_pct'] = matchups['high_def_far2_fg%'] - matchups['low_off_far2_fg%']
-matchups_df['def_3pt_fg_pct'] = matchups['high_def_3pt_fg%'] - matchups['low_off_3pt_fg%']
+matchups_df['kenpom_def'] = matchups['high_kenpom_def'] + matchups['low_kenpom_off'] - 200
+matchups_df['torvik_def'] = matchups['high_torvik_def'] + matchups['low_torvik_off'] - 200
+matchups_df['efgd_pct'] = matchups['high_efgd%'] + matchups['low_efg%'] - 100
+matchups_df['2pd_pct'] = matchups['high_2p%d'] + matchups['low_2p%'] - 100
+matchups_df['3pd_pct'] = matchups['high_3p%d'] + matchups['low_3p%'] - 100
+matchups_df['ftd_pct'] = matchups['high_ft%d'] + matchups['low_ft%'] - 100
+matchups_df['ftrd'] = matchups['high_ftrd'] + matchups['low_ftr'] - 100
+matchups_df['tord'] = matchups['high_tord'] + matchups['low_tor'] - 100
+matchups_df['drb_pct'] = matchups['high_drb%'] - matchups['low_orb%']  # not inverted
+matchups_df['astd_pct'] = matchups['high_ast%d'] + matchups['low_ast%'] - 100
+matchups_df['blked_pct'] = matchups['high_blked%'] + matchups['low_blk%'] - 100
+matchups_df['def_dunk_fg_pct'] = matchups['high_def_dunk_fg%'] + matchups['low_off_dunk_fg%'] - 100
+matchups_df['def_close2_fg_pct'] = matchups['high_def_close2_fg%'] + matchups['low_off_close2_fg%'] - 100
+matchups_df['def_far2_fg_pct'] = matchups['high_def_far2_fg%'] + matchups['low_off_far2_fg%'] - 100
+matchups_df['def_3pt_fg_pct'] = matchups['high_def_3pt_fg%'] + matchups['low_off_3pt_fg%'] - 100
 
-# NEW FEATURES - HIGH OFFENSE vs LOW DEFENSE
+# ENGINEERED FEATURES — these are already computed from inverted stats,
+# so offense vs defense engineered features use simple subtraction
+# (the inversion is baked into the engineered feature itself)
 matchups_df['net_efg_margin'] = matchups['high_net_efg_margin'] - matchups['low_def_net_efg_margin']
 matchups_df['net_turnover_margin'] = matchups['high_net_turnover_margin'] - matchups['low_def_net_turnover_margin']
 matchups_df['net_rebounding_margin'] = matchups['high_net_rebounding_margin'] - matchups['low_def_net_rebounding_margin']
@@ -414,7 +413,7 @@ matchups_df['offense_defense_balance'] = matchups['high_offense_defense_balance'
 matchups_df['shooting_variance_resilience'] = matchups['high_shooting_variance_resilience'] - matchups['low_shooting_variance_resilience']
 matchups_df['lineup_depth_quality'] = matchups['high_lineup_depth_quality'] - matchups['low_def_lineup_depth_quality']
 
-# NEW FEATURES - HIGH DEFENSE vs LOW OFFENSE
+# ENGINEERED — HIGH DEFENSE vs LOW OFFENSE
 matchups_df['def_net_efg_margin'] = matchups['high_def_net_efg_margin'] - matchups['low_net_efg_margin']
 matchups_df['def_net_turnover_margin'] = matchups['high_def_net_turnover_margin'] - matchups['low_net_turnover_margin']
 matchups_df['def_net_rebounding_margin'] = matchups['high_def_net_rebounding_margin'] - matchups['low_net_rebounding_margin']
