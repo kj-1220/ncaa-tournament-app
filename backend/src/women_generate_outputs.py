@@ -17,10 +17,11 @@ from pathlib import Path
 from sklearn.linear_model import LogisticRegression
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.frozen import FrozenEstimator
+from sklearn.frozen import FrozenEstimator
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from xgboost import XGBClassifier
 
 # ============================================================================
@@ -55,9 +56,8 @@ print(f"  Current matchups:   {len(current_matchups)} rows (2026)")
 # ============================================================================
 print("\nSTEP 2: Training matchup models on all available data...")
 
-early_features = ['barthag', 'adj_oe', 'adj_de', 'orb_pct', 'drb_pct', 'ftr', '2p_pct']
-elite_features = ['wab', 'barthag', 'adj_oe', 'adj_de', 'efg_pct', 'efgd_pct',
-                  'orb_pct', 'drb_pct', '2p_pct', '2pd_pct', '3p_pct', '3pd_pct', '3pr']
+early_features = ['wab', 'orb_pct', 'adj_de', '3pr', '2p_pct', 'adj_oe', 'drb_pct']
+elite_features = ['barthag', 'orb_pct', '3p_pct', 'efgd_pct', 'adj_oe', 'drb_pct', 'ftrd']
 
 early_rounds_labels = ['First Round', 'Second Round']
 elite_rounds_labels = ['Sweet 16', 'Elite Eight', 'Final Four', 'Championship']
@@ -65,31 +65,43 @@ elite_rounds_labels = ['Sweet 16', 'Elite Eight', 'Final Four', 'Championship']
 early_df = matchups_training[matchups_training['round'].isin(early_rounds_labels)].copy()
 elite_df = matchups_training[matchups_training['round'].isin(elite_rounds_labels)].copy()
 
-# Early rounds model
+# Early rounds model (XGBoost)
 X_early = early_df[early_features]
 y_early = early_df['win']
 X_tr, X_te, y_tr, y_te = train_test_split(X_early, y_early, test_size=0.3, random_state=42)
-base_early = LogisticRegression(random_state=42, max_iter=1000)
+
+base_early = XGBClassifier(
+    subsample=0.4, scale_pos_weight=0.8, reg_lambda=5.0, reg_alpha=2.0,
+    n_estimators=250, min_child_weight=1, max_depth=5, max_delta_step=0,
+    learning_rate=0.15, gamma=0.5, colsample_bytree=0.4,
+    colsample_bynode=0.6, colsample_bylevel=0.6,
+    tree_method='hist', random_state=42, eval_metric='logloss',
+    enable_categorical=False
+)
 base_early.fit(X_tr, y_tr)
 early_model = CalibratedClassifierCV(FrozenEstimator(base_early), method='sigmoid', cv=2)
 early_model.fit(X_te, y_te)
-print(f"  ✓ Early rounds model trained ({len(early_df)} games)")
+print(f"  ✓ Early rounds model trained ({len(early_df)} games, XGBoost)")
 
-# Elite rounds model
+# Elite rounds model (Random Forest)
 X_elite = elite_df[elite_features]
 y_elite = elite_df['win']
 X_tr, X_te, y_tr, y_te = train_test_split(X_elite, y_elite, test_size=0.3, random_state=42)
-base_elite = XGBClassifier(
-    learning_rate=0.2997738363859162, max_depth=9, min_child_weight=8.623522034407337,
-    subsample=0.8324211691115178, colsample_bytree=0.9988769480719698,
-    gamma=2.017715776385069, reg_alpha=0.9692563913308194,
-    reg_lambda=2.5910989850621258, n_estimators=335,
-    random_state=42, eval_metric='logloss'
+
+scaler_elite = StandardScaler()
+X_tr_s = scaler_elite.fit_transform(X_tr)
+X_te_s = scaler_elite.transform(X_te)
+
+base_elite = RandomForestClassifier(
+    n_estimators=100, max_depth=3, min_samples_split=5,
+    min_samples_leaf=5, max_features=0.7, bootstrap=True,
+    random_state=42, n_jobs=-1
 )
-base_elite.fit(X_tr, y_tr)
+base_elite.fit(X_tr_s, y_tr)
 elite_model = CalibratedClassifierCV(FrozenEstimator(base_elite), method='sigmoid', cv=2)
-elite_model.fit(X_te, y_te)
-print(f"  ✓ Elite rounds model trained ({len(elite_df)} games)")
+elite_model.fit(X_te_s, y_te)
+_elite_scaler = scaler_elite
+print(f"  ✓ Elite rounds model trained ({len(elite_df)} games, Random Forest)")
 
 # ============================================================================
 # STEP 3: TRAIN COMPOSITE + TIER MODELS (NCAAPredictor logic inline)
@@ -359,8 +371,9 @@ def predict_win_probs(matchups_df):
 
     elite_mask = df['round'].isin(elite_rounds_pred)
     if elite_mask.sum() > 0:
-        df.loc[elite_mask, 'win_prob_raw'] = elite_model.predict_proba(
-            df.loc[elite_mask, elite_features])[:, 1]
+        X_elite_raw = df.loc[elite_mask, elite_features]
+        X_elite_scaled = _elite_scaler.transform(X_elite_raw)
+        df.loc[elite_mask, 'win_prob_raw'] = elite_model.predict_proba(X_elite_scaled)[:, 1]
 
     # Pairwise normalization: for each game_id, normalize the two sides to sum to 1
     df['win_prob'] = 0.0

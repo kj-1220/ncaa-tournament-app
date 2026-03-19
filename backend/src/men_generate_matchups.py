@@ -3,10 +3,10 @@ Men's NCAA Tournament - Matchup Models & Probabilities (Stage 2)
   Trains 4 round-specific models, applies Platt Scaling,
   calculates advancement probabilities and bracket value.
 
-  Round 1:   XGBoost (23 features)
-  Round 2:   Random Forest (30 features)
+  Round 1:   XGBoost (7 features)
+  Round 2:   Random Forest (7 features)
   Weekend 2: Random Forest (5 features) - Sweet 16 + Elite Eight
-  Weekend 3: Logistic Regression (6 features) - Final Four + Championship
+  Weekend 3: Logistic Regression (3 features) - Final Four + Championship
 
 Inputs (in backend/data/men/):
   - men_2026_matchups_training.csv (from men_create_data.py)
@@ -62,12 +62,8 @@ print(f"  Teams: {len(teams_output)} teams")
 print("\nSTEP 2: Training Round 1 model (XGBoost)...")
 
 r1_features = [
-    '5man_bpm', 'torvik_rtg', 'elite_outcome_probability', '5man_dbpm',
-    'paint_touch_rate', 'bench', 'def_close2_fg_pct', 'bench_scoring_ratio',
-    'adj_tempo', 'experience', 'lineup_depth_quality', '5man_obpm',
-    'height', 'off_close2_fg_pct', 'def_paint_touch_rate', 'tempo_advantage',
-    'def_mid_range_reliance', 'torvik_off', 'top5_rebounding_concentration',
-    'def_3pt_share', 'mid_range_reliance', '3man_prpg', 'offense_defense_balance'
+    '5man_dbpm', 'lineup_depth_quality', 'ast_pct', 'off_far2_share',
+    'def_dunk_share', 'size_speed_index', 'tempo_advantage'
 ]
 
 df_r1 = matchups[matchups['round'] == 'First Round'].copy()
@@ -87,10 +83,10 @@ X_val_r1_s = scaler_r1.transform(X_val_r1)
 X_test_r1_s = scaler_r1.transform(X_test_r1)
 
 xgb_model = XGBClassifier(
-    subsample=0.3, scale_pos_weight=1.0, reg_lambda=5.0, reg_alpha=0.1,
-    n_estimators=250, min_child_weight=3, max_depth=4, max_delta_step=0,
-    learning_rate=0.02, gamma=0.1, colsample_bytree=0.5,
-    colsample_bynode=0.4, colsample_bylevel=0.5,
+    subsample=0.3, scale_pos_weight=0.8, reg_lambda=5.0, reg_alpha=0.5,
+    n_estimators=200, min_child_weight=1, max_depth=3, max_delta_step=1,
+    learning_rate=0.15, gamma=1.0, colsample_bytree=0.8,
+    colsample_bynode=0.4, colsample_bylevel=0.4,
     tree_method='hist', random_state=42, eval_metric='logloss',
     enable_categorical=False
 )
@@ -98,7 +94,7 @@ xgb_model.fit(X_train_r1_s, y_train_r1,
               eval_set=[(X_train_r1_s, y_train_r1), (X_val_r1_s, y_val_r1)],
               verbose=False)
 
-# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
+# Platt Scaling
 r1_calibrated = CalibratedClassifierCV(FrozenEstimator(xgb_model), method='sigmoid', cv=2)
 r1_calibrated.fit(X_val_r1_s, y_val_r1)
 
@@ -112,15 +108,8 @@ print(f"  ✓ Round 1: {len(df_r1)} games, test accuracy: {r1_acc:.4f}")
 print("\nSTEP 3: Training Round 2 model (Random Forest)...")
 
 r2_features = [
-    '5man_bpm', 'kenpom_rtg', 'def_lineup_depth_quality', 'torvik_rtg',
-    'kenpom_off', '3man_bpm', '5man_dbpm', 'lineup_depth_quality',
-    '5man_obpm', 'kenpom_def', 'experience_weighted_production', 'wab',
-    'defensive_versatility_score', 'four_factors_composite', 'torvik_def',
-    '3man_obpm', 'off_3pt_fg_pct', 'def_four_factors_composite',
-    'torvik_off', 'size_speed_index', 'def_size_speed_index',
-    'def_rim_efficiency', 'def_experience_impact', 'efg_pct',
-    'offensive_versatility_score', 'efgd_pct', '3pd_pct',
-    'def_3pt_fg_pct', 'blk_pct', 'blked_pct'
+    '5man_bpm', '5man_dprpg', '3man_prpg', 'size_speed_index',
+    'def_lineup_depth_quality', 'block_efficiency', 'rim_to_three_ratio'
 ]
 
 df_r2 = matchups[matchups['round'] == 'Second Round'].copy()
@@ -136,13 +125,13 @@ X_train_r2_s = scaler_r2.fit_transform(X_train_r2)
 X_test_r2_s = scaler_r2.transform(X_test_r2)
 
 rf_model = RandomForestClassifier(
-    n_estimators=300, min_samples_split=5, min_samples_leaf=1,
-    max_samples=0.65, max_features=0.4, max_depth=12, bootstrap=True,
+    n_estimators=200, min_samples_split=5, min_samples_leaf=8,
+    max_samples=0.5, max_features=0.3, max_depth=3, bootstrap=True,
     random_state=42, n_jobs=-1
 )
 rf_model.fit(X_train_r2_s, y_train_r2)
 
-# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
+# Platt Scaling
 r2_calibrated = CalibratedClassifierCV(FrozenEstimator(rf_model), method='sigmoid', cv=2)
 r2_calibrated.fit(X_test_r2_s, y_test_r2)
 
@@ -155,8 +144,8 @@ print(f"  ✓ Round 2: {len(df_r2)} games, test accuracy: {r2_acc:.4f}")
 print("\nSTEP 4: Training Weekend 2 model (Random Forest)...")
 
 w2_features = [
-    'wab', 'rotation_balance', '5man_prpg',
-    'three_point_volume_efficiency', '5man_dbpm'
+    '3man_bpm', 'rotation_balance', 'torvik_def',
+    'effective_possession_rate', 'def_paint_touch_rate'
 ]
 
 df_w2 = matchups[matchups['round'].isin(['Sweet 16', 'Elite Eight'])].copy()
@@ -172,8 +161,9 @@ X_train_w2_s = scaler_w2.fit_transform(X_train_w2)
 X_test_w2_s = scaler_w2.transform(X_test_w2)
 
 rf_w2 = RandomForestClassifier(
-    n_estimators=300, max_depth=3, min_samples_split=8,
-    min_samples_leaf=5, max_features=0.7, random_state=42, n_jobs=-1
+    n_estimators=200, max_depth=3, min_samples_split=15,
+    min_samples_leaf=1, max_samples=0.6, max_features=0.3,
+    bootstrap=True, random_state=42, n_jobs=-1
 )
 rf_w2.fit(X_train_w2_s, y_train_w2)
 
@@ -190,8 +180,7 @@ print(f"  ✓ Weekend 2: {len(df_w2)} games, test accuracy: {w2_acc:.4f}")
 print("\nSTEP 5: Training Weekend 3 model (Logistic Regression)...")
 
 w3_features = [
-    '5man_bpm', 'assist_to_usage_ratio', 'kenpom_off',
-    'def_far2_share', 'blk_pct', 'four_factors_composite'
+    '5man_bpm', 'wab', '3man_prpg'
 ]
 
 df_w3 = matchups[matchups['round'].isin(['Final Four', 'Championship'])].copy()
@@ -199,19 +188,19 @@ X_w3 = df_w3[w3_features].fillna(df_w3[w3_features].median())
 y_w3 = df_w3['win']
 
 X_train_w3, X_test_w3, y_train_w3, y_test_w3 = train_test_split(
-    X_w3, y_w3, test_size=20, random_state=42, stratify=y_w3
+    X_w3, y_w3, test_size=0.30, random_state=42, stratify=y_w3
 )
 
 scaler_w3 = StandardScaler()
 X_train_w3_s = scaler_w3.fit_transform(X_train_w3)
 X_test_w3_s = scaler_w3.transform(X_test_w3)
 
-lr_w3 = LogisticRegression(max_iter=1000, random_state=42)
+lr_w3 = LogisticRegression(C=0.05, penalty='l2', solver='liblinear',
+                           max_iter=1000, random_state=42)
 lr_w3.fit(X_train_w3_s, y_train_w3)
 
-# Platt Scaling (FrozenEstimator + cv=2 replaces cv='prefit')
-w3_calibrated = CalibratedClassifierCV(FrozenEstimator(lr_w3), method='sigmoid', cv=2)
-w3_calibrated.fit(X_test_w3_s, y_test_w3)
+# No Platt Scaling for LR — already well-calibrated with tight regularization
+w3_calibrated = lr_w3
 
 w3_acc = accuracy_score(y_test_w3, lr_w3.predict(X_test_w3_s))
 print(f"  ✓ Weekend 3: {len(df_w3)} games, test accuracy: {w3_acc:.4f}")
@@ -254,11 +243,11 @@ for i, t1_id in enumerate(team_ids):
             row['kenpom_rtg'] = t1['kenpom_rtg'] - t2['kenpom_rtg']
             row['torvik_rtg'] = t1['torvik_rtg'] - t2['torvik_rtg']
 
-            # LINEUP PRODUCTION - team offense vs opponent defense
-            row['5man_prpg'] = t1['5man_prpg!'] - t2['5man_dprpg']
-            row['3man_prpg'] = t1['3man_prpg!'] - t2['3man_dprpg']
-            row['5man_dprpg'] = t1['5man_dprpg'] - t2['5man_prpg!']
-            row['3man_dprpg'] = t1['3man_dprpg'] - t2['3man_prpg!']
+            # LINEUP PRODUCTION - inverted with 50
+            row['5man_prpg'] = t1['5man_prpg!'] + t2['5man_dprpg'] - 50
+            row['3man_prpg'] = t1['3man_prpg!'] + t2['3man_dprpg'] - 50
+            row['5man_dprpg'] = t1['5man_dprpg'] + t2['5man_prpg!'] - 50
+            row['3man_dprpg'] = t1['3man_dprpg'] + t2['3man_prpg!'] - 50
 
             # TEAM vs TEAM
             row['size'] = t1['size'] - t2['size']
@@ -267,8 +256,8 @@ for i, t1_id in enumerate(team_ids):
             row['bench'] = t1['bench'] - t2['bench']
             row['raw_tempo'] = t1['raw_tempo'] - t2['raw_tempo']
             row['adj_tempo'] = t1['adj_tempo'] - t2['adj_tempo']
-            row['3pr'] = t1['3pr'] - t2['3prd']
-            row['3prd'] = t1['3prd'] - t2['3pr']
+            row['3pr'] = t1['3pr'] + t2['3prd'] - 100
+            row['3prd'] = t1['3prd'] + t2['3pr'] - 100
 
             # SHOT SHARES - offense vs defense
             row['off_dunk_share'] = t1['off_dunk_share'] - t2['def_dunk_share']
@@ -280,43 +269,43 @@ for i, t1_id in enumerate(team_ids):
             row['def_far2_share'] = t1['def_far2_share'] - t2['off_far2_share']
             row['def_3pt_share'] = t1['def_3pt_share'] - t2['off_3pt_share']
 
-            # OFFENSE vs DEFENSE
-            row['5man_obpm'] = t1['5man_obpm'] - t2['5man_dbpm']
+            # OFFENSE vs DEFENSE — corrected for inversions
+            row['5man_obpm'] = t1['5man_obpm'] - t2['5man_dbpm']  # BPM not inverted
             row['3man_obpm'] = t1['3man_obpm'] - t2['3man_dbpm']
-            row['kenpom_off'] = t1['kenpom_off'] - t2['kenpom_def']
-            row['torvik_off'] = t1['torvik_off'] - t2['torvik_def']
-            row['efg_pct'] = t1['efg%'] - t2['efgd%']
-            row['2p_pct'] = t1['2p%'] - t2['2p%d']
-            row['3p_pct'] = t1['3p%'] - t2['3p%d']
-            row['ft_pct'] = t1['ft%'] - t2['ft%d']
-            row['ftr'] = t1['ftr'] - t2['ftrd']
-            row['tor'] = t1['tor'] - t2['tord']
-            row['orb_pct'] = t1['orb%'] - t2['drb%']
-            row['ast_pct'] = t1['ast%'] - t2['ast%d']
-            row['blk_pct'] = t1['blk%'] - t2['blked%']
-            row['off_dunk_fg_pct'] = t1['off_dunk_fg%'] - t2['def_dunk_fg%']
-            row['off_close2_fg_pct'] = t1['off_close2_fg%'] - t2['def_close2_fg%']
-            row['off_far2_fg_pct'] = t1['off_far2_fg%'] - t2['def_far2_fg%']
-            row['off_3pt_fg_pct'] = t1['off_3pt_fg%'] - t2['def_3pt_fg%']
+            row['kenpom_off'] = t1['kenpom_off'] + t2['kenpom_def'] - 200  # inverted-200
+            row['torvik_off'] = t1['torvik_off'] + t2['torvik_def'] - 200
+            row['efg_pct'] = t1['efg%'] + t2['efgd%'] - 100  # inverted-100
+            row['2p_pct'] = t1['2p%'] + t2['2p%d'] - 100
+            row['3p_pct'] = t1['3p%'] + t2['3p%d'] - 100
+            row['ft_pct'] = t1['ft%'] + t2['ft%d'] - 100
+            row['ftr'] = t1['ftr'] + t2['ftrd'] - 100
+            row['tor'] = t1['tor'] + t2['tord'] - 100
+            row['orb_pct'] = t1['orb%'] - t2['drb%']  # not inverted
+            row['ast_pct'] = t1['ast%'] + t2['ast%d'] - 100
+            row['blk_pct'] = t1['blk%'] + t2['blked%'] - 100
+            row['off_dunk_fg_pct'] = t1['off_dunk_fg%'] + t2['def_dunk_fg%'] - 100
+            row['off_close2_fg_pct'] = t1['off_close2_fg%'] + t2['def_close2_fg%'] - 100
+            row['off_far2_fg_pct'] = t1['off_far2_fg%'] + t2['def_far2_fg%'] - 100
+            row['off_3pt_fg_pct'] = t1['off_3pt_fg%'] + t2['def_3pt_fg%'] - 100
 
-            # DEFENSE vs OFFENSE
+            # DEFENSE vs OFFENSE — corrected for inversions
             row['5man_dbpm'] = t1['5man_dbpm'] - t2['5man_obpm']
             row['3man_dbpm'] = t1['3man_dbpm'] - t2['3man_obpm']
-            row['kenpom_def'] = t1['kenpom_def'] - t2['kenpom_off']
-            row['torvik_def'] = t1['torvik_def'] - t2['torvik_off']
-            row['efgd_pct'] = t1['efgd%'] - t2['efg%']
-            row['2pd_pct'] = t1['2p%d'] - t2['2p%']
-            row['3pd_pct'] = t1['3p%d'] - t2['3p%']
-            row['ftd_pct'] = t1['ft%d'] - t2['ft%']
-            row['ftrd'] = t1['ftrd'] - t2['ftr']
-            row['tord'] = t1['tord'] - t2['tor']
+            row['kenpom_def'] = t1['kenpom_def'] + t2['kenpom_off'] - 200
+            row['torvik_def'] = t1['torvik_def'] + t2['torvik_off'] - 200
+            row['efgd_pct'] = t1['efgd%'] + t2['efg%'] - 100
+            row['2pd_pct'] = t1['2p%d'] + t2['2p%'] - 100
+            row['3pd_pct'] = t1['3p%d'] + t2['3p%'] - 100
+            row['ftd_pct'] = t1['ft%d'] + t2['ft%'] - 100
+            row['ftrd'] = t1['ftrd'] + t2['ftr'] - 100
+            row['tord'] = t1['tord'] + t2['tor'] - 100
             row['drb_pct'] = t1['drb%'] - t2['orb%']
-            row['astd_pct'] = t1['ast%d'] - t2['ast%']
-            row['blked_pct'] = t1['blked%'] - t2['blk%']
-            row['def_dunk_fg_pct'] = t1['def_dunk_fg%'] - t2['off_dunk_fg%']
-            row['def_close2_fg_pct'] = t1['def_close2_fg%'] - t2['off_close2_fg%']
-            row['def_far2_fg_pct'] = t1['def_far2_fg%'] - t2['off_far2_fg%']
-            row['def_3pt_fg_pct'] = t1['def_3pt_fg%'] - t2['off_3pt_fg%']
+            row['astd_pct'] = t1['ast%d'] + t2['ast%'] - 100
+            row['blked_pct'] = t1['blked%'] + t2['blk%'] - 100
+            row['def_dunk_fg_pct'] = t1['def_dunk_fg%'] + t2['off_dunk_fg%'] - 100
+            row['def_close2_fg_pct'] = t1['def_close2_fg%'] + t2['off_close2_fg%'] - 100
+            row['def_far2_fg_pct'] = t1['def_far2_fg%'] + t2['off_far2_fg%'] - 100
+            row['def_3pt_fg_pct'] = t1['def_3pt_fg%'] + t2['off_3pt_fg%'] - 100
 
             # ENGINEERED - offense vs defense
             row['net_efg_margin'] = t1['net_efg_margin'] - t2['def_net_efg_margin']
