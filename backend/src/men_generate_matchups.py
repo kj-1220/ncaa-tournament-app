@@ -3,9 +3,9 @@ Men's NCAA Tournament - Matchup Models & Probabilities (Stage 2)
   Trains 4 round-specific models, applies Platt Scaling,
   calculates advancement probabilities and bracket value.
 
-  Round 1:   XGBoost (7 features)
-  Round 2:   Random Forest (7 features)
-  Weekend 2: Random Forest (5 features) - Sweet 16 + Elite Eight
+  Round 1:   XGBoost (15 features)
+  Round 2:   XGBoost (13 features)
+  Weekend 2: Logistic Regression (15 features) - Sweet 16 + Elite Eight
   Weekend 3: Logistic Regression (3 features) - Final Four + Championship
 
 Inputs (in backend/data/men/):
@@ -32,7 +32,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.frozen import FrozenEstimator
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 
 # ============================================================================
@@ -57,13 +56,16 @@ print(f"  Matchups: {len(matchups)} games")
 print(f"  Teams: {len(teams_output)} teams")
 
 # ============================================================================
-# STEP 2: TRAIN ROUND 1 MODEL (XGBoost)
+# STEP 2: TRAIN ROUND 1 MODEL (XGBoost, 15 features)
 # ============================================================================
 print("\nSTEP 2: Training Round 1 model (XGBoost)...")
 
 r1_features = [
     '5man_dbpm', 'lineup_depth_quality', 'ast_pct', 'off_far2_share',
-    'def_dunk_share', 'size_speed_index', 'tempo_advantage'
+    'def_dunk_share', 'size_speed_index', 'tempo_advantage',
+    'effective_possession_rate', 'def_block_efficiency', 'rotation_balance',
+    '3man_prpg', 'perimeter_efficiency', 'bench', 'def_paint_touch_rate',
+    'rim_to_three_ratio'
 ]
 
 df_r1 = matchups[matchups['round'] == 'First Round'].copy()
@@ -83,10 +85,10 @@ X_val_r1_s = scaler_r1.transform(X_val_r1)
 X_test_r1_s = scaler_r1.transform(X_test_r1)
 
 xgb_model = XGBClassifier(
-    subsample=0.3, scale_pos_weight=0.8, reg_lambda=5.0, reg_alpha=0.5,
-    n_estimators=200, min_child_weight=1, max_depth=3, max_delta_step=1,
-    learning_rate=0.15, gamma=1.0, colsample_bytree=0.8,
-    colsample_bynode=0.4, colsample_bylevel=0.4,
+    subsample=0.3, scale_pos_weight=0.8, reg_lambda=2.0, reg_alpha=1.0,
+    n_estimators=150, min_child_weight=7, max_depth=3, max_delta_step=2,
+    learning_rate=0.05, gamma=0.05, colsample_bytree=0.8,
+    colsample_bynode=0.3, colsample_bylevel=0.8,
     tree_method='hist', random_state=42, eval_metric='logloss',
     enable_categorical=False
 )
@@ -103,13 +105,15 @@ r1_acc = accuracy_score(y_test_r1, xgb_model.predict(X_test_r1_s))
 print(f"  ✓ Round 1: {len(df_r1)} games, test accuracy: {r1_acc:.4f}")
 
 # ============================================================================
-# STEP 3: TRAIN ROUND 2 MODEL (Random Forest)
+# STEP 3: TRAIN ROUND 2 MODEL (XGBoost, 13 features)
 # ============================================================================
-print("\nSTEP 3: Training Round 2 model (Random Forest)...")
+print("\nSTEP 3: Training Round 2 model (XGBoost)...")
 
 r2_features = [
     '5man_bpm', '5man_dprpg', '3man_prpg', 'size_speed_index',
-    'def_lineup_depth_quality', 'block_efficiency', 'rim_to_three_ratio'
+    'def_lineup_depth_quality', 'block_efficiency', 'rim_to_three_ratio',
+    'efg_pct', 'def_rim_efficiency', 'def_experience_impact',
+    'experience_weighted_production', 'four_factors_composite', '2pd_pct'
 ]
 
 df_r2 = matchups[matchups['round'] == 'Second Round'].copy()
@@ -124,28 +128,33 @@ scaler_r2 = StandardScaler()
 X_train_r2_s = scaler_r2.fit_transform(X_train_r2)
 X_test_r2_s = scaler_r2.transform(X_test_r2)
 
-rf_model = RandomForestClassifier(
-    n_estimators=200, min_samples_split=5, min_samples_leaf=8,
-    max_samples=0.5, max_features=0.3, max_depth=3, bootstrap=True,
-    random_state=42, n_jobs=-1
+xgb_r2 = XGBClassifier(
+    subsample=0.3, scale_pos_weight=0.8, reg_lambda=7.0, reg_alpha=0.1,
+    n_estimators=400, min_child_weight=3, max_depth=2, max_delta_step=0,
+    learning_rate=0.02, gamma=0.5, colsample_bytree=0.3,
+    colsample_bynode=0.5, colsample_bylevel=0.6,
+    tree_method='hist', random_state=42, eval_metric='logloss',
+    enable_categorical=False
 )
-rf_model.fit(X_train_r2_s, y_train_r2)
+xgb_r2.fit(X_train_r2_s, y_train_r2)
 
 # Platt Scaling
-r2_calibrated = CalibratedClassifierCV(FrozenEstimator(rf_model), method='sigmoid', cv=2)
+r2_calibrated = CalibratedClassifierCV(FrozenEstimator(xgb_r2), method='sigmoid', cv=2)
 r2_calibrated.fit(X_test_r2_s, y_test_r2)
 
-r2_acc = accuracy_score(y_test_r2, rf_model.predict(X_test_r2_s))
+r2_acc = accuracy_score(y_test_r2, xgb_r2.predict(X_test_r2_s))
 print(f"  ✓ Round 2: {len(df_r2)} games, test accuracy: {r2_acc:.4f}")
 
 # ============================================================================
-# STEP 4: TRAIN WEEKEND 2 MODEL (Random Forest)
+# STEP 4: TRAIN WEEKEND 2 MODEL (Logistic Regression, 15 features)
 # ============================================================================
-print("\nSTEP 4: Training Weekend 2 model (Random Forest)...")
+print("\nSTEP 4: Training Weekend 2 model (Logistic Regression)...")
 
 w2_features = [
-    '3man_bpm', 'rotation_balance', 'torvik_def',
-    'effective_possession_rate', 'def_paint_touch_rate'
+    '3man_bpm', 'rotation_balance', 'torvik_def', 'effective_possession_rate',
+    'def_paint_touch_rate', 'shot_quality_variance', 'ast_pct',
+    'def_close2_share', '5man_prpg', '3pr', 'ftr', 'height',
+    'torvik_off', 'def_experience_impact', '5man_dprpg'
 ]
 
 df_w2 = matchups[matchups['round'].isin(['Sweet 16', 'Elite Eight'])].copy()
@@ -160,22 +169,18 @@ scaler_w2 = StandardScaler()
 X_train_w2_s = scaler_w2.fit_transform(X_train_w2)
 X_test_w2_s = scaler_w2.transform(X_test_w2)
 
-rf_w2 = RandomForestClassifier(
-    n_estimators=200, max_depth=3, min_samples_split=15,
-    min_samples_leaf=1, max_samples=0.6, max_features=0.3,
-    bootstrap=True, random_state=42, n_jobs=-1
-)
-rf_w2.fit(X_train_w2_s, y_train_w2)
+lr_w2 = LogisticRegression(C=0.1, penalty='l2', solver='liblinear',
+                           max_iter=1000, random_state=42)
+lr_w2.fit(X_train_w2_s, y_train_w2)
 
-# Platt Scaling
-w2_calibrated = CalibratedClassifierCV(FrozenEstimator(rf_w2), method='sigmoid', cv=2)
-w2_calibrated.fit(X_test_w2_s, y_test_w2)
+# No Platt Scaling for LR — already well-calibrated
+w2_calibrated = lr_w2
 
-w2_acc = accuracy_score(y_test_w2, rf_w2.predict(X_test_w2_s))
+w2_acc = accuracy_score(y_test_w2, lr_w2.predict(X_test_w2_s))
 print(f"  ✓ Weekend 2: {len(df_w2)} games, test accuracy: {w2_acc:.4f}")
 
 # ============================================================================
-# STEP 5: TRAIN WEEKEND 3 MODEL (Logistic Regression)
+# STEP 5: TRAIN WEEKEND 3 MODEL (Logistic Regression, 3 features)
 # ============================================================================
 print("\nSTEP 5: Training Weekend 3 model (Logistic Regression)...")
 
@@ -686,17 +691,4 @@ matchups_path = os.path.join(data_dir, 'men_matchups_output.csv')
 matchups_out.to_csv(matchups_path, index=False)
 print(f"  ✓ Saved: {matchups_path}")
 print(f"    {len(matchups_out)} matchups, {matchups_out['game_id'].nunique()} unique games")
-print(f"    Columns: {len(matchups_out.columns)}")
-
-# Show sample
-print(f"\n  Sample Round 1 matchups:")
-r1_sample = matchups_out[matchups_out['round'] == 'Round 1'].head(8)
-print(r1_sample[['game_id', 'team', 'team_seed', 'opponent', 'opp_seed', 'win_prob']].to_string(index=False))
-
-print("\n" + "=" * 80)
-print("COMPLETE!")
-print("=" * 80)
-print(f"\nMen's pipeline:")
-print(f"  1. python3 backend/src/men_create_data.py")
-print(f"  2. python3 backend/src/men_generate_outputs.py")
-print(f"  3. python3 backend/src/men_generate_matchups.py")
+print(f"    Columns: {len(matchups_out.columns
