@@ -691,4 +691,17 @@ matchups_path = os.path.join(data_dir, 'men_matchups_output.csv')
 matchups_out.to_csv(matchups_path, index=False)
 print(f"  ✓ Saved: {matchups_path}")
 print(f"    {len(matchups_out)} matchups, {matchups_out['game_id'].nunique()} unique games")
-print(f"    Columns: {len(matchups_out.columns
+print(f"    Columns: {len(matchups_out.columns)}")
+
+# Show sample
+print(f"\n  Sample Round 1 matchups:")
+r1_sample = matchups_out[matchups_out['round'] == 'Round 1'].head(8)
+print(r1_sample[['game_id', 'team', 'team_seed', 'opponent', 'opp_seed', 'win_prob']].to_string(index=False))
+
+print("\n" + "=" * 80)
+print("COMPLETE!")
+print("=" * 80)
+print(f"\nMen's pipeline:")
+print(f"  1. python3 backend/src/men_create_data.py")
+print(f"  2. python3 backend/src/men_generate_outputs.py")
+print(f"  3. python3 backend/src/men_generate_matchups.py")
